@@ -1,5 +1,5 @@
 <script>
-    import '../main.js';
+    import '../styles/styles.css';
     import Footer from '$lib/Footer.svelte';
     import Nav from '$lib/Nav.svelte';
 </script>
@@ -13,7 +13,7 @@
     <title>VicEye Specialist Surgeons</title>
 </svelte:head>
 
-<div class="bg-purple-400">sample div</div>
+<div class="bg-blue-400">sample div</div>
 
 <Nav />
 

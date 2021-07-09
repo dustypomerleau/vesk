@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    input[type="radio"] {
+        @apply fixed w-0 opacity-0;
+    }
+
+    input[type="radio"] + label {
+        @apply radio;
+    }
+
+    input[type="radio"]:focus + label {
+        @apply bg-blue-50 border-blue-600 text-blue-700;
+    }
+
+    input[type="radio"]:checked + label {
+        @apply m-[0.1875rem] sm:m-0.5 border-2 border-blue-600 text-blue-700;
+    }
+
+    li {
+        @apply mb-4 hover:text-gray-700;
+    }
+
+    li::before {
+        @apply inline-block bg-check bg-contain w-4 h-4 mr-2 content-[''];
+    }
+
+    ul {
+        text-indent: -1.85rem;
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@layer components {
+    .button {
+        @apply mx-4 p-2 self-stretch rounded-md bg-gradient-to-r from-blue-800 to-blue-600 hover:from-blue-700 hover:to-blue-500 shadow-lg text-center text-white font-medium;
+    }
+
+    .card {
+        @apply flex flex-col items-center content-center justify-between m-8 p-6 rounded-lg w-full md:w-5/12 md:min-w-[24rem] max-w-sm bg-white;
+    }
+
+    .card-title {
+        @apply pb-3 font-semibold text-xl text-center bg-gradient-to-r from-blue-900 to-blue-500 text-transparent bg-clip-text;
+    }
+
+    .doctor{
+        @apply flex flex-col m-8 w-full md:max-w-xl h-auto rounded-md bg-white;
+    }
+
+    .field {
+        @apply block mt-1 mb-6 w-full rounded-md bg-gray-100 focus:bg-white border border-transparent hover:border-blue-500 focus:border-blue-600 focus:ring-0 placeholder-gray-400 focus:text-gray-900 caret-orange-800;
+    }
+
+    .field-label {
+        @apply font-light text-lg;
+    }
+
+    .form {
+        @apply flex flex-col self-center mx-6 my-8 p-6 rounded-md w-full md:max-w-xl bg-white;
+    }
+
+    .link {
+        @apply shadow-link hover:shadow-activeLink text-blue-700 hover:text-orange-500;
+    }
+
+    .radio {
+        @apply flex flex-row flex-wrap sm:justify-center items-center m-1 sm:mx-0.5 p-2 pl-3 sm:pl-2 w-44 rounded-md bg-gray-50 border border-gray-200 hover:border-blue-500 focus:border-blue-600 shadow-md text-center hover:text-blue-500 font-medium;
+    }
+}

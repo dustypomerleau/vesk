@@ -13,12 +13,14 @@
     <title>VicEye Specialist Surgeons</title>
 </svelte:head>
 
-<div class="bg-blue-400">sample div</div>
+<body class="bg-white font-sans font-light text-gray-500 selection:bg-orange-100 selection:text-blue-700">
 
-<Nav />
+    <Nav />
 
-<main>
-    <slot />
-</main>
+    <main>
+        <slot />
+    </main>
 
-<Footer />
+    <Footer />
+
+</body>

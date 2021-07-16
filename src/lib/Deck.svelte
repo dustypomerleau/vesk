@@ -1,6 +1,6 @@
 <script>
-    import Card from "$lib/Card.svelte";
     import { contact, expertise, location, refer } from "$lib/points";
+    import Card from "$lib/Card.svelte";
 </script>
 
 <div

@@ -1,0 +1,125 @@
+logo colors:
+    #075985 blue 800
+    #0284c7 blue 600
+    #F97316 orange 500
+
+Cool Gray
+colors.coolGray
+50
+#F9FAFB
+100
+#F3F4F6
+200
+#E5E7EB
+300
+#D1D5DB
+400
+#9CA3AF
+500
+#6B7280
+600
+#4B5563
+700
+#374151
+800
+#1F2937
+900
+#111827
+
+Light Blue
+colors.sky
+50
+#F0F9FF
+100
+#E0F2FE
+200
+#BAE6FD
+300
+#7DD3FC
+400
+#38BDF8
+500
+#0EA5E9
+600
+#0284C7
+700
+#0369A1
+800
+#075985
+900
+#0C4A6E
+
+Orange
+colors.orange
+50
+#FFF7ED
+100
+#FFEDD5
+200
+#FED7AA
+300
+#FDBA74
+400
+#FB923C
+500
+#F97316
+600
+#EA580C
+700
+#C2410C
+800
+#9A3412
+900
+#7C2D12
+
+Google fonts:
+Overpass
+Assistant
+
+gradient text:
+    bg-gradient-to-r from-orange-500 via-white to-white text-transparent bg-clip-text
+
+glow:
+@layer utilities {
+    .glow {
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
+}
+
+and then:
+<div class="text-white glow">
+or similar
+
+Temporarily use physical address for maps links, and then once you add your business to Google Maps and Apple Maps, you can update the links.
+
+Google Maps:
+https://goo.gl/maps/2NJ7hPJRejXHEu727
+
+Apple Maps:
+https://maps.apple.com/?address=92%20Maroondah%20Highway,%20Ringwood%20VIC%203134,%20Australia&ll=-37.816640,145.225806&q=92%20Maroondah%20Highway&_ext=EiYpPjjp1hrpQsAxVdaqOAsnYkA5wGLDevTnQsBBHZo+YGgnYkBQBA%3D%3D
+
+https://github.com/tailwindlabs/tailwindcss.com/blob/master/public/safari-pinned-tab.svg
+
+https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions
+
+todo:
+right side info/content in header on larger screens
+phone + fax in header on lg and footer on all
+alternatively, consider a div right under the title of the contact form, so the phone-inclined can go with that option
+pro photos
+svg logo sizing - note that other svgs aren't doing that so check out their widths
+rgba -> hex in all svgs
+
+logo - set height and width:
+192 : 1057
+x   : 539
+x = 97.9 call it 98

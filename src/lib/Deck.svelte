@@ -14,4 +14,22 @@
             <Eye />
         </LinkButton>
     </Card>
+
+    <Card title="Trusted by referrers" points={refer}>
+        <LinkButton href="/refer" buttonText="Make a referral">
+            <Eye />
+        </LinkButton>
+    </Card>
+
+    <Card title="Convenient location" points={location}>
+        <LinkButton href="#location" buttonText="Location and parking">
+            <Eye />
+        </LinkButton>
+    </Card>
+
+    <Card title="More information" points={contact}>
+        <LinkButton href="#contact" buttonText="Contact us">
+            <Eye />
+        </LinkButton>
+    </Card>
 </div>

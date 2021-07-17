@@ -11,7 +11,7 @@ export const refer = [
 
     "We care for the full spectrum of ophthalmic conditions, including complex vitreoretinal diseases, medical retina, and uveitis.",
 
-    "Our approach to cataract surgery is data-driven and patient-centred. We choose intraocular lenses that maximise individual quality-of-life.",
+    "Our approach to cataract surgery is data-driven and patient-centred. We choose intraocular lenses that maximise individual quality of life.",
 
     "We accept emergency patients and same-day referrals. Our doctors are always available to speak with you about high-acuity patients.",
 ];

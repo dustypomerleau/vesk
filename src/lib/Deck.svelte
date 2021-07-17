@@ -3,6 +3,9 @@
     import Card from "$lib/Card.svelte";
     import Eye from "$lib/svg/Eye.svelte";
     import LinkButton from "$lib/LinkButton.svelte";
+    import Mail from "$lib/svg/Mail.svelte";
+    import Pin from "$lib/svg/Pin.svelte";
+    import UserPlus from "$lib/svg/UserPlus.svelte";
 </script>
 
 <div
@@ -17,19 +20,19 @@
 
     <Card title="Trusted by referrers" points={refer}>
         <LinkButton href="/refer" buttonText="Make a referral">
-            <Eye />
+            <UserPlus />
         </LinkButton>
     </Card>
 
     <Card title="Convenient location" points={location}>
         <LinkButton href="#location" buttonText="Location and parking">
-            <Eye />
+            <Pin />
         </LinkButton>
     </Card>
 
     <Card title="More information" points={contact}>
         <LinkButton href="#contact" buttonText="Contact us">
-            <Eye />
+            <Mail />
         </LinkButton>
     </Card>
 </div>

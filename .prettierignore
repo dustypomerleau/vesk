@@ -1,5 +1,7 @@
 .svelte-kit/**
 build/**
+favicon.svg
+mask-icon.svg
 node_modules/**
 static/**
 svg/

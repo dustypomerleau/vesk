@@ -118,6 +118,7 @@ alternatively, consider a div right under the title of the contact form, so the 
 pro photos
 svg logo sizing - note that other svgs aren't doing that so check out their widths
 rgba -> hex in all svgs
+consider icons in the location and parking titles
 
 logo - set height and width:
 192 : 1057

@@ -1,6 +1,4 @@
 <script>
-    export let buttonText;
-    export let href;
     export let points;
     export let title;
     import LinkButton from "$lib/LinkButton.svelte";
@@ -15,5 +13,5 @@
             {/each}
         </ul>
     </div>
-    <LinkButton {href} {buttonText} />
+    <slot />
 </div>

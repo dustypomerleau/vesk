@@ -1,5 +1,5 @@
 .svelte-kit/**
 build/**
-icons/
 node_modules/**
 static/**
+svg/

@@ -1,83 +1,13 @@
 <script>
     import Deck from "$lib/Deck.svelte";
     import Hero from "$lib/Hero.svelte";
+    import Docs from "$lib/Docs.svelte";
 </script>
 
 <Hero />
 <Deck />
+<Docs />
 
-<div
-    id="doctors"
-    class="flex flex-col md:flex-row md:flex-wrap justify-start md:justify-center md:content-start items-center md:items-stretch pt-4"
->
-    <div class="doctor">
-        <div class="overflow-hidden rounded-t-md">
-            <img src="mht.png" alt="Doctor Mei Tan Headshot" class="w-full" />
-        </div>
-        <div class="flex flex-row justify-center w-full -mt-0.5 bg-gray-200">
-            <div class="px-6 py-2">
-                <div
-                    class="flex flex-row flex-wrap justify-start items-baseline"
-                >
-                    <div class="pr-2 font-medium text-xl text-orange-800">
-                        Mei Tan
-                    </div>
-                    <div class="text-xs">
-                        MB ChB BAO, PhD, FRCOphth, FRANZCO
-                    </div>
-                </div>
-                <div class="text-orange-900">
-                    Medical & surgical retina, cataract
-                </div>
-            </div>
-        </div>
-        <div class="px-6 py-4">
-            Dr Tan received her specialist training in the UK, completing a PhD
-            in gene therapy at University College London and her clinical
-            training at Oxford Eye Hospital. She then completed vitreoretinal
-            fellowships at the Royal Perth Hospital and the Royal Adelaide
-            Hospital before settling in Melbourne.
-            <br />
-            <br />
-            Dr Tan conducts clinical research in age-related macular degeneration,
-            including a co-investigator role in clinical trials at the Royal Melbourne
-            Hospital. Additional personal research interests include genetic eye
-            disease, diabetic retinopathy, and vitreoretinal surgery.
-        </div>
-    </div>
-    <div class="doctor">
-        <div class="overflow-hidden rounded-t-md">
-            <img
-                src="dlp.jpg"
-                alt="Doctor Dusty Pomerleau Headshot"
-                class="w-full"
-            />
-        </div>
-        <div class="flex flex-row justify-center w-full -mt-0.5 bg-gray-200">
-            <div class="px-6 py-2">
-                <div
-                    class="flex flex-row flex-wrap justify-start items-baseline"
-                >
-                    <div class="pr-2 font-medium text-xl text-orange-800">
-                        Dusty Pomerleau
-                    </div>
-                    <div class="text-xs">MD, FRANZCO</div>
-                </div>
-                <div class="text-orange-900">
-                    Medical & surgical retina, cataract, uveitis
-                </div>
-            </div>
-        </div>
-        <div class="px-6 py-4">
-            Dusty is acceptable. I mean, he's more or less passable, and that's
-            all anyone can ask of someone born into mediocrity like this. At
-            least, that's all he hopes you will ask, because there's very little
-            chance of improvement, let's just face the harsh reality. When the
-            raw materials look like this, you're pretty happy just to get out of
-            bed in the morning
-        </div>
-    </div>
-</div>
 <div
     id="location"
     class="flex flex-col md:flex-row md:flex-wrap items-center md:items-stretch justify-start md:justify-center"

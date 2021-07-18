@@ -5,7 +5,7 @@
         copy of this referral will be sent to your email address, followed by
         confirmation once an appointment has been booked. This form is intended
         for referring doctors. If you are a patient, please use our <a
-            href="../#contact"
+            href="/#contact"
             class="link">contact form</a
         >.
     </div>

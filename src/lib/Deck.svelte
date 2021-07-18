@@ -13,7 +13,7 @@
     class="flex flex-col md:flex-row md:flex-wrap items-center md:items-stretch justify-start md:justify-center"
 >
     <Card title="Expertise and experience" points={expertise}>
-        <LinkButton href="#doctors" buttonText="Meet our surgeons">
+        <LinkButton href="/#doctors" buttonText="Meet our surgeons">
             <Eye />
         </LinkButton>
     </Card>
@@ -25,13 +25,13 @@
     </Card>
 
     <Card title="Convenient location" points={location}>
-        <LinkButton href="#location" buttonText="Location and parking">
+        <LinkButton href="/#location" buttonText="Location and parking">
             <Pin />
         </LinkButton>
     </Card>
 
     <Card title="More information" points={contact}>
-        <LinkButton href="#contact" buttonText="Contact us">
+        <LinkButton href="/#contact" buttonText="Contact us">
             <Mail />
         </LinkButton>
     </Card>

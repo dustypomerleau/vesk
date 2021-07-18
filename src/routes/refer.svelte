@@ -1,3 +1,8 @@
+<script>
+    import Radio from "$lib/Radio.svelte";
+    import Send from "$lib/svg/Send.svelte";
+</script>
+
 <div class="form">
     <div class="card-title">Refer to VicEye</div>
     <div>
@@ -64,27 +69,9 @@
         <div class="block mt-4">
             <span class="field-label">Preferred specialist</span>
             <div class="flex flex-col sm:flex-row">
-                <input
-                    id="prefer-first-available"
-                    type="radio"
-                    name="specialist-preference"
-                    value="first-available"
-                />
-                <label for="prefer-first-available">First available</label>
-                <input
-                    id="prefer-tan"
-                    type="radio"
-                    name="specialist-preference"
-                    value="tan"
-                />
-                <label for="prefer-tan">Dr Mei Tan</label>
-                <input
-                    id="prefer-pomerleau"
-                    type="radio"
-                    name="specialist-preference"
-                    value="pomerleau"
-                />
-                <label for="prefer-pomerleau">Dr Dusty Pomerleau</label>
+                <Radio name="specialist-preference" text="First available" />
+                <Radio name="specialist-preference" text="Dr Mei Tan" />
+                <Radio name="specialist-preference" text="Dr Dusty Pomerleau" />
             </div>
         </div>
         <label class="block mt-6">
@@ -100,19 +87,7 @@
             class="button self-center w-5/6 max-w-xs flex flex-row place-content-center items-center"
         >
             <div class="text-blue-200">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="none"
-                    ><path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1.5"
-                        d="M4.75 19.25 12 4.75l7.25 14.5-7.25-3.5-7.25 3.5zM12 15.5v-2.75"
-                    /></svg
-                >
+                <Send />
             </div>
             <div class="pl-2">Refer my patient</div>
         </button>

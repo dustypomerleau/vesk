@@ -192,30 +192,3 @@
         </button>
     </form>
 </div>
-
-<div
-    id="footer"
-    class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-6 lg:gap-12 p-8 sm:px-12 bg-gray-300"
->
-    <div class="font-medium text-orange-700">
-        &copy;2021 Vic&nbsp;Eye&nbsp;and&nbsp;Retina&nbsp;Specialists
-        Pty&nbsp;Ltd
-    </div>
-    <a href="/"
-        ><div class="lg:text-center"><span class="link">Home</span></div></a
-    >
-    <a href="#doctors"
-        ><div class="lg:text-center">
-            <span class="link">Specialists</span>
-        </div></a
-    >
-    <a href="#location"
-        ><div class="lg:text-center"><span class="link">Location</span></div></a
-    >
-    <a href="#contact"
-        ><div class="lg:text-center"><span class="link">Contact</span></div></a
-    >
-    <a href="/refer/"
-        ><div class="lg:text-center"><span class="link">Refer</span></div></a
-    >
-</div>

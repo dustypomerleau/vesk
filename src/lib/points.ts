@@ -19,7 +19,7 @@ export const refer = [
 export const location = [
     "Our Ringwood practice has abundant parking, close to the M3, Ringwood Train Station, and Eastland Shopping Centre.",
 
-    'Our ground-floor office is accessible to wheelchairs and walkers. Feel free to <a href="#contact" class="link">contact us</a> in advance if you require any special assistance for your visit.',
+    'Our ground-floor office is accessible to wheelchairs and walkers. Feel free to <a href="/#contact" class="link">contact us</a> in advance if you require any special assistance for your visit.',
 
     "Click the button below for detailed information on how to visit us.",
 ];

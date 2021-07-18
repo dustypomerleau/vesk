@@ -7,7 +7,7 @@
     class="flex flex-col md:flex-row md:flex-wrap justify-start md:justify-center md:content-start items-center md:items-stretch pt-4"
 >
     {#each doctors as doc}
-        <div class="doctor">
+        <div class="wide-card">
             <div class="overflow-hidden rounded-t-md">
                 <img src={doc.src} alt={doc.alt} class="w-full" />
             </div>

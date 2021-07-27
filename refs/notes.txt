@@ -131,3 +131,98 @@ Mailgun + Netlify forms example:
 https://github.com/stefanjudis/just-write-a-fn/blob/e744e42b26e48a43f95a5491515a133791dab6fb/src/lambda/contact.js
 
 https://undraw.co/illustrations
+
+-----
+
+dusty: I have a card component that is working well with prop-drilling, but I feel I should probably be using the context API to get props down to the grandchild button. Because I am using an {#each} block to create the cards, I'm not really sure how to implement context. Would you leave this prop-drilled, or is there a better way?
+
+<!-- LinkButton.svelte -->
+<script>
+    export let buttonText;
+    export let href;
+    export let icon;
+</script>
+
+<a {href} >
+    <div>
+        <svelte:component this={icon} />
+    </div>
+    <div>{buttonText}</div>
+</a>
+
+<!-- Card.svelte -->
+<script>
+    export let bulletPoints;
+    export let buttonText;
+    export let href;
+    export let icon;
+    export let title;
+    import LinkButton from "$lib/LinkButton.svelte";
+</script>
+
+<div>
+    <div>
+        <h2>{title}</h2>
+        <ul>
+            {#each bulletPoints as point}
+                <li>{@html point}</li>
+            {/each}
+        </ul>
+    </div>
+    <LinkButton {buttonText} {href} {icon} />
+</div>
+
+<!-- index.svelte -->
+<script>
+    import Card from "$lib/Card.svelte";
+    import { cards } from "$lib/cardContent";
+</script>
+
+<div>
+    {#each cards as card}
+        <Card {...card} />
+    {/each}
+</div>
+[9:19 PM] Rainlife: what props would you want to get down from index to linkbutton ?
+[9:19 PM] dusty: buttonText, href, and icon
+[9:19 PM] Rainlife: aren't those specific for a card ?
+[9:20 PM] Brady ⋱ Fractal: this seems fine to me, not sure why you'd use context instead
+[9:20 PM] dusty: I am iterating through an array of objects in cardContent and then dynamically creating the cards with the {#each}
+[9:20 PM] Rainlife: also, if you would use context for your linkbutton, suddenly it will become a component that is very limited in it's use
+[9:20 PM] Brady ⋱ Fractal: yea I think you've set it up nicely
+[9:21 PM] dusty: the card isn't using those props @Rainlife - it just passes them through to the contained button
+[9:21 PM] Brady ⋱ Fractal: yea I wouldn't worry about that
+[9:21 PM] dusty: I am happy with it - just a bit redundant - but I don't want to overcomplicate
+[9:22 PM] Brady ⋱ Fractal: oh I see, cus you're exporting them twice
+[9:23 PM] Rainlife: the approach I always take is that I as a parent give my kid some data and then don't care what this child does with it, if the button would be integrated directly into the card, the parent shouldn't have to know the implementation details
+[9:23 PM] Rainlife: it keeps code cleaner and easier to understand
+[9:23 PM] Brady ⋱ Fractal: how would he go about avoiding the need to declare the exports twice here in the most elegant way?
+[9:24 PM] Rainlife: restProps at most
+[9:24 PM] Rainlife:
+<script>
+  export let title
+  export let bulletpoints
+</script>
+<Button {...$$restProps}>
+[9:25 PM] Rainlife: That way 'Button' will receive all the props that are not explicitely used in 'Card'
+[9:25 PM] dusty: oh wow
+[9:25 PM] dusty: I didn't realize I could do that
+[9:25 PM] Brady ⋱ Fractal: I always wished it was just called ...$$rest for some reason
+[9:26 PM] Rainlife: But I really really don't like that, because I find it difficult to follow, only really use it as final thing on dom elements:
+<button on:click {disabled} class:primary {...$$restProps}>
+ for example so consumers can define aria and stuff
+[9:27 PM] Brady ⋱ Fractal: interesting
+[9:27 PM] Brady ⋱ Fractal: I think in his case though, it's not too complicated / hard to follow
+[9:27 PM] Brady ⋱ Fractal: I get what you mean though, in general
+[9:28 PM] dusty: I suppose it does obscure the props you're passing
+[9:28 PM] Rainlife: an alternative is to change your objects to have a prop link that holds these three props and spread that out:
+<script>
+export let title
+export let link
+</script>
+{title}
+<Linkbutton {...link} />
+[9:28 PM] Rainlife: That approach is maybe best for you, it keeps things tidy and organized
+[9:30 PM] dusty: I'll try both - thank you both for your time. @Rainlife @Brady ⋱ Fractal
+
+-----

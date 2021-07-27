@@ -1,3 +1,8 @@
+import Eye from "$lib/svg/Eye.svelte";
+import Mail from "$lib/svg/Mail.svelte";
+import Pin from "$lib/svg/Pin.svelte";
+import UserPlus from "$lib/svg/UserPlus.svelte";
+
 export const cards = [
     {
         title: "Expertise and experience",
@@ -23,7 +28,7 @@ export const cards = [
 
             "We accept emergency patients and same-day referrals. Our doctors are always available to speak with you about high-acuity patients.",
         ],
-        icon: Userplus,
+        icon: UserPlus,
         buttonText: "Make a referral",
         href: "/refer",
     },

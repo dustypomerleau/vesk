@@ -3,7 +3,7 @@
 </script>
 
 <header
-    id="home"
+    id="header"
     class="flex flex-col md:flex-row pb-4 md:pb-0 justify-between items-center"
 >
     <a href="/" title="Vic Eye Home">

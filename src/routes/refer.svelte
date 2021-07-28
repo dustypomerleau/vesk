@@ -24,12 +24,12 @@
         <div class="mt-6 text-lg text-blue-800">Doctor details:</div>
         <div class="bg-gradient-to-r from-blue-700 to-blue-500 h-[2px]" />
 
-        <label class="block mt-4">
+        <label class="mt-4">
             <span class="field-label">Doctor's name</span>
             <input type="text" placeholder="" class="field" />
         </label>
 
-        <label class="block">
+        <label>
             <span class="field-label">Email address</span>
             <input
                 type="email"
@@ -38,12 +38,12 @@
             />
         </label>
 
-        <label class="block">
+        <label>
             <span class="field-label">Preferred phone</span>
             <input type="tel" placeholder="0400 000 000" class="field" />
         </label>
 
-        <label class="block">
+        <label>
             <span class="field-label">Practice name and location</span>
             <input type="text" placeholder="" class="field" />
         </label>
@@ -51,17 +51,17 @@
         <div class="mt-6 text-lg text-blue-800">Patient details:</div>
         <div class="bg-gradient-to-r from-blue-700 to-blue-500 h-[2px]" />
 
-        <label class="block mt-4">
+        <label class="mt-4">
             <span class="field-label">Patient's full name</span>
             <input type="text" placeholder="" class="field" />
         </label>
 
-        <label class="block mt-0">
+        <label class="mt-0">
             <span class="field-label">Date of birth</span>
             <input type="date" value="dd-mm-yyyy" class="field" />
         </label>
 
-        <label class="block">
+        <label>
             <span class="field-label">Email address</span>
             <input
                 type="email"
@@ -70,7 +70,7 @@
             />
         </label>
 
-        <label class="block">
+        <label>
             <span class="field-label">Phone (mobile preferred)</span>
             <input type="tel" placeholder="0400 000 000" class="field" />
         </label>
@@ -78,21 +78,29 @@
         <div class="mt-6 text-lg text-blue-800">Referral details:</div>
         <div class="bg-gradient-to-r from-blue-700 to-blue-500 h-[2px]" />
 
-        <div class="block mt-4">
+        <div class="mt-4">
             <span class="field-label">Preferred specialist</span>
             <div class="flex flex-col sm:flex-row">
-                <Radio name="specialist-preference" text="First available" />
-                <Radio name="specialist-preference" text="Dr Mei Tan" />
-                <Radio name="specialist-preference" text="Dr Dusty Pomerleau" />
+                <Radio
+                    name="specialist-preference"
+                    icon=""
+                    text="First available"
+                />
+                <Radio name="specialist-preference" icon="" text="Dr Mei Tan" />
+                <Radio
+                    name="specialist-preference"
+                    icon=""
+                    text="Dr Dusty Pomerleau"
+                />
             </div>
         </div>
 
-        <label class="block mt-6">
+        <label class="mt-6">
             <span class="field-label">Presumptive diagnosis</span>
             <input type="text" placeholder="" class="field" />
         </label>
 
-        <label class="block">
+        <label>
             <span class="field-label">Further details</span>
             <textarea rows="8" maxlength="10000" class="field" />
         </label>

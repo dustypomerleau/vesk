@@ -36,12 +36,12 @@
         data-netlify="true"
         class="flex flex-col"
     >
-        <label class="block mt-4">
+        <label class="mt-4">
             <span class="field-label">Full name</span>
             <input type="text" placeholder="" class="field" />
         </label>
 
-        <label class="block">
+        <label>
             <span class="field-label">Email address</span>
             <input
                 type="email"
@@ -50,27 +50,29 @@
             />
         </label>
 
-        <label class="block">
+        <label>
             <span class="field-label">Mobile phone</span>
             <input type="tel" placeholder="0400 000 000" class="field" />
         </label>
 
-        <div class="block">
+        <div>
             <span class="field-label">Preferred contact method</span>
             <div class="flex flex-col sm:flex-row">
-                <Radio name="contact-preference" text="Email">
-                    <Mail />
-                </Radio>
-                <Radio name="contact-preference" text="Phone">
-                    <Smartphone />
-                </Radio>
-                <Radio name="contact-preference" text="Text message">
-                    <Message />
-                </Radio>
+                <Radio name="contact-preference" icon={Mail} text="Email" />
+                <Radio
+                    name="contact-preference"
+                    icon={Smartphone}
+                    text="Phone"
+                />
+                <Radio
+                    name="contact-preference"
+                    icon={Message}
+                    text="Text message"
+                />
             </div>
         </div>
 
-        <label class="block mt-6">
+        <label class="mt-6">
             <span class="field-label">Details of your request</span>
             <textarea rows="8" maxlength="10000" class="field" />
         </label>

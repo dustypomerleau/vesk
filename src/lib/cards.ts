@@ -13,9 +13,11 @@ export const cards = [
 
             'Our specialists are fellows of the Royal Australian and New Zealand College of Ophthalmologists (<a href="https://ranzco.edu/" class="link">FRANZCO</a>).',
         ],
-        icon: Eye,
-        buttonText: "Meet our surgeons",
-        href: "/#doctors",
+        link: {
+            icon: Eye,
+            buttonText: "Meet our surgeons",
+            href: "/#doctors",
+        },
     },
     {
         title: "Trusted by referrers",
@@ -28,9 +30,11 @@ export const cards = [
 
             "We accept emergency patients and same-day referrals. Our doctors are always available to speak with you about high-acuity patients.",
         ],
-        icon: UserPlus,
-        buttonText: "Make a referral",
-        href: "/refer",
+        link: {
+            icon: UserPlus,
+            buttonText: "Make a referral",
+            href: "/refer",
+        },
     },
     {
         title: "Convenient location",
@@ -41,9 +45,11 @@ export const cards = [
 
             "Click the button below for detailed information on how to visit us.",
         ],
-        icon: Pin,
-        buttonText: "Location and parking",
-        href: "/#location",
+        link: {
+            icon: Pin,
+            buttonText: "Location and parking",
+            href: "/#location",
+        },
     },
     {
         title: "More information",
@@ -52,8 +58,10 @@ export const cards = [
 
             "Referrals are required for most of our services. If you have questions about the process, or need help obtaining a referral, we are happy to assist.",
         ],
-        icon: Mail,
-        buttonText: "Contact us",
-        href: "/#contact",
+        link: {
+            icon: Mail,
+            buttonText: "Contact us",
+            href: "/#contact",
+        },
     },
 ];

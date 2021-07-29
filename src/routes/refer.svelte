@@ -1,4 +1,7 @@
 <script>
+    import Calendar from "$lib/svg/Calendar.svelte";
+    import Dp from "$lib/svg/Dp.svelte";
+    import Mt from "$lib/svg/Mt.svelte";
     import Radio from "$lib/Radio.svelte";
     import Send from "$lib/svg/Send.svelte";
 </script>
@@ -83,13 +86,17 @@
             <div class="flex flex-col sm:flex-row">
                 <Radio
                     name="specialist-preference"
-                    icon=""
+                    icon={Calendar}
                     text="First available"
                 />
-                <Radio name="specialist-preference" icon="" text="Dr Mei Tan" />
                 <Radio
                     name="specialist-preference"
-                    icon=""
+                    icon={Mt}
+                    text="Dr Mei Tan"
+                />
+                <Radio
+                    name="specialist-preference"
+                    icon={Dp}
                     text="Dr Dusty Pomerleau"
                 />
             </div>

@@ -89,15 +89,11 @@
                     icon={Calendar}
                     text="First available"
                 />
-                <Radio
-                    name="specialist-preference"
-                    icon={Mt}
-                    text="Dr Mei Tan"
-                />
+                <Radio name="specialist-preference" icon={Mt} text="Dr Tan" />
                 <Radio
                     name="specialist-preference"
                     icon={Dp}
-                    text="Dr Dusty Pomerleau"
+                    text="Dr Pomerleau"
                 />
             </div>
         </div>

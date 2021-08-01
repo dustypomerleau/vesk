@@ -231,3 +231,6 @@ delete the favicon cache in safari:
 (use finder, as permissions won't allow terminal)
 delete contents of
 ~/Library/Safari/Favicon Cache/
+
+optimizing layout shift
+https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions

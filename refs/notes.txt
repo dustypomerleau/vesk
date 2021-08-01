@@ -226,3 +226,8 @@ export let link
 [9:30 PM] dusty: I'll try both - thank you both for your time. @Rainlife @Brady ⋱ Fractal
 
 -----
+
+delete the favicon cache in safari:
+(use finder, as permissions won't allow terminal)
+delete contents of
+~/Library/Safari/Favicon Cache/

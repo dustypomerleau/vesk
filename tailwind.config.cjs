@@ -45,9 +45,6 @@ const config = {
             }
         }
     },
-    variants: {
-        extend: {}
-    },
     plugins: [require("@tailwindcss/forms")]
 };
 

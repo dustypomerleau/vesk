@@ -20,14 +20,14 @@
 </svelte:head>
 
 <body
-    class="bg-white font-sans font-light text-slate-500 selection:bg-orange-100 selection:text-sky-700"
+    class="bg-white font-sans font-light text-gray-500 selection:bg-orange-100 selection:text-sky-700"
 >
     <Nav />
 
     <main>
         <div
             id="bg"
-            class="bg-gradient-to-br from-slate-50 to-slate-200 bg-cover bg-fixed flex flex-col"
+            class="bg-gradient-to-br from-gray-50 to-gray-200 bg-cover bg-fixed flex flex-col"
         >
             <slot />
         </div>

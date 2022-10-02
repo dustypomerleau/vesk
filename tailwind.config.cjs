@@ -19,10 +19,13 @@ const config = {
                 "Segoe UI Emoji"
             ]
         },
+        // todo fix this https://tailwindcss.com/docs/font-weight#customizing-your-theme
+        // probably just use the defaults and change the names so you can delete this section
+        // looks like that would just mean changing medium to normal (others are the same)
         fontWeight: {
-            light: 300,
-            medium: 400,
-            semibold: 600
+            // light: 300,
+            // normal: 400,
+            // semibold: 600
         },
         extend: {
             backgroundImage: (theme) => ({

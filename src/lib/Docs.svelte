@@ -12,13 +12,13 @@
                 <img src={doc.src} alt={doc.alt} class="w-full" />
             </div>
             <div
-                class="flex flex-row justify-center w-full -mt-0.5 bg-slate-200"
+                class="flex flex-row justify-center w-full -mt-0.5 bg-gray-200"
             >
                 <div class="px-6 py-2">
                     <div
                         class="flex flex-row flex-wrap justify-start items-baseline"
                     >
-                        <div class="pr-2 font-medium text-xl text-orange-800">
+                        <div class="pr-2 font-normal text-xl text-orange-800">
                             {doc.name}
                         </div>
                         <div class="text-xs">

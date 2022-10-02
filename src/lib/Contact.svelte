@@ -12,13 +12,13 @@
     <div class="card-title">Contact VicEye</div>
     <div class="flex flex-row flex-wrap gap-x-8 justify-center mb-4">
         <div class="flex flex-row items-center gap-1">
-            <div id="landline-icon-container" class="text-blue-700">
+            <div id="landline-icon-container" class="text-sky-700">
                 <Landline />
             </div>
             <div>03 0000 0000</div>
         </div>
         <div class="flex flex-row items-center gap-1">
-            <div id="fax-icon-container" class="text-blue-700">
+            <div id="fax-icon-container" class="text-sky-700">
                 <Print />
             </div>
             <div>03 0000 0000</div>
@@ -81,7 +81,7 @@
             type="submit"
             class="button self-center w-5/6 max-w-xs flex flex-row justify-center items-center"
         >
-            <div id="send-icon-container" class="text-blue-200">
+            <div id="send-icon-container" class="text-sky-200">
                 <Send />
             </div>
             <div class="pl-2">Send my request</div>

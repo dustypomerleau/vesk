@@ -5,7 +5,7 @@
 </script>
 
 <a {href} class="button flex flex-row justify-center items-center">
-    <div class="text-blue-200">
+    <div class="text-sky-200">
         <svelte:component this={icon} />
     </div>
     <div class="pl-2">{buttonText}</div>

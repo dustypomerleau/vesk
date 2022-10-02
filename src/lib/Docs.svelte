@@ -12,7 +12,7 @@
                 <img src={doc.src} alt={doc.alt} class="w-full" />
             </div>
             <div
-                class="flex flex-row justify-center w-full -mt-0.5 bg-gray-200"
+                class="flex flex-row justify-center w-full -mt-0.5 bg-slate-200"
             >
                 <div class="px-6 py-2">
                     <div

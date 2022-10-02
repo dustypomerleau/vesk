@@ -5,16 +5,7 @@ const colors = require("tailwindcss/colors");
 const config = {
     content: ["./src/**/*.{html,js,svelte,ts}"],
     theme: {
-        colors: {
-            black: colors.black,
-            blue: colors.sky,
-            current: "currentColor",
-            gray: colors.coolGray,
-            orange: colors.orange,
-            purple: colors.purple,
-            transparent: "transparent",
-            white: colors.white
-        },
+        colors: {},
         fontFamily: {
             sans: [
                 "system-ui",

@@ -6,7 +6,7 @@
 
 <div class="wide-card">
     <div class="absolute pt-2 sm:pt-8 pl-8 sm:pl-16">
-        <div class="font-semibold text-xl text-blue-700">Location</div>
+        <div class="font-semibold text-xl text-sky-700">Location</div>
         92 Maroondah Highway<br />
         Ringwood, VIC 3134<br />
         <div id="maps" class="flex flex-row items-end gap-8 p-2">

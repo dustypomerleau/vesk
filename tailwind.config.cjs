@@ -4,7 +4,6 @@ const colors = require("tailwindcss/colors");
 /** @type {import('tailwindcss').Config} */
 const config = {
     content: ["./src/**/*.{html,js,svelte,ts}"],
-    darkMode: false,
     theme: {
         colors: {
             black: colors.black,

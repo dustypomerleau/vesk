@@ -1,5 +1,5 @@
 <script>
-    import "../app.postcss";
+    import "../app.css";
     import Footer from "$lib/Footer.svelte";
     import Nav from "$lib/Nav.svelte";
 </script>

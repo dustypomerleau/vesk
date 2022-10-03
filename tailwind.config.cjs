@@ -5,7 +5,15 @@ const colors = require("tailwindcss/colors");
 const config = {
     content: ["./src/**/*.{html,js,svelte,ts}"],
     theme: {
-        colors: {},
+        colors: {
+            black: colors.black,
+            current: "currentColor",
+            gray: colors.gray,
+            orange: colors.orange,
+            sky: colors.sky,
+            transparent: "transparent",
+            white: colors.white
+        },
         fontFamily: {
             sans: [
                 "system-ui",
@@ -23,9 +31,9 @@ const config = {
         // probably just use the defaults and change the names so you can delete this section
         // looks like that would just mean changing medium to normal (others are the same)
         fontWeight: {
-            // light: 300,
-            // normal: 400,
-            // semibold: 600
+            light: 300,
+            normal: 400,
+            semibold: 600
         },
         extend: {
             backgroundImage: (theme) => ({

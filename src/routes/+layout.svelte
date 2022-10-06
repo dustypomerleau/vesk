@@ -19,9 +19,7 @@
     <title>VicEye Specialist Surgeons</title>
 </svelte:head>
 
-<body
-    class="bg-white font-sans font-light text-gray-500 selection:bg-orange-100 selection:text-sky-700"
->
+<body class="bg-white font-sans font-light text-gray-500">
     <Nav />
 
     <main>

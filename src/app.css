@@ -64,7 +64,7 @@
     }
 
     .link {
-        @apply shadow-link hover:shadow-activeLink text-sky-700 hover:text-orange-500;
+        @apply shadow-link hover:shadow-activeLink text-sky-700;
     }
 
     .radio {

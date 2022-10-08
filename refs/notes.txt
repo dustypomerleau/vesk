@@ -1,4 +1,4 @@
-width="524" height="524" viewBox="0 0 393 393" new colors from helena
+new colors from helena
 #ff7b00 hsl 29 100 50
 #1785be hsl 200 78 42
 #183863 hsl 214 61 24

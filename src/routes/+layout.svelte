@@ -6,7 +6,7 @@
 
 <svelte:head>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="manifest" href="/manifest.json" />
     <meta charset="utf-8" />
     <meta
         name="description"

@@ -1,4 +1,9 @@
-logo colors:
+new colors from helena
+#ff7b00 hsl 29 100 50
+#1785be hsl 200 78 42
+#183863 hsl 214 61 24
+
+old logo colors:
     #075985 blue 800
     #0284c7 blue 600
     #F97316 orange 500
@@ -233,6 +238,9 @@ delete the favicon cache in safari:
 (use finder, as permissions won't allow terminal)
 delete contents of
 ~/Library/Safari/Favicon Cache/
+
+delete the favicon cache in chrome:
+rm -rf "$HOME/Library/Application Support/Google/Chrome/Default/Favicons"
 
 optimizing layout shift
 https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions

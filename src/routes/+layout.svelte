@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-    <link rel="icon" href="/favicon.svg" />
-    <link rel="mask-icon" color="#f97316" href="/mask-icon.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <meta charset="utf-8" />
     <meta
         name="description"

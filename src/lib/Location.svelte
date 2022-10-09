@@ -17,7 +17,7 @@
                 <div id="google-maps" class="link">
                     <div
                         id="google-maps-svg-container"
-                        class="opacity-70 flex flex-row justify-center items-start"
+                        class="opacity-80 flex flex-row justify-center items-start"
                     >
                         <Google />
                     </div>
@@ -31,7 +31,7 @@
                 <div id="apple-maps" class="link">
                     <div
                         id="apple-maps-svg-container"
-                        class="opacity-70 flex flex-row justify-center items-start"
+                        class="opacity-80 flex flex-row justify-center items-start"
                     >
                         <Apple />
                     </div>

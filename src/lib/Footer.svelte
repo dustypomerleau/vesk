@@ -19,7 +19,10 @@
     {#each links as link}
         <a href={link.href}>
             <div class="lg:text-center">
-                <span class="link text-gray-500">{link.text}</span>
+                <span
+                    class="shadow-footer hover:shadow-activeFooter text-gray-500"
+                    >{link.text}</span
+                >
             </div>
         </a>
     {/each}

@@ -9,7 +9,7 @@
 </script>
 
 <div id="contact" class="form">
-    <div class="card-title">Contact VicEye</div>
+    <div class="card-title">Contact Vic Eye</div>
     <div class="flex flex-row flex-wrap gap-x-8 justify-center mb-4">
         <div class="flex flex-row items-center gap-1">
             <div id="landline-icon-container" class="text-sky-700">

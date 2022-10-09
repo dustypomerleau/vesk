@@ -10,13 +10,13 @@
     <meta charset="utf-8" />
     <meta
         name="description"
-        content="VicEye & Retina Specialists: Cataract and retinal surgeons serving greater Melbourne. Located in Ringwood, Victoria."
+        content="Vic Eye & Retina Specialists: Cataract and retinal surgeons serving greater Melbourne. Located in Ringwood, Victoria."
     />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>VicEye Specialist Surgeons</title>
+    <title>Vic Eye Specialist Surgeons</title>
 </svelte:head>
 
 <body class="bg-white font-sans font-light text-gray-600">

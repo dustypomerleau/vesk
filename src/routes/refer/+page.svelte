@@ -7,9 +7,9 @@
 </script>
 
 <div class="form">
-    <div class="card-title">Refer to VicEye</div>
+    <div class="card-title">Refer to Vic Eye</div>
     <div>
-        Thank you for entrusting your patients to the specialists at VicEye. A
+        Thank you for entrusting your patients to the specialists at Vic Eye. A
         copy of this referral will be sent to your email address, followed by
         confirmation once an appointment has been booked. This form is intended
         for referring doctors. If you are a patient, please use our <a

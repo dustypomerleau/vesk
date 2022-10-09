@@ -15,7 +15,9 @@
             <div id="landline-icon-container" class="text-sky-700">
                 <Landline />
             </div>
-            <div><a class="link" href="tel:0391001928">(03) 9100 1928</a></div>
+            <div>
+                <a class="link" href="tel:+61391001928">(03) 9100 1928</a>
+            </div>
         </div>
         <div class="flex flex-row items-center gap-1">
             <div id="fax-icon-container" class="text-sky-700">

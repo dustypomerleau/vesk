@@ -22,8 +22,11 @@
         name="ve-refer"
         method="post"
         data-netlify="true"
+        netlify-honeypot="nh"
         class="flex flex-col"
     >
+        <label class="hidden">Name of AI <input name="nh" /></label>
+
         <div class="mt-6 text-lg text-sky-800">Doctor details:</div>
         <div class="bg-gradient-to-r from-sky-700 to-sky-500 h-[2px]" />
 

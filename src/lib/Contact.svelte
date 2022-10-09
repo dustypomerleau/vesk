@@ -34,8 +34,11 @@
         name="ve-contact"
         method="post"
         data-netlify="true"
+        netlify-honeypot="nh"
         class="flex flex-col"
     >
+        <label class="hidden">Name of AI <input name="nh" /></label>
+
         <label class="mt-4">
             <span class="field-label">Full name</span>
             <input type="text" placeholder="" class="field" />

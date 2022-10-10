@@ -5,8 +5,8 @@
 </script>
 
 <div class="wide-card">
-    <div class="absolute pt-2 sm:pt-8 pl-8 sm:pl-16">
-        <div class="font-semibold text-xl text-sky-700">Location</div>
+    <div class="absolute pt-2 pl-8 sm:pt-8 sm:pl-16">
+        <div class="text-xl font-semibold text-sky-700">Location</div>
         92 Maroondah Highway<br />
         Ringwood, VIC 3134<br />
         <div id="maps" class="flex flex-row items-end gap-8 p-2">
@@ -17,7 +17,7 @@
                 <div id="google-maps" class="link">
                     <div
                         id="google-maps-svg-container"
-                        class="opacity-80 flex flex-row justify-center items-start"
+                        class="flex flex-row items-start justify-center opacity-80"
                     >
                         <Google />
                     </div>
@@ -31,7 +31,7 @@
                 <div id="apple-maps" class="link">
                     <div
                         id="apple-maps-svg-container"
-                        class="opacity-80 flex flex-row justify-center items-start"
+                        class="flex flex-row items-start justify-center opacity-80"
                     >
                         <Apple />
                     </div>

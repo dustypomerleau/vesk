@@ -10,7 +10,7 @@
 
 <div id="contact" class="form">
     <div class="card-title">Contact Vic Eye</div>
-    <div class="flex flex-row flex-wrap gap-x-8 justify-center mb-4">
+    <div class="mb-4 flex flex-row flex-wrap justify-center gap-x-8">
         <div class="flex flex-row items-center gap-1">
             <div id="landline-icon-container" class="text-sky-700">
                 <Landline />
@@ -84,7 +84,7 @@
 
         <button
             type="submit"
-            class="button self-center w-5/6 max-w-xs flex flex-row justify-center items-center"
+            class="button flex w-5/6 max-w-xs flex-row items-center justify-center self-center"
         >
             <div id="send-icon-container" class="text-sky-200">
                 <Send />

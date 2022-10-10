@@ -5,7 +5,7 @@
 
 <div
     id="location"
-    class="flex flex-col md:flex-row md:flex-wrap items-center md:items-stretch justify-start md:justify-center"
+    class="flex flex-col items-center justify-start md:flex-row md:flex-wrap md:items-stretch md:justify-center"
 >
     <Location />
     <Parking />

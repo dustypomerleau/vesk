@@ -4,7 +4,7 @@
     export let icon;
 </script>
 
-<a {href} class="button flex flex-row justify-center items-center">
+<a {href} class="button flex flex-row items-center justify-center">
     <div class="text-sky-200">
         <svelte:component this={icon} />
     </div>

@@ -4,7 +4,7 @@
 
 <header
     id="header"
-    class="flex flex-col md:flex-row pb-4 md:pb-0 justify-between items-center"
+    class="flex flex-col items-center justify-between pb-4 md:flex-row md:pb-0"
 >
     <a href="/" title="Vic Eye Home">
         <div class="px-8 pt-4 pb-2 md:pb-4">

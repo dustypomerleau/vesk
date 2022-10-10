@@ -25,7 +25,7 @@
     <main>
         <div
             id="bg"
-            class="bg-gradient-to-br from-gray-50 to-gray-200 bg-cover bg-fixed flex flex-col"
+            class="flex flex-col bg-gradient-to-br from-gray-50 to-gray-200 bg-cover bg-fixed"
         >
             <slot />
         </div>

@@ -27,8 +27,8 @@
     >
         <label class="hidden">Name of AI <input name="nh" /></label>
 
-        <div class="mt-6 text-lg text-sky-800">Doctor details:</div>
-        <div class="bg-gradient-to-r from-sky-700 to-sky-500 h-[2px]" />
+        <div class="mt-6 text-lg text-blue-800">Doctor details:</div>
+        <div class="h-[2px] bg-gradient-to-r from-blue-700 to-blue-500" />
 
         <label class="mt-4">
             <span class="field-label">Doctor's name</span>
@@ -54,8 +54,8 @@
             <input type="text" placeholder="" class="field" />
         </label>
 
-        <div class="mt-6 text-lg text-sky-800">Patient details:</div>
-        <div class="bg-gradient-to-r from-sky-700 to-sky-500 h-[2px]" />
+        <div class="mt-6 text-lg text-blue-800">Patient details:</div>
+        <div class="h-[2px] bg-gradient-to-r from-blue-700 to-blue-500" />
 
         <label class="mt-4">
             <span class="field-label">Patient's full name</span>
@@ -81,8 +81,8 @@
             <input type="tel" placeholder="0400 000 000" class="field" />
         </label>
 
-        <div class="mt-6 text-lg text-sky-800">Referral details:</div>
-        <div class="bg-gradient-to-r from-sky-700 to-sky-500 h-[2px]" />
+        <div class="mt-6 text-lg text-blue-800">Referral details:</div>
+        <div class="h-[2px] bg-gradient-to-r from-blue-700 to-blue-500" />
 
         <div class="mt-4">
             <span class="field-label">Preferred specialist</span>
@@ -113,9 +113,9 @@
 
         <button
             type="submit"
-            class="button self-center w-5/6 max-w-xs flex flex-row place-content-center items-center"
+            class="button flex w-5/6 max-w-xs flex-row place-content-center items-center self-center"
         >
-            <div class="text-sky-200">
+            <div class="text-blue-200">
                 <Send />
             </div>
             <div class="pl-2">Refer my patient</div>

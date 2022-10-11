@@ -7,6 +7,18 @@ const config = {
     theme: {
         colors: {
             black: colors.black,
+            blue: {
+                50: "#d5e3f5",
+                100: "#acc7eb",
+                200: "#83abe1",
+                300: "#5a8fd7",
+                400: "#3174cd",
+                500: "#275ca4",
+                600: "#1d457b",
+                700: "#183863",
+                800: "#132e52",
+                900: "#091729"
+            },
             current: "currentColor",
             gray: colors.gray,
             orange: colors.orange,

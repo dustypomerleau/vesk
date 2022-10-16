@@ -7,7 +7,6 @@ const config = {
     theme: {
         colors: {
             black: colors.black,
-            // todo: checkmark colors, link colors
             blue: {
                 50: "hsl(210, 100%, 97%)", // #f0f7ff
                 100: "hsl(210, 94%, 94%)", // #e1f0fe

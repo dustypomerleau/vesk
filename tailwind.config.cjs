@@ -7,17 +7,18 @@ const config = {
     theme: {
         colors: {
             black: colors.black,
+            // todo: checkmark colors, link colors
             blue: {
-                50: "hsl(210, 100%, 97%)",
-                100: "hsl(210, 94%, 94%)",
-                200: "hsl(209, 94%, 86%)",
-                300: "hsl(209, 95%, 74%)",
-                400: "hsl(209, 93%, 60%)",
-                500: "hsl(207, 89%, 48%)",
-                600: "hsl(207, 98%, 39%)",
-                700: "hsl(208, 96%, 32%)",
-                800: "hsl(208, 90%, 27%)",
-                900: "hsl(210, 80%, 24%)"
+                50: "hsl(210, 100%, 97%)", // #f0f7ff
+                100: "hsl(210, 94%, 94%)", // #e1f0fe
+                200: "hsl(209, 94%, 86%)", // #badcfd
+                300: "hsl(209, 95%, 74%)", // #7ebffc
+                400: "hsl(209, 93%, 60%)", // #3a9cf8
+                500: "hsl(207, 89%, 48%)", // #0d85e7
+                600: "hsl(207, 98%, 39%)", // #026dc5
+                700: "hsl(208, 96%, 32%)", // #0357a0
+                800: "hsl(208, 90%, 27%)", // #074983
+                900: "hsl(210, 80%, 24%)" //  #0c3d6e
             },
             current: "currentColor",
             gray: colors.gray,
@@ -47,7 +48,7 @@ const config = {
         extend: {
             backgroundImage: (theme) => ({
                 hero: "url('hero.png');",
-                check: 'url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2724%27%20height%3D%2724%27%20fill%3D%27none%27%3E%3Cpath%20stroke%3D%27%230369a1%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20stroke-width%3D%271.5%27%20d%3D%27m5.75%2012.867%202.59%203.547a2%202%200%200%200%203.26-.043l6.65-9.621%27%2F%3E%3C%2Fsvg%3E");'
+                check: 'url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2724%27%20height%3D%2724%27%20fill%3D%27none%27%3E%3Cpath%20stroke%3D%27%230357a0%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20stroke-width%3D%271.5%27%20d%3D%27m5.75%2012.867%202.59%203.547a2%202%200%200%200%203.26-.043l6.65-9.621%27%2F%3E%3C%2Fsvg%3E");'
             }),
             boxShadow: {
                 activeFooter: "0 -4px 0 0 #4b556399 inset",

@@ -8,19 +8,23 @@ const config = {
         colors: {
             black: colors.black,
             blue: {
-                50: "hsl(210, 100%, 97%)", // #f0f7ff
-                100: "hsl(210, 94%, 94%)", // #e1f0fe
-                200: "hsl(209, 94%, 86%)", // #badcfd
-                300: "hsl(209, 95%, 74%)", // #7ebffc
-                400: "hsl(209, 93%, 60%)", // #3a9cf8
-                500: "hsl(207, 89%, 48%)", // #0d85e7
-                600: "hsl(207, 98%, 39%)", // #026dc5
-                700: "hsl(208, 96%, 32%)", // #0357a0
-                800: "hsl(208, 90%, 27%)", // #074983
-                900: "hsl(210, 80%, 24%)" //  #0c3d6e
+                // atmos hue shift of #183863 255-275
+                50: "#f3f7fb",
+                100: "#d1e2f7",
+                200: "#adcdf4",
+                300: "#88b8f2",
+                400: "#60a3ee",
+                500: "#438ddf",
+                600: "#3878c3",
+                700: "#2e63a7",
+                800: "#254f8b",
+                900: "#193767"
             },
             current: "currentColor",
             gray: colors.gray,
+            logoNavy: "#183863",
+            logoOrange: "#ff7b00",
+            logoSky: "#1785be",
             orange: colors.orange,
             sky: colors.sky,
             transparent: "transparent",

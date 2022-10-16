@@ -52,9 +52,9 @@ const config = {
             }),
             boxShadow: {
                 activeFooter: "0 -4px 0 0 #4b556399 inset",
-                activeLink: "0 -4px 0 0 #0284c7bb inset",
+                activeLink: "0 -4px 0 0 #026dc5bb inset",
                 footer: "0 -4px 0 0 #4b556350 inset",
-                link: "0 -4px 0 0 #0284c750 inset"
+                link: "0 -4px 0 0 #026dc550 inset"
             }
         }
     },

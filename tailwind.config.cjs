@@ -9,6 +9,7 @@ const config = {
             black: colors.black,
             blue: {
                 // atmos hue shift of #183863 255-275
+                // todo: ticks, links, derive palettes from logoOrange and logoSky
                 50: "#f3f7fb",
                 100: "#d1e2f7",
                 200: "#adcdf4",

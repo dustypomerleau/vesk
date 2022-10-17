@@ -15,9 +15,9 @@ const logo_navy_hs_255_275 = {
 // logo orange hs  68-44
 const logo_orange_hs_68_44 = {
   25: '#fcf5ee',
-  100: '#fcd9b7',
-  200: '#fdba7e',
-  275: '#ff9841',
+  100: '#fcd9b9',
+  200: '#fdba80',
+  275: '#ff9843',
   350: '#ff7b00',
   425: '#dd6200',
   500: '#c44d00',
@@ -26,13 +26,13 @@ const logo_orange_hs_68_44 = {
   750: '#721900',
 };
 
-// logo sky hs 264-244
-const logo_sky_hs_264_244 = {
+// logo sky hs 263-244
+const logo_sky_hs_263_244 = {
   25: '#f4f7fc',
-  100: '#d1e1fa',
-  200: '#a8cdfb',
-  275: '#73bafc',
-  350: '#21abfc',
+  100: '#d0e2fa',
+  200: '#a7cefb',
+  275: '#72bbfc',
+  350: '#22abfb',
   425: '#1b92d4',
   500: '#1785be',
   600: '#106894',

@@ -5,7 +5,8 @@
 <div class="wide-card">
     <div class="absolute pt-2 pl-8 sm:pt-8 sm:pl-16">
         <div class="text-xl font-semibold text-blue-700">Parking</div>
-        Access via Murray Place
+        Access parking via Murray Place<br />
+        Enter practice on Maroondah Highway
     </div>
     <div id="parking-map">
         <ParkingMap />

@@ -56,7 +56,7 @@ const config = {
             }),
             boxShadow: {
                 activeFooter: "0 -4px 0 0 #4b556399 inset",
-                activeLink: "0 -4px 0 0 #438ddfbb inset",
+                activeLink: "0 -4px 0 0 #438ddfcc inset",
                 footer: "0 -4px 0 0 #4b556350 inset",
                 link: "0 -4px 0 0 #438ddf60 inset"
             }

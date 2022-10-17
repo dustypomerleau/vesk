@@ -6,6 +6,7 @@
             true,
             { "ignoreAtRules": ["tailwind", "apply"] }
         ],
+        "hue-degree-notation": "number",
         "max-line-length": [120, { "ignorePattern": "/@apply\\s+.+;/" }]
     }
 }

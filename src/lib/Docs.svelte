@@ -4,7 +4,7 @@
 
 <div
     id="doctors"
-    class="flex flex-col items-center justify-start pt-4 md:flex-row md:flex-wrap md:content-start md:items-stretch md:justify-center"
+    class="flex flex-col items-center justify-start bg-gray-300 md:flex-row md:flex-wrap md:content-start md:items-stretch md:justify-center"
 >
     {#each doctors as doc}
         <div class="wide-card">

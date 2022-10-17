@@ -8,8 +8,6 @@ const config = {
         colors: {
             black: colors.black,
             blue: {
-                // atmos hue shift of #183863 255-275
-                // todo: ticks, links, derive palettes from logoOrange and logoSky
                 50: "#f3f7fb",
                 100: "#d1e2f7",
                 200: "#adcdf4",
@@ -26,8 +24,30 @@ const config = {
             logoNavy: "#183863",
             logoOrange: "#ff7b00",
             logoSky: "#1785be",
-            orange: colors.orange,
-            sky: colors.sky,
+            orange: {
+                50: "#fcf5ee",
+                100: "#fcd9b9",
+                200: "#fdba80",
+                300: "#ff9843",
+                400: "#ff7b00",
+                500: "#dd6200",
+                600: "#c44d00",
+                700: "#aa3900",
+                800: "#902600",
+                900: "#721900"
+            },
+            sky: {
+                50: "#f4f7fc",
+                100: "#d0e2fa",
+                200: "#a7cefb",
+                300: "#72bbfc",
+                400: "#22abfb",
+                500: "#1b92d4",
+                600: "#1785be",
+                700: "#106894",
+                800: "#0a5476",
+                900: "#063c54"
+            },
             transparent: "transparent",
             white: colors.white
         },

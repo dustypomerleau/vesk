@@ -39,7 +39,7 @@
             <span class="field-label">Email address</span>
             <input
                 type="email"
-                placeholder="your.email@example.com"
+                placeholder="doctor.email@example.com"
                 class="field"
             />
         </label>
@@ -71,7 +71,7 @@
             <span class="field-label">Email address</span>
             <input
                 type="email"
-                placeholder="your.email@example.com"
+                placeholder="patient.email@example.com"
                 class="field"
             />
         </label>

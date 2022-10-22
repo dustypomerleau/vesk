@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,4.86279,6.25112)">
+        <g transform="matrix(2.54301,0,0,4.06436,-32.1163,-39.4436)">
+            <rect x="9.734" y="7.552" width="72.748" height="45.518" style="fill:rgb(24,56,99);"/>
+        </g>
+        <g id="logo" transform="matrix(3.59915,0,0,3.59915,6.00894,5.41788)">
+            <g id="lens" transform="matrix(0,-1,-1,0,37.873,18.0492)">
+                <path d="M-3.715,-3.715C-8.11,-3.715 -11.674,-2.052 -11.674,0C-11.674,2.052 -8.11,3.715 -3.715,3.715C0.68,3.715 4.245,2.052 4.245,0C4.245,-2.052 0.68,-3.715 -3.715,-3.715" style="fill:rgb(23,133,190);fill-rule:nonzero;"/>
+            </g>
+            <path id="outer-circle" serif:id="outer circle" d="M2.383,21.713C2.383,32.475 11.121,41.213 21.883,41.213C27.044,41.213 33.375,38.409 35.228,35.925C36.133,34.714 35.577,31.372 34.852,28.79C33.961,25.612 32.781,23.808 32.319,23.719C32.12,23.681 31.499,23.617 31.226,24.514C30.011,28.515 26.279,31.463 21.883,31.463C16.502,31.463 12.133,27.094 12.133,21.713L12.133,21.815C12.133,16.434 16.502,12.065 21.883,12.065C26.279,12.065 30.011,15.013 31.226,19.014C31.499,19.911 32.12,19.847 32.319,19.809C32.781,19.72 33.961,17.915 34.852,14.738C35.577,12.156 36.133,8.814 35.228,7.602C33.375,5.119 27.044,2.315 21.883,2.315C11.121,2.315 2.383,11.052 2.383,21.815" style="fill:rgb(255,123,0);"/>
+        </g>
+    </g>
+    <g id="Artboard1" transform="matrix(3.95963,0,0,4.14446,0,0)">
+        <rect x="0" y="0" width="45.459" height="43.432" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="0" y="0" width="45.459" height="43.432"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g id="Layer-1" serif:id="Layer 1">
+            </g>
+        </g>
+    </g>
+</svg>

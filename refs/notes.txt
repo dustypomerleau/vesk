@@ -3,6 +3,24 @@ new colors from helena
 #1785be hsl 200 78 42
 #183863 hsl 214 61 24
 
+-----
+
+Pantone:
+
+Orange: 
+Coated - 151 C 
+Uncoated - Pantone Orange 021 U
+
+Mid Blue: 
+Coated - 7461 C 
+Uncoated - Pantone Process Blue
+
+Navy Blue: 
+Coated - 2955 C 
+Uncoated - 288 U
+
+-----
+
 old logo colors:
     #075985 blue 800
     #0284c7 blue 600

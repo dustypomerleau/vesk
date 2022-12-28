@@ -16,7 +16,10 @@ export const doctors = [
         name: "Dusty Pomerleau",
         credentials: "MD, FRANZCO",
         specialties: "Medical &amp; surgical retina, cataract, uveitis",
-        bio: ["bio par 1", "bio par 2"],
+        bio: [
+            "Dr Pomerleau received his specialist training at California Pacific Medical Center in San Francisco, followed by a fellowship in medical retina at Duke University, and a vitreoretinal fellowship at the University of Alabama.",
+            "Dr Pomerleau's appointment at the Royal Melbourne Hospital includes primary and co-investigator roles in multiple clinical trials for age-related macular degeneration. His personal research interests include macular hole and retinal detachment surgery, as well as inflammatory eye disease."
+        ],
         src: "dlp.png",
         alt: "Doctor Dusty Pomerleau headshot"
     }

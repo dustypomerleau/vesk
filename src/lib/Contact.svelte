@@ -10,7 +10,7 @@
 
 <div id="contact" class="form">
     <div class="card-title">Contact Vic Eye</div>
-    <div class="mb-4 flex flex-row flex-wrap justify-center gap-x-8">
+    <div class="mb-4 flex flex-row flex-wrap justify-center gap-y-2 gap-x-8">
         <div class="flex flex-row items-center gap-1">
             <div id="landline-icon-container" class="text-blue-700">
                 <Landline />

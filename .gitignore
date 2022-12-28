@@ -1,9 +1,10 @@
-.DS_Store
-/.svelte-kit
-/package
 # dlp.png
 # hero*.png
 # mht.png
+.DS_Store
+/.svelte-kit
+/build
+/package
 node_modules
 
 # Local Netlify folder

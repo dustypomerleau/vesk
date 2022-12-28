@@ -17,7 +17,7 @@ export const doctors = [
         credentials: "MD, FRANZCO",
         specialties: "Medical &amp; surgical retina, cataract, uveitis",
         bio: ["bio par 1", "bio par 2"],
-        src: "dlp.jpg",
+        src: "dlp.png",
         alt: "Doctor Dusty Pomerleau headshot"
     }
 ];

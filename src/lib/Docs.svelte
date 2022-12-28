@@ -9,7 +9,11 @@
     {#each doctors as doc}
         <div class="wide-card">
             <div class="overflow-hidden rounded-t-md">
-                <img src={doc.src} alt={doc.alt} class="w-full" />
+                <img
+                    src={doc.src}
+                    alt={doc.alt}
+                    class="h-96 w-full object-cover object-top"
+                />
             </div>
             <div
                 class="-mt-0.5 flex w-full flex-row justify-center bg-gray-200"

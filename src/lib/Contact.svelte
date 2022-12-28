@@ -35,7 +35,7 @@
     <form
         name="ve-contact"
         method="post"
-        netlify
+        data-netlify="true"
         netlify-honeypot="nh"
         class="flex flex-col"
     >

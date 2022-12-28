@@ -21,7 +21,7 @@
     <form
         name="ve-refer"
         method="post"
-        netlify
+        data-netlify="true"
         netlify-honeypot="nh"
         class="flex flex-col"
     >

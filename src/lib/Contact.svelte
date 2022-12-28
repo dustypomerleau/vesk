@@ -1,7 +1,6 @@
-<script context="module">
+<!-- <script context="module">
     export const prerender = true;
-</script>
-
+</script> -->
 <script>
     import Landline from "$lib/svg/Landline.svelte";
     import Mail from "$lib/svg/Mail.svelte";
@@ -40,13 +39,11 @@
         name="ve-contact"
         method="post"
         data-netlify="true"
-        netlify-honeypot="nh"
+        netlify-honeypot="bot-field"
         class="flex flex-col"
     >
         <!-- helper for netlify forms -->
         <input type="hidden" name="form-name" value="ve-contact" />
-
-        <label class="hidden">Name of AI <input name="nh" /></label>
 
         <label class="mt-4">
             <span class="field-label">Full name</span>

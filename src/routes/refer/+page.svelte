@@ -1,7 +1,6 @@
-<script context="module">
+<!-- <script context="module">
     export const prerender = true;
-</script>
-
+</script> -->
 <script>
     import Calendar from "$lib/svg/Calendar.svelte";
     import Dp from "$lib/svg/Dp.svelte";
@@ -26,13 +25,11 @@
         name="ve-refer"
         method="post"
         data-netlify="true"
-        netlify-honeypot="nh"
+        netlify-honeypot="bot-field"
         class="flex flex-col"
     >
         <!-- helper for netlify forms -->
         <input type="hidden" name="form-name" value="ve-refer" />
-
-        <label class="hidden">Name of AI <input name="nh" /></label>
 
         <div class="mt-6 text-lg text-blue-800">Doctor details:</div>
         <div class="h-[2px] bg-gradient-to-r from-blue-700 to-blue-500" />

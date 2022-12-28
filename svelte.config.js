@@ -7,15 +7,15 @@ const config = {
     // for more information about preprocessors
     preprocess: [preprocess({ postcss: true })],
     kit: {
-        adapter: adapter(),
-        // added prerender settings per this github issue re: netlify forms:
-        // https://github.com/sveltejs/kit/issues/942
-        prerender: {
-            crawl: true,
-            enabled: true,
-            onError: "continue",
-            entries: ["*"]
-        }
+        adapter: adapter()
+        // // added prerender settings per this github issue re: netlify forms:
+        // // https://github.com/sveltejs/kit/issues/942
+        // prerender: {
+        //     crawl: true,
+        //     enabled: true,
+        //     onError: "continue",
+        //     entries: ["*"]
+        // }
     }
 };
 

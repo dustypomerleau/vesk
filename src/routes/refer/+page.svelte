@@ -32,12 +32,13 @@
 
         <label class="mt-4">
             <span class="field-label">Doctor's name</span>
-            <input type="text" placeholder="" class="field" />
+            <input name="doc-name" type="text" placeholder="" class="field" />
         </label>
 
         <label>
             <span class="field-label">Email address</span>
             <input
+                name="doc-email"
                 type="email"
                 placeholder="doctor.email@example.com"
                 class="field"
@@ -46,12 +47,17 @@
 
         <label>
             <span class="field-label">Preferred phone</span>
-            <input type="tel" placeholder="0400 000 000" class="field" />
+            <input
+                name="doc-phone"
+                type="tel"
+                placeholder="0400 000 000"
+                class="field"
+            />
         </label>
 
         <label>
             <span class="field-label">Practice name and location</span>
-            <input type="text" placeholder="" class="field" />
+            <input name="practice" type="text" placeholder="" class="field" />
         </label>
 
         <div class="mt-6 text-lg text-blue-800">Patient details:</div>
@@ -59,17 +65,28 @@
 
         <label class="mt-4">
             <span class="field-label">Patient's full name</span>
-            <input type="text" placeholder="" class="field" />
+            <input
+                name="patient-name"
+                type="text"
+                placeholder=""
+                class="field"
+            />
         </label>
 
         <label class="mt-0">
             <span class="field-label">Date of birth</span>
-            <input type="date" value="dd-mm-yyyy" class="field" />
+            <input
+                name="patient-dob"
+                type="date"
+                value="dd-mm-yyyy"
+                class="field"
+            />
         </label>
 
         <label>
             <span class="field-label">Email address</span>
             <input
+                name="patient-email"
                 type="email"
                 placeholder="patient.email@example.com"
                 class="field"
@@ -78,7 +95,12 @@
 
         <label>
             <span class="field-label">Phone (mobile preferred)</span>
-            <input type="tel" placeholder="0400 000 000" class="field" />
+            <input
+                name="patient-phone"
+                type="tel"
+                placeholder="0400 000 000"
+                class="field"
+            />
         </label>
 
         <div class="mt-6 text-lg text-blue-800">Referral details:</div>
@@ -103,12 +125,12 @@
 
         <label class="mt-6">
             <span class="field-label">Presumptive diagnosis</span>
-            <input type="text" placeholder="" class="field" />
+            <input name="diagnosis" type="text" placeholder="" class="field" />
         </label>
 
         <label>
             <span class="field-label">Further details</span>
-            <textarea rows="8" maxlength="10000" class="field" />
+            <textarea name="details" rows="8" maxlength="10000" class="field" />
         </label>
 
         <button

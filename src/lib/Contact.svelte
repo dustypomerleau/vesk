@@ -43,12 +43,13 @@
 
         <label class="mt-4">
             <span class="field-label">Full name</span>
-            <input type="text" placeholder="" class="field" />
+            <input name="full-name" type="text" placeholder="" class="field" />
         </label>
 
         <label>
             <span class="field-label">Email address</span>
             <input
+                name="email"
                 type="email"
                 placeholder="your.email@example.com"
                 class="field"
@@ -57,7 +58,12 @@
 
         <label>
             <span class="field-label">Mobile phone</span>
-            <input type="tel" placeholder="0400 000 000" class="field" />
+            <input
+                name="mobile"
+                type="tel"
+                placeholder="0400 000 000"
+                class="field"
+            />
         </label>
 
         <div>
@@ -79,7 +85,7 @@
 
         <label class="mt-6">
             <span class="field-label">Details of your request</span>
-            <textarea rows="8" maxlength="10000" class="field" />
+            <textarea name="details" rows="8" maxlength="10000" class="field" />
         </label>
 
         <button

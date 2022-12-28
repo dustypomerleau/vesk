@@ -10,20 +10,24 @@
 
 <div
     id="footer"
-    class="flex flex-col gap-6 bg-gray-300 px-8 py-4 sm:px-12 lg:flex-row lg:items-center lg:justify-center lg:gap-12"
+    class="flex flex-col gap-3 bg-gray-300 px-8 py-4 sm:items-center sm:justify-center sm:px-12 lg:flex-row lg:gap-12"
 >
     <div class="font-normal text-gray-500">
         &copy;2022 Vic&nbsp;Eye&nbsp;and&nbsp;Retina&nbsp;Specialists
         Pty&nbsp;Ltd
     </div>
-    {#each links as link}
-        <a href={link.href}>
-            <div class="lg:text-center">
-                <span
-                    class="text-gray-500 shadow-footer hover:shadow-activeFooter"
-                    >{link.text}</span
-                >
-            </div>
-        </a>
-    {/each}
+    <div
+        class="sm: grid grid-cols-2 items-center gap-3 sm:flex sm:grid-cols-none sm:flex-row sm:justify-center sm:gap-6"
+    >
+        {#each links as link}
+            <a href={link.href}>
+                <div class="lg:text-center">
+                    <span
+                        class="text-gray-500 shadow-footer hover:shadow-activeFooter"
+                        >{link.text}</span
+                    >
+                </div>
+            </a>
+        {/each}
+    </div>
 </div>

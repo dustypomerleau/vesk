@@ -1,3 +1,7 @@
+<script context="module">
+    export const prerender = true;
+</script>
+
 <script>
     import Landline from "$lib/svg/Landline.svelte";
     import Mail from "$lib/svg/Mail.svelte";

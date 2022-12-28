@@ -1,3 +1,7 @@
+<script context="module">
+    export const prerender = true;
+</script>
+
 <script>
     import Calendar from "$lib/svg/Calendar.svelte";
     import Dp from "$lib/svg/Dp.svelte";

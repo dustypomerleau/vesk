@@ -29,6 +29,9 @@
         netlify-honeypot="nh"
         class="flex flex-col"
     >
+        <!-- helper for netlify forms -->
+        <input type="hidden" name="form-name" value="ve-refer" />
+
         <label class="hidden">Name of AI <input name="nh" /></label>
 
         <div class="mt-6 text-lg text-blue-800">Doctor details:</div>

@@ -43,6 +43,9 @@
         netlify-honeypot="nh"
         class="flex flex-col"
     >
+        <!-- helper for netlify forms -->
+        <input type="hidden" name="form-name" value="ve-contact" />
+
         <label class="hidden">Name of AI <input name="nh" /></label>
 
         <label class="mt-4">

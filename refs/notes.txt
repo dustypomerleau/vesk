@@ -1,3 +1,19 @@
+todo:
+
+fix forwarding of viceye.com and .com.au
+larger font size on mobile
+new images and image zoom level for both doctors
+image optimization (different sizes - possibly use cloudinary integration)
+lighthouse extension and accessibility testing
+link to correct google business profile
+clean commented code and other dirt
+npm outdated for the other deps you didn't update during forms fiasco
+custom page for form submissions
+run through redirected .com .com.au - can we delegate these to netlify dns also?
+run through form field names and make them very clear for email recipient
+
+
+
 new colors from helena
 #ff7b00 hsl 29 100 50
 #1785be hsl 200 78 42
@@ -7,16 +23,16 @@ new colors from helena
 
 Pantone:
 
-Orange: 
-Coated - 151 C 
+Orange:
+Coated - 151 C
 Uncoated - Pantone Orange 021 U
 
-Mid Blue: 
-Coated - 7461 C 
+Mid Blue:
+Coated - 7461 C
 Uncoated - Pantone Process Blue
 
-Navy Blue: 
-Coated - 2955 C 
+Navy Blue:
+Coated - 2955 C
 Uncoated - 288 U
 
 -----

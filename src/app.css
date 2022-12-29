@@ -56,7 +56,7 @@
     }
 
     .field-label {
-        @apply font-light text-lg;
+        @apply font-light text-xl
     }
 
     .form {

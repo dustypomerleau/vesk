@@ -31,7 +31,7 @@
         <!-- helper for netlify forms -->
         <input type="hidden" name="form-name" value="ve-refer" />
 
-        <div class="mt-6 text-lg text-blue-800">Doctor details:</div>
+        <div class="mt-6 text-xl text-blue-800">Doctor details:</div>
         <div class="h-[2px] bg-gradient-to-r from-blue-700 to-blue-500" />
 
         <label class="mt-4">
@@ -64,7 +64,7 @@
             <input name="practice" type="text" placeholder="" class="field" />
         </label>
 
-        <div class="mt-6 text-lg text-blue-800">Patient details:</div>
+        <div class="mt-6 text-xl text-blue-800">Patient details:</div>
         <div class="h-[2px] bg-gradient-to-r from-blue-700 to-blue-500" />
 
         <label class="mt-4">
@@ -107,7 +107,7 @@
             />
         </label>
 
-        <div class="mt-6 text-lg text-blue-800">Referral details:</div>
+        <div class="mt-6 text-xl text-blue-800">Referral details:</div>
         <div class="h-[2px] bg-gradient-to-r from-blue-700 to-blue-500" />
 
         <div class="mt-4">

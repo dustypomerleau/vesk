@@ -1,7 +1,8 @@
 todo:
 
 fix forwarding of viceye.com and .com.au
-larger font size on mobile
+done: larger font size on mobile
+use just the eye without any text on location svg
 new images and image zoom level for both doctors
 image optimization (different sizes - possibly use cloudinary integration)
 lighthouse extension and accessibility testing

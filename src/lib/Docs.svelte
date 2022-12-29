@@ -22,10 +22,10 @@
                     <div
                         class="flex flex-row flex-wrap items-baseline justify-start"
                     >
-                        <div class="pr-2 text-xl font-normal text-orange-800">
+                        <div class="pr-2 text-2xl font-normal text-orange-800">
                             {doc.name}
                         </div>
-                        <div class="text-xs">
+                        <div class="text-base">
                             {doc.credentials}
                         </div>
                     </div>

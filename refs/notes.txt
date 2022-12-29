@@ -1,5 +1,6 @@
 todo:
 
+why is the left margin of your name/specialty on mobile not aligned with text like mht's?
 fix forwarding of viceye.com and .com.au
 done: larger font size on mobile
 use just the eye without any text on location svg

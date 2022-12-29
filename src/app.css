@@ -48,7 +48,7 @@
     }
 
     .card-title {
-        @apply pb-3 font-semibold text-xl text-center bg-gradient-to-r from-blue-900 to-blue-500 text-transparent bg-clip-text;
+        @apply pb-3 font-semibold text-2xl text-center bg-gradient-to-r from-blue-900 to-blue-500 text-transparent bg-clip-text;
     }
 
     .field {

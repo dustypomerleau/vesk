@@ -22,7 +22,7 @@
     <title>Vic Eye Specialist Surgeons</title>
 </svelte:head>
 
-<body class="bg-logoNavy font-sans font-light text-gray-600">
+<body class="bg-logoNavy font-sans text-lg font-light text-gray-600">
     <Nav />
 
     <main>

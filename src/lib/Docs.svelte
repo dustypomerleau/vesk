@@ -16,7 +16,7 @@
                 />
             </div>
             <div
-                class="-mt-0.5 flex w-full flex-row justify-center bg-gray-200"
+                class="-mt-0.5 flex w-full flex-row sm:justify-center bg-gray-200"
             >
                 <div class="px-6 py-2">
                     <div

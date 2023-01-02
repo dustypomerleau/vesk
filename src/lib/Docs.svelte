@@ -9,14 +9,18 @@
     {#each doctors as doc}
         <div class="wide-card">
             <div class="overflow-hidden rounded-t-md">
-                <img
-                    src={doc.src}
-                    alt={doc.alt}
-                    class="h-96 w-full object-cover object-top"
-                />
+                <picture>
+                    <source type="image/webp" srcset={doc.srcWebp} />
+                    <source type="image/jpeg" srcset={doc.srcJpg} />
+                    <img
+                        src={doc.srcJpg}
+                        alt={doc.alt}
+                        class="h-96 w-full object-cover object-top"
+                    />
+                </picture>
             </div>
             <div
-                class="-mt-0.5 flex w-full flex-row sm:justify-center bg-gray-200"
+                class="-mt-0.5 flex flex-row w-full sm:justify-center bg-gray-200"
             >
                 <div class="px-6 py-2">
                     <div

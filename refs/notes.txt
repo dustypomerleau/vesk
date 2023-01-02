@@ -1,5 +1,12 @@
 todo:
 
+fix images to use the webp versions where supported
+<picture>
+  <source type="image/webp" srcset="images/flower1.webp">
+  <source type="image/jpeg" srcset="images/flower1.jpg">
+  <img src="images/flower1.jpg">
+</picture>
+
 why is the left margin of your name/specialty on mobile not aligned with text like mht's?
 fix forwarding of viceye.com and .com.au
 done: larger font size on mobile
@@ -19,7 +26,7 @@ run through form field names and make them very clear for email recipient
 summary of DNS settings:
 viceye.au
     netlify nameservers (automatically handles www CNAME)
-    google site verification TXT record
+    google site verification TXT records (gmail and search indexing)
     gmail MX records
     also has A Records for viceye.au and www.viceye.au, but I believe these do nothing currently, given alternate nameservers
 
@@ -27,7 +34,7 @@ viceye.com, viceye.com.au
     namecheap premium DNS nameservers
     ALIAS @ apex-loadbalancer.netlify.com.
     CNAME www viceye.netlify.app.
-    google site verification TXT record
+    google site verification TXT records (gmail and search indexing)
     gmail MX records
 
 -----

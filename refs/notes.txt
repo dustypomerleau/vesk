@@ -14,6 +14,23 @@ custom page for form submissions
 run through redirected .com .com.au - can we delegate these to netlify dns also?
 run through form field names and make them very clear for email recipient
 
+-----
+
+summary of DNS settings:
+viceye.au
+    netlify nameservers (automatically handles www CNAME)
+    google site verification TXT record
+    gmail MX records
+    also has A Records for viceye.au and www.viceye.au, but I believe these do nothing currently, given alternate nameservers
+
+viceye.com, viceye.com.au
+    namecheap premium DNS nameservers
+    ALIAS @ apex-loadbalancer.netlify.com.
+    CNAME www viceye.netlify.app.
+    google site verification TXT record
+    gmail MX records
+
+-----
 
 (see CSS files for updated brand palettes)
 

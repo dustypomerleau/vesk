@@ -11,7 +11,7 @@
     import Smartphone from "$lib/svg/Smartphone.svelte";
 </script>
 
-<div id="contact" class="form">
+<div id="contact" class="form mt-8 sm:mb-8">
     <div class="card-title">Contact Vic Eye</div>
     <div class="mb-4 flex flex-row flex-wrap justify-center gap-y-2 gap-x-8">
         <div class="flex flex-row items-center gap-1">

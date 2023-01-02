@@ -9,7 +9,7 @@
     import Send from "$lib/svg/Send.svelte";
 </script>
 
-<div class="form">
+<div class="form sm:my-8">
     <div class="card-title">Refer to Vic Eye</div>
     <div>
         Thank you for entrusting your patients to the specialists at Vic Eye.

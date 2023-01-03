@@ -1,6 +1,3 @@
-// see https://github.com/tailwindlabs/prettier-plugin-tailwindcss
-// because of these issues we set pluginSearchDirs to false and
-// list tailwind plugin last
 {
     "overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }],
     "pluginSearchDirs": false,

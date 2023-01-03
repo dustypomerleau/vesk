@@ -96,7 +96,7 @@
         </label>
 
         <label>
-            <span class="field-label">Phone (mobile preferred)</span>
+            <span class="field-label">Mobile phone</span>
             <input
                 name="patient-phone"
                 type="tel"

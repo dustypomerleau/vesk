@@ -13,7 +13,7 @@
     class="flex flex-col gap-3 bg-gray-300 px-8 py-4 sm:items-center sm:justify-center sm:px-12 lg:flex-row lg:gap-12"
 >
     <div class="font-normal text-gray-600">
-        &copy;2022 Vic&nbsp;Eye&nbsp;and&nbsp;Retina&nbsp;Specialists
+        &copy;2022&ndash;2023 Vic&nbsp;Eye&nbsp;and&nbsp;Retina&nbsp;Specialists
         Pty&nbsp;Ltd
     </div>
     <div

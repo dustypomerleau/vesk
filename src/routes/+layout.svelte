@@ -5,12 +5,12 @@
 </script>
 
 <svelte:head>
+    <meta charset="UTF-8" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="mask-icon" href="/mask-icon.svg" color="#3878c3" />
-    <meta charset="utf-8" />
     <meta
         name="description"
         content="Vic Eye & Retina Specialists: Cataract and retinal surgeons serving greater Melbourne. Located in Ringwood, Victoria."

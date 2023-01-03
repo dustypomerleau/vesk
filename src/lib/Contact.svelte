@@ -55,7 +55,7 @@
             <input
                 name="email"
                 type="email"
-                placeholder="your.email@example.com"
+                placeholder="email@example.com"
                 class="field"
             />
         </label>

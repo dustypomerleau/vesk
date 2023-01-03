@@ -12,7 +12,7 @@
     id="footer"
     class="flex flex-col gap-3 bg-gray-300 px-8 py-4 sm:items-center sm:justify-center sm:px-12 lg:flex-row lg:gap-12"
 >
-    <div class="font-normal text-gray-500">
+    <div class="font-normal text-gray-600">
         &copy;2022 Vic&nbsp;Eye&nbsp;and&nbsp;Retina&nbsp;Specialists
         Pty&nbsp;Ltd
     </div>
@@ -23,7 +23,7 @@
             <a href={link.href}>
                 <div class="lg:text-center">
                     <span
-                        class="text-gray-500 shadow-footer hover:shadow-activeFooter"
+                        class="text-gray-600 shadow-footer hover:shadow-activeFooter"
                         >{link.text}</span
                     >
                 </div>

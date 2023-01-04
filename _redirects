@@ -1,0 +1,7 @@
+https://viceye.com.au/*          https://viceye.au/:splat 301!
+https://viceye.com/*             https://viceye.au/:splat 301!
+https://viceye.netlify.app/*     https://viceye.au/:splat 301!
+
+https://www.viceye.com.au/*      https://viceye.au/:splat 301!
+https://www.viceye.com/*         https://viceye.au/:splat 301!
+https://www.viceye.netlify.app/* https://viceye.au/:splat 301!

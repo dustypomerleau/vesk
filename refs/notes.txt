@@ -7,9 +7,7 @@ done: fix images to use the webp versions where supported
   <img src="images/flower1.jpg">
 </picture>
 
-solve webp background image with fallback jpg
-clean commented code and other dirt
-custom page for form submissions
+deferred: solve webp background image with fallback jpg
 done: fix forwarding of viceye.com and .com.au
 done: image optimization (different sizes - possibly use cloudinary integration)
 done: larger font size on mobile
@@ -18,9 +16,11 @@ done: npm outdated for the other deps you didn't update during forms fiasco
 done: run through redirected .com .com.au - can we delegate these to netlify dns also?
 done: use just the eye without any text on location svg
 done: why is the left margin of your name/specialty on mobile not aligned with text like mht's?
-link to correct google business profile
-new images and image zoom level for both doctors
-run through form field names and make them very clear for email recipient
+todo: clean commented code and other dirt
+todo: custom page for form submissions
+todo: link to correct google business profile
+todo: new images and image zoom level for both doctors
+todo: run through form field names and make them very clear for email recipient
 
 -----
 

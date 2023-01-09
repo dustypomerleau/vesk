@@ -21,6 +21,8 @@ todo: custom page for form submissions
 todo: link to correct google business profile
 todo: new images and image zoom level for both doctors
 todo: run through form field names and make them very clear for email recipient
+todo: add other referral methods like fax and update refer instructions to explain file upload.
+todo: add icons to links in ts file and use them in footer and nav
 
 -----
 

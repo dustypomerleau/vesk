@@ -20,13 +20,15 @@
                 </picture>
             </div>
             <div
-                class="-mt-0.5 flex flex-row w-full sm:justify-center bg-gray-200"
+                class="-mt-0.5 flex w-full flex-row bg-gray-200 sm:justify-center"
             >
                 <div class="px-6 py-2">
                     <div
                         class="flex flex-row flex-wrap items-baseline justify-start"
                     >
-                        <div class="pr-2 text-2xl font-normal text-orange-800">
+                        <div
+                            class="bg-gradient-to-r from-orange-900 to-orange-700 bg-clip-text pr-2 text-2xl font-normal text-transparent"
+                        >
                             {doc.name}
                         </div>
                         <div class="text-base">

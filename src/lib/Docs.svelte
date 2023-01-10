@@ -10,6 +10,7 @@
         <div class="wide-card">
             <div class="overflow-hidden rounded-t-md">
                 <picture>
+                    <source type="image/avif" srcset={doc.srcAvif} />
                     <source type="image/webp" srcset={doc.srcWebp} />
                     <source type="image/jpeg" srcset={doc.srcJpg} />
                     <img

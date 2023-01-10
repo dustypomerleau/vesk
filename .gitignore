@@ -5,6 +5,7 @@
 /.svelte-kit
 /build
 /package
+hero.avif
 node_modules
 
 # Local Netlify folder

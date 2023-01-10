@@ -35,7 +35,7 @@
                             {doc.credentials}
                         </div>
                     </div>
-                    <div class="text-orange-900">
+                    <div class="font-normal text-orange-900">
                         {@html doc.specialties}
                     </div>
                 </div>

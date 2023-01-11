@@ -24,7 +24,7 @@ todo: run through form field names and make them very clear for email recipient
 todo: add other referral methods like fax and update refer instructions to explain file upload.
 todo: add icons to links in ts file and use them in footer and nav
 todo: either increase font weight a bit or use a google font for consistent display
-
+todo: edit google business avatar to be just inverted eye once website is approved
 -----
 
 summary of DNS settings:

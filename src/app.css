@@ -72,6 +72,6 @@
     }
 
     .wide-card {
-        @apply flex flex-col m-8 w-full md:max-w-xl h-auto rounded-md bg-white;
+        @apply flex flex-col m-8 w-full sm:max-w-xl h-auto rounded-md bg-white;
     }
 }

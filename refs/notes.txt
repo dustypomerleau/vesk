@@ -27,6 +27,13 @@ todo: either increase font weight a bit or use a google font for consistent disp
 todo: edit google business avatar to be just inverted eye once website is approved
 -----
 
+google business profile link:
+https://g.page/r/CWDmMMCqUYOiEAI/review
+https://g.page/r/CWDmMMCqUYOiEAI
+
+google maps page:
+https://maps.app.goo.gl/aafsjEXZ3L83jdpW9?g_st=ic
+
 summary of DNS settings:
 viceye.au
     netlify nameservers (automatically handles www CNAME)

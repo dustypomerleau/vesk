@@ -5,6 +5,7 @@
 /.svelte-kit
 /build
 /package
+deprecated/
 hero.avif
 node_modules
 unoptimized/

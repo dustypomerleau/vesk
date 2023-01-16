@@ -6,6 +6,20 @@
 
 <svelte:head>
     <meta charset="UTF-8" />
+    <link
+        rel="preload"
+        fetchpriority="high"
+        as="image"
+        href="/images/hero.webp"
+        type="image/webp"
+    />
+    <link
+        rel="preload"
+        fetchpriority="high"
+        as="font"
+        href="/fonts/albertvar.woff2"
+        type="font/woff2"
+    />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />

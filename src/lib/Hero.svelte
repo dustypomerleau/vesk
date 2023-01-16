@@ -1,13 +1,3 @@
-<svelte:head>
-    <link
-        rel="preload"
-        fetchpriority="high"
-        as="image"
-        href="/images/hero.webp"
-        type="image/webp"
-    />
-</svelte:head>
-
 <div
     id="hero"
     class="flex h-screen flex-row items-start justify-center bg-logoNavy bg-hero bg-cover bg-top bg-blend-multiply"

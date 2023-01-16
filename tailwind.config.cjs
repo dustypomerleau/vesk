@@ -72,7 +72,7 @@ const config = {
             light: 300,
             midlight: 350,
             normal: 400,
-            medium: 450,
+            medium: 500,
             semibold: 600
         },
         extend: {

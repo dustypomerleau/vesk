@@ -8,6 +8,7 @@ done: fix images to use the webp versions where supported
 </picture>
 
 deferred: solve webp background image with fallback jpg
+done: change to small breakpoint on form width for mobile (actually maybe leave this idk) landscape fix and review all breakpoints generally
 done: fix forwarding of viceye.com and .com.au
 done: image optimization (different sizes - possibly use cloudinary integration)
 done: larger font size on mobile
@@ -16,16 +17,16 @@ done: npm outdated for the other deps you didn't update during forms fiasco
 done: run through redirected .com .com.au - can we delegate these to netlify dns also?
 done: use just the eye without any text on location svg
 done: why is the left margin of your name/specialty on mobile not aligned with text like mht's?
+todo: add icons to links in ts file and use them in footer and nav
+todo: add other referral methods like fax and update refer instructions to explain file upload.
 todo: clean commented code and other dirt
 todo: custom page for form submissions
+todo: edit google business avatar to be just inverted eye once website is approved
+todo: either increase font weight a bit or use a google font for consistent display
 todo: link to correct google business profile
 todo: new images and image zoom level for both doctors
 todo: run through form field names and make them very clear for email recipient
-todo: add other referral methods like fax and update refer instructions to explain file upload.
-todo: add icons to links in ts file and use them in footer and nav
-todo: either increase font weight a bit or use a google font for consistent display
-todo: edit google business avatar to be just inverted eye once website is approved
-todo: change to small breakpoint on form width for mobile (actually maybe leave this idk) landscape fix and review all breakpoints generally
+
 -----
 
 google business profile link:

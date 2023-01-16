@@ -23,7 +23,7 @@
 </svelte:head>
 
 <body
-    class="bg-logoNavy font-sans text-lg font-normal leading-normal text-gray-600"
+    class="bg-logoNavy font-sans text-lg font-midlight leading-normal text-gray-600"
 >
     <Nav />
 

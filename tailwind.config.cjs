@@ -53,20 +53,26 @@ const config = {
         },
         fontFamily: {
             sans: [
+                "Albert",
+                "ui-sans-serif",
                 "system-ui",
                 "-apple-system",
+                "BlinkMacSystemFont",
                 "Segoe UI",
                 "Roboto",
-                "Helvetica",
+                "Helvetica Neue",
                 "Arial",
                 "sans-serif",
                 "Apple Color Emoji",
-                "Segoe UI Emoji"
+                "Segoe UI Emoji",
+                "Segoe UI Symbol"
             ]
         },
         fontWeight: {
             light: 300,
+            midlight: 350,
             normal: 400,
+            medium: 450,
             semibold: 600
         },
         extend: {

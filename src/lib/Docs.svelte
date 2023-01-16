@@ -28,7 +28,7 @@
                         class="flex flex-row flex-wrap items-baseline justify-start"
                     >
                         <div
-                            class="bg-gradient-to-r from-orange-900 to-orange-700 bg-clip-text pr-2 text-2xl font-normal text-transparent"
+                            class="bg-gradient-to-r from-orange-900 to-orange-700 bg-clip-text pr-2 text-2xl font-medium text-transparent"
                         >
                             {doc.name}
                         </div>

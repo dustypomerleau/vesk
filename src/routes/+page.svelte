@@ -6,6 +6,16 @@
     import Maps from "$lib/Maps.svelte";
 </script>
 
+<svelte:head>
+    <link
+        rel="preload"
+        fetchpriority="high"
+        as="image"
+        href="/images/hero.webp"
+        type="image/webp"
+    />
+</svelte:head>
+
 <Hero />
 <Deck />
 <Docs />

@@ -73,7 +73,7 @@
     }
 
     .form {
-        @apply flex flex-col self-center mx-6 p-6 rounded-md w-full md:max-w-xl bg-white;
+        @apply flex flex-col self-center mx-6 p-6 rounded-md w-full sm:max-w-xl bg-white;
     }
 
     .link {

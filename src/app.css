@@ -69,7 +69,7 @@
     }
 
     .field-label {
-        @apply font-light text-xl;
+        @apply font-midlight text-xl;
     }
 
     .form {

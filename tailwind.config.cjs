@@ -70,7 +70,7 @@ const config = {
         },
         fontWeight: {
             light: 300,
-            midlight: 360,
+            midlight: 350,
             normal: 400,
             medium: 450,
             semibold: 600

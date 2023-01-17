@@ -8,8 +8,8 @@ const config = {
     // Consult https://github.com/sveltejs/svelte-preprocess
     // for more information about preprocessors
     preprocess: [
-        mdsvex({ extensions: [".md"] }),
-        preprocess({ postcss: true })
+        preprocess({ postcss: true }),
+        mdsvex({ extensions: [".md"] })
     ],
     kit: {
         adapter: adapter()

@@ -30,7 +30,7 @@
 </svelte:head>
 
 <body
-    class="bg-logoNavy font-sans text-lg font-normal leading-[1.55] text-gray-600"
+    class="bg-blue-900 font-sans text-lg font-normal leading-[1.55] text-gray-600"
 >
     <Nav />
 

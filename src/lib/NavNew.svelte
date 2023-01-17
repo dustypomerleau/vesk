@@ -34,7 +34,7 @@
 
 <header
     id="header"
-    class="flex flex-col items-center justify-between bg-logoNavy md:flex-row"
+    class="flex flex-col items-center justify-between bg-blue-900 md:flex-row"
 >
     <nav
         class:visible={visible || open}

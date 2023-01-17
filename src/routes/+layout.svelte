@@ -9,13 +9,6 @@
     <link
         rel="preload"
         fetchpriority="high"
-        as="image"
-        href="/images/hero.webp"
-        type="image/webp"
-    />
-    <link
-        rel="preload"
-        fetchpriority="high"
         as="font"
         href="/fonts/albertvar.woff2"
         type="font/woff2"

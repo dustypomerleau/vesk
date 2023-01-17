@@ -35,20 +35,6 @@
     input[type="radio"]:checked + label {
         @apply m-[0.1875rem] sm:m-0.5 border-2 border-blue-600 text-blue-700;
     }
-
-    li {
-        @apply mb-4 hover:text-gray-800;
-    }
-
-    li::before {
-        @apply inline-block bg-check bg-contain w-4 h-4 mr-2 content-[""];
-    }
-
-    ul {
-        text-indent: -1.55rem;
-        margin-left: 1rem;
-        margin-right: 0.5rem;
-    }
 }
 
 @layer components {
@@ -58,6 +44,20 @@
 
     .card {
         @apply flex flex-col items-center content-center justify-between m-8 p-6 rounded-lg w-full md:w-5/12 md:min-w-[24rem] max-w-sm bg-white;
+    }
+
+    .card ul li {
+        @apply mb-4 hover:text-gray-800;
+    }
+
+    .card ul li::before {
+        @apply inline-block bg-check bg-contain w-4 h-4 mr-2 content-[""];
+    }
+
+    .card ul {
+        text-indent: -1.55rem;
+        margin-left: 1rem;
+        margin-right: 0.5rem;
     }
 
     .card-title {

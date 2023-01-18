@@ -6,8 +6,8 @@
     import Mail from "$lib/svg/Mail.svelte";
     import Message from "$lib/svg/Message.svelte";
     import Print from "$lib/svg/Print.svelte";
-    import Radio from "$lib/Radio.svelte";
-    import Send from "./svg/Send.svelte";
+    import Radio from "$lib/components/Radio.svelte";
+    import Send from "$lib/svg/Send.svelte";
     import Smartphone from "$lib/svg/Smartphone.svelte";
 </script>
 

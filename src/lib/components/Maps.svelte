@@ -1,6 +1,6 @@
 <script>
-    import Location from "$lib/Location.svelte";
-    import Parking from "$lib/Parking.svelte";
+    import Location from "$lib/components/Location.svelte";
+    import Parking from "$lib/components/Parking.svelte";
 </script>
 
 <div

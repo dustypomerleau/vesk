@@ -2,7 +2,7 @@
     export let link;
     export let points;
     export let title;
-    import LinkButton from "$lib/LinkButton.svelte";
+    import LinkButton from "$lib/components/LinkButton.svelte";
 </script>
 
 <div class="card">

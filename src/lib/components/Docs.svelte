@@ -1,5 +1,5 @@
 <script>
-    import { doctors } from "$lib/doctors";
+    import { doctors } from "$lib/content/doctors";
 </script>
 
 <div

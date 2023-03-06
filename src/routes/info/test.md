@@ -1,6 +1,8 @@
 ---
-author: dusty
+author: Mei Tan
+creds: Mei's creds
 title: none of your business title
+date: 2023-01-01
 ---
 
 <script>

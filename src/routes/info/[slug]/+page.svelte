@@ -1,9 +1,9 @@
 <script>
     export let data;
-    // let { author, title, Content } = data; // allows <Content /> instead of data.content
+    const { author, title, Content } = data; // allows <Content /> instead of data.content
 </script>
 
 <article class="prose">
-    <h1>{data.title}</h1>
-    test
+    <h1>{title}</h1>
+    <Content />
 </article>

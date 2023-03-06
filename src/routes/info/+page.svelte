@@ -1,18 +1,14 @@
 <script>
+    import Post from "$lib/components/Post.svelte";
     export let data;
-    // const {
-    //     posts: {
-    //         meta: { author, creds, title, date },
-    //         Content
-    //     }
-    // } = data;
 </script>
 
-info posts
+<div class="m-8">
+    <div class="text-2xl font-semibold">Patient Information</div>
 
-<ul>
-    <!-- todo: account for situation where there are no posts -->
-    {#each data.posts as post}
-        {post.meta.author}
-    {/each}
-</ul>
+    <ul>
+        {#each data.posts as post}
+            <Post {post} />
+        {/each}
+    </ul>
+</div>

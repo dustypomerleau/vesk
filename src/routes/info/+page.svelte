@@ -1,14 +1,15 @@
 <script>
-    import Post from "$lib/components/Post.svelte";
+    import Listing from "$lib/components/Listing.svelte";
     export let data;
 </script>
 
-<div class="m-8">
-    <div class="text-2xl font-semibold">Patient Information</div>
+<!-- todo: what is the best margin for this page on mobile and desktop -->
+<div>
+    <div class="mx-10 mt-2 text-2xl font-semibold">Patient Information</div>
 
     <ul>
         {#each data.posts as post}
-            <Post {post} />
+            <Listing {post} />
         {/each}
     </ul>
 </div>

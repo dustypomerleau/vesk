@@ -1,7 +1,8 @@
 ---
 author: Dusty Pomerleau
 image: dlp
-creds: MD, FRANZCO
+creds: MD FRANZCO
+icon: Pin
 title: A Patient's Guide to Cataract Surgery
 date: 2023-03-06
 ---

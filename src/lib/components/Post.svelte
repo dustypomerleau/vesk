@@ -6,20 +6,18 @@
     } = post;
 </script>
 
-<div class="flex h-auto w-full flex-col bg-blue-300 sm:max-w-xl">
-    <!-- probably remove the image from the posts list and just use it on the actual post page -->
-    <div class="w-1/3 overflow-hidden rounded-t-md">
-        <picture>
-            <source type="image/avif" srcset="{image}.avif" />
-            <source type="image/webp" srcset="{image}.webp" />
-            <source type="image/jpeg" srcset="{image}.jpg" />
-            <img
-                src="{image}.jpg"
-                alt={author}
-                class="object-cover object-top"
-            />
-        </picture>
-    </div>
+<div class="flex flex-wrap bg-blue-300 sm:max-w-xl">
+    <picture class="h-28 w-28 overflow-clip rounded-2xl">
+        <source type="image/avif" srcset="{image}.avif" />
+        <source type="image/webp" srcset="{image}.webp" />
+        <source type="image/jpeg" srcset="{image}.jpg" />
+        <img
+            src="{image}.jpg"
+            alt={author}
+            style="object-position: -30px 0px 100px 100px;"
+            class="h-32 object-cover"
+        />
+    </picture>
     <div>
         {author}
         <a href={path}>{title}</a>

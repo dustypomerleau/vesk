@@ -36,8 +36,8 @@ todo: template for each listing in overview screen of patient info sheets
     const icons = { Eye, Iol, Retina, Syringe };
 </script>
 
-<a href={path} class="my-12 mr-4 ml-2 flex first:mt-6 last:mb-4">
-    <div class="pt-[0.1rem] text-blue-700">
+<a href={path} class="my-12 mx-4 flex first:mt-6 last:mb-4">
+    <div class="pt-[0.1rem] text-orange-700">
         <svelte:component this={icons[icon]} />
     </div>
     <div class="ml-2 flex w-full flex-col">

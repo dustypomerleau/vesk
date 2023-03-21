@@ -3,7 +3,7 @@ author: Mei Tan
 image: mht
 creds: MB ChB BAO, PhD, FRCOphth, FRANZCO
 icon: Syringe
-title: "Eye injections: What to expect"
+title: Eye injections
 date: 2023-01-01
 ---
 

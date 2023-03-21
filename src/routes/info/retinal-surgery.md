@@ -3,6 +3,6 @@ author: Dusty Pomerleau
 image: dlp
 creds: MD, FRANZCO
 icon: Retina
-title: "Retinal surgery: What to expect"
+title: Retinal surgery and recovery
 date: 2023-01-01
 ---

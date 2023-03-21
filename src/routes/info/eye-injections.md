@@ -2,8 +2,8 @@
 author: Mei Tan
 image: mht
 creds: MB ChB BAO, PhD, FRCOphth, FRANZCO
-icon: Print
-title: none of your business title but also long enough that it will test wrapping
+icon: Syringe
+title: "Eye injections: What to expect"
 date: 2023-01-01
 ---
 

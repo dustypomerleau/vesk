@@ -29,13 +29,14 @@ todo: template for each listing in overview screen of patient info sheets
     } = post;
 
     import Eye from "$lib/svg/Eye.svelte";
-    import Print from "$lib/svg/Print.svelte";
-    import Pin from "$lib/svg/Pin.svelte";
+    import Iol from "$lib/svg/Iol.svelte";
+    import Retina from "$lib/svg/Retina.svelte";
+    import Syringe from "$lib/svg/Syringe.svelte";
 
-    const icons = { Eye, Print, Pin };
+    const icons = { Eye, Iol, Retina, Syringe };
 </script>
 
-<a href={path} class="m-4 my-12 ml-2 flex first:mt-6 last:mb-4">
+<a href={path} class="my-12 mr-4 ml-2 flex first:mt-6 last:mb-4">
     <div class="pt-[0.1rem] text-blue-700">
         <svelte:component this={icons[icon]} />
     </div>
@@ -48,3 +49,5 @@ todo: template for each listing in overview screen of patient info sheets
         </div>
     </div>
 </a>
+
+<!-- todo: probably show creds only in Post but not in Listing -->

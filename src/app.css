@@ -83,10 +83,6 @@
         @apply shadow-link hover:shadow-activeLink text-blue-700;
     }
 
-    .listhover {
-        @apply hover:bg-gray-100
-    }
-
     .radio {
         @apply flex flex-row flex-wrap sm:justify-center items-center m-1 sm:mx-0.5 p-2 pl-3 sm:pl-2 w-44 rounded-md bg-gray-50 border border-gray-200 hover:border-blue-600/50 focus:border-blue-600 shadow-md text-center hover:text-blue-700/80 font-normal;
     }

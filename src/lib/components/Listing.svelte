@@ -16,7 +16,7 @@
 </script>
 
 <!-- also decide on hover effect -->
-<a href={path} class="listhover flex p-4">
+<a href={path} class="flex p-4 hover:bg-gray-100">
     <div class="flex flex-col content-center justify-center text-blue-700">
         <svelte:component this={icons[icon]} />
     </div>

@@ -64,6 +64,9 @@
         @apply pb-3 font-semibold text-2xl text-center bg-gradient-to-r from-blue-900 to-blue-500 text-transparent bg-clip-text;
     }
 
+    .card-title-gray {
+        @apply pb-3 font-semibold text-2xl text-center bg-gradient-to-r from-gray-700 to-gray-500 text-transparent bg-clip-text;
+    }
     .field {
         @apply block mt-1 mb-6 w-full rounded-md bg-gray-100 focus:bg-white border border-transparent hover:border-blue-600/50 focus:border-blue-600 focus:ring-0 placeholder-gray-400 focus:text-gray-900 caret-orange-800;
     }
@@ -78,6 +81,10 @@
 
     .link {
         @apply shadow-link hover:shadow-activeLink text-blue-700;
+    }
+
+    .listhover {
+        @apply hover:bg-gray-100
     }
 
     .radio {

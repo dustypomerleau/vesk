@@ -1,4 +1,4 @@
-export const getPosts = async () => {
+export const getPosts: Promise<Post[]> = async () => {
     const postFiles = import.meta.glob("/src/routes/info/*.md");
     const iterableFiles = Object.entries(postFiles);
 

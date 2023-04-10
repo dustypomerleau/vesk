@@ -1,6 +1,8 @@
-<script>
-    export let icon;
-    export let name;
+<script lang="ts">
+    import type { ComponentType, SvelteComponentTyped } from "svelte";
+
+    export let icon: ComponentType<SvelteComponentTyped>;
+    export let name: string;
     export let text = "radio text";
     let value = text.toLowerCase();
 </script>

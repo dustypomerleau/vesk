@@ -1,8 +1,8 @@
 <script lang="ts">
-    export let post;
+    export let post: Post;
     const {
-        path,
-        meta: { author, image, creds, title }
+        meta: { author, creds, image, title },
+        path
     } = post;
 </script>
 

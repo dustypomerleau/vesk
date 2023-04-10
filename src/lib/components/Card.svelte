@@ -1,8 +1,14 @@
-<script>
-    export let link;
-    export let points;
-    export let title;
+<script lang="ts">
     import LinkButton from "$lib/components/LinkButton.svelte";
+    import type { ComponentType, SvelteComponentTyped } from "svelte";
+
+    export let link: {
+        icon: ComponentType<SvelteComponentTyped>;
+        buttonText: string;
+        href: string;
+    };
+    export let points: Array<string>;
+    export let title: string;
 </script>
 
 <div class="card">

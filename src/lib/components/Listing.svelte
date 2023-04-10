@@ -15,8 +15,8 @@
 
     export let post: Post;
     const {
-        path,
-        meta: { icon, title }
+        meta: { icon, title },
+        path
     } = post;
 </script>
 

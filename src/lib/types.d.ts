@@ -14,15 +14,15 @@
 // "the data from the load() function is automatically available to use as the data prop" - so this is a feature of sveltekit
 
 interface Post {
-    path: string;
     meta: PostMetadata;
+    path: string;
 }
 
 interface PostMetadata {
     author: string;
-    image: string;
     creds: string;
-    icon: string;
-    title: string;
     date: Date;
+    icon: string;
+    image: string;
+    title: string;
 }

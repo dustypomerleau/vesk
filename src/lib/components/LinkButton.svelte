@@ -1,7 +1,9 @@
-<script>
-    export let buttonText;
-    export let href;
-    export let icon;
+<script lang="ts">
+    import type { ComponentType, SvelteComponentTyped } from "svelte";
+
+    export let buttonText: string;
+    export let href: string;
+    export let icon: ComponentType<SvelteComponentTyped>;
 </script>
 
 <a {href} class="button flex flex-row items-center justify-center">

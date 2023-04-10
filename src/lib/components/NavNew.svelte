@@ -1,9 +1,11 @@
 <script lang="ts">
     import Logo from "$lib/svg/Logo.svelte";
+    import type { Readable } from "svelte/store";
+    import type { Page } from "@sveltejs/kit";
 
-    export let page;
+    export let page: Readable<Page<Record<string, string>, string>>;
 
-    let nav;
+    let nav: HTMLElement;
     let open = false;
     let visible = true;
 

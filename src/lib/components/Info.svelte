@@ -1,6 +1,8 @@
-<script>
+<script lang="ts">
     import Listing from "$lib/components/Listing.svelte";
-    export let data;
+    import type { PageData } from "../../routes/$types";
+
+    export let data: PageData;
 </script>
 
 <div id="info" class="self-center rounded-md py-6">

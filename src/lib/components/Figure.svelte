@@ -1,6 +1,6 @@
 <script lang="ts">
-    export let image;
-    export let caption;
+    export let image: string;
+    export let caption: string;
 </script>
 
 <picture class="rounded-2xl">

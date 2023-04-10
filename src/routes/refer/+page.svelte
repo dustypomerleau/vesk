@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Calendar from "$lib/svg/Calendar.svelte";
     import Dp from "$lib/svg/Dp.svelte";
     import Mt from "$lib/svg/Mt.svelte";

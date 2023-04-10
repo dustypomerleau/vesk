@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import Location from "$lib/components/Location.svelte";
     import Parking from "$lib/components/Parking.svelte";
 </script>

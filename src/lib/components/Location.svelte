@@ -1,6 +1,4 @@
-<script>
-    import Apple from "$lib/svg/Apple.svelte";
-    import Google from "$lib/svg/Google.svelte";
+<script lang="ts">
     import LocationMap from "$lib/svg/LocationMap.svelte";
 </script>
 

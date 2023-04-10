@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import ParkingMap from "$lib/svg/ParkingMap.svelte";
 </script>
 

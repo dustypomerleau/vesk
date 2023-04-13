@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Byline from "$lib/components/Byline.svelte";
+
     export let data;
     const { author, brief, creds, title, Content } = data; // allows <Content /> instead of data.content
 </script>
@@ -7,9 +9,8 @@
     <title>Vic Eye &amp; Retina Specialists | {brief}</title>
 </svelte:head>
 
-<!-- <Author /> -->
 <article class="prose">
     <h1>{title}</h1>
-    <!-- <Byline {author, creds} /> -->
+    <Byline {author} {creds} />
     <Content />
 </article>

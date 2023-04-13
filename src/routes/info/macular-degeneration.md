@@ -1,9 +1,9 @@
 ---
 author: Dusty Pomerleau
-image: dlp
-creds: MD, FRANZCO
-icon: Amd
 brief: Macular degeneration
-title: "Macular degeneration: A guide for patients"
+creds: MD, FRANZCO
 date: 2023-01-01
+icon: Amd
+image: dlp
+title: "Macular degeneration: A guide for patients"
 ---

@@ -13,17 +13,24 @@
 // when you click through to the slug for that article, it passes the metadata and the content as props on the data object, but not nested under meta as before - it's all just one level deep
 // "the data from the load() function is automatically available to use as the data prop" - so this is a feature of sveltekit
 
-interface Post {
-    meta: PostMetadata;
-    path: string;
-}
-
 interface PostMetadata {
     author: string;
     brief: string;
     creds: string;
     date: Date;
-    icon: string;
+    icon?: string;
     image: string;
     title: string;
 }
+
+interface PostWithPath {
+    meta: PostMetadata;
+    path: string;
+}
+
+interface PostWithContent {
+    meta: PostMetadata;
+    Content: HTMLElement;
+}
+
+type Post = Post extends PostWithContent ? PostWithContent : PostWithPath;

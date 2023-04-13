@@ -1,9 +1,9 @@
 ---
 author: Dusty Pomerleau
-image: dlp
-creds: MD, FRANZCO
-icon: Vr
 brief: Retinal surgery
-title: A patient's guide to retinal surgery and recovery
+creds: MD, FRANZCO
 date: 2023-01-01
+icon: Vr
+image: dlp
+title: A patient's guide to retinal surgery and recovery
 ---

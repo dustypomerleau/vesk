@@ -1,7 +1,6 @@
 <script lang="ts">
-    export let author: string;
-    export let creds: string;
-    export let image: string;
+    export let meta: PostMetadata;
+    const { author, creds, image } = meta;
 </script>
 
 <!-- gray line div -->

@@ -2,7 +2,11 @@
     import Byline from "$lib/components/Byline.svelte";
 
     export let data;
-    const { author, brief, creds, image, title, Content } = data; // allows <Content /> instead of data.content
+    const {
+        meta,
+        meta: { brief, title },
+        Content
+    } = data; // allows <Content /> instead of data.content
 </script>
 
 <svelte:head>
@@ -12,6 +16,6 @@
 <!-- todo: you probably want the whole bg white here, and then tone down title text to match -->
 <article class="prose m-4 sm:m-6">
     <h1 class="text-gray-700">{title}</h1>
-    <Byline {author} {creds} {image} />
+    <Byline {meta} />
     <Content />
 </article>

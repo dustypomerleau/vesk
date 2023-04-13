@@ -1,10 +1,10 @@
 import { getPosts } from "$lib/utils";
 import { json } from "@sveltejs/kit";
 
-export const GET = async () => {
+export const GET = async (): Promise<Response> => {
     const posts = await getPosts();
 
-    const sortedPosts = posts.sort((a, b) => {
+    const sortedPosts: Array<Post> = posts.sort((a, b) => {
         return (
             new Date(b.meta.date).valueOf() - new Date(a.meta.date).valueOf()
         );

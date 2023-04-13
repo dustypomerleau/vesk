@@ -1,11 +1,11 @@
 ---
 author: Mei Tan
-image: mht
-creds: MB ChB BAO, PhD, FRCOphth, FRANZCO
-icon: Syringe
 brief: Eye injections
-title: Understanding injection therapy for eye conditions
+creds: MB ChB BAO, PhD, FRCOphth, FRANZCO
 date: 2023-01-01
+icon: Syringe
+image: mht
+title: Understanding injection therapy for eye conditions
 ---
 
 # this is a test: testing

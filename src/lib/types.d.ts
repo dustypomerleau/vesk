@@ -20,6 +20,7 @@ interface Post {
 
 interface PostMetadata {
     author: string;
+    brief: string;
     creds: string;
     date: Date;
     icon: string;

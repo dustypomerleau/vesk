@@ -15,7 +15,7 @@
 
     export let post: Post;
     const {
-        meta: { icon, title },
+        meta: { icon, brief },
         path
     } = post;
 </script>
@@ -25,6 +25,6 @@
         <svelte:component this={icons[icon]} />
     </div>
     <div class="ml-2 flex w-full flex-col">
-        <h3 class="font-semibold">{title}</h3>
+        <h3 class="font-semibold">{brief}</h3>
     </div>
 </a>

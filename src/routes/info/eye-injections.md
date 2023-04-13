@@ -3,7 +3,8 @@ author: Mei Tan
 image: mht
 creds: MB ChB BAO, PhD, FRCOphth, FRANZCO
 icon: Syringe
-title: Eye injections
+brief: Eye injections
+title: Understanding injection therapy for eye conditions
 date: 2023-01-01
 ---
 

@@ -17,6 +17,7 @@
         href="/images/hero.webp"
         type="image/webp"
     />
+    <title>Vic Eye &amp; Retina Specialists</title>
 </svelte:head>
 
 <Hero />

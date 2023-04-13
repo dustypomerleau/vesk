@@ -3,4 +3,8 @@
     export let data;
 </script>
 
+<svelte:head>
+    <title>Vic Eye &amp; Retina Specialists | Patient information</title>
+</svelte:head>
+
 <Info {data} />

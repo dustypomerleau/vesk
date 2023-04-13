@@ -6,6 +6,10 @@
     import Send from "$lib/svg/Send.svelte";
 </script>
 
+<svelte:head>
+    <title>Vic Eye &amp; Retina Specialists | Refer</title>
+</svelte:head>
+
 <div class="form sm:my-8">
     <div class="card-title">Refer to Vic Eye</div>
     <div>

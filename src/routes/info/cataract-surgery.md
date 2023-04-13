@@ -3,7 +3,8 @@ author: Dusty Pomerleau
 image: dlp
 creds: MD, FRANZCO
 icon: Iol
-title: Cataract surgery and lens implants
+brief: Cataract surgery
+title: A patient's guide to cataract surgery and lens implants
 date: 2023-03-06
 ---
 

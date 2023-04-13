@@ -2,6 +2,7 @@
     import "../app.css";
     import Footer from "$lib/components/Footer.svelte";
     import Nav from "$lib/components/Nav.svelte";
+    import { page } from "$app/stores";
 
     export const prerender = true;
 </script>
@@ -28,7 +29,6 @@
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Vic Eye Specialist Surgeons</title>
 </svelte:head>
 
 <body

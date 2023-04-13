@@ -10,7 +10,7 @@
 </svelte:head>
 
 <article class="prose m-4 sm:m-6">
-    <h1>{title}</h1>
+    <h1 class="text-gray-700">{title}</h1>
     <Byline {author} {creds} {image} />
     <Content />
 </article>

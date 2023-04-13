@@ -9,6 +9,7 @@
     <title>Vic Eye &amp; Retina Specialists | {brief}</title>
 </svelte:head>
 
+<!-- todo: you probably want the whole bg white here, and then tone down title text to match -->
 <article class="prose m-4 sm:m-6">
     <h1 class="text-gray-700">{title}</h1>
     <Byline {author} {creds} {image} />

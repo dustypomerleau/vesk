@@ -14,6 +14,6 @@
     </div>
     <div class="flex flex-col pl-4 text-gray-600">
         <div class="text-lg">{author}</div>
-        <div class="text-sm text-gray-500">{creds}</div>
+        <div class="text-sm leading-none text-gray-500">{creds}</div>
     </div>
 </div>

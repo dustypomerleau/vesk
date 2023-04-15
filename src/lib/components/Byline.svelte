@@ -4,7 +4,7 @@
 </script>
 
 <!-- gray line div -->
-<div class="not-prose">
+<div class="flex items-center">
     <div class="h-20 w-20 overflow-hidden rounded-3xl">
         <picture>
             <source type="image/avif" srcset="/{image}.avif" />
@@ -13,8 +13,8 @@
             <img src="/{image}.jpg" alt={author} class="h-24 object-cover" />
         </picture>
     </div>
-    <div>
-        {author}
-        {creds}
+    <div class="flex flex-col pl-4">
+        <div class="text-lg">{author}</div>
+        <div class="text-sm">{creds}</div>
     </div>
 </div>

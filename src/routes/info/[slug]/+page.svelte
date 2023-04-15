@@ -13,9 +13,11 @@
     <title>Vic Eye &amp; Retina Specialists | {brief}</title>
 </svelte:head>
 
-<!-- todo: you probably want the whole bg white here, and then tone down title text to match -->
-<article class="prose m-4 sm:m-6">
-    <h1 class="text-gray-700">{title}</h1>
-    <Byline {meta} />
-    <Content />
-</article>
+<div class="bg-white">
+    <article class="prose m-4 sm:m-6">
+        <h1 class="mb-3 text-gray-600">{title}</h1>
+        <div class="not-prose"><Byline {meta} /></div>
+        <div class="mt-6 h-[2px] bg-gradient-to-r from-gray-400 to-gray-300" />
+        <div class="text-lg"><Content /></div>
+    </article>
+</div>

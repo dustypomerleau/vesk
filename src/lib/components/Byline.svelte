@@ -3,7 +3,6 @@
     const { author, creds, image } = meta;
 </script>
 
-<!-- gray line div -->
 <div class="flex items-center">
     <div class="h-20 w-20 overflow-hidden rounded-3xl">
         <picture>
@@ -13,8 +12,8 @@
             <img src="/{image}.jpg" alt={author} class="h-24 object-cover" />
         </picture>
     </div>
-    <div class="flex flex-col pl-4">
+    <div class="flex flex-col pl-4 text-gray-600">
         <div class="text-lg">{author}</div>
-        <div class="text-sm">{creds}</div>
+        <div class="text-sm text-gray-500">{creds}</div>
     </div>
 </div>

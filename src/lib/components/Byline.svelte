@@ -4,7 +4,9 @@
 </script>
 
 <div class="flex items-center">
-    <div class="h-20 w-20 overflow-hidden rounded-3xl">
+    <div
+        class="h-20 min-h-[5rem] w-20 min-w-[5rem] overflow-hidden rounded-3xl"
+    >
         <picture>
             <source type="image/avif" srcset="/{image}.avif" />
             <source type="image/webp" srcset="/{image}.webp" />

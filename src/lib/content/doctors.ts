@@ -1,4 +1,6 @@
-export const doctors = [
+import type { Doc } from "$lib/types";
+
+export const doctors: Array<Doc> = [
     {
         name: "Mei Tan",
         credentials: "MB ChB BAO, PhD, FRCOphth, FRANZCO",
@@ -8,9 +10,7 @@ export const doctors = [
 
             "Dr Tan conducts clinical research in age-related macular degeneration, including a co-investigator role in clinical trials at the Royal Melbourne Hospital. Additional personal research interests include genetic eye disease, diabetic retinopathy, and vitreoretinal surgery."
         ],
-        srcAvif: "mht.avif",
-        srcJpg: "mht.jpg",
-        srcWebp: "mht.webp",
+        image: "mht",
         alt: "Doctor Mei Tan headshot"
     },
     {
@@ -21,9 +21,7 @@ export const doctors = [
             "Dr Pomerleau received his specialist training at California Pacific Medical Center in San Francisco, followed by a fellowship in medical retina at Duke University, and a vitreoretinal fellowship at the University of Alabama.",
             "Dr Pomerleau's appointment at the Royal Melbourne Hospital includes primary and co-investigator roles in multiple clinical trials for age-related macular degeneration. His personal research interests include macular hole and retinal detachment surgery, as well as inflammatory eye disease."
         ],
-        srcAvif: "dlp.avif",
-        srcJpg: "dlp.jpg",
-        srcWebp: "dlp.webp",
+        image: "dlp",
         alt: "Doctor Dusty Pomerleau headshot"
     }
 ];

@@ -4,7 +4,6 @@
     import type { Readable } from "svelte/store";
 
     export let page: Readable<Page<Record<string, string>, string>>;
-
     let nav: HTMLElement;
     let open = false;
     let visible = true;

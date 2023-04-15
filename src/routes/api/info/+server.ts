@@ -1,3 +1,4 @@
+import type { PostPath } from "$lib/types";
 import { getPosts } from "$lib/utils";
 import { json } from "@sveltejs/kit";
 

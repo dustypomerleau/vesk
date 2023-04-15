@@ -1,4 +1,6 @@
 <script lang="ts">
+    import type { PostMetadata } from "$lib/types";
+
     export let meta: PostMetadata;
     const { author, creds, image } = meta;
 </script>

@@ -1,12 +1,12 @@
 <script lang="ts">
     import Listing from "$lib/components/Listing.svelte";
-    import type { PageData } from "../../routes/$types";
+    import type { PostPath } from "$lib/types";
 
-    export let data: PageData;
+    export let data: { posts: Array<PostPath> };
 </script>
 
 <div id="info" class="self-center rounded-md py-6">
-    <div class="px-4 pb-3 text-center text-2xl font-semibold  md:text-left">
+    <div class="px-4 pb-3 text-center text-2xl font-semibold md:text-left">
         Patient Information
     </div>
 

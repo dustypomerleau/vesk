@@ -5,9 +5,9 @@
     import Hero from "$lib/components/Hero.svelte";
     import Info from "$lib/components/Info.svelte";
     import Maps from "$lib/components/Maps.svelte";
-    import type { PageData } from "./$types";
+    import type { PostPath } from "$lib/types";
 
-    export let data: PageData;
+    export let data: { posts: Array<PostPath> };
 </script>
 
 <svelte:head>

@@ -1,6 +1,8 @@
 <script lang="ts">
     import Info from "$lib/components/Info.svelte";
-    export let data;
+    import type { PostPath } from "$lib/types";
+
+    export let data: { posts: Array<PostPath> };
 </script>
 
 <svelte:head>

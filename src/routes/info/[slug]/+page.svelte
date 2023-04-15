@@ -1,12 +1,13 @@
 <script lang="ts">
     import Byline from "$lib/components/Byline.svelte";
+    import type { PostContent } from "$lib/types";
 
-    export let data;
+    export let data: PostContent;
     const {
         meta,
         meta: { brief, title },
         Content
-    } = data; // allows <Content /> instead of data.content
+    } = data;
 </script>
 
 <svelte:head>

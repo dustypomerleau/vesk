@@ -1,14 +1,9 @@
 <script lang="ts">
     import LinkButton from "$lib/components/LinkButton.svelte";
-    import type { ComponentType, SvelteComponentTyped } from "svelte";
+    import type { Card } from "$lib/types";
 
-    export let link: {
-        icon: ComponentType<SvelteComponentTyped>;
-        buttonText: string;
-        href: string;
-    };
-    export let points: Array<string>;
-    export let title: string;
+    export let card: Card;
+    const { link, points, title } = card;
 </script>
 
 <div class="card">
@@ -20,5 +15,5 @@
             {/each}
         </ul>
     </div>
-    <LinkButton {...link} />
+    <LinkButton {link} />
 </div>

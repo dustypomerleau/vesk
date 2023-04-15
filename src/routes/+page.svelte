@@ -5,8 +5,9 @@
     import Hero from "$lib/components/Hero.svelte";
     import Info from "$lib/components/Info.svelte";
     import Maps from "$lib/components/Maps.svelte";
+    import type { PageData } from "./$types";
 
-    export let data;
+    export let data: PageData;
 </script>
 
 <svelte:head>

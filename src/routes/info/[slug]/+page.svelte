@@ -14,8 +14,8 @@
 </svelte:head>
 
 <div class="bg-white">
-    <article class="prose m-4 sm:m-6">
-        <h1 class="mb-4 text-gray-600">{title}</h1>
+    <article class="prose m-6">
+        <h1 class="mb-0 pb-4 text-gray-600">{title}</h1>
         <div class="not-prose"><Byline {meta} /></div>
         <div class="mt-6 h-[2px] bg-gradient-to-r from-gray-300 to-gray-100" />
         <div class="text-lg text-gray-600"><Content /></div>

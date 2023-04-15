@@ -13,7 +13,7 @@
         Vr
     };
 
-    export let post: Post;
+    export let post: PostPath;
     const {
         meta: { icon, brief },
         path

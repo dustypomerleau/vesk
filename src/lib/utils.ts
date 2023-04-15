@@ -1,4 +1,4 @@
-export const getPosts = async (): Promise<Array<Post>> => {
+export const getPosts = async (): Promise<Array<PostPath>> => {
     // import.meta.glob() is a Vite function that returns an object with (in this case) keys of path and values of resolver functions that take no params and return the result of importing the file.
     // I'm still a bit fuzzy on the details, but it looks like casting the type with turbofish here tells the resolver function what type it will return when called (even though the return type is actually the function itself).
     const postFiles = import.meta.glob<Record<string, PostMetadata>>(
@@ -8,7 +8,7 @@ export const getPosts = async (): Promise<Array<Post>> => {
     const iterableFiles = Object.entries(postFiles);
 
     // Here, calling the resolver() (essentially calling import on the md file) appears to return the files' metadata as metadata: and perhaps content as default: although we aren't binding the content here.
-    const posts: Array<Post> = await Promise.all(
+    const posts: Array<PostPath> = await Promise.all(
         iterableFiles.map(async ([path, resolver]) => {
             const { metadata } = await resolver();
             // trim /src/routes and .md to get the URL

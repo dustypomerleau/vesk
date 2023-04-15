@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let post: Post;
+    export let post: PostPath;
     const {
         meta: { author, creds, image, title },
         path

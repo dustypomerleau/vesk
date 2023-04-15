@@ -3,7 +3,7 @@ interface PostMetadata {
     brief: string;
     creds: string;
     date: Date;
-    icon?: string;
+    icon: string;
     image: string;
     title: string;
 }
@@ -17,5 +17,3 @@ interface PostPath {
     meta: PostMetadata;
     path: string;
 }
-
-type Post = Post extends PostContent ? PostContent : PostPath;

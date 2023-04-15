@@ -14,7 +14,6 @@ They are given to treat wet macular degeneration, diabetic macular oedema, retin
 
 The retina is the light sensitive tissue that lines the back of the eye much like the film in a camera. The central part of the retina where light focuses on is called the macula, and this gives us our central vision for reading, fine vision and detail recognition.
 
-
 Eye injections can be administered via various routes:
 
 - An intravitreal injection is the injection of a medication into the vitreous cavity (Figure 1). It is the most commonly used method of injection. Various medications may be injected into the vitreous cavity, these include anti vascular endothelial growth factor (anti-VEGF), corticosteroids or steroid implant.

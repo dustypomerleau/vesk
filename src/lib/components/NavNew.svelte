@@ -1,7 +1,7 @@
 <script lang="ts">
     import Logo from "$lib/svg/Logo.svelte";
-    import type { Readable } from "svelte/store";
     import type { Page } from "@sveltejs/kit";
+    import type { Readable } from "svelte/store";
 
     export let page: Readable<Page<Record<string, string>, string>>;
 

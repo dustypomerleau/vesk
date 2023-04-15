@@ -3,7 +3,6 @@
     import Iol from "$lib/svg/Iol.svelte";
     import Syringe from "$lib/svg/Syringe.svelte";
     import Vr from "$lib/svg/Vr.svelte";
-
     import type { ComponentType, SvelteComponentTyped } from "svelte";
 
     const icons: Record<string, ComponentType<SvelteComponentTyped>> = {

@@ -13,6 +13,17 @@ export interface Doc {
     alt: string;
 }
 
+export interface Figure {
+    image: string;
+    alt: string;
+    caption: string;
+}
+
+export interface SvgFigure {
+    svg: typeof SvelteComponent;
+    caption: string;
+}
+
 export interface Link {
     href: string;
     // see https://github.com/sveltejs/language-tools/issues/486

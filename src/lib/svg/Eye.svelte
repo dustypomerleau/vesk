@@ -1,12 +1,3 @@
-<!-- 24 px = 1.5 rem -->
-<!-- the key is setting the viewbox to 24 because that's the number of pixels the svg is designed to be displayed at based on stroke width etc. -->
-<!-- now you just need to extract the width as a variable: string and set it to whatever rem/percentage value you want -->
-<!-- if you create an svg diagram, rather than an icon, the viewbox size will be larger -->
-<!-- have a look at the viewbox on your maps for reference -->
-<!-- todo: go through and set up all your svg this way -->
-<!-- todo: set your default widths at the time of calling <svelte:component> up 1 level, which makes these SVGs more reusable -->
-
-<!-- plan: move viewbox and width to be the first attributes on every SVG first, while adding script with the width prop, then go back to components and handle sizing in rem, then run routes -->
 <script lang="ts">
     export let width: string;
     export let viewBox = "0 0.4 24 24"

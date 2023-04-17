@@ -11,6 +11,8 @@
         class="text-blue-100 shadow-banner hover:shadow-activeBanner"
         >register here</a
     >
-    <span class="inline-flex align-middle text-blue-100"><Share /></span>
+    <span class="inline-flex align-middle text-blue-100"
+        ><Share width="1.3rem" /></span
+    >
     for our upcoming CPD evening.
 </div>

@@ -10,10 +10,10 @@
 
 <div id="contact" class="form mt-8 sm:mb-8">
     <div class="card-title">Contact Vic Eye</div>
-    <div class="mb-4 flex flex-row flex-wrap justify-center gap-y-2 gap-x-8">
+    <div class="mb-4 flex flex-row flex-wrap justify-center gap-x-8 gap-y-2">
         <div class="flex flex-row items-center gap-1">
             <div id="landline-icon-container" class="text-blue-700">
-                <Landline />
+                <Landline width="1.5rem" />
             </div>
             <div>
                 <a class="link" href="tel:+61391001928">(03) 9100 1928</a>
@@ -21,7 +21,7 @@
         </div>
         <div class="flex flex-row items-center gap-1">
             <div id="fax-icon-container" class="text-blue-700">
-                <Print />
+                <Print width="1.5rem" />
             </div>
             <div>(03) 9100 1972</div>
         </div>
@@ -94,7 +94,7 @@
             class="button flex w-5/6 max-w-xs flex-row items-center justify-center self-center"
         >
             <div id="send-icon-container" class="text-blue-200">
-                <Send />
+                <Send width="1.5rem" />
             </div>
             <div class="pl-2">Send my request</div>
         </button>

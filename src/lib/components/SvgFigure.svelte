@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { SvgFigure } from "$lib/types";
 
+    // todo: consider a width prop. Default value? Possibly 100%.
     export let figure: SvgFigure;
     const { svg, caption } = figure;
 </script>

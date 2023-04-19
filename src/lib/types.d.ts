@@ -14,14 +14,18 @@ export interface Doc {
 }
 
 export interface Figure {
-    image: string;
-    alt: string;
-    caption: string;
+    width: string = "100%";
+    caption?: string;
 }
 
-export interface SvgFigure {
+export interface PhotoFigure extends Figure {
+    image: string;
+    alt: string;
+}
+
+export interface SvgFigure extends Figure {
     svg: typeof SvelteComponent;
-    caption: string;
+    viewBox?: string;
 }
 
 export interface Link {

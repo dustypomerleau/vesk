@@ -14,7 +14,7 @@
     <title>Vic Eye &amp; Retina Specialists | {brief}</title>
 </svelte:head>
 
-<div class="self-center bg-white">
+<div class="flex justify-center bg-white">
     <article class="prose m-6">
         <h1 class="mb-0 pb-4 text-gray-600">{title}</h1>
         <div class="not-prose"><Byline {meta} /></div>

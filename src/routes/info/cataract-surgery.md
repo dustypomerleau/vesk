@@ -10,12 +10,23 @@ title: A patient's guide to cataract surgery and lens implants
 
 <script>
     import Eye from "$lib/svg/Eye.svelte";
+    import ParkingMap from "$lib/svg/ParkingMap.svelte";
     import PhotoFigure from "$lib/components/PhotoFigure.svelte";
     import SvgFigure from "$lib/components/SvgFigure.svelte";
 
     // pass a width if you don't want it to default to 100%
-    const figure1 = { image: "mht", width: "50%", alt: "mht alt", caption: "Figure 1: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure." }
-    const figure2 = { svg: Eye, width: "5rem", caption: "SVG caption" }
+    const figure1 = {
+        image: "mht",
+        // width: "50%",
+        alt: "mht alt",
+        caption: "Figure 1: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure."
+    }
+
+    const figure2 = {
+        svg: ParkingMap,
+        // width: "50%",
+        caption: "Figure 2: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure."
+    }
 </script>
 
 The inside of your eye contains a lens that focuses light.

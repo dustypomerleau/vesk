@@ -6,7 +6,17 @@
     const { svg, viewBox, width = "100%", caption } = figure;
 </script>
 
-<div class="not-prose flex flex-col items-center overflow-hidden">
-    <svelte:component this={svg} {viewBox} {width} />
-    <div>{caption}</div>
+<!-- todo: rounded corners to match PhotoFigure -->
+<div class="not-prose flex flex-col items-center">
+    <!-- you can apply text-color, gradient, etc. to the svg on this container div -->
+    <div
+        style="width: {width}"
+        class="flex flex-col items-center overflow-hidden rounded-lg"
+    >
+        <!-- 100% of the container div -->
+        <svelte:component this={svg} {viewBox} width="100%" />
+    </div>
+    <div style="width: {width}" class="p-1 text-base text-gray-500">
+        {caption}
+    </div>
 </div>

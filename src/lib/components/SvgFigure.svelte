@@ -16,7 +16,9 @@
         <!-- 100% of the container div -->
         <svelte:component this={svg} {viewBox} width="100%" />
     </div>
-    <div style="width: {width}" class="p-1 text-base text-gray-500">
-        {caption}
-    </div>
+    {#if caption}
+        <div style="width: {width}" class="p-1 text-base text-gray-500">
+            {caption}
+        </div>
+    {/if}
 </div>

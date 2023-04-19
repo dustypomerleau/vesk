@@ -12,7 +12,9 @@
         <source type="image/jpeg" srcset="/{image}.jpg" />
         <img src="/{image}.jpg" {alt} class="rounded-lg" />
     </picture>
-    <div style="width: {width}" class="p-1 text-base text-gray-500">
-        {caption}
-    </div>
+    {#if caption}
+        <div style="width: {width}" class="p-1 text-base text-gray-500">
+            {caption}
+        </div>
+    {/if}
 </div>

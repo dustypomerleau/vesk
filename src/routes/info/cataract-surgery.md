@@ -24,7 +24,7 @@ title: A patient's guide to cataract surgery and lens implants
 
     const figure2 = {
         svg: ParkingMap,
-        width: "w-full sm:w-[50%]",
+        // width: "w-full sm:w-[50%]",
         caption: "Figure 2: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure."
     }
 </script>

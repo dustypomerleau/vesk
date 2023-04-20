@@ -17,14 +17,14 @@ title: A patient's guide to cataract surgery and lens implants
     // pass a width if you don't want it to default to 100%
     const figure1 = {
         image: "mht",
-        // width: "50%",
+        // width: "90%",
         alt: "mht alt",
         caption: "Figure 1: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure."
     }
 
     const figure2 = {
         svg: ParkingMap,
-        // width: "50%",
+        width: "w-full sm:w-[50%]",
         caption: "Figure 2: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure."
     }
 </script>

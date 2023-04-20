@@ -14,7 +14,7 @@ export interface Doc {
 }
 
 export interface Figure {
-    width: string = "100%";
+    size: "small" | "medium" | "large" = "large";
     caption?: string;
 }
 

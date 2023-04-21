@@ -8,11 +8,12 @@
 </script>
 
 <div class="not-prose flex flex-col items-center gap-2">
+    <!-- widths need to go on the <picture> because it acts as a container -->
+    <!-- rounded goes directly on the image or alternatively, you can put it on the <picture> and use overflow-hidden -->
     <picture class="w-full {smallBreakpointWidth}">
         <source type="image/avif" srcset="/{image}.avif" />
         <source type="image/webp" srcset="/{image}.webp" />
         <source type="image/jpeg" srcset="/{image}.jpg" />
-        <!-- ...but rounded needs to go on the img -->
         <img src="/{image}.jpg" {alt} class="rounded-lg" />
     </picture>
     {#if caption}

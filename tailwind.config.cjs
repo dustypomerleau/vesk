@@ -8,6 +8,19 @@ const config = {
         colors: {
             black: colors.black,
             blue: {
+                a: "#dbeeff", // not p3, closest to oklch(94.1% 0.185 243.33)
+                b: "#b6ddff", // not p3, closest to oklch(88.1% 0.175 244.66)
+                c: "#90cbff", // not p3, closest to oklch(82.1% 0.165 245.99)
+                d: "#69b8ff", // not p3, closest to oklch(76.1% 0.155 247.32)
+                e: "#4ca4f4", // oklch(70.1% 0.145 248.65)
+                f: "#4491db", // oklch(64.1% 0.135 249.98)
+                g: "#3b7ec2", // oklch(58.1% 0.125 251.31)
+                h: "#336ba9", // oklch(52.1% 0.115 252.64)
+                i: "#2a5991", // oklch(46.1% 0.105 253.97)
+                j: "#21487a", // oklch(40.1% 0.095 255.3)
+                k: "#183863", // oklch(34.1% 0.085 256.63), logoNavy
+                l: "#0f284d", // oklch(28.1% 0.075 257.96)
+                m: "#071a38", // oklch(22.1% 0.065 259.29)
                 50: "#f3f7fb",
                 100: "#d1e2f7",
                 200: "#accdf4",

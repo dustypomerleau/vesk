@@ -14,7 +14,6 @@ title: A patient's guide to cataract surgery and lens implants
     import PhotoFigure from "$lib/components/PhotoFigure.svelte";
     import SvgFigure from "$lib/components/SvgFigure.svelte";
 
-    // pass a width if you don't want it to default to 100%
     const figure1 = {
         image: "mht",
         size: "small",
@@ -32,8 +31,9 @@ title: A patient's guide to cataract surgery and lens implants
 The inside of your eye contains a lens that focuses light.
 As we age, the lens gradually becomes less clear.
 When the lens becomes yellowed or cloudy, we call it a cataract.
-When a cataract is mild, it won't affect your vision much, although it may change the prescription in your glasses.
-Cataracts gradually worsen with time, and eventually your vision will be blurry in a way that glasses can't correct.
+A mild cataract won't affect your vision much, but it may gradually change the prescription in your glasses.
+Cataracts usually increase over time, and eventually your vision will be blurry in a way that glasses can't correct.
+Difficulty reading and bothersome glare&mdash;particularly when driving at night&mdash;are common complaints.
 
 <PhotoFigure figure={figure1} />
 

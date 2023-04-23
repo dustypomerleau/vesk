@@ -1,0 +1,79 @@
+oklch(34.1% 0.085 256.63)
+#183863
+
+lightness 20-84
+88.1 #bfdaff (outside p3)
+82.1 #a1c7fc
+76.1 #8eb4e7
+70.1 #7ca1d3
+64.1 #6b8ec0
+58.1 #597cad
+52.1 #486b9a
+46.1 #385987
+40.1 #284875
+34.1 #183863
+28.1 #072852
+22.1 #00193e closest (p3 only)
+
+increasing lightness the same amount and also bumping chroma by 0.005
+#bfdaff not p3, closest to oklch(88.1% 0.13 256.63)
+#9fc7ff not p3, closest to oklch(82.1% 0.125 256.63)
+#7fb4fd oklch(76.1% 0.12 256.63)
+#6fa1e5 oklch(70.1% 0.115 256.63)
+#5f8ece oklch(64.1% 0.11 256.63)
+#507cb8 oklch(58.1% 0.105 256.63)
+#426aa2 oklch(52.1% 0.1 256.63)
+#33598c oklch(46.1% 0.095 256.63)
+#254878 oklch(40.1% 0.09 256.63)
+#183863 oklch(34.1% 0.085 256.63)
+#0a2850 oklch(28.1% 0.08 256.63)
+#01193d oklch(22.1% 0.075 256.63)
+
+increasing lightness by 6 and chroma by 0.01
+#e0edff not p3, closest to oklch(94.1% 0.185 256.63)
+#bfdaff not p3, closest to oklch(88.1% 0.175 256.63)
+#9fc7ff not p3, closest to oklch(82.1% 0.165 256.63)
+#7db4ff not p3, closest to oklch(76.1% 0.155 256.63)
+#60a0f7 oklch(70.1% 0.145 256.63)
+#538ddd oklch(64.1% 0.135 256.63)
+#467bc3 oklch(58.1% 0.125 256.63)
+#3a6aaa oklch(52.1% 0.115 256.63)
+#2e5992 oklch(46.1% 0.105 256.63)
+#23487a oklch(40.1% 0.095 256.63)
+#0d294d oklch(28.1% 0.075 256.63)
+#041a38 oklch(22.1% 0.065 256.63)
+
+good! match with orange, sky can wait
+increasing lightness by 6, increasing chroma by 0.01, decreasing hue by 1.5
+#daefff not p3, closest to oklch(94.1% 0.185 241.63)
+#b4ddff not p3, closest to oklch(88.1% 0.175 243.13)
+#8eccff not p3, closest to oklch(82.1% 0.165 244.63)
+#65b9ff not p3, closest to oklch(76.1% 0.155 246.13)
+#49a5f4 oklch(70.1% 0.145 247.63) try one more, targeting 248 here ~ 1.33 per
+#4191da oklch(64.1% 0.135 249.13)
+#3a7ec1 oklch(58.1% 0.125 250.63)
+#326ba9 oklch(52.1% 0.115 252.13)
+#295a91 oklch(46.1% 0.105 253.63)
+#21487a oklch(40.1% 0.095 255.13)
+#183863 oklch(34.1% 0.085 256.63)
+#0f284d oklch(28.1% 0.075 258.13)
+#071a38 oklch(22.1% 0.065 259.63)
+
+back off on the hue shift a touch - perfect
+starting from darkest
+lightness +6
+chroma +0.01
+hue -1.33
+a: "#dbeeff", // not p3, closest to oklch(94.1% 0.185 243.33)
+b: "#b6ddff", // not p3, closest to oklch(88.1% 0.175 244.66)
+c: "#90cbff", // not p3, closest to oklch(82.1% 0.165 245.99)
+d: "#69b8ff", // not p3, closest to oklch(76.1% 0.155 247.32)
+e: "#4ca4f4", // oklch(70.1% 0.145 248.65)
+f: "#4491db", // oklch(64.1% 0.135 249.98)
+g: "#3b7ec2", // oklch(58.1% 0.125 251.31)
+h: "#336ba9", // oklch(52.1% 0.115 252.64)
+i: "#2a5991", // oklch(46.1% 0.105 253.97)
+j: "#21487a", // oklch(40.1% 0.095 255.3)
+k: "#183863", // oklch(34.1% 0.085 256.63), logoNavy
+l: "#0f284d", // oklch(28.1% 0.075 257.96)
+m: "#071a38", // oklch(22.1% 0.065 259.29)

@@ -1,5 +1,6 @@
 final palettes:
 
+similar effect to orange below in blue 1-4, but in this case the reference color is less saturated, so the effect is less bothersome
 1: "#dbeeff", // not p3, closest to oklch(94.1% 0.185 243.33)
 2: "#b6ddff", // not p3, closest to oklch(88.1% 0.175 244.66)
 3: "#90cbff", // not p3, closest to oklch(82.1% 0.165 245.99)
@@ -14,6 +15,8 @@ final palettes:
 12: "#0f284d", // oklch(28.1% 0.075 257.96)
 13: "#071a38", // oklch(22.1% 0.065 259.29)
 
+orange 1-4 run out of chroma, and should be used sparingly
+orange 5-13 are well saturated with a nice hue shift
 1: "#ffdfc6", // not p3, closest to oklch(92.45% 0.789007315343796 61.340375131646900)
 2: "#ffc9a0", // not p3, closest to oklch(87.45% 0.639007315343796 58.740375131646900)
 3: "#ffb27a", // not p3, closest to oklch(82.45% 0.489007315343796 56.140375131646900)

@@ -9,6 +9,7 @@ title: A patient's guide to cataract surgery and lens implants
 ---
 
 <script>
+    import Cataract from "$lib/svg/Cataract.svelte";
     import Eye from "$lib/svg/Eye.svelte";
     import ParkingMap from "$lib/svg/ParkingMap.svelte";
     import PhotoFigure from "$lib/components/PhotoFigure.svelte";
@@ -26,6 +27,13 @@ title: A patient's guide to cataract surgery and lens implants
         size: "medium",
         caption: "Figure 2: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure."
     }
+
+    const cataract = {
+        svg: Cataract,
+        viewBox: "0, 200, 2500, 1267",
+        size: "medium",
+        caption: "This is a caption under the cataract figure."
+    }
 </script>
 
 The inside of your eye contains a lens that focuses light.
@@ -35,9 +43,7 @@ A mild cataract won't affect your vision much, but it may gradually change the p
 Cataracts usually increase over time, and eventually your vision will be blurry in a way that glasses can't correct.
 Difficulty reading and bothersome glare&mdash;particularly when driving at night&mdash;are common complaints.
 
-<PhotoFigure figure={figure1} />
-
-<SvgFigure figure={figure2} />
+<SvgFigure figure={cataract} />
 
 When a cataract is mild, it won't affect your vision much, although it may change the prescription in your glasses.
 Cataracts gradually worsen with time, and eventually your vision will be blurry in a way that glasses can't correct

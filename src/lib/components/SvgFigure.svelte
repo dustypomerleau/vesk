@@ -1,3 +1,5 @@
+<!-- todo: create a FigStack so that you can wrap sequential figs or lay out horizontally depending on the screen -->
+
 <script lang="ts">
     import { getFigureBreakpointWidth } from "$lib/utils";
     import type { SvgFigure } from "$lib/types";

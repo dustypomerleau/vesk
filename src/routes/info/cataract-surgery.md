@@ -22,12 +22,6 @@ title: A patient's guide to cataract surgery and lens implants
         caption: "Figure 1: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure."
     }
 
-    const figure2 = {
-        svg: ParkingMap,
-        size: "medium",
-        caption: "Figure 2: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure."
-    }
-
     const cataract = {
         svg: Cataract,
         viewBox: "0, 200, 2500, 1267",

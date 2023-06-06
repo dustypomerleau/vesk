@@ -69,7 +69,7 @@
     }
 
     .field {
-        @apply mb-6 mt-1 block w-full rounded-md border border-transparent bg-gray-100 placeholder-gray-400 caret-orange-800 hover:border-blue-7/50 focus:border-blue-7 focus:bg-white focus:text-gray-900 focus:ring-0;
+        @apply mb-6 mt-1 block w-full rounded-md border border-transparent bg-gray-100 placeholder-gray-400 caret-orange-9 hover:border-blue-7/50 focus:border-blue-7 focus:bg-white focus:text-gray-900 focus:ring-0;
     }
 
     .field-label {

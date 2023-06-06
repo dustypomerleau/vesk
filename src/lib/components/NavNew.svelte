@@ -30,7 +30,7 @@
 <svelte:window on:focusin={handle_focus} on:scroll={handle_scroll} />
 
 {#if open}
-    <div class="bg-orange-300" on:click={() => (open = false)} />
+    <div class="bg-orange-4" on:click={() => (open = false)} />
 {/if}
 
 <header id="header" class="flex flex-col items-center justify-between bg-blue-10 md:flex-row">

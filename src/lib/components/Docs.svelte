@@ -20,15 +20,11 @@
                     />
                 </picture>
             </div>
-            <div
-                class="-mt-0.5 flex w-full flex-row bg-gray-200 sm:justify-center"
-            >
+            <div class="-mt-0.5 flex w-full flex-row bg-gray-200 sm:justify-center">
                 <div class="px-6 py-2">
-                    <div
-                        class="flex flex-row flex-wrap items-baseline justify-start"
-                    >
+                    <div class="flex flex-row flex-wrap items-baseline justify-start">
                         <div
-                            class="bg-gradient-to-r from-orange-900 to-orange-700 bg-clip-text pr-2 text-2xl font-medium text-transparent"
+                            class="bg-gradient-to-r from-orange-10 to-orange-8 bg-clip-text pr-2 text-2xl font-medium text-transparent"
                         >
                             {doc.name}
                         </div>
@@ -36,7 +32,7 @@
                             {doc.credentials}
                         </div>
                     </div>
-                    <div class="font-normal text-orange-900">
+                    <div class="font-normal text-orange-10">
                         {@html doc.specialties}
                     </div>
                 </div>

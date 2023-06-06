@@ -2,7 +2,7 @@
     import Share from "$lib/svg/Share.svelte";
 </script>
 
-<div id="cpd" class="bg-orange-600 w-full px-4 py-2 text-white sm:text-center">
+<div id="cpd" class="w-full bg-orange-7 px-4 py-2 text-white sm:text-center">
     Referring doctors can
     <a
         href="https://www.eventbrite.com.au/e/vic-eye-retina-specialists-cpd-evening-for-optometrists-tickets-609027857717"

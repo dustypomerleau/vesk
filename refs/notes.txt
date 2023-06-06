@@ -256,7 +256,7 @@ Overpass
 Assistant
 
 gradient text:
-    bg-gradient-to-r from-orange-500 via-white to-white text-transparent bg-clip-text
+    bg-gradient-to-r from-orange-6 via-white to-white text-transparent bg-clip-text
 
 glow:
 @layer utilities {

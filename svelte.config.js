@@ -7,15 +7,12 @@ const config = {
     extensions: [".svelte", ".md"],
     // Consult https://github.com/sveltejs/svelte-preprocess
     // for more information about preprocessors
-    preprocess: [
-        preprocess({ postcss: true }),
-        mdsvex({ extensions: [".md"] })
-    ],
+    preprocess: [preprocess({ postcss: true }), mdsvex({ extensions: [".md"] })],
     kit: {
-        adapter: adapter()
+        adapter: adapter(),
         // previously added (then removed) prerender settings per this github issue re: netlify forms:
         // https://github.com/sveltejs/kit/issues/942
-    }
+    },
 };
 
 export default config;

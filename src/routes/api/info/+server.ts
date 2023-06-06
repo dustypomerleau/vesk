@@ -6,9 +6,7 @@ export const GET = async (): Promise<Response> => {
     const posts = await getPosts();
 
     const sortedPosts: Array<PostPath> = posts.sort((a, b) => {
-        return (
-            new Date(b.meta.date).valueOf() - new Date(a.meta.date).valueOf()
-        );
+        return new Date(b.meta.date).valueOf() - new Date(a.meta.date).valueOf();
     });
 
     return json(sortedPosts);

@@ -4,7 +4,7 @@ export const getFigureBreakpointWidth = (size: string) => {
     const widths: { [size: string]: string } = {
         small: "sm:w-2/3",
         medium: "sm:w-3/4",
-        large: ""
+        large: "",
     };
 
     return widths[size];
@@ -13,9 +13,7 @@ export const getFigureBreakpointWidth = (size: string) => {
 export const getPosts = async (): Promise<Array<PostPath>> => {
     // import.meta.glob() is a Vite function that returns an object with (in this case) keys of path and values of resolver functions that take no params and return the result of importing the file.
     // I'm still a bit fuzzy on the details, but it looks like casting the type with turbofish here tells the resolver function what type it will return when called (even though the return type is actually the function itself).
-    const postFiles = import.meta.glob<Record<string, PostMetadata>>(
-        "/src/routes/info/*.md"
-    );
+    const postFiles = import.meta.glob<Record<string, PostMetadata>>("/src/routes/info/*.md");
     // Object.entries returns an array of arrays, where each array is a KV pair from the object.
     const iterableFiles = Object.entries(postFiles);
 

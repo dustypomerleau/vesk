@@ -30,7 +30,7 @@ const config = {
                 600: "#3778bf",
                 700: "#2e64a3",
                 800: "#245086",
-                900: "#183863"
+                900: "#183863",
             },
             current: "currentColor",
             gray: colors.gray,
@@ -60,7 +60,7 @@ const config = {
                 600: "#c44d00",
                 700: "#aa3900",
                 800: "#902600",
-                900: "#721900"
+                900: "#721900",
             },
             sky: {
                 50: "#f4f7fc",
@@ -72,10 +72,10 @@ const config = {
                 600: "#1785be",
                 700: "#106894",
                 800: "#0a5476",
-                900: "#063c54"
+                900: "#063c54",
             },
             transparent: "transparent",
-            white: colors.white
+            white: colors.white,
         },
         fontFamily: {
             sans: [
@@ -91,20 +91,20 @@ const config = {
                 "sans-serif",
                 "Apple Color Emoji",
                 "Segoe UI Emoji",
-                "Segoe UI Symbol"
-            ]
+                "Segoe UI Symbol",
+            ],
         },
         fontWeight: {
             light: 300,
             midlight: 350,
             normal: 400,
             medium: 500,
-            semibold: 600
+            semibold: 600,
         },
         extend: {
             backgroundImage: (theme) => ({
                 hero: 'url("/images/hero.webp");',
-                check: 'url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2724%27%20height%3D%2724%27%20fill%3D%27none%27%3E%3Cpath%20stroke%3D%27%232e63a7%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20stroke-width%3D%271.5%27%20d%3D%27m5.75%2012.867%202.59%203.547a2%202%200%200%200%203.26-.043l6.65-9.621%27%2F%3E%3C%2Fsvg%3E");'
+                check: 'url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2724%27%20height%3D%2724%27%20fill%3D%27none%27%3E%3Cpath%20stroke%3D%27%232e63a7%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20stroke-width%3D%271.5%27%20d%3D%27m5.75%2012.867%202.59%203.547a2%202%200%200%200%203.26-.043l6.65-9.621%27%2F%3E%3C%2Fsvg%3E");',
             }),
             boxShadow: {
                 activeBanner: "0 -4px 0 0 #accdf4dd inset",
@@ -112,11 +112,11 @@ const config = {
                 activeLink: "0 -4px 0 0 #438ddfcc inset",
                 banner: "0 -4px 0 0 #accdf490 inset",
                 footer: "0 -4px 0 0 #4b556350 inset",
-                link: "0 -4px 0 0 #438ddf60 inset"
-            }
-        }
+                link: "0 -4px 0 0 #438ddf60 inset",
+            },
+        },
     },
-    plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")]
+    plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };
 
 module.exports = config;

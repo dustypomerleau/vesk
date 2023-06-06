@@ -1,8 +1,4 @@
-import type {
-    ComponentType,
-    SvelteComponent,
-    SvelteComponentTyped
-} from "svelte";
+import type { ComponentType, SvelteComponent, SvelteComponentTyped } from "svelte";
 
 export interface Doc {
     name: string;

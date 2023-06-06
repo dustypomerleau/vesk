@@ -11,5 +11,6 @@ mask-icon.svg
 node_modules
 package-lock.json
 pnpm-lock.yaml
+refs/add-tailwind-css-to-sveltekit.js
 svg
 yarn.lock

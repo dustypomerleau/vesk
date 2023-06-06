@@ -5,13 +5,10 @@ import { mdsvex } from "mdsvex";
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     extensions: [".svelte", ".md"],
-    // Consult https://github.com/sveltejs/svelte-preprocess
-    // for more information about preprocessors
-    preprocess: [preprocess({ postcss: true }), mdsvex({ extensions: [".md"] })],
+    // the issues you had with sending width to figures may have to do with tailwind running before mdsvex - can these be reversed?
+    preprocess: [preprocess({ postcss: true }), mdsvex({ extensions: [".svelte", ".md"] })],
     kit: {
         adapter: adapter(),
-        // previously added (then removed) prerender settings per this github issue re: netlify forms:
-        // https://github.com/sveltejs/kit/issues/942
     },
 };
 

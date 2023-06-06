@@ -3,8 +3,8 @@
 </script>
 
 <div class="wide-card">
-    <div class="absolute pt-2 pl-6 sm:pt-8 sm:pl-16">
-        <div class="text-2xl font-semibold text-blue-700">Location</div>
+    <div class="absolute pl-6 pt-2 sm:pl-16 sm:pt-8">
+        <div class="text-2xl font-semibold text-blue-8">Location</div>
         <a class="link" href="https://maps.app.goo.gl/aafsjEXZ3L83jdpW9">
             92 Maroondah Highway
         </a><br />

@@ -22,14 +22,11 @@
         name="description"
         content="Vic Eye & Retina Specialists: Cataract and retinal surgeons serving greater Melbourne. Located in Ringwood, Victoria."
     />
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 </svelte:head>
 
 <body
-    class="flex min-h-screen flex-col bg-blue-900 font-sans text-lg font-normal leading-[1.55] text-gray-600"
+    class="flex min-h-screen flex-col bg-blue-10 font-sans text-lg font-normal leading-[1.55] text-gray-600"
 >
     <Nav />
 

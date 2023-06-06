@@ -12,7 +12,7 @@
     <div class="card-title">Contact Vic Eye</div>
     <div class="mb-4 flex flex-row flex-wrap justify-center gap-x-8 gap-y-2">
         <div class="flex flex-row items-center gap-1">
-            <div id="landline-icon-container" class="text-blue-700">
+            <div id="landline-icon-container" class="text-blue-8">
                 <Landline />
             </div>
             <div>
@@ -20,16 +20,17 @@
             </div>
         </div>
         <div class="flex flex-row items-center gap-1">
-            <div id="fax-icon-container" class="text-blue-700">
+            <div id="fax-icon-container" class="text-blue-8">
                 <Print />
             </div>
             <div>(03) 9100 1972</div>
         </div>
     </div>
     <div class="pb-3">
-        You can use this form to request an appointment, assistance with your
-        visit, or more information. If you are a referring doctor, please use
-        our <a href="/refer" class="link">referral form</a>.
+        You can use this form to request an appointment, assistance with your visit, or more
+        information. If you are a referring doctor, please use our <a href="/refer" class="link"
+            >referral form</a
+        >.
     </div>
 
     <form
@@ -49,38 +50,20 @@
 
         <label>
             <span class="field-label">Email address</span>
-            <input
-                name="email"
-                type="email"
-                placeholder="email@example.com"
-                class="field"
-            />
+            <input name="email" type="email" placeholder="email@example.com" class="field" />
         </label>
 
         <label>
             <span class="field-label">Mobile phone</span>
-            <input
-                name="mobile"
-                type="tel"
-                placeholder="0400 000 000"
-                class="field"
-            />
+            <input name="mobile" type="tel" placeholder="0400 000 000" class="field" />
         </label>
 
         <div>
             <span class="field-label">Preferred contact method</span>
             <div class="flex flex-col sm:flex-row">
                 <Radio name="contact-preference" icon={Mail} text="Email" />
-                <Radio
-                    name="contact-preference"
-                    icon={Smartphone}
-                    text="Phone"
-                />
-                <Radio
-                    name="contact-preference"
-                    icon={Message}
-                    text="Text message"
-                />
+                <Radio name="contact-preference" icon={Smartphone} text="Phone" />
+                <Radio name="contact-preference" icon={Message} text="Text message" />
             </div>
         </div>
 
@@ -93,7 +76,7 @@
             type="submit"
             class="button flex w-5/6 max-w-xs flex-row items-center justify-center self-center"
         >
-            <div id="send-icon-container" class="text-blue-200">
+            <div id="send-icon-container" class="text-blue-3">
                 <Send />
             </div>
             <div class="pl-2">Send my request</div>

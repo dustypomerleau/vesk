@@ -10,19 +10,19 @@
         Amd,
         Iol,
         Syringe,
-        Vr
+        Vr,
     };
     export let iconWidth = "1.5rem";
 
     export let post: PostPath;
     const {
         meta: { icon, brief },
-        path
+        path,
     } = post;
 </script>
 
 <a href={path} class="flex rounded-md p-4 hover:bg-gray-50">
-    <div class="flex flex-col content-center justify-center text-blue-700">
+    <div class="flex flex-col content-center justify-center text-blue-8">
         <svelte:component this={icons[icon]} width={iconWidth} />
     </div>
     <div class="ml-2 flex w-full flex-col">

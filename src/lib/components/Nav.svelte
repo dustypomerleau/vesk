@@ -2,10 +2,7 @@
     import Logo from "$lib/svg/Logo.svelte";
 </script>
 
-<header
-    id="header"
-    class="flex flex-col items-center justify-between bg-blue-900 md:flex-row"
->
+<header id="header" class="flex flex-col items-center justify-between bg-blue-10 md:flex-row">
     <a href="/" title="Vic Eye Home">
         <div class="px-8 py-4">
             <Logo />

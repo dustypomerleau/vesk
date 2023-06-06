@@ -29,17 +29,17 @@
     }
 
     input[type="radio"]:focus + label {
-        @apply border-blue-600 bg-blue-50 text-blue-700;
+        @apply border-blue-7 bg-blue-1 text-blue-8;
     }
 
     input[type="radio"]:checked + label {
-        @apply m-[0.1875rem] border-2 border-blue-600 text-blue-700 sm:m-0.5;
+        @apply m-[0.1875rem] border-2 border-blue-7 text-blue-8 sm:m-0.5;
     }
 }
 
 @layer components {
     .button {
-        @apply mx-4 self-stretch rounded-md bg-gradient-to-r from-blue-800 to-blue-600 p-2 text-center font-medium text-white shadow-lg hover:from-blue-700 hover:to-blue-500;
+        @apply mx-4 self-stretch rounded-md bg-gradient-to-r from-blue-9 to-blue-7 p-2 text-center font-medium text-white shadow-lg hover:from-blue-8 hover:to-blue-6;
     }
 
     .card {
@@ -61,7 +61,7 @@
     }
 
     .card-title {
-        @apply bg-gradient-to-r from-blue-900 to-blue-500 bg-clip-text pb-3 text-center text-2xl font-semibold text-transparent;
+        @apply bg-gradient-to-r from-blue-10 to-blue-6 bg-clip-text pb-3 text-center text-2xl font-semibold text-transparent;
     }
 
     .card-title-gray {
@@ -69,7 +69,7 @@
     }
 
     .field {
-        @apply mb-6 mt-1 block w-full rounded-md border border-transparent bg-gray-100 placeholder-gray-400 caret-orange-800 hover:border-blue-600/50 focus:border-blue-600 focus:bg-white focus:text-gray-900 focus:ring-0;
+        @apply mb-6 mt-1 block w-full rounded-md border border-transparent bg-gray-100 placeholder-gray-400 caret-orange-800 hover:border-blue-7/50 focus:border-blue-7 focus:bg-white focus:text-gray-900 focus:ring-0;
     }
 
     .field-label {
@@ -81,11 +81,11 @@
     }
 
     .link {
-        @apply text-blue-700 shadow-link hover:shadow-activeLink;
+        @apply text-blue-8 shadow-link hover:shadow-activeLink;
     }
 
     .radio {
-        @apply m-1 flex w-44 flex-row flex-wrap items-center rounded-md border border-gray-200 bg-gray-50 p-2 pl-3 text-center font-normal shadow-md hover:border-blue-600/50 hover:text-blue-700/80 focus:border-blue-600 sm:mx-0.5 sm:justify-center sm:pl-2;
+        @apply m-1 flex w-44 flex-row flex-wrap items-center rounded-md border border-gray-200 bg-gray-50 p-2 pl-3 text-center font-normal shadow-md hover:border-blue-7/50 hover:text-blue-8/80 focus:border-blue-7 sm:mx-0.5 sm:justify-center sm:pl-2;
     }
 
     .wide-card {

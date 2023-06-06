@@ -8,29 +8,19 @@ const config = {
         colors: {
             black: colors.black,
             blue: {
-                1: "#dbeeff",
-                2: "#b6ddff",
-                3: "#90cbff",
-                4: "#69b8ff",
-                5: "#4ca4f4",
-                6: "#4491db",
-                7: "#3b7ec2",
-                8: "#336ba9",
-                9: "#2a5991",
-                10: "#21487a",
-                11: "#183863",
-                12: "#0f284d",
-                13: "#071a38",
-                50: "#f3f7fb",
-                100: "#d1e2f7",
-                200: "#accdf4",
-                300: "#86b8f2",
-                400: "#62a6ef",
-                500: "#418edb",
-                600: "#3778bf",
-                700: "#2e64a3",
-                800: "#245086",
-                900: "#183863",
+                1: "#f1f6fa", // 50
+                2: "#cee1f2", // 100
+                3: "#accded", // 200
+                4: "#86b8e9", // 300
+                5: "#61a2e3", // 400
+                6: "#468dd6", // 500
+                7: "#3a77ba", // 600
+                8: "#2f629e", // 700
+                9: "#244f84", // 800
+                10: "#183863", // 900
+                11: "#10294e",
+                12: "#081a37",
+                13: "#030a1d",
             },
             current: "currentColor",
             gray: colors.gray,
@@ -38,41 +28,34 @@ const config = {
             logoOrange: "#ff7b00",
             logoSky: "#1785be",
             orange: {
-                1: "#ffdfc6",
-                2: "#ffc9a0",
-                3: "#ffb27a",
-                4: "#ff984f",
-                5: "#ff7b00",
-                6: "#e76904",
-                7: "#cf5805",
-                8: "#b84804",
-                9: "#a03702",
-                10: "#892800",
-                11: "#721900",
-                12: "#5b0c00",
-                13: "#440200",
-                50: "#fcf5ee",
-                100: "#fcd9b9",
-                200: "#fdba80",
-                300: "#ff9843",
-                400: "#ff7b00",
-                500: "#dd6200",
-                600: "#c44d00",
-                700: "#aa3900",
-                800: "#902600",
-                900: "#721900",
+                1: "#fcf3ed", // 50
+                2: "#fbd6bb", // 100
+                3: "#fcb889", // 200
+                4: "#ff9348", // 300
+                5: "#ff7b00", // 400
+                6: "#d76203", // 500
+                7: "#bb4f03", // 600
+                8: "#a03d01", // 700
+                9: "#872c00", // 800
+                10: "#6b1c00", // 900
+                11: "#500e00",
+                12: "#380501",
+                13: "#1d0101",
             },
             sky: {
-                50: "#f4f7fc",
-                100: "#d0e2fa",
-                200: "#a7cefb",
-                300: "#72bbfc",
-                400: "#22abfb",
-                500: "#1b92d4",
-                600: "#1785be",
-                700: "#106894",
-                800: "#0a5476",
-                900: "#063c54",
+                1: "#eff6fc", // 50
+                2: "#c3e3fa", // 100
+                3: "#95d1fa", // 200
+                4: "#59bdfb", // 300
+                5: "#1ea8ee", // 400
+                6: "#1993d1", // 500
+                7: "#1785be", // 600
+                8: "#0f6795", // 700
+                9: "#0a547a", // 800
+                10: "#06405f", // 900
+                11: "#032e45",
+                12: "#021d2d",
+                13: "#010d16",
             },
             transparent: "transparent",
             white: colors.white,
@@ -107,12 +90,12 @@ const config = {
                 check: 'url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2724%27%20height%3D%2724%27%20fill%3D%27none%27%3E%3Cpath%20stroke%3D%27%232e63a7%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20stroke-width%3D%271.5%27%20d%3D%27m5.75%2012.867%202.59%203.547a2%202%200%200%200%203.26-.043l6.65-9.621%27%2F%3E%3C%2Fsvg%3E");',
             }),
             boxShadow: {
-                activeBanner: "0 -4px 0 0 #accdf4dd inset",
+                activeBanner: "0 -4px 0 0 #accdeddd inset",
                 activeFooter: "0 -4px 0 0 #4b556399 inset",
-                activeLink: "0 -4px 0 0 #438ddfcc inset",
-                banner: "0 -4px 0 0 #accdf490 inset",
+                activeLink: "0 -4px 0 0 #468dd6cc inset",
+                banner: "0 -4px 0 0 #accded90 inset",
                 footer: "0 -4px 0 0 #4b556350 inset",
-                link: "0 -4px 0 0 #438ddf60 inset",
+                link: "0 -4px 0 0 #468dd660 inset",
             },
         },
     },

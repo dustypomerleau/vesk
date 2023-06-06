@@ -33,16 +33,8 @@
     <div class="bg-orange-300" on:click={() => (open = false)} />
 {/if}
 
-<header
-    id="header"
-    class="flex flex-col items-center justify-between bg-blue-900 md:flex-row"
->
-    <nav
-        class:visible={visible || open}
-        class:open
-        bind:this={nav}
-        aria-label="Primary"
-    >
+<header id="header" class="flex flex-col items-center justify-between bg-blue-10 md:flex-row">
+    <nav class:visible={visible || open} class:open bind:this={nav} aria-label="Primary">
         <a href="/" title="Vic Eye Home">
             <div class="px-8 py-4">
                 <Logo />

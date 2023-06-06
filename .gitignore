@@ -1,7 +1,6 @@
-# dlp.png
-# hero*.png
-# mht.png
+*.xlsx
 .DS_Store
+.netlify
 /.svelte-kit
 /build
 /package
@@ -9,6 +8,3 @@ deprecated/
 hero.avif
 node_modules
 unoptimized/
-
-# Local Netlify folder
-.netlify

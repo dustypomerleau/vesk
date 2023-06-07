@@ -19,6 +19,6 @@
         <h1 class="mb-0 pb-4 text-gray-8">{title}</h1>
         <div class="not-prose"><Byline {meta} /></div>
         <div class="mt-6 h-[2px] bg-gradient-to-r from-gray-4 to-gray-2" />
-        <div class="text-lg text-gray-8"><Content /></div>
+        <div class="text-lg"><Content /></div>
     </article>
 </div>

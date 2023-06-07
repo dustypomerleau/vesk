@@ -1,13 +1,13 @@
 import type { PostMetadata, PostPath } from "$lib/types";
 
-export const getFigureBreakpointWidth = (size: string) => {
+export const getFigureBreakpointWidth = (size = "large") => {
     const widths: { [size: string]: string } = {
         small: "sm:w-2/3",
         medium: "sm:w-3/4",
-        large: "",
+        large: "sm:w-5/6",
     };
 
-    return widths[size];
+    return widths[size] ? widths[size] : size;
 };
 
 export const getPosts = async (): Promise<Array<PostPath>> => {

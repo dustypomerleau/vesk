@@ -10,16 +10,19 @@ export interface Doc {
 }
 
 export interface Figure {
-    size: "small" | "medium" | "large" = "large";
+    size?: string;
+    width?: string;
     caption?: string;
+    textSize?: string;
+    textColor?: string;
 }
 
-export interface PhotoFigure extends Figure {
+export interface PhotoFig extends Figure {
     image: string;
     alt: string;
 }
 
-export interface SvgFigure extends Figure {
+export interface SvgFig extends Figure {
     svg: typeof SvelteComponent;
     viewBox?: string;
 }

@@ -8,26 +8,27 @@ image: dlp
 title: A patient's guide to cataract surgery and lens implants
 ---
 
-<script>
+<script lang="ts">
     import Cataract from "$lib/svg/Cataract.svelte";
     import Eye from "$lib/svg/Eye.svelte";
     import ParkingMap from "$lib/svg/ParkingMap.svelte";
     import PhotoFigure from "$lib/components/PhotoFigure.svelte";
     import SvgFigure from "$lib/components/SvgFigure.svelte";
+    import type { PhotoFig, SvgFig } from "$lib/types";
 
-    const figure1 = {
-        image: "mht",
-        size: "small",
-        alt: "mht alt",
-        caption: "Figure 1: Ok so this is the deal, we have a figure and below the figure there is a caption. The idea is that the caption should explain the figure."
-    }
-
-    const cataract = {
+    const cataract: SvgFig = {
         svg: Cataract,
-        viewBox: "0, 200, 2500, 1267",
-        size: "medium",
-        caption: "This is a caption under the cataract figure."
-    }
+        viewBox: "0, 100, 1200, 600",
+        size: "large",
+        caption: "This is a caption under the cataract figure.",
+    };
+
+    const mht: PhotoFig = {
+        image: "mht",
+        size: "large",
+        alt: "The Haag-Streit EYESTAR 900 optical biometer",
+        caption: "haagstreit.com",
+    };
 </script>
 
 The inside of your eye contains a lens that focuses light.
@@ -41,3 +42,5 @@ Difficulty reading and bothersome glare&mdash;particularly when driving at night
 
 When a cataract is mild, it won't affect your vision much, although it may change the prescription in your glasses.
 Cataracts gradually worsen with time, and eventually your vision will be blurry in a way that glasses can't correct
+
+<PhotoFigure figure={mht} />

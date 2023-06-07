@@ -1,23 +1,24 @@
 <script lang="ts">
     import { getFigureBreakpointWidth } from "$lib/utils";
-    import type { PhotoFigure } from "$lib/types";
+    import type { PhotoFig } from "$lib/types";
 
-    export let figure: PhotoFigure;
-    const { image, size, alt, caption } = figure;
+    export let figure: PhotoFig;
+    // at present, these text size/color customizations are not playing nicely with mdsvex, so basically whatever is the default here will be used, regardless of what you specify in the markdown file
+    // at present, we are not using the width prop on PhotoFigure, even though it exists on all descendents of type Figure (see SvgFigure for an example)
+    const { image, size, alt, caption, textSize = "text-base", textColor = "text-gray-7" } = figure;
     const smallBreakpointWidth = size ? getFigureBreakpointWidth(size) : "";
 </script>
 
 <div class="not-prose flex flex-col items-center gap-2">
     <!-- widths need to go on the <picture> because it acts as a container -->
     <!-- rounded goes directly on the image or alternatively, you can put it on the <picture> and use overflow-hidden -->
-    <picture class="w-full {smallBreakpointWidth}">
+    <picture class="flex place-content-center">
         <source type="image/avif" srcset="/{image}.avif" />
         <source type="image/webp" srcset="/{image}.webp" />
-        <source type="image/jpeg" srcset="/{image}.jpg" />
-        <img src="/{image}.jpg" {alt} class="rounded-lg" />
+        <img src="/{image}.webp" {alt} class="w-full {smallBreakpointWidth} rounded-lg" />
     </picture>
     {#if caption}
-        <div class="w-full {smallBreakpointWidth} px-2 text-base text-gray-7">
+        <div class="w-full {smallBreakpointWidth} px-2 text-center {textSize} {textColor}">
             {caption}
         </div>
     {/if}

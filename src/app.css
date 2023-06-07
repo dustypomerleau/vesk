@@ -47,7 +47,7 @@
     }
 
     .card ul li {
-        @apply mb-4 hover:text-gray-800;
+        @apply mb-4 hover:text-gray-10;
     }
 
     .card ul li::before {
@@ -65,11 +65,11 @@
     }
 
     .card-title-gray {
-        @apply bg-gradient-to-r from-gray-700 to-gray-500 bg-clip-text pb-3 text-center text-2xl font-semibold text-transparent;
+        @apply bg-gradient-to-r from-gray-9 to-gray-7 bg-clip-text pb-3 text-center text-2xl font-semibold text-transparent;
     }
 
     .field {
-        @apply mb-6 mt-1 block w-full rounded-md border border-transparent bg-gray-100 placeholder-gray-400 caret-orange-9 hover:border-blue-7/50 focus:border-blue-7 focus:bg-white focus:text-gray-900 focus:ring-0;
+        @apply mb-6 mt-1 block w-full rounded-md border border-transparent bg-gray-2 placeholder-gray-6 caret-orange-9 hover:border-blue-7/50 focus:border-blue-7 focus:bg-white focus:text-gray-11 focus:ring-0;
     }
 
     .field-label {
@@ -85,7 +85,7 @@
     }
 
     .radio {
-        @apply m-1 flex w-44 flex-row flex-wrap items-center rounded-md border border-gray-200 bg-gray-50 p-2 pl-3 text-center font-normal shadow-md hover:border-blue-7/50 hover:text-blue-8/80 focus:border-blue-7 sm:mx-0.5 sm:justify-center sm:pl-2;
+        @apply m-1 flex w-44 flex-row flex-wrap items-center rounded-md border border-gray-3 bg-gray-1 p-2 pl-3 text-center font-normal shadow-md hover:border-blue-7/50 hover:text-blue-8/80 focus:border-blue-7 sm:mx-0.5 sm:justify-center sm:pl-2;
     }
 
     .wide-card {

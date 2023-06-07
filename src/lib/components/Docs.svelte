@@ -4,7 +4,7 @@
 
 <div
     id="doctors"
-    class="flex flex-col items-center justify-start sm:bg-gray-300 md:flex-row md:flex-wrap md:content-start md:items-stretch md:justify-center"
+    class="flex flex-col items-center justify-start sm:bg-gray-4 md:flex-row md:flex-wrap md:content-start md:items-stretch md:justify-center"
 >
     {#each doctors as doc}
         <div class="wide-card">
@@ -20,7 +20,7 @@
                     />
                 </picture>
             </div>
-            <div class="-mt-0.5 flex w-full flex-row bg-gray-200 sm:justify-center">
+            <div class="-mt-0.5 flex w-full flex-row bg-gray-3 sm:justify-center">
                 <div class="px-6 py-2">
                     <div class="flex flex-row flex-wrap items-baseline justify-start">
                         <div

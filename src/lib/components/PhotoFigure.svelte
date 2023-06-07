@@ -17,7 +17,7 @@
         <img src="/{image}.jpg" {alt} class="rounded-lg" />
     </picture>
     {#if caption}
-        <div class="w-full {smallBreakpointWidth} px-2 text-base text-gray-500">
+        <div class="w-full {smallBreakpointWidth} px-2 text-base text-gray-7">
             {caption}
         </div>
     {/if}

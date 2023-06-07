@@ -23,7 +23,21 @@ const config = {
                 13: "#030a1d",
             },
             current: "currentColor",
-            gray: colors.gray,
+            gray: {
+                1: "#f9fafb", // 50
+                2: "#f6f7f7", // 100
+                3: "#e9ebee", // 200
+                4: "#d1d6dc", // 300
+                5: "#b2bcc6",
+                6: "#8e9bab", // 400
+                7: "#6a7789", // 500
+                8: "#4b5563", // 600
+                9: "#323a45", // 700
+                10: "#1f242d", // 800
+                11: "#11151b", // 900
+                12: "#0a0d13",
+                13: "#080b12",
+            },
             logoNavy: "#183863",
             logoOrange: "#ff7b00",
             logoSky: "#1785be",

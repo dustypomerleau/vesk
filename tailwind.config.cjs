@@ -112,7 +112,12 @@ const config = {
                 link: "0 -4px 0 0 #468dd660 inset",
             },
             typography: ({ theme }) => ({
-                DEFAULT: { css: { "--tw-prose-headings": theme("colors.gray[8]") } },
+                DEFAULT: {
+                    css: {
+                        "--tw-prose-headings": theme("colors.gray[8]"),
+                        "--tw-prose-bullets": theme("colors.gray[5]"),
+                    },
+                },
             }),
         },
     },

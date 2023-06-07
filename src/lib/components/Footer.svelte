@@ -18,7 +18,7 @@
         &copy;2022&ndash;{currYear} Vic&nbsp;Eye&nbsp;and&nbsp;Retina&nbsp;Specialists Pty&nbsp;Ltd
     </div>
     <div
-        class="sm: grid grid-cols-2 items-center gap-3 sm:flex sm:grid-cols-none sm:flex-row sm:justify-center sm:gap-6"
+        class="grid grid-cols-2 items-center gap-3 sm:flex sm:grid-cols-none sm:flex-row sm:justify-center sm:gap-6"
     >
         {#each links as link}
             <a href={link.href}>

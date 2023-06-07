@@ -20,15 +20,15 @@ title: A patient's guide to cataract surgery and lens implants
         svg: Cataract,
         viewBox: "0, 100, 1200, 600",
         size: "large",
-        caption: "This is a caption under the cataract figure.",
+        caption: "Compared to a clear lens, a cataract impairs your vision in several ways: It reduces the amount of light entering your eye (poor contrast), changes the color of the image (yellowing), scatters light (glare, blur), and changes where the light is focused (myopia).",
     };
 
-    const mht: PhotoFig = {
-        image: "mht",
-        size: "large",
-        alt: "The Haag-Streit EYESTAR 900 optical biometer",
-        caption: "haagstreit.com",
-    };
+    // const mht: PhotoFig = {
+    //     image: "mht",
+    //     size: "large",
+    //     alt: "The Haag-Streit EYESTAR 900 optical biometer",
+    //     caption: "haagstreit.com",
+// };
 </script>
 
 The inside of your eye contains a lens that focuses light.
@@ -43,4 +43,4 @@ Difficulty reading and bothersome glare&mdash;particularly when driving at night
 When a cataract is mild, it won't affect your vision much, although it may change the prescription in your glasses.
 Cataracts gradually worsen with time, and eventually your vision will be blurry in a way that glasses can't correct
 
-<PhotoFigure figure={mht} />
+### this is an h3, what's it to you?

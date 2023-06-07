@@ -18,7 +18,7 @@
         <img src="/{image}.webp" {alt} class="w-full {smallBreakpointWidth} rounded-lg" />
     </picture>
     {#if caption}
-        <div class="w-full {smallBreakpointWidth} px-2 text-center {textSize} {textColor}">
+        <div class="w-full {smallBreakpointWidth} px-2 {textSize} {textColor}">
             {caption}
         </div>
     {/if}

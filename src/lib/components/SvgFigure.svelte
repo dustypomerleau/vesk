@@ -27,7 +27,7 @@
         <svelte:component this={svg} {viewBox} {width} />
     </div>
     {#if caption}
-        <div class="w-full {smallBreakpointWidth} px-2 text-center {textSize} {textColor}">
+        <div class="w-full {smallBreakpointWidth} px-2 {textSize} {textColor}">
             {caption}
         </div>
     {/if}

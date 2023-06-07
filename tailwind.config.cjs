@@ -111,6 +111,9 @@ const config = {
                 footer: "0 -4px 0 0 #4b556350 inset",
                 link: "0 -4px 0 0 #468dd660 inset",
             },
+            typography: ({ theme }) => ({
+                DEFAULT: { css: { "--tw-prose-headings": theme("colors.gray[8]") } },
+            }),
         },
     },
     plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],

@@ -13,6 +13,8 @@ title: A patient's guide to cataract surgery and lens implants
     import Eye from "$lib/svg/Eye.svelte";
     import ParkingMap from "$lib/svg/ParkingMap.svelte";
     import PhotoFigure from "$lib/components/PhotoFigure.svelte";
+    import IolDistance from "$lib/svg/IolDistance.svelte";
+    import IolNear from "$lib/svg/IolNear.svelte";
     import SvgFigure from "$lib/components/SvgFigure.svelte";
     import type { PhotoFig, SvgFig } from "$lib/types";
 
@@ -21,6 +23,20 @@ title: A patient's guide to cataract surgery and lens implants
         viewBox: "0, 100, 1200, 600",
         size: "large",
         caption: "Compared to a clear lens, a cataract impairs your vision in several ways: It reduces the amount of light entering your eye (poor contrast), changes the color of the image (yellowing), scatters light (glare, blur), and changes where the light is focused (myopic shift).",
+    };
+
+    const distance: SvgFig = {
+        svg: IolDistance,
+        viewBox: "0, 100, 1200, 600",
+        size: "large",
+        caption: "caption here",
+    };
+
+    const near: SvgFig = {
+        svg: IolNear,
+        viewBox: "0, 100, 1200, 600",
+        size: "large",
+        caption: "caption here",
     };
 
     // const mht: PhotoFig = {
@@ -80,3 +96,6 @@ The most important decision you will make before your cataract surgery is to cho
 Once you've found a surgeon you trust, they can make specific recommendations to help you select an implant lens.
 As a general rule, you should let your surgeon choose an implant they are comfortable with.
 It isn't
+
+<SvgFigure figure={distance} />
+<SvgFigure figure={near} />

@@ -1,11 +1,6 @@
 module.exports = {
-    overrides: [
-        { files: "*.md", options: { tabWidth: 2 } },
-        { files: "*.svelte", options: { parser: "svelte" } },
-    ],
-    pluginSearchDirs: false,
+    overrides: [{ files: "*.md", options: { tabWidth: 2 } }],
     printWidth: 100,
     tabWidth: 4,
-    tailwindConfig: "./tailwind.config.cjs",
-    plugins: [require("prettier-plugin-svelte"), require("prettier-plugin-tailwindcss")],
+    plugins: ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
 };

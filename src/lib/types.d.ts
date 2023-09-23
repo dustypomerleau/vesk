@@ -1,4 +1,4 @@
-import type { ComponentType, SvelteComponent, SvelteComponentTyped } from "svelte";
+import type { ComponentType, SvelteComponent, } from "svelte";
 
 export interface Doc {
     name: string;
@@ -54,7 +54,7 @@ export interface PostMetadata {
 export interface PostContent {
     meta: PostMetadata;
     // not really clear why this doesn't throw an error, but icon on Link does.
-    Content: ComponentType<SvelteComponentTyped>;
+    Content: ComponentType<SvelteComponent>;
 }
 
 export interface PostPath {

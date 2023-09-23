@@ -25,7 +25,7 @@ export const getPosts = async (): Promise<Array<PostPath>> => {
             const postPath = path.slice(11, -3);
 
             return { meta: metadata, path: postPath };
-        })
+        }),
     );
 
     return posts;

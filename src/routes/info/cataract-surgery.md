@@ -2,7 +2,7 @@
 author: Dusty Pomerleau
 brief: Cataract surgery
 creds: MD, FRANZCO
-date: 2023-03-06
+date: 2023-09-24
 icon: Iol
 image: dlp
 title: A patient's guide to cataract surgery and lens implants
@@ -29,14 +29,14 @@ title: A patient's guide to cataract surgery and lens implants
         svg: IolDistance,
         viewBox: "0, 100, 1200, 600",
         size: "large",
-        caption: "caption here",
+        caption: "Distance vision: Both the monofocal implant (left) and the multifocal implant (right) have an in-focus distance image. The multifocal implant also has a near image, but your brain will ignore this image when it's not in focus.",
     };
 
     const near: SvgFig = {
         svg: IolNear,
         viewBox: "0, 100, 1200, 600",
         size: "large",
-        caption: "caption here",
+        caption: "Near vision: Only the multifocal implant (right) has in in-focus near image. The distance image is out of focus. The patient with a monofocal implant (left) will need to use reading glasses to move the clear image from distance to near.",
     };
 
     // const mht: PhotoFig = {
@@ -50,8 +50,8 @@ title: A patient's guide to cataract surgery and lens implants
 The inside of your eye contains a lens that focuses light.
 As you age, the lens gradually becomes less clear.
 When the lens becomes yellowed or cloudy, we call it a cataract.
-A mild cataract won't affect your vision much, although it may change the prescription in your glasses.
-Cataracts gradually worsen with time, and eventually your vision will be blurry in a way that glasses can't correct.
+A mild cataract won't affect your vision much, but it may change the prescription in your glasses.
+Cataracts gradually worsen, and eventually your vision will be blurry in a way that glasses can't correct.
 Difficulty reading and bothersome glare&mdash;particularly when driving at night&mdash;are common complaints.
 
 <SvgFigure figure={cataract} />
@@ -61,7 +61,7 @@ Difficulty reading and bothersome glare&mdash;particularly when driving at night
 Only a doctor can tell you if cataracts are the cause of your vision problem.
 Once you're certain that cataracts are the reason you aren't seeing well, the decision to operate is based on several factors:
 
-- **How bad are your symptoms?** If you are struggling with your usual tasks (reading, driving), your surgeon is much more likely to recommend cataract extraction. Symptoms are usually the primary reason for proceeding with cataract surgery.
+- **How bad are your symptoms?** If you are struggling with your usual tasks (reading, driving), your surgeon is much more likely to recommend cataract extraction. Symptoms are usually the primary reason for proceeding with surgery.
 - **How much has your vision declined?** In most cases, your ability to read a vision chart will be reduced by a cataract. Some patients have very severe symptoms, despite being able to read a vision chart well, but if your vision is measurably reduced the doctor is more likely to recommend surgery. A particularly important threshold is the vision requirement for maintaining your driver licence. If you fall below this threshold and you still want to drive, surgery may be recommended.
 - **How fast is your prescription changing?** If your glasses prescription is changing very rapidly, you might want earlier surgery. In addition, glasses can only improve some of the symptoms of cataract. The overall quality of your vision may be poor, even with updated glasses. During an evaluation for cataract surgery, a lot of emphasis is placed on how much your symptoms can be improved with glasses alone.
 - **How strong is the prescription in your glasses?** Surgeons often try to correct your prescription at the time of cataract surgery (more on how they do that below). If you have a very strong prescription, operating on just one eye can lead to a big difference in prescription between your eyes. This can cause a sensation of eye strain or imbalance. As a result, surgeons are more likely to wait until you are ready for surgery in both eyes. Doing the surgeries closer together (typically 2&ndash;4 weeks apart) will minimise the amount of time that you have to cope with a large difference between your eyes. If you have a very mild prescription, operating on one eye is usually not a problem.
@@ -75,11 +75,11 @@ In most cases, cataract surgery is an outpatient procedure, requiring a few hour
 Your experience will consist of several stages:
 
 1. **Dilating the eye:** In order to access the cataract, your pupil needs to be widely dilated. This is usually done by giving several rounds of eye drops over a 15 to 30-minute period.
-1. **Local anesthesia:** Most cataract surgery can be performed without a general anesthetic, which means that you don't need a breathing tube, and you are usually awake during the surgery. If needed, your anesthetist can give intravenous medications to help with anxiety. The surgery requires you to lay still for about 30 minutes, but you won't need to hold your eye open. If you have difficulty lying completely flat due to breathing problems or pain in your spine, it's important to discuss this with your surgeon ahead of time. These challenges can usually be overcome with advanced planning. The surface of your eye is numbed using anesthetic drops. The eye can be further numbed by injecting medication inside the eye while the surgeon is working, or by injecting anesthetic to block the nerves that supply your eye. The amount of movement or light that you see during the surgery depends on the details of your anesthesia, but in all cases the goal is for you to be comfortable and pain-free.
+1. **Local anesthesia:** Most cataract surgery can be performed without a general anesthetic, which means that you don't need a breathing tube, and you are usually awake during the surgery. If needed, your anesthetist can give intravenous medications to help with anxiety. The surface of your eye is numbed using anesthetic drops. The eye can be further numbed by injecting medication inside the eye (during the surgery), or by injecting anesthetic to block the nerves that supply your eye (before the surgery). The amount of movement or light that you see during the surgery depends on the details of your anesthesia, but in all cases the goal is for you to be comfortable and pain-free.
 1. **Preparing the eye:** The eye and surrounding skin are washed with antiseptic solution, and a drape is applied to keep the field sterile. The drape covers your face, but you will have an oxygen mask and plenty of room to breathe.
-1. **Removing the cataract:** Small incisions are made in the cornea, the clear tissue in the front of your eye where you would place a contact lens. The capsule holding the lens is opened, and ultrasound is used to break the lens up and remove it. The machine makes different sounds to give feedback to the surgeon, and it is normal to be able to hear these noises.
-1. **Inserting the implant:** The empty capsule is expanded with a surgical gel, and a plastic lens implant is injected to replace the lens that was removed. The implant is positioned, the gel is removed from the eye, and the incisions are sealed. It is common to inject antibiotic and steroid preparations at the end of the surgery.
-1. **Dressing the eye:** At this point, the drape is removed and a sterile dressing or protective shield are applied. After a short recovery, you will be able to go home.
+1. **Removing the cataract:** The surgery requires you to lay still for about 30 minutes, but you won't need to hold your eye open. If you have difficulty lying completely flat due to breathing problems or joint pain, it's important to discuss this with your surgeon ahead of time. Small incisions are made in the cornea, the clear tissue just in front of your pupil. The capsule holding the lens is opened, and ultrasound is used to break the lens up and remove it. The machine makes different sounds to give feedback to the surgeon, and it is normal to be able to hear these noises.
+1. **Inserting the implant:** The empty capsule is expanded with a surgical gel, and a plastic lens implant is injected to replace the lens that was removed. The implant is positioned, the gel is removed from the eye, and the incisions are sealed. It's common to inject antibiotic and steroid preparations at the end of the surgery.
+1. **Dressing the eye:** The drape is removed and a sterile dressing or protective shield are applied. After a short recovery, you will be able to go home.
 
 ## When will I notice improvement in my vision?
 
@@ -94,8 +94,14 @@ If you are in the group that needs a bit more time, you shouldn't worry. Here ar
 
 The most important decision you will make before your cataract surgery is to choose your surgeon.
 Once you've found a surgeon you trust, they can make specific recommendations to help you select an implant lens.
-As a general rule, you should let your surgeon choose an implant they are comfortable with.
-It isn't
+All modern lens implants are of high quality, and will usually last for the rest of your life.
+The implants come in three broad categories, and each has different tradeoffs:
 
-<SvgFigure figure={distance} />
+1. **_Monofocal_** implants are the most common type. They provide high-quality vision, but they don't completely eliminate the need for glasses. For example, a common approach is to aim for clear distance vision (driving, television), and then use reading glasses for near work. Monofocal implants are popular because patients adapt easily to them, and the results of surgery are fairly predictable.
+1. **_Enhanced depth of field_** implants are similar to monofocal implants, but they provide a larger range of clear vision. We sometimes refer to this improvement as better _intermediate_ vision (in the middle distance, just beyond arm's reach). Computer work is a common example of a task that requires good intermediate vision. These implants have fewer optical tradeoffs than multifocal implants (below), but don't completely eliminate the need for glasses when reading or working up close.
+1. **_Multifocal_** implants give the widest range of vision, and in some cases can completely eliminate the need for glasses. Many patients with this type of implant report that they see soft halos around lights in dim lighting (night driving). These optical artifacts are usually not bothersome, and occur because of the technology that allows the lens to provide both near and far vision. You should choose a multifocal implant if eliminating the need for glasses is your top priority, and you don't mind taking some time to adapt to the implant.
+
+<SvgFigure figure={distance} /><br/>
 <SvgFigure figure={near} />
+
+<!-- section on how prescription is corrected and why you might miss etc -->

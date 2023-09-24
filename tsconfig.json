@@ -4,6 +4,7 @@
         "allowJs": true,
         "checkJs": true,
         "esModuleInterop": true,
+        "plugins": [{ "name": "typescript-svelte-plugin" }],
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,

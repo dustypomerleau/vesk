@@ -3,10 +3,10 @@
     import Iol from "$lib/svg/Iol.svelte";
     import Syringe from "$lib/svg/Syringe.svelte";
     import Vr from "$lib/svg/Vr.svelte";
-    import type { ComponentType, SvelteComponentTyped } from "svelte";
+    import type { ComponentType, SvelteComponent } from "svelte";
     import type { PostPath } from "$lib/types";
 
-    const icons: Record<string, ComponentType<SvelteComponentTyped>> = {
+    const icons: Record<string, ComponentType<SvelteComponent>> = {
         Amd,
         Iol,
         Syringe,

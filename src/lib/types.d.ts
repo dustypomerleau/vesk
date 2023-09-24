@@ -23,7 +23,7 @@ export interface PhotoFig extends Figure {
 }
 
 export interface SvgFig extends Figure {
-    svg: typeof SvelteComponent;
+    svg: typeof SvelteComponent<any>;
     viewBox?: string;
 }
 

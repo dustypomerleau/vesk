@@ -97,11 +97,26 @@ Once you've found a surgeon you trust, they can make specific recommendations to
 All modern lens implants are of high quality, and will usually last for the rest of your life.
 The implants come in three broad categories, and each has different tradeoffs:
 
-1. **_Monofocal_** implants are the most common type. They provide high-quality vision, but they don't completely eliminate the need for glasses. For example, a common approach is to aim for clear distance vision (driving, television), and then use reading glasses for near work. Monofocal implants are popular because patients adapt easily to them, and the results of surgery are fairly predictable.
+1. **_Monofocal_** implants are the most common type. They provide high-quality vision, but they don't completely eliminate the need for glasses. A common approach is to aim for clear distance vision (driving, television), and then use reading glasses for near work. Monofocal implants are popular because patients adapt to them easily, and the results of surgery are fairly predictable.
 1. **_Enhanced depth of field_** implants are similar to monofocal implants, but they provide a larger range of clear vision. We sometimes refer to this improvement as better _intermediate_ vision (in the middle distance, just beyond arm's reach). Computer work is a common example of a task that requires good intermediate vision. These implants have fewer optical tradeoffs than multifocal implants (below), but don't completely eliminate the need for glasses when reading or working up close.
 1. **_Multifocal_** implants give the widest range of vision, and in some cases can completely eliminate the need for glasses. Many patients with this type of implant report that they see soft halos around lights in dim lighting (night driving). These optical artifacts are usually not bothersome, and occur because of the technology that allows the lens to provide both near and far vision. You should choose a multifocal implant if eliminating the need for glasses is your top priority, and you don't mind taking some time to adapt to the implant. Multifocal implants are not suitable for everyone. If you have high levels of astigmatism (oval eye shape), retinal or optic nerve conditions (macular degeneration, glaucoma), or problems with eye alignment (double vision), you may have trouble adjusting to a multifocal lens.
 
 <SvgFigure figure={distance} /><br/>
 <SvgFigure figure={near} />
 
-<!-- section on how prescription is corrected and why you might miss etc -->
+## What determines my need for glasses after surgery?
+
+Before you have cataract surgery, the doctor will measure your eye with a machine called a biometer.
+The biometer provides information about the length and shape of your eye, which is then entered into a formula that calculates the correct lens implant for you.
+Even though the goal is to completely correct your prescription with the implant lens, there are a number of reasons why that might not be possible:
+
+- **Measurement quality:** The machine takes multiple sets of measurements. If they match exactly, there is a greater chance that they are accurate. Sometimes the measurements are very variable (dry eyes, very dense cataract, movement during the test), making it harder to be certain of the correct lens power.
+- **Mathematical variation:** Different mathematical formulas can give different results for the same patient. It's common for the doctor to run several formulas and compare them, but these formulas make certain assumptions about your eye, and can only estimate the correct lens implant for you.
+- **Intentional undercorrection:** If either the measurements or the formula results are highly variable, the doctor will need to leave some room for error. When choosing the implant, they will usually err on the side of being slightly nearsighted, as patients tend to prefer nearsightedness (myopia) to farsightedness (hyperopia).
+- **Implant availability:** Lens implants are available in certain powers, but the perfect implant for you won't exactly match the available powers. The doctor will need to pick the implant that most closely matches your measurements.
+- **Variable healing:** The formulas used to calculate your implant lens are based on an estimation of where the lens will be positioned after you are done healing. If your eye heals with the lens in a slightly different position, it can change your prescription.
+- **Implant limitations:** As previously mentioned, the most common implants can only correct your vision at one distance (near, far). That means you will require glasses some of the time, even if your outcome is perfect.
+
+Keep in mind that your surgeon is trained to consider all of these factors.
+They will choose an implant with a high likelihood of matching your prescription, and add a safety margin that is appropriate for your measurements.
+If you have specific goals, such as a particular activity you would like to do without glasses, it's important to communicate that to your surgeon.

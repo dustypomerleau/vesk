@@ -10,8 +10,6 @@ title: A patient's guide to cataract surgery and lens implants
 
 <script lang="ts">
     import Cataract from "$lib/svg/Cataract.svelte";
-    import Eye from "$lib/svg/Eye.svelte";
-    import ParkingMap from "$lib/svg/ParkingMap.svelte";
     import PhotoFigure from "$lib/components/PhotoFigure.svelte";
     import IolDistance from "$lib/svg/IolDistance.svelte";
     import IolNear from "$lib/svg/IolNear.svelte";

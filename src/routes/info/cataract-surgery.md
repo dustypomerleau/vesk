@@ -70,14 +70,15 @@ Other lifestyle factors&mdash;such as your age, occupation, or hobbies&mdash;are
 ## What happens during cataract surgery?
 
 In most cases, cataract surgery is an outpatient procedure, requiring a few hours in a hospital or day surgery.
+The surgery requires you to lay still for about 30 minutes, but you won't need to hold your eye open. If you have difficulty lying completely flat due to breathing problems or joint pain, it's important to discuss this with your surgeon ahead of time.
 Your experience will consist of several stages:
 
 1. **Dilating the eye:** In order to access the cataract, your pupil needs to be widely dilated. This is usually done by giving several rounds of eye drops over a 15 to 30-minute period.
 1. **Local anesthesia:** Most cataract surgery can be performed without a general anesthetic, which means that you don't need a breathing tube, and you are usually awake during the surgery. If needed, your anesthetist can give intravenous medications to help with anxiety. The surface of your eye is numbed using anesthetic drops. The eye can be further numbed by injecting medication inside the eye (during the surgery), or by injecting anesthetic to block the nerves that supply your eye (before the surgery). The amount of movement or light that you see during the surgery depends on the details of your anesthesia, but in all cases the goal is for you to be comfortable and pain-free.
 1. **Preparing the eye:** The eye and surrounding skin are washed with antiseptic solution, and a drape is applied to keep the field sterile. The drape covers your face, but you will have an oxygen mask and plenty of room to breathe.
-1. **Removing the cataract:** The surgery requires you to lay still for about 30 minutes, but you won't need to hold your eye open. If you have difficulty lying completely flat due to breathing problems or joint pain, it's important to discuss this with your surgeon ahead of time. Small incisions are made in the cornea, the clear tissue just in front of your pupil. The capsule holding the lens is opened, and ultrasound is used to break the lens up and remove it. The machine makes different sounds to give feedback to the surgeon, and it is normal to be able to hear these noises.
-1. **Inserting the implant:** The empty capsule is expanded with a surgical gel, and a plastic lens implant is injected to replace the lens that was removed. The implant is positioned, the gel is removed from the eye, and the incisions are sealed. It's common to inject antibiotic and steroid preparations at the end of the surgery.
-1. **Dressing the eye:** The drape is removed and a sterile dressing or protective shield are applied. After a short recovery, you will be able to go home.
+1. **Removing the cataract:** Small incisions are made in the cornea, the clear tissue just in front of your pupil. The capsule holding the lens is opened, and ultrasound is used to break the lens up and remove it. The machine makes different sounds to give feedback to the surgeon, and it is normal for you to hear these noises.
+1. **Inserting the implant:** The empty lens capsule is expanded with a surgical gel, and a plastic lens implant is injected to replace the lens that was removed. The implant is positioned, the gel is removed from the eye, and the incisions are sealed. It's common to inject antibiotic and steroid preparations at the end of the surgery.
+1. **Dressing the eye:** The drape is removed and a protective shield or sterile dressing is applied. After a short recovery, you will be able to go home.
 
 ## When will I notice improvement in my vision?
 

@@ -37,12 +37,12 @@ title: A patient's guide to cataract surgery and lens implants
         caption: "Near vision: Only the multifocal implant (right) has in in-focus near image. The distance image is out of focus. The patient with a monofocal implant (left) will need to use reading glasses to move the clear image from distance to near.",
     };
 
-    // const mht: PhotoFig = {
-    //     image: "mht",
-    //     size: "large",
-    //     alt: "The Haag-Streit EYESTAR 900 optical biometer",
-    //     caption: "haagstreit.com",
-// };
+    const slitlamp: PhotoFig = {
+        image: "images/cataract",
+        size: "large",
+        alt: "Slitlamp image of a cataract",
+        caption: "A cataract with yellowing of the lens: In this case, the back of the lens is opaque and irregular, which scatters light and causes glare.",
+    };
 </script>
 
 The inside of your eye contains a lens that focuses light.
@@ -52,6 +52,7 @@ A mild cataract won't affect your vision much, but it may change the prescriptio
 Cataracts gradually worsen, and eventually your vision will be blurry in a way that glasses can't correct.
 Difficulty reading and bothersome glare&mdash;particularly when driving at night&mdash;are common complaints.
 
+<PhotoFigure figure={slitlamp} /><br/>
 <SvgFigure figure={cataract} />
 
 ## How do I know when it's time for cataract surgery?
@@ -85,7 +86,7 @@ Your experience will consist of several stages:
 Some people have good vision within a day of surgery, and others require time to reach their best vision.
 If you are in the group that needs a bit more time, you shouldn't worry. Here are some reasons your recovery might not be immediate:
 
-- **A dense cataract:** Surgeons are trained to minimise the amount of ultrasound energy used to break up the cataract, but there are practical limits to how much the ultrasound can be reduced. If your cataract is very advanced, it may require more energy to remove it. This energy causes swelling that blurs your vision, and you will not have your best vision until the swelling subsides.
+- **A dense cataract:** Surgeons attempt to minimise the amount of ultrasound energy used to break up the cataract, but there are practical limits to how much the ultrasound can be reduced. If your cataract is very advanced, it may require more energy to remove it. This energy causes swelling that blurs your vision, and you will not have your best vision until the swelling subsides.
 - **Adapting to your lens implant:** Some implants use technology that requires your brain to adapt before you experience the full benefit of the lens (the different types of lens implants are described in detail below). If you are having surgery in both eyes, it is often easier to adjust to the implant after both eyes have been operated.
 - **Updating your glasses:** It isn't always possible to achieve independence from glasses with cataract surgery. If you have a very strong prescription, high levels of astigmatism (oval-shaped eye), or variable preoperative measurements, it may be necessary to correct your vision with glasses. In most cases where glasses are required, the strength of your prescription will be lower than it was before surgery. If you are in this group, it's best to wait 4&ndash;6 weeks for your prescription to settle before obtaining new glasses.
 
@@ -96,12 +97,15 @@ Once you've found a surgeon you trust, they can make specific recommendations to
 All modern lens implants are of high quality, and will usually last for the rest of your life.
 The implants come in three broad categories, and each has different tradeoffs:
 
-1. **_Monofocal_** implants are the most common type. They provide high-quality vision, but they don't completely eliminate the need for glasses. A common approach is to aim for clear distance vision (driving, television), and then use reading glasses for near work. Monofocal implants are popular because patients adapt to them easily, and the results of surgery are fairly predictable.
-1. **_Enhanced depth of field_** implants are similar to monofocal implants, but they provide a larger range of clear vision. We sometimes refer to this improvement as better _intermediate_ vision (in the middle distance, just beyond arm's reach). Computer work is a common example of a task that requires good intermediate vision. These implants have fewer optical tradeoffs than multifocal implants (below), but don't completely eliminate the need for glasses when reading or working up close.
-1. **_Multifocal_** implants give the widest range of vision, and in some cases can completely eliminate the need for glasses. Many patients with this type of implant report that they see soft halos around lights in dim lighting (night driving). These optical artifacts are usually not bothersome, and occur because of the technology that allows the lens to provide both near and far vision. You should choose a multifocal implant if eliminating the need for glasses is your top priority, and you don't mind taking some time to adapt to the implant. Multifocal implants are not suitable for everyone. If you have high levels of astigmatism (oval eye shape), retinal or optic nerve conditions (macular degeneration, glaucoma), or problems with eye alignment (double vision), you may have trouble adjusting to a multifocal lens.
+1. **Monofocal** implants are the most common type. They provide high-quality vision, but they don't completely eliminate the need for glasses. A common approach is to aim for clear distance vision (driving, television), and then use reading glasses for near work. Monofocal implants are popular because patients adapt to them easily, and the results of surgery are fairly predictable.
+1. **Enhanced depth of field** implants are similar to monofocal implants, but they provide a larger range of clear vision. We sometimes refer to this improvement as better _intermediate_ vision (in the middle distance, just beyond arm's reach). Computer work is a common example of a task that requires good intermediate vision. These implants have fewer optical tradeoffs than multifocal implants (below), but don't completely eliminate the need for glasses when reading or working up close.
+1. **Multifocal** implants give the widest range of vision, and in some cases can completely eliminate the need for glasses. Many patients with this type of implant report that they see soft halos around lights in dim lighting (night driving). These optical artifacts are usually not bothersome, and occur because of the technology that allows the lens to provide both near and far vision. You should choose a multifocal implant if eliminating the need for glasses is your top priority, and you don't mind taking some time to adapt to the implant. Multifocal implants are not suitable for everyone. If you have high levels of astigmatism (oval eye shape), retinal or optic nerve conditions (macular degeneration, glaucoma), or problems with eye alignment (double vision), you may have trouble adjusting to a multifocal lens.
 
 <SvgFigure figure={distance} /><br/>
 <SvgFigure figure={near} />
+
+There are many strategies for using these three types of implants to achieve specific goals.
+Talk to your surgeon about the tasks that are highest priority for you.
 
 ## What determines my need for glasses after surgery?
 
@@ -119,3 +123,5 @@ Even though the goal is to completely correct your prescription with the implant
 Keep in mind that your surgeon is trained to consider all of these factors.
 They will choose an implant with a high likelihood of matching your prescription, and add a safety margin that is appropriate for your measurements.
 If you have specific goals, such as a particular activity you would like to do without glasses, it's important to communicate that to your surgeon.
+
+If you have further questions about cataract surgery and your options, feel free to [contact us](/#contact) at Vic Eye for a consultation.

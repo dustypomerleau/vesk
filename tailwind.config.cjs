@@ -117,6 +117,7 @@ const config = {
                         "--tw-prose-bold": theme("colors.gray[9]"),
                         "--tw-prose-bullets": theme("colors.gray[5]"),
                         "--tw-prose-headings": theme("colors.gray[8]"),
+                        a: false, // disable tailwind typography default link styling inside prose
                     },
                 },
             }),

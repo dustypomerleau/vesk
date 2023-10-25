@@ -72,6 +72,7 @@ Other lifestyle factors&mdash;such as your age, occupation, or hobbies&mdash;are
 
 In most cases, cataract surgery is an outpatient procedure, requiring a few hours in a hospital or day surgery.
 The surgery requires you to lay still for about 30 minutes, but you won't need to hold your eye open. If you have difficulty lying completely flat due to breathing problems or joint pain, it's important to discuss this with your surgeon ahead of time.
+
 Your experience will consist of several stages:
 
 1. **Dilating the eye:** In order to access the cataract, your pupil needs to be widely dilated. This is usually done by giving several rounds of eye drops over a 15 to 30-minute period.

@@ -34,7 +34,7 @@ title: A patient's guide to cataract surgery and lens implants
         svg: IolNear,
         viewBox: "0, 100, 1200, 600",
         size: "large",
-        caption: "Near vision: Only the multifocal implant (right) has in in-focus near image. The distance image is out of focus. The patient with a monofocal implant (left) will need to use reading glasses to move the clear image from distance to near.",
+        caption: "Near vision: Only the multifocal implant (right) has an in-focus near image. The distance image is out of focus. The patient with a monofocal implant (left) will need to use reading glasses to move the clear image from distance to near.",
     };
 
     const slitlamp: PhotoFig = {

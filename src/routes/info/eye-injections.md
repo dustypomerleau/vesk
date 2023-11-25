@@ -2,31 +2,23 @@
 author: Mei Tan
 brief: Eye injections
 creds: MB ChB BAO, PhD, FRCOphth, FRANZCO
-date: 2023-01-01
+date: 2023-11-25
 icon: Syringe
 image: mht
 title: Understanding injection therapy for eye conditions
 ---
 
 <script lang="ts">
-    import Intravitreal from "$lib/svg/Intravitreal.svelte";
-    import OrbitalFloor from "$lib/svg/OrbitalFloor.svelte";
+    import Injection from "$lib/svg/Injection.svelte";
     import SvgFigure from "$lib/components/SvgFigure.svelte";
     import Syringe from "$lib/svg/Syringe.svelte";
     import type { SvgFig } from "$lib/types";
 
-    const intravitreal: SvgFig = {
-        svg: Intravitreal,
-        viewBox: "0, 100, 1200, 600",
+    const injection: SvgFig = {
+        svg: Injection,
+        viewBox: "0, 20, 1200, 770",
         size: "large",
-        caption: "caption here",
-    };
-
-    const orbital: SvgFig = {
-        svg: OrbitalFloor,
-        viewBox: "0, 100, 1200, 600",
-        size: "large",
-        caption: "caption here",
+        caption: "Intravitreal injections (blue) are placed into the hollow space inside the eye. Orbital floor injections (orange) are placed just below the eye.",
     };
 </script>
 
@@ -40,12 +32,14 @@ The central part of the retina where light focuses on is called the macula, and 
 
 Eye injections can be administered via various routes:
 
-- An intravitreal injection is the injection of a medication into the vitreous cavity (Figure 1).
+- An intravitreal injection is the injection of a medication into the vitreous cavity.
   It is the most commonly used method of injection.
   Various medications may be injected into the vitreous cavity, these include anti vascular endothelial growth factor (anti-VEGF), corticosteroids or steroid implant.
 
-- An orbital floor injection is the injection of a medication along the outside of the wall of the eye, but does not penetrate into the eyeball (Figure 2).
+- An orbital floor injection is the injection of a medication along the outside of the wall of the eye, but does not penetrate into the eyeball.
   Corticosteroids are often administered this way for macular oedema due to inflammation.
+
+<SvgFigure figure={injection} />
 
 Intravitreal injections are performed in an outpatient clinic setting under sterile conditions.
 Our doctors will ensure that the procedure is painless.

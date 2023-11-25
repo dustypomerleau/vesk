@@ -18,7 +18,7 @@ title: Understanding injection therapy for eye conditions
         svg: Injection,
         viewBox: "0, 30, 1200, 770",
         size: "large",
-        caption: "Intravitreal injections (blue, top) are placed into the hollow space inside the eye. Orbital floor injections (orange, bottom) are placed just below the eye.",
+        caption: "Intravitreal injections (top) are placed into the hollow space inside the eye. Orbital floor injections (bottom) are placed just below the eye.",
     };
 </script>
 

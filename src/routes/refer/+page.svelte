@@ -39,6 +39,11 @@
         </label>
 
         <label>
+            <span class="field-label">Provider number</span>
+            <input name="doc-provider" type="text" placeholder="" class="field" />
+        </label>
+
+        <label>
             <span class="field-label">Email address</span>
             <input
                 name="doc-email"

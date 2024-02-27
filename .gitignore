@@ -1,5 +1,6 @@
 *.xlsx
 .DS_Store
+.env*
 .netlify
 /.svelte-kit
 /build

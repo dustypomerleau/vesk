@@ -1,1 +1,1 @@
-(protected content on provider page)
+(protected content on provider/+page.svelte)

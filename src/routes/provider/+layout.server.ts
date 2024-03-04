@@ -5,7 +5,7 @@ import { PUBLIC_CLERK_PUBLISHABLE_KEY } from "$env/static/public";
 
 export const prerender = false;
 
-export async function load(): LayoutServerLoad {
+export async function load(): Promise<LayoutServerLoad> {
     const clerk = new Clerk(PUBLIC_CLERK_PUBLISHABLE_KEY);
     await clerk.load();
     const user = clerk.user;

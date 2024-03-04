@@ -1,13 +1,11 @@
 <script lang="ts">
-    import type { LayoutData } from "./$types";
+    import type { LayoutServerData } from "./$types";
 
-    export let data: LayoutData;
+    export let data: LayoutServerData;
 </script>
 
 provider layout file - this content is always visible
 
-{#if data.user.organizationMemberships.role}{/if}
-
-<div>{user}</div>
-<div>{data.clerk.user}</div>
-<slot />
+{#if data.user.organizationMemberships.role}
+    <slot />
+{/if}

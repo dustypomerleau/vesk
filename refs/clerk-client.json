@@ -1,0 +1,484 @@
+{
+    "internal_last_error": null,
+    "publishableKey": "pk_test_Y29tcG9zZWQtZWdyZXQtODMuY2xlcmsuYWNjb3VudHMuZGV2JA",
+    "frontendApi": "composed-egret-83.clerk.accounts.dev",
+    "__internal_country": "au",
+    "session": {
+        "pathRoot": "/client/sessions",
+        "id": "sess_2dZkOtk4mpGZObNzhdSvEvoTbth",
+        "status": "active",
+        "expireAt": "2024-03-19T05:55:58.010Z",
+        "abandonAt": "2024-04-11T05:55:58.010Z",
+        "lastActiveAt": "2024-03-12T08:28:35.782Z",
+        "lastActiveOrganizationId": null,
+        "actor": null,
+        "createdAt": "2024-03-12T05:55:58.010Z",
+        "updatedAt": "2024-03-12T08:28:35.782Z",
+        "user": {
+            "pathRoot": "/me",
+            "id": "user_2cyVLotas7UsKLQB8y4cNBGmz5P",
+            "externalId": null,
+            "username": null,
+            "emailAddresses": [
+                {
+                    "pathRoot": "/me/email_addresses",
+                    "emailAddress": "dusty@viceye.au",
+                    "linkedTo": [],
+                    "id": "idn_2cyVFGsl0yBI38hCgUBwjyFnefp",
+                    "verification": {
+                        "pathRoot": "",
+                        "status": "verified",
+                        "strategy": "email_link",
+                        "nonce": null,
+                        "externalVerificationRedirectURL": null,
+                        "attempts": null,
+                        "expireAt": "2024-02-28T01:38:19.849Z",
+                        "error": null
+                    }
+                }
+            ],
+            "phoneNumbers": [],
+            "web3Wallets": [],
+            "externalAccounts": [],
+            "samlAccounts": [],
+            "organizationMemberships": [
+                {
+                    "pathRoot": "",
+                    "publicMetadata": {},
+                    "permissions": ["org:provider:access"],
+                    "id": "orgmem_2dUI1KcMSQKZECsbuThMNnvYLxA",
+                    "organization": {
+                        "pathRoot": "/organizations",
+                        "publicMetadata": {},
+                        "membersCount": 2,
+                        "pendingInvitationsCount": 0,
+                        "id": "org_2cyElJm755bKFIZzBkwPTlNdIJS",
+                        "name": "viceye",
+                        "slug": "viceye",
+                        "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJjeUVsT1FDTDhmVHpLRnByNWxCMmlVbER5aiJ9",
+                        "hasImage": true,
+                        "maxAllowedMemberships": 0,
+                        "adminDeleteEnabled": true,
+                        "createdAt": "2024-02-27T23:12:47.236Z",
+                        "updatedAt": "2024-03-10T07:33:21.380Z"
+                    },
+                    "role": "org:provider",
+                    "createdAt": "2024-03-10T07:33:33.539Z",
+                    "updatedAt": "2024-03-10T07:33:33.539Z"
+                }
+            ],
+            "passwordEnabled": true,
+            "firstName": "dusty",
+            "lastName": "pomerleau",
+            "fullName": "dusty pomerleau",
+            "primaryEmailAddressId": "idn_2cyVFGsl0yBI38hCgUBwjyFnefp",
+            "primaryEmailAddress": {
+                "pathRoot": "/me/email_addresses",
+                "emailAddress": "dusty@viceye.au",
+                "linkedTo": [],
+                "id": "idn_2cyVFGsl0yBI38hCgUBwjyFnefp",
+                "verification": {
+                    "pathRoot": "",
+                    "status": "verified",
+                    "strategy": "email_link",
+                    "nonce": null,
+                    "externalVerificationRedirectURL": null,
+                    "attempts": null,
+                    "expireAt": "2024-02-28T01:38:19.849Z",
+                    "error": null
+                }
+            },
+            "primaryPhoneNumberId": null,
+            "primaryPhoneNumber": null,
+            "primaryWeb3WalletId": null,
+            "primaryWeb3Wallet": null,
+            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18yY3czU3ZQdFBUVk9JVlpoZ21WRG00U25KYTIiLCJyaWQiOiJ1c2VyXzJjeVZMb3RhczdVc0tMUUI4eTRjTkJHbXo1UCIsImluaXRpYWxzIjoiRFAifQ",
+            "hasImage": false,
+            "twoFactorEnabled": false,
+            "totpEnabled": false,
+            "backupCodeEnabled": false,
+            "publicMetadata": {},
+            "unsafeMetadata": {},
+            "createOrganizationEnabled": false,
+            "deleteSelfEnabled": true,
+            "lastSignInAt": "2024-03-12T05:55:58.010Z",
+            "updatedAt": "2024-03-12T05:55:58.029Z",
+            "createdAt": "2024-02-28T01:29:11.720Z",
+            "cachedSessionsWithActivities": null
+        },
+        "publicUserData": {
+            "firstName": "dusty",
+            "lastName": "pomerleau",
+            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18yY3czU3ZQdFBUVk9JVlpoZ21WRG00U25KYTIiLCJyaWQiOiJ1c2VyXzJjeVZMb3RhczdVc0tMUUI4eTRjTkJHbXo1UCIsImluaXRpYWxzIjoiRFAifQ",
+            "hasImage": false,
+            "identifier": "dusty@viceye.au"
+        },
+        "lastActiveToken": {
+            "pathRoot": "tokens",
+            "jwt": {
+                "encoded": {
+                    "header": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yY3czU3ZQdFBUVk9JVlpoZ21WRG00U25KYTIiLCJ0eXAiOiJKV1QifQ",
+                    "payload": "eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjUxNzMiLCJleHAiOjE3MTAyMzIxNzUsImlhdCI6MTcxMDIzMjExNSwiaXNzIjoiaHR0cHM6Ly9jb21wb3NlZC1lZ3JldC04My5jbGVyay5hY2NvdW50cy5kZXYiLCJuYmYiOjE3MTAyMzIxMDUsInNpZCI6InNlc3NfMmRaa090azRtcEdaT2JOemhkU3ZFdm9UYnRoIiwic3ViIjoidXNlcl8yY3lWTG90YXM3VXNLTFFCOHk0Y05CR216NVAifQ",
+                    "signature": "RtBpfeo7XmbyYfy_550SSP0TgyvsWa-GMezFI9u2w5gH3aUk6W5X1xM0HHX0hnCofTN4RY8BtGqsQpvcRhYGsxDW40TDV5YpXMmebZ7ASOmQ6DvzV3JzhUWclZ7kPzY638BGapJJxL3oR-BR8Nm1XllL0d71Uif2lyutZOKoxSMotCFsJERvO4BpBIv5bdZlStsa4a0kKKync2GiMSPzyfC8iyJ-KBESfu_SJQECGB9QV61AJoK-r9XAAmXiqa0CTLbyhfXbkOzEfBqkpqJ3_UA7bWVwP7DSOGLjeq2H-Zy57UONV8WF06T0Ojdz3smL9Z2HzbAGUjjsg_BSBxdV5A"
+                },
+                "header": {
+                    "alg": "RS256",
+                    "cat": "cl_B7d4PD111AAA",
+                    "kid": "ins_2cw3SvPtPTVOIVZhgmVDm4SnJa2",
+                    "typ": "JWT"
+                },
+                "claims": {
+                    "__raw": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yY3czU3ZQdFBUVk9JVlpoZ21WRG00U25KYTIiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjUxNzMiLCJleHAiOjE3MTAyMzIxNzUsImlhdCI6MTcxMDIzMjExNSwiaXNzIjoiaHR0cHM6Ly9jb21wb3NlZC1lZ3JldC04My5jbGVyay5hY2NvdW50cy5kZXYiLCJuYmYiOjE3MTAyMzIxMDUsInNpZCI6InNlc3NfMmRaa090azRtcEdaT2JOemhkU3ZFdm9UYnRoIiwic3ViIjoidXNlcl8yY3lWTG90YXM3VXNLTFFCOHk0Y05CR216NVAifQ.RtBpfeo7XmbyYfy_550SSP0TgyvsWa-GMezFI9u2w5gH3aUk6W5X1xM0HHX0hnCofTN4RY8BtGqsQpvcRhYGsxDW40TDV5YpXMmebZ7ASOmQ6DvzV3JzhUWclZ7kPzY638BGapJJxL3oR-BR8Nm1XllL0d71Uif2lyutZOKoxSMotCFsJERvO4BpBIv5bdZlStsa4a0kKKync2GiMSPzyfC8iyJ-KBESfu_SJQECGB9QV61AJoK-r9XAAmXiqa0CTLbyhfXbkOzEfBqkpqJ3_UA7bWVwP7DSOGLjeq2H-Zy57UONV8WF06T0Ojdz3smL9Z2HzbAGUjjsg_BSBxdV5A",
+                    "azp": "http://localhost:5173",
+                    "exp": 1710232175,
+                    "iat": 1710232115,
+                    "iss": "https://composed-egret-83.clerk.accounts.dev",
+                    "nbf": 1710232105,
+                    "sid": "sess_2dZkOtk4mpGZObNzhdSvEvoTbth",
+                    "sub": "user_2cyVLotas7UsKLQB8y4cNBGmz5P"
+                }
+            }
+        }
+    },
+    "organization": null,
+    "user": {
+        "pathRoot": "/me",
+        "id": "user_2cyVLotas7UsKLQB8y4cNBGmz5P",
+        "externalId": null,
+        "username": null,
+        "emailAddresses": [
+            {
+                "pathRoot": "/me/email_addresses",
+                "emailAddress": "dusty@viceye.au",
+                "linkedTo": [],
+                "id": "idn_2cyVFGsl0yBI38hCgUBwjyFnefp",
+                "verification": {
+                    "pathRoot": "",
+                    "status": "verified",
+                    "strategy": "email_link",
+                    "nonce": null,
+                    "externalVerificationRedirectURL": null,
+                    "attempts": null,
+                    "expireAt": "2024-02-28T01:38:19.849Z",
+                    "error": null
+                }
+            }
+        ],
+        "phoneNumbers": [],
+        "web3Wallets": [],
+        "externalAccounts": [],
+        "samlAccounts": [],
+        "organizationMemberships": [
+            {
+                "pathRoot": "",
+                "publicMetadata": {},
+                "permissions": ["org:provider:access"],
+                "id": "orgmem_2dUI1KcMSQKZECsbuThMNnvYLxA",
+                "organization": {
+                    "pathRoot": "/organizations",
+                    "publicMetadata": {},
+                    "membersCount": 2,
+                    "pendingInvitationsCount": 0,
+                    "id": "org_2cyElJm755bKFIZzBkwPTlNdIJS",
+                    "name": "viceye",
+                    "slug": "viceye",
+                    "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJjeUVsT1FDTDhmVHpLRnByNWxCMmlVbER5aiJ9",
+                    "hasImage": true,
+                    "maxAllowedMemberships": 0,
+                    "adminDeleteEnabled": true,
+                    "createdAt": "2024-02-27T23:12:47.236Z",
+                    "updatedAt": "2024-03-10T07:33:21.380Z"
+                },
+                "role": "org:provider",
+                "createdAt": "2024-03-10T07:33:33.539Z",
+                "updatedAt": "2024-03-10T07:33:33.539Z"
+            }
+        ],
+        "passwordEnabled": true,
+        "firstName": "dusty",
+        "lastName": "pomerleau",
+        "fullName": "dusty pomerleau",
+        "primaryEmailAddressId": "idn_2cyVFGsl0yBI38hCgUBwjyFnefp",
+        "primaryEmailAddress": {
+            "pathRoot": "/me/email_addresses",
+            "emailAddress": "dusty@viceye.au",
+            "linkedTo": [],
+            "id": "idn_2cyVFGsl0yBI38hCgUBwjyFnefp",
+            "verification": {
+                "pathRoot": "",
+                "status": "verified",
+                "strategy": "email_link",
+                "nonce": null,
+                "externalVerificationRedirectURL": null,
+                "attempts": null,
+                "expireAt": "2024-02-28T01:38:19.849Z",
+                "error": null
+            }
+        },
+        "primaryPhoneNumberId": null,
+        "primaryPhoneNumber": null,
+        "primaryWeb3WalletId": null,
+        "primaryWeb3Wallet": null,
+        "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18yY3czU3ZQdFBUVk9JVlpoZ21WRG00U25KYTIiLCJyaWQiOiJ1c2VyXzJjeVZMb3RhczdVc0tMUUI4eTRjTkJHbXo1UCIsImluaXRpYWxzIjoiRFAifQ",
+        "hasImage": false,
+        "twoFactorEnabled": false,
+        "totpEnabled": false,
+        "backupCodeEnabled": false,
+        "publicMetadata": {},
+        "unsafeMetadata": {},
+        "createOrganizationEnabled": false,
+        "deleteSelfEnabled": true,
+        "lastSignInAt": "2024-03-12T05:55:58.010Z",
+        "updatedAt": "2024-03-12T05:55:58.029Z",
+        "createdAt": "2024-02-28T01:29:11.720Z",
+        "cachedSessionsWithActivities": null
+    },
+    "client": {
+        "pathRoot": "/client",
+        "sessions": [
+            {
+                "pathRoot": "/client/sessions",
+                "id": "sess_2dZkOtk4mpGZObNzhdSvEvoTbth",
+                "status": "active",
+                "expireAt": "2024-03-19T05:55:58.010Z",
+                "abandonAt": "2024-04-11T05:55:58.010Z",
+                "lastActiveAt": "2024-03-12T08:28:35.782Z",
+                "lastActiveOrganizationId": null,
+                "actor": null,
+                "createdAt": "2024-03-12T05:55:58.010Z",
+                "updatedAt": "2024-03-12T08:28:35.782Z",
+                "user": {
+                    "pathRoot": "/me",
+                    "id": "user_2cyVLotas7UsKLQB8y4cNBGmz5P",
+                    "externalId": null,
+                    "username": null,
+                    "emailAddresses": [
+                        {
+                            "pathRoot": "/me/email_addresses",
+                            "emailAddress": "dusty@viceye.au",
+                            "linkedTo": [],
+                            "id": "idn_2cyVFGsl0yBI38hCgUBwjyFnefp",
+                            "verification": {
+                                "pathRoot": "",
+                                "status": "verified",
+                                "strategy": "email_link",
+                                "nonce": null,
+                                "externalVerificationRedirectURL": null,
+                                "attempts": null,
+                                "expireAt": "2024-02-28T01:38:19.849Z",
+                                "error": null
+                            }
+                        }
+                    ],
+                    "phoneNumbers": [],
+                    "web3Wallets": [],
+                    "externalAccounts": [],
+                    "samlAccounts": [],
+                    "organizationMemberships": [
+                        {
+                            "pathRoot": "",
+                            "publicMetadata": {},
+                            "permissions": ["org:provider:access"],
+                            "id": "orgmem_2dUI1KcMSQKZECsbuThMNnvYLxA",
+                            "organization": {
+                                "pathRoot": "/organizations",
+                                "publicMetadata": {},
+                                "membersCount": 2,
+                                "pendingInvitationsCount": 0,
+                                "id": "org_2cyElJm755bKFIZzBkwPTlNdIJS",
+                                "name": "viceye",
+                                "slug": "viceye",
+                                "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJjeUVsT1FDTDhmVHpLRnByNWxCMmlVbER5aiJ9",
+                                "hasImage": true,
+                                "maxAllowedMemberships": 0,
+                                "adminDeleteEnabled": true,
+                                "createdAt": "2024-02-27T23:12:47.236Z",
+                                "updatedAt": "2024-03-10T07:33:21.380Z"
+                            },
+                            "role": "org:provider",
+                            "createdAt": "2024-03-10T07:33:33.539Z",
+                            "updatedAt": "2024-03-10T07:33:33.539Z"
+                        }
+                    ],
+                    "passwordEnabled": true,
+                    "firstName": "dusty",
+                    "lastName": "pomerleau",
+                    "fullName": "dusty pomerleau",
+                    "primaryEmailAddressId": "idn_2cyVFGsl0yBI38hCgUBwjyFnefp",
+                    "primaryEmailAddress": {
+                        "pathRoot": "/me/email_addresses",
+                        "emailAddress": "dusty@viceye.au",
+                        "linkedTo": [],
+                        "id": "idn_2cyVFGsl0yBI38hCgUBwjyFnefp",
+                        "verification": {
+                            "pathRoot": "",
+                            "status": "verified",
+                            "strategy": "email_link",
+                            "nonce": null,
+                            "externalVerificationRedirectURL": null,
+                            "attempts": null,
+                            "expireAt": "2024-02-28T01:38:19.849Z",
+                            "error": null
+                        }
+                    },
+                    "primaryPhoneNumberId": null,
+                    "primaryPhoneNumber": null,
+                    "primaryWeb3WalletId": null,
+                    "primaryWeb3Wallet": null,
+                    "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18yY3czU3ZQdFBUVk9JVlpoZ21WRG00U25KYTIiLCJyaWQiOiJ1c2VyXzJjeVZMb3RhczdVc0tMUUI4eTRjTkJHbXo1UCIsImluaXRpYWxzIjoiRFAifQ",
+                    "hasImage": false,
+                    "twoFactorEnabled": false,
+                    "totpEnabled": false,
+                    "backupCodeEnabled": false,
+                    "publicMetadata": {},
+                    "unsafeMetadata": {},
+                    "createOrganizationEnabled": false,
+                    "deleteSelfEnabled": true,
+                    "lastSignInAt": "2024-03-12T05:55:58.010Z",
+                    "updatedAt": "2024-03-12T05:55:58.029Z",
+                    "createdAt": "2024-02-28T01:29:11.720Z",
+                    "cachedSessionsWithActivities": null
+                },
+                "publicUserData": {
+                    "firstName": "dusty",
+                    "lastName": "pomerleau",
+                    "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18yY3czU3ZQdFBUVk9JVlpoZ21WRG00U25KYTIiLCJyaWQiOiJ1c2VyXzJjeVZMb3RhczdVc0tMUUI4eTRjTkJHbXo1UCIsImluaXRpYWxzIjoiRFAifQ",
+                    "hasImage": false,
+                    "identifier": "dusty@viceye.au"
+                },
+                "lastActiveToken": {
+                    "pathRoot": "tokens",
+                    "jwt": {
+                        "encoded": {
+                            "header": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yY3czU3ZQdFBUVk9JVlpoZ21WRG00U25KYTIiLCJ0eXAiOiJKV1QifQ",
+                            "payload": "eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjUxNzMiLCJleHAiOjE3MTAyMzIxNzUsImlhdCI6MTcxMDIzMjExNSwiaXNzIjoiaHR0cHM6Ly9jb21wb3NlZC1lZ3JldC04My5jbGVyay5hY2NvdW50cy5kZXYiLCJuYmYiOjE3MTAyMzIxMDUsInNpZCI6InNlc3NfMmRaa090azRtcEdaT2JOemhkU3ZFdm9UYnRoIiwic3ViIjoidXNlcl8yY3lWTG90YXM3VXNLTFFCOHk0Y05CR216NVAifQ",
+                            "signature": "RtBpfeo7XmbyYfy_550SSP0TgyvsWa-GMezFI9u2w5gH3aUk6W5X1xM0HHX0hnCofTN4RY8BtGqsQpvcRhYGsxDW40TDV5YpXMmebZ7ASOmQ6DvzV3JzhUWclZ7kPzY638BGapJJxL3oR-BR8Nm1XllL0d71Uif2lyutZOKoxSMotCFsJERvO4BpBIv5bdZlStsa4a0kKKync2GiMSPzyfC8iyJ-KBESfu_SJQECGB9QV61AJoK-r9XAAmXiqa0CTLbyhfXbkOzEfBqkpqJ3_UA7bWVwP7DSOGLjeq2H-Zy57UONV8WF06T0Ojdz3smL9Z2HzbAGUjjsg_BSBxdV5A"
+                        },
+                        "header": {
+                            "alg": "RS256",
+                            "cat": "cl_B7d4PD111AAA",
+                            "kid": "ins_2cw3SvPtPTVOIVZhgmVDm4SnJa2",
+                            "typ": "JWT"
+                        },
+                        "claims": {
+                            "__raw": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yY3czU3ZQdFBUVk9JVlpoZ21WRG00U25KYTIiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjUxNzMiLCJleHAiOjE3MTAyMzIxNzUsImlhdCI6MTcxMDIzMjExNSwiaXNzIjoiaHR0cHM6Ly9jb21wb3NlZC1lZ3JldC04My5jbGVyay5hY2NvdW50cy5kZXYiLCJuYmYiOjE3MTAyMzIxMDUsInNpZCI6InNlc3NfMmRaa090azRtcEdaT2JOemhkU3ZFdm9UYnRoIiwic3ViIjoidXNlcl8yY3lWTG90YXM3VXNLTFFCOHk0Y05CR216NVAifQ.RtBpfeo7XmbyYfy_550SSP0TgyvsWa-GMezFI9u2w5gH3aUk6W5X1xM0HHX0hnCofTN4RY8BtGqsQpvcRhYGsxDW40TDV5YpXMmebZ7ASOmQ6DvzV3JzhUWclZ7kPzY638BGapJJxL3oR-BR8Nm1XllL0d71Uif2lyutZOKoxSMotCFsJERvO4BpBIv5bdZlStsa4a0kKKync2GiMSPzyfC8iyJ-KBESfu_SJQECGB9QV61AJoK-r9XAAmXiqa0CTLbyhfXbkOzEfBqkpqJ3_UA7bWVwP7DSOGLjeq2H-Zy57UONV8WF06T0Ojdz3smL9Z2HzbAGUjjsg_BSBxdV5A",
+                            "azp": "http://localhost:5173",
+                            "exp": 1710232175,
+                            "iat": 1710232115,
+                            "iss": "https://composed-egret-83.clerk.accounts.dev",
+                            "nbf": 1710232105,
+                            "sid": "sess_2dZkOtk4mpGZObNzhdSvEvoTbth",
+                            "sub": "user_2cyVLotas7UsKLQB8y4cNBGmz5P"
+                        }
+                    }
+                }
+            }
+        ],
+        "signUp": {
+            "pathRoot": "/client/sign_ups",
+            "status": null,
+            "requiredFields": [],
+            "optionalFields": [],
+            "missingFields": [],
+            "unverifiedFields": [],
+            "verifications": {
+                "emailAddress": {
+                    "pathRoot": "",
+                    "status": null,
+                    "strategy": null,
+                    "nonce": null,
+                    "externalVerificationRedirectURL": null,
+                    "attempts": null,
+                    "expireAt": null,
+                    "error": null,
+                    "verifiedAtClient": null,
+                    "nextAction": "",
+                    "supportedStrategies": []
+                },
+                "phoneNumber": {
+                    "pathRoot": "",
+                    "status": null,
+                    "strategy": null,
+                    "nonce": null,
+                    "externalVerificationRedirectURL": null,
+                    "attempts": null,
+                    "expireAt": null,
+                    "error": null,
+                    "verifiedAtClient": null,
+                    "nextAction": "",
+                    "supportedStrategies": []
+                },
+                "web3Wallet": {
+                    "pathRoot": "",
+                    "status": null,
+                    "strategy": null,
+                    "nonce": null,
+                    "externalVerificationRedirectURL": null,
+                    "attempts": null,
+                    "expireAt": null,
+                    "error": null,
+                    "verifiedAtClient": null,
+                    "nextAction": "",
+                    "supportedStrategies": []
+                },
+                "externalAccount": {
+                    "pathRoot": "",
+                    "status": null,
+                    "strategy": null,
+                    "nonce": null,
+                    "externalVerificationRedirectURL": null,
+                    "attempts": null,
+                    "expireAt": null,
+                    "error": null,
+                    "verifiedAtClient": null
+                }
+            },
+            "username": null,
+            "firstName": null,
+            "lastName": null,
+            "emailAddress": null,
+            "phoneNumber": null,
+            "web3wallet": null,
+            "hasPassword": false,
+            "unsafeMetadata": {},
+            "createdSessionId": null,
+            "createdUserId": null,
+            "abandonAt": null
+        },
+        "signIn": {
+            "pathRoot": "/client/sign_ins",
+            "status": null,
+            "supportedIdentifiers": [],
+            "supportedFirstFactors": [],
+            "supportedSecondFactors": [],
+            "firstFactorVerification": {
+                "pathRoot": "",
+                "status": null,
+                "strategy": null,
+                "nonce": null,
+                "externalVerificationRedirectURL": null,
+                "attempts": null,
+                "expireAt": null,
+                "error": null,
+                "verifiedAtClient": null
+            },
+            "secondFactorVerification": {
+                "pathRoot": "",
+                "status": null,
+                "strategy": null,
+                "nonce": null,
+                "externalVerificationRedirectURL": null,
+                "attempts": null,
+                "expireAt": null,
+                "error": null,
+                "verifiedAtClient": null
+            },
+            "identifier": null,
+            "createdSessionId": null
+        },
+        "lastActiveSessionId": "sess_2dZkOtk4mpGZObNzhdSvEvoTbth",
+        "createdAt": "2024-03-12T05:55:40.092Z",
+        "updatedAt": "2024-03-12T05:55:58.032Z",
+        "id": "client_2dZkMdW9rl361rOvByISNTiG179"
+    }
+}

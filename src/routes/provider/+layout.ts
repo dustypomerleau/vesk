@@ -4,7 +4,7 @@ import type { LayoutLoad } from "./$types";
 import type { ClerkAuthorization } from "$lib/globals";
 import { PUBLIC_CLERK_PUBLISHABLE_KEY } from "$env/static/public";
 
-// export const prerender = false;
+export const prerender = false;
 export const ssr = false;
 
 export async function load(): Promise<LayoutLoad> {

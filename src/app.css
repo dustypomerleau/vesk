@@ -92,3 +92,43 @@
         @apply m-8 flex h-auto w-full flex-col rounded-md bg-white sm:max-w-xl;
     }
 }
+
+/* clerk styles */
+
+.cl-organizationSwitcher-root {
+    display: flex;
+}
+
+.cl-organizationSwitcherTrigger {
+    background-color: #d1d6dc;
+    padding: 0.2rem;
+}
+
+.cl-organizationSwitcherTrigger:hover {
+    background-color: #f9fafb;
+}
+
+.cl-avatarBox {
+    background-color: inherit;
+}
+
+.cl-avatarImage {
+    object-fit: contain;
+}
+
+.cl-formButtonPrimary {
+    @apply mx-4 self-center rounded-md bg-gradient-to-r from-blue-9 to-blue-7 p-2 text-center font-medium text-white shadow-lg hover:from-blue-8 hover:to-blue-6;
+}
+
+.cl-footerActionLink {
+    @apply text-blue-8 shadow-link hover:shadow-activeLink;
+}
+
+.cl-formFieldAction {
+    @apply text-blue-8 shadow-link hover:shadow-activeLink;
+}
+
+/* todo: revisit this to get the styling you want */
+/* .cl-organizationPreview { */
+/*     background-color: #183863; */
+/* } */

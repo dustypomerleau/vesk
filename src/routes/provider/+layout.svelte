@@ -12,6 +12,6 @@ provider layout file - this content is always visible
 <ClerkLoading let:clerk>clerk is loading</ClerkLoading>
 <ClerkLoaded let:clerk
     >clerk is fully loaded
-    {window.Clerk.user?.fullName}
+    {clerk.user?.fullName}
     <slot />
 </ClerkLoaded>

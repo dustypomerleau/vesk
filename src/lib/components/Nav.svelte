@@ -6,10 +6,7 @@
     import UserButton from "clerk-sveltekit/client/UserButton.svelte";
 </script>
 
-<header
-    id="header"
-    class="flex flex-row flex-wrap items-center justify-between bg-blue-10 px-4 py-4 sm:px-8"
->
+<header id="header" class="flex flex-row items-center justify-between bg-blue-10 px-4 py-4 sm:px-8">
     <a href="/" title="Vic Eye Home">
         <div>
             <Logo />

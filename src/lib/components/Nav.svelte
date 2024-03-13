@@ -25,7 +25,7 @@
     </SignedIn>
 
     <SignedOut>
-        <div class="flex flex-col justify-center pl-2 pt-3 sm:pt-0">
+        <div>
             <a href="/login" class="text-gray-4 underline hover:text-gray-3 hover:decoration-2"
                 >Provider login</a
             >

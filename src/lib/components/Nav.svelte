@@ -8,7 +8,7 @@
 
 <header
     id="header"
-    class="flex flex-row flex-wrap items-center justify-between bg-blue-10 px-4 py-4 sm:px-8"
+    class="flex flex-row flex-wrap items-center justify-between gap-y-8 bg-blue-10 px-4 py-4 sm:px-8"
 >
     <a href="/" title="Vic Eye Home">
         <div>
@@ -17,7 +17,7 @@
     </a>
 
     <SignedIn>
-        <div class="flex flex-wrap items-center gap-4 pl-1 pt-4">
+        <div class="flex flex-wrap items-center gap-4 pl-1">
             <!-- todo: how best to get the user into the correct organization, can we default to viceye rather than personal? Can we make viceye the only option? -->
             <div><OrganizationSwitcher /></div>
             <div><UserButton afterSignOutUrl="/" /></div>

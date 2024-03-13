@@ -100,12 +100,12 @@
 }
 
 .cl-organizationSwitcherTrigger {
-    background-color: #d1d6dc;
+    background-color: #e9ebee;
     padding: 0.2rem;
 }
 
 .cl-organizationSwitcherTrigger:hover {
-    background-color: #f9fafb;
+    background-color: white;
 }
 
 .cl-avatarBox {

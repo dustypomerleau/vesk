@@ -41,19 +41,13 @@ export function focus_outside(node: HTMLElement, callback: () => void) {
 }
 
 function focusable_children(node: HTMLElement) {
-    // We use `Element` here, rather than `HTMLElement`, because `document.activeElement`
-    // returns `Element` when we assign `index`. We can then cast back to `HTMLElement`
-    // for the sake of calling `focus()`.
     const nodes: Array<HTMLElement> = Array.from(
         node.querySelectorAll(
             'a[href], button, input, textarea, select, details, [tabindex]:not([tabindex="-1"])',
         ),
     );
 
-    // @ts-expect-error
-    // The `activeElement` method returns `Element`,
-    // which in this case can be used in place of `HTMLElement`.
-    const index = nodes.indexOf(document.activeElement!);
+    const index = nodes.indexOf(document.activeElement! as HTMLElement);
 
     const update = (d: number) => {
         let i = index + d;
@@ -115,3 +109,27 @@ export function trap(node: HTMLElement, { reset_focus = true } = {}) {
         },
     };
 }
+
+export const transitionstart = (e: Event) => {
+    const target = e.target;
+
+    if (!(target as HTMLElement)?.classList.contains("viewport")) return;
+    if (e.propertyName !== "transform") return;
+
+    // we need to apply a clip-path during the transition so that the contents
+    // are constrained to the menu background, but only while the transition
+    // is running, otherwise it prevents the contents from being scrolled
+    const a = "calc(var(--height-difference) + 1px)";
+    const b = "1px";
+
+    const start = $show_context_menu ? a : b;
+    const end = $show_context_menu ? b : a;
+
+    const container = e.currentTarget;
+
+    container.style.clipPath = `polygon(0% ${start}, 100% ${start}, 100% 100%, 0% 100%)`;
+
+    setTimeout(() => {
+        container.style.clipPath = `polygon(0% ${end}, 100% ${end}, 100% 100%, 0% 100%)`;
+    }, 0);
+};

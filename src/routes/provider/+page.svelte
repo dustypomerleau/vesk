@@ -1,3 +1,1 @@
-<br class="mt-6" />
-<div class="text-3xl">provider/+page.svelte (protected content)</div>
-<br class="mt-6" />
+<div class="m-6 text-3xl">provider/+page.svelte (protected content)</div>

@@ -5,7 +5,7 @@
     import SignedIn from "clerk-sveltekit/client/SignedIn.svelte";
 </script>
 
-<ClerkLoading><div class="p-4">Loading...</div></ClerkLoading>
+<ClerkLoading><div class="m-6">Loading...</div></ClerkLoading>
 
 <ClerkLoaded let:clerk>
     <SignedIn>

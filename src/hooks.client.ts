@@ -4,8 +4,7 @@ import { PUBLIC_CLERK_PUBLISHABLE_KEY } from "$env/static/public";
 
 initializeClerkClient(PUBLIC_CLERK_PUBLISHABLE_KEY, {
     afterSignInUrl: "/provider",
-    // todo: likely make this also /provider and use conditional logic to render a form for them to ping me for access
-    afterSignUpUrl: "/pending",
+    afterSignUpUrl: "/provider",
     signInUrl: "/login",
     signUpUrl: "/signup",
 });

@@ -1,6 +1,5 @@
 <script lang="ts">
-    export let viewBox = "0 1 24 24";
-    export let width = "1.5rem";
+    let { viewBox = "0 1 24 24", width = "1.5rem" } = $props();
 </script>
 
 <svg {viewBox} {width} xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.75 8.75a2 2 0 0 1 2-2h10.5a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H6.75a2 2 0 0 1-2-2v-8.5zM8 4.75v3.5M16 4.75v3.5M7.75 10.75h8.5"/></svg>

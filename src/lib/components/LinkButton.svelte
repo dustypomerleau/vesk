@@ -1,9 +1,8 @@
 <script lang="ts">
     import type { Link } from "$lib/types";
 
-    export let link: Link;
+    let { link, iconWidth = "1.5rem" }: { link: Link; iconWidth?: string } = $props();
     const { buttonText, href, icon } = link;
-    export let iconWidth = "1.5rem";
 </script>
 
 <a {href} class="button flex flex-row items-center justify-center">

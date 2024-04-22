@@ -14,9 +14,9 @@
         Syringe,
         Vr,
     };
-    export let iconWidth = "1.5rem";
 
-    export let post: PostPath;
+    let { post, iconWidth = "1.5rem" }: { post: PostPath; iconWidth?: string } = $props();
+
     const {
         meta: { icon, brief },
         path,

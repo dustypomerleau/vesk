@@ -2,6 +2,8 @@
     import "../app.css";
     import Footer from "$lib/components/Footer.svelte";
     import Nav from "$lib/components/Nav.svelte";
+
+    let { children } = $props();
 </script>
 
 <svelte:head>
@@ -35,7 +37,7 @@
             id="bg"
             class="flex flex-col bg-gradient-to-br from-gray-1 to-gray-3 bg-cover bg-fixed"
         >
-            <slot />
+            {@render children()}
         </div>
     </main>
 

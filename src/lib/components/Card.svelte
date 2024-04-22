@@ -2,7 +2,7 @@
     import LinkButton from "$lib/components/LinkButton.svelte";
     import type { Card } from "$lib/types";
 
-    export let card: Card;
+    let { card }: { card: Card } = $props();
     const { link, points, title } = card;
 </script>
 

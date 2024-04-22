@@ -1,6 +1,5 @@
 <script lang="ts">
-    export let viewBox = "0 0 1200 800";
-    export let width = "100%";
+    let { viewBox = "0 0 1200 800", width = "100%" } = $props();
 </script>
 
 <svg {viewBox} {width} fill="none">

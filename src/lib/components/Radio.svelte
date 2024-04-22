@@ -1,10 +1,18 @@
 <script lang="ts">
     import type { ComponentType, SvelteComponent } from "svelte";
 
-    export let icon: ComponentType<SvelteComponent>;
-    export let iconWidth = "1.5rem";
-    export let name: string;
-    export let text = "radio text";
+    let {
+        icon,
+        name,
+        text = "radio text",
+        iconWidth = "1.5rem",
+    }: {
+        icon: ComponentType<SvelteComponent>;
+        name: string;
+        text?: string;
+        iconWidth?: string;
+    } = $props();
+
     let value = text.toLowerCase();
 </script>
 

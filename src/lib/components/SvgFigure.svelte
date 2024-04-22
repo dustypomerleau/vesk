@@ -4,7 +4,8 @@
     import { getFigureBreakpointWidth } from "$lib/utils";
     import type { SvgFig } from "$lib/types";
 
-    export let figure: SvgFig;
+    let { figure }: { figure: SvgFig } = $props();
+
     // at present, these text size/color customizations are not playing nicely with mdsvex, so basically whatever is the default here will be used, regardless of what you specify in the markdown file
     const {
         svg,
@@ -15,6 +16,7 @@
         textSize = "text-base",
         textColor = "text-gray-7",
     } = figure;
+
     const smallBreakpointWidth = size ? getFigureBreakpointWidth(size) : "";
 </script>
 

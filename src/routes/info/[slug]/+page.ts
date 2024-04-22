@@ -1,7 +1,15 @@
-import type { PostContent } from "$lib/types";
+import type { PostContent, PostMetadata } from "$lib/types";
+import type { ComponentType, SvelteComponent } from "svelte";
+
 export const prerender = false;
+
+// params:
+// Parameters of the target page - e.g. for a route like `/blog/[slug]`, a `{ slug: string }` object.
 export async function load({ params }): Promise<PostContent> {
-    const post = await import(`../${params.slug}.md`);
+    // no idea if these types are correct
+    const post: { metadata: PostMetadata; default: ComponentType<SvelteComponent> } = await import(
+        `../${params.slug}.md`
+    );
     const meta = post.metadata;
     const Content = post.default;
 

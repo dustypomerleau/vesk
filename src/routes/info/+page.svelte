@@ -2,11 +2,11 @@
     import Info from "$lib/components/Info.svelte";
     import type { PostPath } from "$lib/types";
 
-    export let data: { posts: Array<PostPath> };
+    let { posts }: { posts: Array<PostPath> } = $props();
 </script>
 
 <svelte:head>
     <title>Vic Eye &amp; Retina Specialists | Patient information</title>
 </svelte:head>
 
-<Info {data} />
+<Info {posts} />

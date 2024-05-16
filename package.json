@@ -13,16 +13,16 @@
         "test": "playwright test"
     },
     "devDependencies": {
-        "@eslint/js": "^9.2.0",
+        "@eslint/js": "^9.3.0",
         "@netlify/plugin-lighthouse": "^6.0.0",
         "@playwright/test": "^1.44.0",
         "@sveltejs/adapter-netlify": "^4.2.0",
-        "@sveltejs/kit": "^2.5.8",
+        "@sveltejs/kit": "^2.5.9",
         "@tailwindcss/forms": "^0.5.7",
         "@tailwindcss/typography": "^0.5.13",
         "autoprefixer": "^10.4.19",
         "cssnano": "^7.0.1",
-        "eslint": "^9.2.0",
+        "eslint": "^9.3.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-svelte": "^2.46.1",
         "mdsvex": "^0.11.2",
@@ -45,7 +45,7 @@
     },
     "type": "module",
     "dependencies": {
-        "@clerk/types": "^4.3.1",
+        "@clerk/types": "^4.4.0",
         "@sveltejs/vite-plugin-svelte": "^3.1.0",
         "clerk-sveltekit": "^0.4.2"
     }

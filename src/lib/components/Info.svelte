@@ -2,16 +2,15 @@
     import Listing from "$lib/components/Listing.svelte";
     import type { PostPath } from "$lib/types";
 
-    let { data } = $props();
+    let { data }: { posts: PostPath[] } = $props();
     console.log("data prop on Info.svelte:");
-    console.log(data);
+    console.log(data); // undefined now?
     // {
     //   posts: [
     //     { meta: [Object], path: '/info/cataract-surgery' },
     //     { meta: [Object], path: '/info/eye-injections' }
     //   ]
     // }
-    let { posts } = data;
 </script>
 
 <div id="info" class="self-center rounded-md py-6">
@@ -20,7 +19,7 @@
     <ul class="grid gap-x-16 sm:grid-cols-2">
         <!-- todo: error here undefined is not iterable, so there is a problem with the posts getting passed in (therefore probably the function generating them -->
         <!-- specifically, the props being passed into Info are undefined -->
-        {#each posts as post}
+        {#each data.posts as post}
             <Listing {post} />
         {/each}
     </ul>

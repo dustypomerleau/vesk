@@ -8,6 +8,8 @@
     import type { PostPath } from "$lib/types";
 
     let { data } = $props();
+    console.log("data prop on +page.svelte:");
+    console.log(data);
 </script>
 
 <svelte:head>

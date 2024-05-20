@@ -1,15 +1,13 @@
 import adapter from "@sveltejs/adapter-netlify";
-import preprocess from "svelte-preprocess";
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { mdsvex } from "mdsvex";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     compilerOptions: { runes: true },
     extensions: [".svelte", ".md"],
-    preprocess: [mdsvex({ extensions: [".svelte", ".md"] }), preprocess({ postcss: true })],
-    kit: {
-        adapter: adapter(),
-    },
+    preprocess: [mdsvex({ extensions: [".svelte", ".md"] }), vitePreprocess()],
+    kit: { adapter: adapter() },
 };
 
 export default config;

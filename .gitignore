@@ -9,5 +9,4 @@ deprecated/
 hero.avif
 node_modules
 pnpm-lock.yaml
-refs/
 unoptimized/

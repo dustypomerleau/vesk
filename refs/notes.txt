@@ -1,15 +1,9 @@
-todo:
+svelte 5 migration:
+hydration https://github.com/sveltejs/svelte/issues/10375
+runes config https://github.com/sveltejs/vite-plugin-svelte/blob/main/docs/config.md#dynamiccompileoptions
 
-done: fix images to use the webp versions where supported
-<picture>
-  <source type="image/webp" srcset="images/flower1.webp">
-  <source type="image/jpeg" srcset="images/flower1.jpg">
-  <img src="images/flower1.jpg">
-</picture>
 
-todo: add icons to links in ts file and use them in footer and nav
 todo: add other referral methods like fax and update refer instructions to explain file upload.
-todo: custom page for form submissions
 todo: identity and gated access
     keycloak vs. okta vs. auth0 vs. authelia vs. cognito vs. authentik
     roles: admin, staff, refer

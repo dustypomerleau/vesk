@@ -1,14 +1,4 @@
 <script lang="ts">
-
-
-
-
-
-
-
-
-
-
     export let viewBox = "0 0.6 24 24";
     export let width = "1.5rem";
 </script>

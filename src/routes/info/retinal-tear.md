@@ -11,52 +11,64 @@ title: Laser treatment for retinal tears
 <script lang="ts">
     import NormalVersusTear from "$lib/svg/NormalVersusTear.svelte";
     import SvgFigure from "$lib/components/SvgFigure.svelte";
-    import type { PhotoFig, SvgFig } from "$lib/types";
+    import type { SvgFig } from "$lib/types";
 
     const tear: SvgFig = {
         svg: NormalVersusTear,
         viewBox: "0, 100, 1200, 600",
         size: "large",
-        caption: "caption for the photo",
+        caption: "A healthy retina lines the inside wall of your eye, reacting to light and sending visual information to your brain. Light passes through the vitreous gel to reach the retina. As you age, the gel liquefies and collapses toward the middle of the eye. If the gel is very adherent to the retina, it can pull a flap of tissue free, creating a defect in the retina.",
     };
 </script>
 
-A retinal tear or a retinal hole is a defect in the
-peripheral part of retina as shown in Figure 1,
-arrow 1.
+The hollow space inside your eye is filled with a gel called vitreous.
+Normal aging changes in the gel cause it to liquefy with age, collapsing toward the centre of the eye.
+This process is referred to as a posterior vitreous detachment (PVD), and in most people it does not cause any damage.
+In some cases, the gel does not release cleanly from the retina, pulling the retina with it until the tissue tears.
+Some people are at higher risk of developing retinal tears, due to extreme nearsightedness or a history of trauma to the eye.
+A tear in the retina allows fluid into the space underneath it, pushing the retina away from the wall of the eye.
+This is referred to as a retinal detachment, and can cause permanent vision loss without prompt surgery.
+Applying laser treatment to retinal tears can preserve your vision by sealing off the defect and preventing retinal detachment.
+The procedure is referred to as laser retinopexy.
 
 <SvgFigure figure={tear} />
 
-Retina tears occur acutely due to the separation
-of the vitreous body (space-filler jelly) inside the
-eye from the retina, also called a posterior
-vitreous detachment (PVD). A PVD usually occurs
-as part of the aging process in the eye in which
-the vitreous body has shrunk with age and
-no longer fills the whole cavity of the eyeball. It can
-also be precipitated by blunt trauma to the eyeball.
-As the vitreous body separates from the retina, it can pull on the retina and cause a retinal tear. Some people who are very short sighted are at much greater risk of developing retinal tears.
+Some defects in the retina are not caused by traction, forming gradually due to progressive thinning of the retina.
+These atrophic holes may be discovered during a routine eye examination, prompting referral to a specialist.
+Small, round holes may not require any treatment if you have no symptoms.
+A retina specialist can give you advice about the risk profile of your specific case.
 
-Retinal holes form more gradually with time and do not normally cause acute symptoms or visual disturbances when they form. They are usually detected during routine eye examinations. They occur as part of progressive thinning of the retina with time and age.
+## How does the laser work?
 
-A retinal hole or tear is a serious condition that, if left unmonitored or untreated, can lead to permanent total or partial vision loss due to the development of a retinal detachment. We know from several studies that if retinal tears or retinal holes are left untreated, then there is a high risk of developing retinal detachment (Figure 1, arrow 2). The retina can become detached because fluid from inside the eye is able to enter the tear, causing the retina to lift off from the underlying tissue below.
+Small spots of laser energy are applied in a ring around the defect.
+Over approximately 2 weeks, these spots form a scar, sealing the retina to the layer underneath.
+Because of the adhesion at the scar, fluid can't pass into the space under the retina, and the retina is prevented from detaching.
 
-To prevent a retinal detachment from happening, laser treatment can be performed to seal off the tear or hole, a treatment called laser retinopexy or laser photocoagulation. In this treatment, spots of laser beam are applied around the edges of the tear or hole. The laser induces a scarring effect at the site which creates strong adhesion around the tear or hole, thereby preventing the retina from detaching. It usually takes about 14 days for the scar tissue to develop.
+## What are the risks of laser retinopexy?
 
-How is it done?
-An anaesthetic drop will be put in your eye. The doctor will then place a contact lens on the surface of your eye. This will help to keep your eye open and more importantly, it will focus the laser beam on the area of the retina for treatment. This is performed sitting upright on the slit-lamp microscope. The anaesthetic “numbing” drops do not completely anaesthetise the eyeball itself, but should allow the contact lens to be placed comfortably on the surface of the eye. The treatment would normally last about 10- 15 minutes depending on the area or extent of treatment required. It is important that you keep your head still during the treatment.
+All laser procedures carry the risk of applying laser energy to a part of the eye that is critical for vision.
+Fortunately, the area where retinal tears usually occur is far away from the centre of your vision.
+If you are relaxed and still, applying the laser safely is much easier.
+The doctor will adjust the machine for your comfort.
 
-The laser treatment itself can be associated with “stabbing”, “sharp”, and “aching” pains. Very occasionally, there can be a feeling like an “electric shock” during the laser treatment. Although these sensations can be worrying, they do not indicate any adverse effects inside the eye related to the laser treatment. Depending on the amount of laser performed, you may also experience a headache after the procedure, which can be alleviated by taking simple analgesia like Panadol.
+## What should I expect during the procedure?
 
-What happens after the treatment?
-Immediately after the laser your vision will be dazzled as a result of the bright lights. Your vision may be misty for a few hours and should return to normal by the next day. You should not drive on the day of your laser. It is important to remember that laser retinopexy will not “get rid” of any pre-existing symptoms such as floaters that you experienced before your treatment. Sometimes the floaters may increase immediately after the treatment, but these will settle after a few days. There may be light sensitivity and glare outside.
-You will be reviewed in clinic in about 2-3 weeks after treatment to check that the laser has worked.
+The treatment is applied sitting upright, with your head resting on a chinrest, and typically lasts 5–10 minutes.
+The surface of the eye is numbed with an anaesthetic drop, and a contact lens is used to direct the laser energy to the tear.
+The doctor may ask you to focus on a target light with your other eye.
+When the laser is active, you will see flashes of green light and hear beeping noises.
+If many laser spots are required, you may feel an aching sensation.
+This feeling goes away with a short break.
 
-What are the risks?
-Since no incisions are made to the eye, there is no risk of infection inside the eye. Some patients experience a slight irritation after the procedure from the lens being placed on the eye; however, this usually settles quickly. It is important that you do not move during the procedure. If you do, there is a possibility that the laser will affect a portion of your vision that it was not intended to (i.e. your central vision). There is also a very small possibility that the laser retinopexy does not completely seal the tear. Even after laser retinopexy, a retinal detachment can still form, though the possibility of one is greatly reduced with treatment.
+## What happens after the procedure?
 
-Can the retina detach after laser retinopexy?
-Laser retinopexy significantly reduces the risk of retinal detachment but it can still occur despite laser retinopexy. You should seek help immediately if you notice:
-• New floaters (any floaters in the vision that were present before the laser will still be there afterwards but with time will become less noticeable)
-• Flashing lights in the eye
-• A change in vision like a curtain coming across.
+Your vision will remain blurry for several hours, due to the dilating drops, contact lens, and bright lights, so you will need someone to drive you home.
+The vision typically returns to normal the following day.
+A review appointment will be needed several weeks later, to ensure that the laser is holding.
+Most of the time, laser retinopexy is sufficient to prevent a retinal detachment, but if the laser does not hold, or new tears develop, additional procedures may be needed.
+If you have symptoms from your tear, like flashing lights or grey floaters, these will still be present after the treatment, but they usually improve with time.
+If the floaters persist and affect your quality of life, surgical treatment options can be considered.
+
+## What should prompt me to call my doctor?
+
+If you have an increase in flashing lights or floaters, a drop in your vision, or a dark area at the edge of your vision, you will need to be examained again, to ensure the retina is not detaching.

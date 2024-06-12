@@ -1,6 +1,7 @@
 <script lang="ts">
     import Amd from "$lib/svg/Amd.svelte";
     import Iol from "$lib/svg/Iol.svelte";
+    import RetinalTear from "$lib/svg/RetinalTear.svelte";
     import Syringe from "$lib/svg/Syringe.svelte";
     import Vr from "$lib/svg/Vr.svelte";
     import type { ComponentType, SvelteComponent } from "svelte";
@@ -9,6 +10,7 @@
     const icons: Record<string, ComponentType<SvelteComponent>> = {
         Amd,
         Iol,
+        RetinalTear,
         Syringe,
         Vr,
     };

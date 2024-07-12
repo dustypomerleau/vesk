@@ -1,3 +1,6 @@
+eslint 8 migration
+https://github.com/typescript-eslint/typescript-eslint/discussions/9389
+
 svelte 5 migration:
 hydration https://github.com/sveltejs/svelte/issues/10375
 runes config https://github.com/sveltejs/vite-plugin-svelte/blob/main/docs/config.md#dynamiccompileoptions

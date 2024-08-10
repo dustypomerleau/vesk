@@ -32,7 +32,7 @@
         <input type="hidden" name="form-name" value="ve-refer" />
 
         <div class="mt-6 text-xl text-blue-9">Doctor details:</div>
-        <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6" />
+        <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6"></div>
 
         <label class="mt-4">
             <span class="field-label">Doctor's name*</span>
@@ -60,7 +60,7 @@
         </label>
 
         <div class="mt-6 text-xl text-blue-9">Patient details:</div>
-        <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6" />
+        <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6"></div>
 
         <label class="mt-4">
             <span class="field-label">Patient's full name*</span>
@@ -83,7 +83,7 @@
         </label>
 
         <div class="mt-6 text-xl text-blue-9">Referral details:</div>
-        <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6" />
+        <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6"></div>
 
         <div class="mt-4">
             <span class="field-label">Preferred specialist</span>

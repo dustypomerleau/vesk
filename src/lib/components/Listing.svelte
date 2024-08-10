@@ -4,10 +4,10 @@
     import RetinalTear from "$lib/svg/RetinalTear.svelte";
     import Syringe from "$lib/svg/Syringe.svelte";
     import Vr from "$lib/svg/Vr.svelte";
-    import type { ComponentType, SvelteComponent } from "svelte";
+    import type { Component } from "svelte";
     import type { PostPath } from "$lib/types";
 
-    const icons: Record<string, ComponentType<SvelteComponent>> = {
+    const icons: Record<string, Component> = {
         Amd,
         Iol,
         RetinalTear,

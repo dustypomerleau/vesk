@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { ComponentType, SvelteComponent } from "svelte";
+    import type { Component } from "svelte";
 
     let {
         icon,
@@ -7,7 +7,7 @@
         text = "radio text",
         iconWidth = "1.5rem",
     }: {
-        icon: ComponentType<SvelteComponent>;
+        icon: Component;
         name: string;
         text?: string;
         iconWidth?: string;

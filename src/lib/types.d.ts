@@ -1,4 +1,4 @@
-import type { ComponentType, SvelteComponent } from "svelte";
+import type { Component } from "svelte";
 
 export interface Doc {
     name: string;
@@ -23,7 +23,7 @@ export interface PhotoFig extends Figure {
 }
 
 export interface SvgFig extends Figure {
-    svg: typeof SvelteComponent<any>;
+    svg: Component;
     viewBox?: string;
 }
 
@@ -31,7 +31,7 @@ export interface Link {
     href: string;
     // see https://github.com/sveltejs/language-tools/issues/486
     // see https://github.com/zerodevx/svelte-toast/pull/30
-    icon: typeof SvelteComponent;
+    icon: Component;
     buttonText: string;
 }
 
@@ -54,7 +54,7 @@ export interface PostMetadata {
 export interface PostContent {
     meta: PostMetadata;
     // not really clear why this doesn't throw an error, but icon on Link does.
-    Content: ComponentType<SvelteComponent>;
+    Content: Component;
 }
 
 export interface PostPath {

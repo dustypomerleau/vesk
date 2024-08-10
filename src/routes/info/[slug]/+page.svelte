@@ -2,7 +2,8 @@
     import Byline from "$lib/components/Byline.svelte";
     import type { PostContent } from "$lib/types";
 
-    let { data } = $props();
+    let { meta, Content }: PostContent = $props();
+    let { brief, title } = meta;
     // console.log(data);
     // {
     //   meta: {
@@ -19,12 +20,6 @@
     //     render: [Function (anonymous)]
     //   }
     // }
-
-    let {
-        meta,
-        meta: { brief, title },
-        Content,
-    }: PostContent = data;
 </script>
 
 <svelte:head>

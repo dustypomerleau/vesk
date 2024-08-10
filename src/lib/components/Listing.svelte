@@ -16,19 +16,6 @@
     };
 
     let { post, iconWidth = "1.5rem" }: { post: PostPath; iconWidth?: string } = $props();
-    console.log("post prop on Listing.svelte: ", post);
-    // post prop on Listing.svelte:  {
-    //   meta: {
-    //     author: 'Dusty Pomerleau',
-    //     brief: 'Cataract surgery',
-    //     creds: 'MD, FRANZCO',
-    //     date: '2023-09-24T00:00:00.000Z',
-    //     icon: 'Iol',
-    //     image: 'dlp',
-    //     title: "A patient's guide to cataract surgery and lens implants"
-    //   },
-    //   path: '/info/cataract-surgery'
-    // }
 
     const {
         meta: { icon, brief },

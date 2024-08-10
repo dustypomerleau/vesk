@@ -7,9 +7,7 @@
     import Maps from "$lib/components/Maps.svelte";
     import type { PostPath } from "$lib/types";
 
-    let { data } = $props();
-    console.log("data prop on +page.svelte:");
-    console.log(data);
+    let { posts }: { posts: Array<PostPath> } = $props();
 </script>
 
 <svelte:head>
@@ -27,5 +25,5 @@
 <Deck />
 <Docs />
 <Maps />
-<Info {data} />
+<Info {posts} />
 <Contact />

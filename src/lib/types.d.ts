@@ -29,8 +29,6 @@ export interface SvgFig extends Figure {
 
 export interface Link {
     href: string;
-    // see https://github.com/sveltejs/language-tools/issues/486
-    // see https://github.com/zerodevx/svelte-toast/pull/30
     icon: Component;
     buttonText: string;
 }
@@ -53,7 +51,6 @@ export interface PostMetadata {
 
 export interface PostContent {
     meta: PostMetadata;
-    // not really clear why this doesn't throw an error, but icon on Link does.
     Content: Component;
 }
 

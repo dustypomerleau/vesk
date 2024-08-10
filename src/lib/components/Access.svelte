@@ -70,7 +70,7 @@
 
         <label class="mt-4">
             <span class="field-label">Additional information</span>
-            <textarea name="details" rows="2" maxlength="10000" class="field" />
+            <textarea name="details" rows="2" maxlength="10000" class="field"></textarea>
         </label>
 
         <button

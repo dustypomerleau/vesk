@@ -70,7 +70,7 @@
 
         <label class="mt-6">
             <span class="field-label">Details of your request</span>
-            <textarea name="details" rows="8" maxlength="10000" class="field" />
+            <textarea name="details" rows="8" maxlength="10000" class="field"></textarea>
         </label>
 
         <button

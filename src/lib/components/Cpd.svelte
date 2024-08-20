@@ -5,7 +5,7 @@
 <div id="cpd" class="w-full bg-orange-7 px-4 py-2 text-white sm:text-center">
     Referring doctors can
     <a
-        href="https://www.eventbrite.com.au/e/vic-eye-retina-specialists-cpd-evening-for-optometrists-tickets-609027857717"
+        href="https://in4med-23651214.hubspotpagebuilder.com/"
         target="_blank"
         rel="noreferrer"
         class="text-blue-1 shadow-banner hover:shadow-activeBanner">register here</a

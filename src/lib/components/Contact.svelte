@@ -63,9 +63,9 @@
         <div>
             <span class="field-label">Preferred contact method</span>
             <div class="flex flex-col sm:flex-row">
-                <Radio name="contact-preference" icon={Mail} text="Email" />
-                <Radio name="contact-preference" icon={Smartphone} text="Phone" />
-                <Radio name="contact-preference" icon={Message} text="Text message" />
+                <Radio name="contact-preference" Icon={Mail} text="Email" />
+                <Radio name="contact-preference" Icon={Smartphone} text="Phone" />
+                <Radio name="contact-preference" Icon={Message} text="Text message" />
             </div>
         </div>
 

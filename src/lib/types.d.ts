@@ -23,13 +23,13 @@ export interface PhotoFig extends Figure {
 }
 
 export interface SvgFig extends Figure {
-    svg: Component;
+    Svg: Component;
     viewBox?: string;
 }
 
 export interface Link {
     href: string;
-    icon: Component;
+    Icon: Component;
     buttonText: string;
 }
 

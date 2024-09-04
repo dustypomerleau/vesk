@@ -8,7 +8,7 @@
 
     // at present, these text size/color customizations are not playing nicely with mdsvex, so basically whatever is the default here will be used, regardless of what you specify in the markdown file
     const {
-        svg,
+        Svg,
         viewBox,
         width = "100%",
         size,
@@ -26,7 +26,7 @@
         class="w-full {smallBreakpointWidth} flex flex-col items-center overflow-hidden rounded-lg"
     >
         <!-- You need to specify width relative to the container div, so that if the SVG also specifies a width, it will be overridden. -->
-        <svelte:component this={svg} {viewBox} {width} />
+        <Svg {viewBox} {width} />
     </div>
     {#if caption}
         <div class="w-full {smallBreakpointWidth} px-2 {textSize} {textColor}">

@@ -2,12 +2,12 @@
     import type { Component } from "svelte";
 
     let {
-        icon,
+        Icon,
         name,
         text = "radio text",
         iconWidth = "1.5rem",
     }: {
-        icon: Component;
+        Icon: Component;
         name: string;
         text?: string;
         iconWidth?: string;
@@ -19,7 +19,7 @@
 <input id={value} type="radio" {name} {value} />
 <label for={value} class="flex flex-row items-center">
     <div>
-        <svelte:component this={icon} width={iconWidth} />
+        <Icon width={iconWidth} />
     </div>
-    <div class:pl-2={icon}>{text}</div>
+    <div class:pl-2={Icon}>{text}</div>
 </label>

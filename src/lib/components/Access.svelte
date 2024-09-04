@@ -57,9 +57,9 @@
         <div class="mb-6 mt-4">
             <span class="field-label">Provider type</span>
             <div class="flex flex-col sm:flex-row">
-                <Radio name="provider-type" icon={Glasses} text="Optometrist" />
-                <Radio name="provider-type" icon={Stethoscope} text="GP" />
-                <Radio name="provider-type" icon={Medical} text="Other" />
+                <Radio name="provider-type" Icon={Glasses} text="Optometrist" />
+                <Radio name="provider-type" Icon={Stethoscope} text="GP" />
+                <Radio name="provider-type" Icon={Medical} text="Other" />
             </div>
         </div>
 

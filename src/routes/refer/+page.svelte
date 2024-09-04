@@ -89,9 +89,9 @@
         <div class="mt-4">
             <span class="field-label">Preferred specialist</span>
             <div class="flex flex-col sm:flex-row">
-                <Radio name="specialist-preference" icon={Calendar} text="First available" />
-                <Radio name="specialist-preference" icon={Mt} text="Dr Tan" />
-                <Radio name="specialist-preference" icon={Dp} text="Dr Pomerleau" />
+                <Radio name="specialist-preference" Icon={Calendar} text="First available" />
+                <Radio name="specialist-preference" Icon={Mt} text="Dr Tan" />
+                <Radio name="specialist-preference" Icon={Dp} text="Dr Pomerleau" />
             </div>
         </div>
 

@@ -38,11 +38,12 @@
         name="ve-contact"
         method="post"
         data-netlify="true"
-        netlify-honeypot="bot-field"
+        netlify-honeypot="other"
         class="flex flex-col"
     >
         <!-- helper for netlify forms -->
         <input type="hidden" name="form-name" value="ve-contact" />
+        <input type="hidden" name="other" />
 
         <label class="mt-4">
             <span class="field-label">Full name*</span>

@@ -25,11 +25,12 @@
         name="ve-refer"
         method="post"
         data-netlify="true"
-        netlify-honeypot="bot-field"
+        netlify-honeypot="other"
         class="flex flex-col"
     >
         <!-- helper for netlify forms -->
         <input type="hidden" name="form-name" value="ve-refer" />
+        <input type="hidden" name="other" />
 
         <div class="mt-6 text-xl text-blue-9">Doctor details:</div>
         <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6"></div>

@@ -21,11 +21,12 @@
         name="ve-provider-access"
         method="post"
         data-netlify="true"
-        netlify-honeypot="bot-field"
+        netlify-honeypot="other"
         class="flex flex-col"
     >
         <!-- helper for netlify forms -->
         <input type="hidden" name="form-name" value="ve-provider-access" />
+        <input type="hidden" name="other" />
 
         <label class="mt-6">
             <span class="field-label">Full name</span>

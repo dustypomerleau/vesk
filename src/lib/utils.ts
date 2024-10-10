@@ -13,6 +13,9 @@ export const getFigureBreakpointWidth = (size = "large") => {
 export const getPosts = async (): Promise<Array<PostPath>> => {
     // import.meta.glob() is a Vite function that returns an object with (in this case) keys of path and values of resolver functions that take no params and return the result of importing the file.
     // I'm still a bit fuzzy on the details, but it looks like casting the type with turbofish here tells the resolver function what type it will return when called (even though the return type is actually the function itself).
+    // todo: try making this eager and following:
+    // https://blog.shabad22.com/articles/svelte-mdsvex
+    // I'm not convinced it will make any difference, as it still uses svelte 4 syntax
     const postFiles = import.meta.glob<Record<string, PostMetadata>>("/src/routes/info/*.md");
     // Object.entries returns an array of arrays, where each array is a KV pair from the object.
     const iterableFiles = Object.entries(postFiles);

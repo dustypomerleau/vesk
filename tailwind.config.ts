@@ -1,9 +1,12 @@
-const { boxShadow } = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
+import colors from "tailwindcss/colors";
+import forms from "@tailwindcss/forms";
+import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
-/** @type {import('tailwindcss').Config} */
-const config = {
+export default {
     content: ["./src/**/*.{html,js,svelte,ts}"],
+    plugins: [typography, forms],
+
     theme: {
         colors: {
             black: colors.black,
@@ -123,7 +126,4 @@ const config = {
             }),
         },
     },
-    plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
-};
-
-module.exports = config;
+} satisfies Config;

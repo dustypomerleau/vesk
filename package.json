@@ -1,26 +1,26 @@
 {
     "name": "vesk",
     "version": "0.1.0",
+    "type": "module",
     "private": true,
     "scripts": {
         "build": "vite build",
-        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "dev": "vite dev",
         "format": "prettier --write .",
         "lint": "prettier --check . && eslint .",
         "preview": "vite preview",
-        "test": "playwright test"
+        "test": "npm run test:unit -- --run && npm run test:e2e",
+        "test:e2e": "playwright test",
+        "test:unit": "vitest"
     },
     "devDependencies": {
-        "@eslint/js": "^9.15.0",
         "@netlify/plugin-lighthouse": "^6.0.1",
         "@playwright/test": "^1.49.0",
         "@sveltejs/adapter-netlify": "^4.3.6",
-        "@sveltejs/kit": "^2.8.4",
+        "@sveltejs/kit": "^2.8.5",
         "@sveltejs/vite-plugin-svelte": "^4.0.2",
-        "@tailwindcss/forms": "^0.5.9",
-        "@tailwindcss/typography": "^0.5.15",
         "autoprefixer": "^10.4.20",
         "cssnano": "^7.0.6",
         "eslint": "^9.15.0",
@@ -44,9 +44,10 @@
         "vite": "^5.4.19",
         "vitest": "^1.6.1"
     },
-    "type": "module",
     "dependencies": {
         "@clerk/types": "^4.35.0",
+        "@tailwindcss/forms": "^0.5.9",
+        "@tailwindcss/typography": "^0.5.15",
         "clerk-sveltekit": "^0.4.2"
     }
 }

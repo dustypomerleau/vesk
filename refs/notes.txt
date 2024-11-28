@@ -1,3 +1,10 @@
+Svelte 5 migration using empty project:
+
+1. package.json for vesk has tslib. Why?
+2. version of mdsvex in fixvesk is 11 rather than 12.
+
+---
+
 eslint 8 migration
 https://github.com/typescript-eslint/typescript-eslint/discussions/9389
 

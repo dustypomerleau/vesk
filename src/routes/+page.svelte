@@ -7,7 +7,8 @@
     import Maps from "$lib/components/Maps.svelte";
     import type { PostPath } from "$lib/types";
 
-    let { posts }: { posts: Array<PostPath> } = $props();
+    let { data } = $props();
+    let { posts } = data;
 </script>
 
 <svelte:head>

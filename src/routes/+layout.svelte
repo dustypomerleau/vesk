@@ -27,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 </svelte:head>
 
-<body
+<div
     class="flex min-h-screen flex-col bg-blue-10 font-sans text-lg font-normal leading-[1.55] text-gray-8"
 >
     <Nav />
@@ -42,4 +42,4 @@
     </main>
 
     <Footer />
-</body>
+</div>

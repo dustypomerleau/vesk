@@ -1,4 +1,6 @@
 onlyBuiltDependencies:
   - '@sveltejs/kit'
+  - browser-tabs-lock
+  - core-js
   - esbuild
-  - svelte-preprocess
+  - puppeteer

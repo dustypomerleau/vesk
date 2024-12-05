@@ -6,7 +6,8 @@ import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 const config = {
     extensions: [".md", ".svelte"],
     kit: { adapter: adapter() },
-    preprocess: [vitePreprocess(), mdsvex()],
+    // adding `".md"` to mdsvex extensions puts `{ metadata }` into the exported object!
+    preprocess: [vitePreprocess(), mdsvex({ extensions: [".md"] })],
 };
 
 export default config;

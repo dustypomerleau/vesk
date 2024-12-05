@@ -1,4 +1,6 @@
 import type { PostMetadata, PostPath } from "$lib/types";
+import type { Component } from "svelte";
+import { render } from "svelte/server";
 
 export const getFigureBreakpointWidth = (size = "large") => {
     const widths: { [size: string]: string } = {
@@ -16,20 +18,30 @@ export const getPosts = async (): Promise<Array<PostPath>> => {
     // todo: try making this eager and following:
     // https://blog.shabad22.com/articles/svelte-mdsvex
     // I'm not convinced it will make any difference, as it still uses svelte 4 syntax
-    const postFiles = import.meta.glob<Record<string, PostMetadata>>("/src/routes/info/*.md");
-    // Object.entries returns an array of arrays, where each array is a KV pair from the object.
-    const iterableFiles = Object.entries(postFiles);
+    const postFiles = import.meta.glob("/src/routes/info/*.md", {
+        eager: true,
+    });
 
-    // Here, calling the resolver() (essentially calling import on the md file) returns the files' metadata as metadata:.
-    const posts: Array<PostPath> = await Promise.all(
-        iterableFiles.map(async ([path, resolver]) => {
-            const { metadata } = await resolver();
-            // trim /src/routes and .md to get the URL
-            const postPath = path.slice(11, -3);
+    // debugging - remove later
+    console.log(postFiles);
+    const values = Object.values(postFiles);
+    console.log(values);
+    values.map((value) => console.log(value.metadata)); // Ok
+    values.map((value) => console.log(render(value.default()))); // Not Ok
 
-            return { meta: metadata, path: postPath };
-        }),
-    );
-
-    return posts;
+    // // Object.entries returns an array of arrays, where each array is a KV pair from the object.
+    // const iterableFiles = Object.entries(postFiles);
+    //
+    // // Here, calling the resolver() (essentially calling import on the md file) returns the files' metadata as metadata:.
+    // const posts: Array<PostPath> = await Promise.all(
+    //     iterableFiles.map(async ([path, resolver]) => {
+    //         const { metadata } = await resolver();
+    //         // trim /src/routes and .md to get the URL
+    //         const postPath = path.slice(11, -3);
+    //
+    //         return { meta: metadata, path: postPath };
+    //     }),
+    // );
+    //
+    // return posts;
 };

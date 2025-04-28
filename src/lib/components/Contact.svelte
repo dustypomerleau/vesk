@@ -32,6 +32,7 @@
             >referral form</a
         >.
     </div>
+    <div class="mt-4">Fields marked with * are required.</div>
 
     <form
         name="ve-contact"
@@ -44,18 +45,18 @@
         <input type="hidden" name="form-name" value="ve-contact" />
 
         <label class="mt-4">
-            <span class="field-label">Full name</span>
-            <input name="full-name" type="text" placeholder="" class="field" />
+            <span class="field-label">Full name*</span>
+            <input name="full-name" type="text" class="field" required />
         </label>
 
         <label>
-            <span class="field-label">Email address</span>
-            <input name="email" type="email" placeholder="email@example.com" class="field" />
+            <span class="field-label">Email address*</span>
+            <input name="email" type="email" class="field" required />
         </label>
 
         <label>
-            <span class="field-label">Mobile phone</span>
-            <input name="mobile" type="tel" placeholder="0400 000 000" class="field" />
+            <span class="field-label">Mobile phone*</span>
+            <input name="mobile" type="tel" class="field" required />
         </label>
 
         <div>

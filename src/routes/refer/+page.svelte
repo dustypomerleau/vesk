@@ -19,6 +19,7 @@
             >contact form</a
         >.
     </div>
+    <div class="mt-4">Fields marked with * are required.</div>
 
     <form
         name="ve-refer"
@@ -34,41 +35,36 @@
         <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6" />
 
         <label class="mt-4">
-            <span class="field-label">Doctor's name</span>
-            <input name="doc-name" type="text" placeholder="" class="field" />
+            <span class="field-label">Doctor's name*</span>
+            <input name="doc-name" type="text" class="field" required />
         </label>
 
         <label>
-            <span class="field-label">Provider number</span>
-            <input name="doc-provider" type="text" placeholder="" class="field" />
+            <span class="field-label">Provider number*</span>
+            <input name="doc-provider" type="text" class="field" required />
         </label>
 
         <label>
-            <span class="field-label">Email address</span>
-            <input
-                name="doc-email"
-                type="email"
-                placeholder="doctor.email@example.com"
-                class="field"
-            />
+            <span class="field-label">Email address*</span>
+            <input name="doc-email" type="email" class="field" required />
         </label>
 
         <label>
-            <span class="field-label">Preferred phone</span>
-            <input name="doc-phone" type="tel" placeholder="0400 000 000" class="field" />
+            <span class="field-label">Preferred phone*</span>
+            <input name="doc-phone" type="tel" class="field" required />
         </label>
 
         <label>
             <span class="field-label">Practice name and location</span>
-            <input name="practice" type="text" placeholder="" class="field" />
+            <input name="practice" type="text" class="field" />
         </label>
 
         <div class="mt-6 text-xl text-blue-9">Patient details:</div>
         <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6" />
 
         <label class="mt-4">
-            <span class="field-label">Patient's full name</span>
-            <input name="patient-name" type="text" placeholder="" class="field" />
+            <span class="field-label">Patient's full name*</span>
+            <input name="patient-name" type="text" class="field" required />
         </label>
 
         <label class="mt-0">
@@ -78,17 +74,12 @@
 
         <label>
             <span class="field-label">Email address</span>
-            <input
-                name="patient-email"
-                type="email"
-                placeholder="patient.email@example.com"
-                class="field"
-            />
+            <input name="patient-email" type="email" class="field" />
         </label>
 
         <label>
-            <span class="field-label">Mobile phone</span>
-            <input name="patient-phone" type="tel" placeholder="0400 000 000" class="field" />
+            <span class="field-label">Mobile phone*</span>
+            <input name="patient-phone" type="tel" class="field" />
         </label>
 
         <div class="mt-6 text-xl text-blue-9">Referral details:</div>
@@ -105,7 +96,7 @@
 
         <label class="mt-6">
             <span class="field-label">Presumptive diagnosis</span>
-            <input name="diagnosis" type="text" placeholder="" class="field" />
+            <input name="diagnosis" type="text" class="field" />
         </label>
 
         <label>

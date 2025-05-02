@@ -6,7 +6,6 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "moduleResolution": "bundler",
-        "plugins": [{ "name": "typescript-svelte-plugin" }],
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "sourceMap": true,

@@ -10,20 +10,26 @@
         "dev": "vite dev",
         "format": "prettier --write .",
         "lint": "prettier --check . && eslint .",
+        "prepare": "svelte-kit sync || echo ''",
         "preview": "vite preview",
         "test": "npm run test:unit -- --run && npm run test:e2e",
         "test:e2e": "playwright test",
         "test:unit": "vitest"
     },
     "devDependencies": {
+        "@eslint/compat": "^1.2.9",
+        "@eslint/js": "^9.27.0",
         "@netlify/plugin-lighthouse": "^6.0.1",
         "@playwright/test": "^1.52.0",
-        "@sveltejs/adapter-netlify": "^5.0.0",
-        "@sveltejs/kit": "^2.20.7",
+        "@sveltejs/adapter-netlify": "^5.0.2",
+        "@sveltejs/kit": "^2.21.1",
         "@sveltejs/vite-plugin-svelte": "^5.0.3",
-        "autoprefixer": "^10.4.21",
-        "cssnano": "^7.0.6",
-        "eslint": "^9.25.1",
+        "@tailwindcss/forms": "^0.5.10",
+        "@tailwindcss/typography": "^0.5.16",
+        "@tailwindcss/vite": "^4.1.7",
+        "@testing-library/jest-dom": "^6.6.3",
+        "@testing-library/svelte": "^5.2.7",
+        "eslint": "^9.26.0",
         "eslint-config-prettier": "^10.1.2",
         "eslint-plugin-svelte": "^3.5.1",
         "globals": "^16.0.0",
@@ -36,19 +42,20 @@
         "stylelint-config-standard": "^38.0.0",
         "stylelint-order": "^7.0.0",
         "svelte": "^5.28.2",
-        "svelte-check": "^4.1.6",
-        "tailwindcss": "^4.1.4",
-        "tslib": "^2.8.1",
+        "svelte-check": "^4.1.7",
+        "tailwindcss": "^4.1.5",
         "typescript": "^5.8.3",
-        "typescript-eslint": "8.31.0",
-        "typescript-svelte-plugin": "^0.3.46",
-        "vite": "^6.3.3",
-        "vitest": "^3.1.2"
+        "typescript-eslint": "8.32.1",
+        "vite": "^6.3.5",
+        "vitest": "^3.1.4"
     },
     "dependencies": {
-        "@clerk/types": "^4.55.1",
-        "@tailwindcss/forms": "^0.5.10",
-        "@tailwindcss/typography": "^0.5.16",
+        "@clerk/types": "^4.59.1",
         "clerk-sveltekit": "^0.4.2"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "esbuild"
+        ]
     }
 }

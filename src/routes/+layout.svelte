@@ -28,14 +28,14 @@
 </svelte:head>
 
 <div
-    class="flex min-h-screen flex-col bg-blue-10 font-sans text-lg font-normal leading-[1.55] text-gray-8"
+    class="bg-blue-10 text-gray-8 flex min-h-screen flex-col font-sans text-lg leading-[1.55] font-normal"
 >
     <Nav />
 
     <main>
         <div
             id="bg"
-            class="flex flex-col bg-gradient-to-br from-gray-1 to-gray-3 bg-cover bg-fixed"
+            class="from-gray-1 to-gray-3 flex flex-col bg-gradient-to-br bg-cover bg-fixed"
         >
             {@render children()}
         </div>

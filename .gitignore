@@ -2,11 +2,16 @@
 .DS_Store
 .env*
 .netlify
+.output
 /.svelte-kit
 /build
 /package
+Thumbs.db
 deprecated/
 hero.avif
 node_modules
 pnpm-lock.yaml
+test-results
 unoptimized/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

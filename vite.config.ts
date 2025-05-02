@@ -1,14 +1,34 @@
-import { defineConfig } from "vite";
+/// <reference types="vitest/config" />
+import tailwindcss from "@tailwindcss/vite";
+import { svelteTesting } from "@testing-library/svelte/vite";
 import { sveltekit } from "@sveltejs/kit/vite";
+import { defineConfig } from "vite";
 
-// bookmark:
-// - vite config https://vite.dev/config/
-// - svelte config https://svelte.dev/docs/kit/configuration
-// - tailwind 4 config https://tailwindcss.com/docs/installation/framework-guides/sveltekit
-// - check revision pp to ensure that you still have the corrected body tag fix for svelte 5
-// - revisit mdsvex
-// - rebase on main
 export default defineConfig({
-    plugins: [sveltekit()],
-    test: { include: ["src/**/*.{test,spec}.{js,ts}"] },
+    plugins: [tailwindcss(), sveltekit()],
+    test: {
+        workspace: [
+            {
+                extends: "./vite.config.ts",
+                plugins: [svelteTesting()],
+                test: {
+                    name: "client",
+                    environment: "jsdom",
+                    clearMocks: true,
+                    include: ["src/**/*.svelte.{test,spec}.{js,ts}"],
+                    exclude: ["src/lib/server/**"],
+                    setupFiles: ["./vitest-setup-client.ts"],
+                },
+            },
+            {
+                extends: "./vite.config.ts",
+                test: {
+                    name: "server",
+                    environment: "node",
+                    include: ["src/**/*.{test,spec}.{js,ts}"],
+                    exclude: ["src/**/*.svelte.{test,spec}.{js,ts}"],
+                },
+            },
+        ],
+    },
 });

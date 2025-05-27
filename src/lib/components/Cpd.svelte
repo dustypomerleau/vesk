@@ -2,7 +2,7 @@
     import Share from "$lib/svg/Share.svelte";
 </script>
 
-<div id="cpd" class="w-full bg-orange-7 px-4 py-2 text-white sm:text-center">
+<div id="cpd" class="w-full bg-orange-7 px-4 py-4 text-xl text-white sm:text-center">
     Referring doctors can
     <a
         href="https://in4med-23651214.hubspotpagebuilder.com/"

@@ -2,7 +2,7 @@
     let { viewBox = "0 0 1200 800", width = "100%" } = $props();
 </script>
 
-<svg {viewBox} {width} fill="none">
+<svg {viewBox} style="width: {width};" fill="none">
 <rect width="1200" height="800" fill="#183863"/>
 <path d="M742.16 204.5L919.16 102" stroke="url(#paint0_linear_101_2)" stroke-opacity="0.8" stroke-width="9"/>
 <path d="M907.16 86L926.66 119.5" stroke="url(#paint1_linear_101_2)" stroke-width="7" stroke-linecap="round"/>

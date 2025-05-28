@@ -10,11 +10,8 @@ export interface Doc {
 }
 
 export interface Figure {
-    size?: string;
-    width?: string;
+    size: "small" | "medium" | "large";
     caption?: string;
-    textSize?: string;
-    textColor?: string;
 }
 
 export interface PhotoFig extends Figure {
@@ -25,6 +22,8 @@ export interface PhotoFig extends Figure {
 export interface SvgFig extends Figure {
     Svg: Component;
     viewBox?: string;
+    width?: string;
+    title: string;
 }
 
 export interface Link {

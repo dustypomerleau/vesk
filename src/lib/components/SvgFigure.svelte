@@ -1,36 +1,34 @@
 <!-- todo: create a FigStack so that you can wrap sequential figs or lay out horizontally depending on the screen -->
 
 <script lang="ts">
-    import { getFigureBreakpointWidth } from "$lib/utils";
     import type { SvgFig } from "$lib/types";
 
     let { figure }: { figure: SvgFig } = $props();
-
-    // at present, these text size/color customizations are not playing nicely with mdsvex, so basically whatever is the default here will be used, regardless of what you specify in the markdown file
-    const {
-        Svg,
-        viewBox,
-        width = "100%",
-        size,
-        caption,
-        textSize = "text-base",
-        textColor = "text-gray-7",
-    } = figure;
-
-    const smallBreakpointWidth = size ? getFigureBreakpointWidth(size) : "";
+    const { caption, size, Svg, title, viewBox, width = "100%" } = figure;
 </script>
 
-<div class="flex flex-col items-center gap-2">
+<div class="figure figure-size {size}">
     <!-- you can apply text-color, gradient, etc. to the svg using styles/classes on this container div -->
-    <div
-        class="w-full {smallBreakpointWidth} flex flex-col items-center overflow-hidden rounded-lg"
-    >
+    <div class="svg-container">
         <!-- You need to specify width relative to the container div, so that if the SVG also specifies a width, it will be overridden. -->
-        <Svg {viewBox} {width} />
+        <!-- todo: update the SVGs used in existing posts to take the title prop and add it inside a <title> tag -->
+        <Svg {title} {viewBox} {width} />
     </div>
     {#if caption}
-        <div class="w-full {smallBreakpointWidth} px-2 {textSize} {textColor}">
+        <div class="figure-caption">
             {caption}
         </div>
     {/if}
 </div>
+
+<style>
+    .svg-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        width: 100%;
+    }
+</style>

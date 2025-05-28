@@ -1,12 +1,12 @@
 session_name: vesk
 windows:
-  - window_name: nvim
-    panes:
-      - nvim src/lib/types.d.ts
-  - window_name: fish
-    focus: true
-    panes:
-      - jj status
-  - window_name: watch
-    panes:
-      - pnpm run dev
+    - window_name: nvim
+      panes:
+          - nvim src/lib/types.d.ts
+    - window_name: fish
+      focus: true
+      panes:
+          - jj status
+    - window_name: watch
+      panes:
+          - pnpm run dev

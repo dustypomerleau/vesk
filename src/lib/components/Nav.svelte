@@ -7,12 +7,9 @@
     // import UserButton from "clerk-sveltekit/client/UserButton.svelte";
 </script>
 
-<header
-    id="header"
-    class="flex flex-row flex-wrap items-center justify-between gap-y-8 bg-blue-10 px-4 py-4 sm:px-8"
->
+<header id="header" class="header">
     <a href="/" title="Vic Eye Home">
-        <div>
+        <div class="logo">
             <Logo />
         </div>
     </a>
@@ -33,3 +30,32 @@
     <!--     </div> -->
     <!-- </SignedOut> -->
 </header>
+
+<style>
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: var(--blue-10);
+        column-gap: var(--space-8);
+        padding-block: var(--space-4);
+        padding-inline: var(--space-4);
+
+        @media (width >= 40rem) {
+            padding-inline: var(--space-8);
+        }
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+
+        width: calc(var(--space-4) * 12);
+
+        @media (width >= 40rem) {
+            width: calc(var(--space-4) * 15);
+        }
+    }
+</style>

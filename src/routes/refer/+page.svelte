@@ -10,7 +10,9 @@
     <title>Vic Eye &amp; Retina Specialists | Refer</title>
 </svelte:head>
 
-<div class="form sm:my-8">
+<!-- bookmark: removing tailwind from routes starting here -->
+<!-- first, fix the gradient dividers, then remove all other styles and start with just the classes you used on the contact form -->
+<div class="form">
     <div class="card-title">Refer to Vic Eye</div>
     <div>
         Thank you for entrusting your patients to the specialists at Vic Eye. You will receive a
@@ -19,23 +21,25 @@
             >contact form</a
         >.
     </div>
-    <div class="mt-4">Fields marked with * are required.</div>
+    <div>Fields marked with * are required.</div>
 
     <form
         name="ve-refer"
         method="post"
         data-netlify="true"
         netlify-honeypot="other"
-        class="flex flex-col"
+        class="form-inner"
     >
         <!-- helper for netlify forms -->
         <input type="hidden" name="form-name" value="ve-refer" />
         <input type="hidden" name="other" />
 
-        <div class="mt-6 text-xl text-blue-9">Doctor details:</div>
-        <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6"></div>
+        <div>
+            <div class="section-title">Doctor details:</div>
+            <div class="divider"></div>
+        </div>
 
-        <label class="mt-4">
+        <label>
             <span class="field-label">Doctor's name*</span>
             <input name="doc-name" type="text" class="field" required />
         </label>
@@ -60,15 +64,17 @@
             <input name="practice" type="text" class="field" />
         </label>
 
-        <div class="mt-6 text-xl text-blue-9">Patient details:</div>
-        <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6"></div>
+        <div>
+            <div class="section-title">Patient details:</div>
+            <div class="divider"></div>
+        </div>
 
-        <label class="mt-4">
+        <label>
             <span class="field-label">Patient's full name*</span>
             <input name="patient-name" type="text" class="field" required />
         </label>
 
-        <label class="mt-0">
+        <label>
             <span class="field-label">Date of birth</span>
             <input name="patient-dob" type="date" value="dd-mm-yyyy" class="field" />
         </label>
@@ -83,19 +89,21 @@
             <input name="patient-phone" type="tel" class="field" />
         </label>
 
-        <div class="mt-6 text-xl text-blue-9">Referral details:</div>
-        <div class="h-[2px] bg-gradient-to-r from-blue-8 to-blue-6"></div>
+        <div>
+            <div class="section-title">Referral details:</div>
+            <div class="divider"></div>
+        </div>
 
-        <div class="mt-4">
+        <div>
             <span class="field-label">Preferred specialist</span>
-            <div class="flex flex-col sm:flex-row">
+            <div class="radio-container">
                 <Radio name="specialist-preference" Icon={Calendar} text="First available" />
                 <Radio name="specialist-preference" Icon={Mt} text="Dr Tan" />
                 <Radio name="specialist-preference" Icon={Dp} text="Dr Pomerleau" />
             </div>
         </div>
 
-        <label class="mt-6">
+        <label>
             <span class="field-label">Presumptive diagnosis</span>
             <input name="diagnosis" type="text" class="field" />
         </label>
@@ -105,14 +113,23 @@
             <textarea name="details" rows="8" maxlength="10000" class="field"></textarea>
         </label>
 
-        <button
-            type="submit"
-            class="button flex w-5/6 max-w-xs flex-row place-content-center items-center self-center"
-        >
-            <div class="text-blue-3">
+        <button type="submit" class="button">
+            <div class="icon">
                 <Send />
             </div>
-            <div class="pl-2">Refer my patient</div>
+            <div>Refer my patient</div>
         </button>
     </form>
 </div>
+
+<style>
+    .divider {
+        background-image: linear-gradient(to right, var(--blue-8), var(--blue-6));
+        height: 2px;
+    }
+
+    .section-title {
+        color: var(--blue-9);
+        font-size: var(--fs-xl);
+    }
+</style>

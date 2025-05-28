@@ -3,7 +3,7 @@ const config = {
         { files: "*.md", options: { tabWidth: 2 } },
         { files: "*.svelte", options: { parser: "svelte" } },
     ],
-    plugins: ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+    plugins: ["prettier-plugin-svelte"],
     printWidth: 100,
     tabWidth: 4,
 };

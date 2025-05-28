@@ -25,11 +25,45 @@
     let Icon = icons[icon];
 </script>
 
-<a href={path} class="flex rounded-md p-4 hover:bg-gray-1">
-    <div class="flex flex-col content-center justify-center text-blue-8">
+<a href={path}>
+    <div class="icon">
         <Icon width={iconWidth} />
     </div>
-    <div class="ml-2 flex w-full flex-col">
-        <h3 class="font-semibold">{brief}</h3>
+    <div class="brief">
+        <h3>{brief}</h3>
     </div>
 </a>
+
+<style>
+    .brief {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        h3 {
+            font-weight: var(--fw-semibold);
+        }
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        color: var(--blue-8);
+    }
+
+    a {
+        display: flex;
+        gap: var(--space-2);
+
+        border-radius: var(--radius-md);
+        padding: var(--space-4);
+
+        &:hover {
+            background-color: var(--gray-1);
+        }
+    }
+</style>

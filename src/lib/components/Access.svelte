@@ -10,7 +10,7 @@
     <title>Vic Eye &amp; Retina Specialists | Request provider access</title>
 </svelte:head>
 
-<div class="form sm:my-8">
+<div class="form">
     <div class="card-title">Request provider access</div>
     <div>
         Thank you for your interest in our provider-only content! Please fill out the form below to
@@ -22,66 +22,81 @@
         method="post"
         data-netlify="true"
         netlify-honeypot="other"
-        class="flex flex-col"
+        class="form-inner"
     >
         <!-- helper for netlify forms -->
         <input type="hidden" name="form-name" value="ve-provider-access" />
         <input type="hidden" name="other" />
 
-        <label class="mt-6">
+        <label>
             <span class="field-label">Full name</span>
-            <input name="doc-name" type="text" placeholder="" class="field" />
+            <input name="doc-name" type="text" class="field" />
         </label>
 
         <label>
             <span class="field-label">Provider number</span>
-            <input name="doc-provider" type="text" placeholder="" class="field" />
+            <input name="doc-provider" type="text" class="field" />
         </label>
 
         <label>
             <span class="field-label">Email address</span>
-            <input name="doc-email" type="email" placeholder="" class="field" />
+            <input name="doc-email" type="email" class="field" />
         </label>
 
         <label>
             <span class="field-label">Preferred phone</span>
-            <input name="doc-phone" type="tel" placeholder="" class="field" />
+            <input name="doc-phone" type="tel" class="field" />
         </label>
 
         <label>
             <span class="field-label">Practice name and location</span>
-            <input name="practice" type="text" placeholder="" class="field" />
+            <input name="practice" type="text" class="field" />
         </label>
 
         <!-- todo: fix icons -->
-        <div class="mb-6 mt-4">
+        <div class="radio-set">
             <span class="field-label">Provider type</span>
-            <div class="flex flex-col sm:flex-row">
+            <div class="radio-container">
                 <Radio name="provider-type" Icon={Glasses} text="Optometrist" />
                 <Radio name="provider-type" Icon={Stethoscope} text="GP" />
                 <Radio name="provider-type" Icon={Medical} text="Other" />
             </div>
         </div>
 
-        <label class="mb-6 mt-4 flex items-center">
-            <input name="cpd-contact" type="checkbox" class="mr-3" />
-            <span class="field-label pt-[0.05rem]">Please notify me about upcoming CPD events.</span
-            >
+        <label class="checkbox">
+            <input name="cpd-contact" type="checkbox" />
+            <span class="field-label nudge">Please notify me about upcoming CPD events.</span>
         </label>
 
-        <label class="mt-4">
+        <label class="text-area">
             <span class="field-label">Additional information</span>
             <textarea name="details" rows="2" maxlength="10000" class="field"></textarea>
         </label>
 
-        <button
-            type="submit"
-            class="button flex w-5/6 max-w-xs flex-row place-content-center items-center self-center"
-        >
-            <div class="text-blue-3">
+        <button type="submit" class="button">
+            <div class="icon">
                 <Send />
             </div>
-            <div class="pl-2">Request access</div>
+            <div>Request access</div>
         </button>
     </form>
 </div>
+
+<style>
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+
+        margin-block-end: var(--space-6);
+        margin-block-start: var(--space-4);
+    }
+
+    .nudge {
+        padding-block-start: 0.05rem;
+    }
+
+    .text-area {
+        margin-block-start: var(--space-4);
+    }
+</style>

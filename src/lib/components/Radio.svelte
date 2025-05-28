@@ -17,9 +17,13 @@
 </script>
 
 <input id={value} type="radio" {name} {value} />
-<label for={value} class="flex flex-row items-center">
-    <div>
-        <Icon width={iconWidth} />
-    </div>
-    <div class:pl-2={Icon}>{text}</div>
+<label for={value}>
+    <Icon width={iconWidth} />
+    <div class="nudge">{text}</div>
 </label>
+
+<style>
+    .nudge {
+        padding-inline-start: var(--space-2);
+    }
+</style>

@@ -2,43 +2,34 @@
     import { doctors } from "$lib/content/doctors";
 </script>
 
-<div
-    id="doctors"
-    class="flex flex-col items-center justify-start sm:bg-gray-4 md:flex-row md:flex-wrap md:content-start md:items-stretch md:justify-center"
->
+<div id="doctors" class="doctors">
     {#each doctors as doc}
         <div class="wide-card">
-            <div class="overflow-hidden rounded-t-md">
+            <div class="doctor-image-container">
                 <picture>
                     <source type="image/avif" srcset="/{doc.image}.avif" />
                     <source type="image/webp" srcset="/{doc.image}.webp" />
-                    <img
-                        src="/{doc.image}.webp"
-                        alt={doc.alt}
-                        class="h-96 w-full object-cover object-top"
-                    />
+                    <img src="/{doc.image}.webp" alt={doc.alt} class="doctor-image" />
                 </picture>
             </div>
-            <div class="-mt-0.5 flex w-full flex-row bg-gray-3 sm:justify-center">
-                <div class="px-6 py-2">
-                    <div class="flex flex-row flex-wrap items-baseline justify-start">
-                        <div
-                            class="bg-gradient-to-r from-orange-10 to-orange-8 bg-clip-text pr-2 text-2xl font-medium text-transparent"
-                        >
+            <div class="doctor-text">
+                <div class="doctor-text-inner">
+                    <div class="name-creds">
+                        <div class="name">
                             {doc.name}
                         </div>
-                        <div class="text-base">
+                        <div class="creds">
                             {doc.credentials}
                         </div>
                     </div>
-                    <div class="font-normal text-orange-10">
+                    <div class="specialties">
                         {@html doc.specialties}
                     </div>
                 </div>
             </div>
-            <div class="px-6 py-4">
+            <div class="bio-container">
                 {#each doc.bio as par}
-                    <div class="mb-4 last:mb-1">
+                    <div class="bio">
                         {par}
                     </div>
                 {/each}
@@ -46,3 +37,94 @@
         </div>
     {/each}
 </div>
+
+<style>
+    .bio {
+        margin-block-end: var(--space-4);
+
+        &:last-child {
+            margin-block-end: var(--space-1);
+        }
+    }
+
+    .bio-container {
+        padding-block: var(--space-4);
+        padding-inline: var(--space-6);
+    }
+
+    .creds {
+        font-size: var(--fs-base);
+        font-weight: var(--fw-normal);
+        line-height: var(--lh-base);
+    }
+
+    .doctor-image {
+        height: calc(var(--space-4) * 24);
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+    }
+
+    .doctor-image-container {
+        border-top-left-radius: var(--radius-md);
+        border-top-right-radius: var(--radius-md);
+        overflow: hidden;
+    }
+
+    .doctors {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media (width >= 40rem) {
+            background-color: var(--gray-4);
+        }
+
+        @media (width >= 48rem) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            align-items: stretch;
+        }
+    }
+
+    .doctor-text {
+        display: flex;
+
+        background-color: var(--gray-3);
+        width: 100%;
+
+        @media (width >= 40rem) {
+            justify-content: center;
+        }
+    }
+
+    .doctor-text-inner {
+        padding-block: var(--space-2);
+        padding-inline: var(--space-6);
+    }
+
+    .name {
+        background-clip: text;
+        background-image: linear-gradient(to right, var(--orange-10), var(--orange-8));
+        color: transparent;
+        font-size: var(--fs-2xl);
+        font-weight: var(--fw-medium);
+        line-height: var(--lh-lg);
+    }
+
+    .name-creds {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+        column-gap: var(--space-2);
+    }
+
+    .specialties {
+        color: var(--orange-10);
+        line-height: var(--lh-base);
+    }
+</style>

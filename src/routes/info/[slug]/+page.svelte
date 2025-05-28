@@ -26,12 +26,22 @@
     <title>Vic Eye &amp; Retina Specialists | {brief}</title>
 </svelte:head>
 
-<div class="flex justify-center bg-white">
-    <article class="prose-a:link prose m-6">
-        <h1 class="mb-0 pb-4 text-gray-8">{title}</h1>
-        <div class="not-prose"><Byline {meta} /></div>
-        <div class="mt-6 h-[2px] bg-gradient-to-r from-gray-4 to-gray-2">
-            <div class="text-lg"><Content /></div>
-        </div>
+<div class="article-container">
+    <!-- todo: the article tag previously had tailwind prose class and may need to be tweaked -->
+    <!-- conversely, the div wrapping Byline had to be marked not prose, so really only the content div needs tweaking -->
+    <article>
+        <h1>{title}</h1>
+        <div><Byline {meta} /></div>
+        <div class="divider"></div>
+        <div class="content"><Content /></div>
     </article>
 </div>
+
+<style>
+    .article-container {
+        display: flex;
+        justify-content: center;
+
+        background-color: white;
+    }
+</style>

@@ -27,19 +27,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 </svelte:head>
 
-<div
-    class="bg-blue-10 text-gray-8 flex min-h-screen flex-col font-sans text-lg leading-[1.55] font-normal"
->
+<div class="outer">
     <Nav />
 
     <main>
-        <div
-            id="bg"
-            class="from-gray-1 to-gray-3 flex flex-col bg-gradient-to-br bg-cover bg-fixed"
-        >
+        <div id="bg" class="bg">
             {@render children()}
         </div>
     </main>
 
     <Footer />
 </div>
+
+<style>
+    .outer {
+        color: var(--gray-8);
+        display: flex;
+        flex-direction: column;
+
+        font-size: var(--fs-lg);
+        font-weight: var(--fw-normal);
+        line-height: 1.55;
+        min-height: 100lvh;
+    }
+
+    .bg {
+        background-attachment: fixed;
+        background-image: linear-gradient(135deg, var(--gray-1), var(--gray-3));
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+</style>

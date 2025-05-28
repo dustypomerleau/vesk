@@ -2,7 +2,7 @@
     let { viewBox = "0 0 1200 800", width = "100%" } = $props();
 </script>
 
-<svg {viewBox} {width} fill="none">
+<svg {viewBox} style="width: {width};"  fill="none">
 <rect width="1200" height="800" fill="#183863"/>
 <g filter="url(#filter0_f_1_60)">
 <path d="M751.629 472.5V327.5L1013.13 263C1013.13 263 1066.13 313.5 1066.13 400C1066.13 486.5 1013.13 537 1013.13 537L751.629 472.5Z" fill="url(#paint0_diamond_1_60)" fill-opacity="0.2"/>

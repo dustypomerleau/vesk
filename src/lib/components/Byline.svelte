@@ -5,17 +5,57 @@
     const { author, creds, image } = meta;
 </script>
 
-<div class="flex items-center">
-    <div class="h-20 min-h-[5rem] w-20 min-w-[5rem] overflow-hidden rounded-3xl">
+<div class="byline">
+    <div class="avatar-container">
         <picture>
             <source type="image/avif" srcset="/{image}.avif" />
             <source type="image/webp" srcset="/{image}.webp" />
-            <source type="image/jpeg" srcset="/{image}.jpg" />
-            <img src="/{image}.jpg" alt={author} class="h-24 object-cover" />
+            <img src="/{image}.webp" alt={author} class="avatar" />
         </picture>
     </div>
-    <div class="flex flex-col pl-4 text-gray-8">
-        <div class="text-lg">{author}</div>
-        <div class="text-sm leading-none text-gray-7">{creds}</div>
+    <div class="author-container">
+        <div class="author">{author}</div>
+        <div class="creds">{creds}</div>
     </div>
 </div>
+
+<style>
+    .author {
+        font-size: var(--fs-lg);
+    }
+
+    .author-container {
+        display: flex;
+        flex-direction: column;
+
+        color: var(--gray-8);
+    }
+
+    .avatar {
+        height: calc(var(--space-4) * 6);
+        object-fit: cover;
+    }
+
+    .avatar-container {
+        --dim: calc(var(--space-4) * 5);
+
+        border-radius: calc(var(--radius-lg) * 3);
+        height: var(--dim);
+        min-height: 5rem;
+        min-width: 5rem;
+        overflow: hidden;
+        width: var(--dim);
+    }
+
+    .byline {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
+    }
+
+    .creds {
+        color: var(--gray-7);
+        font-size: var(--fs-sm);
+        line-height: 0;
+    }
+</style>

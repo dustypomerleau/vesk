@@ -3,10 +3,23 @@
     import Parking from "$lib/components/Parking.svelte";
 </script>
 
-<div
-    id="location"
-    class="flex flex-col items-center justify-start md:flex-row md:flex-wrap md:items-stretch md:justify-center"
->
+<div id="location" class="location">
     <Location />
     <Parking />
 </div>
+
+<style>
+    .location {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media (width >= 48rem) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+        }
+    }
+</style>

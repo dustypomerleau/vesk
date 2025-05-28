@@ -5,9 +5,16 @@
     const { buttonText, href, Icon } = link;
 </script>
 
-<a {href} class="button flex flex-row items-center justify-center">
-    <div class="text-blue-3">
+<!-- todo: link styles -->
+<a {href} class="button">
+    <div class="icon">
         <Icon width={iconWidth} />
     </div>
-    <div class="pl-2">{buttonText}</div>
+    <div class="button-text">{buttonText}</div>
 </a>
+
+<style>
+    .button-text {
+        font-weight: var(--fw-medium);
+    }
+</style>

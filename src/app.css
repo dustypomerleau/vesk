@@ -92,6 +92,7 @@
         --container-lg: 32rem;
         --container-xl: 36rem;
 
+        font-size: 1em;
         --fs-base: 1rem;
         --fs-sm: calc(var(--fs-base) * 0.875);
         --fs-lg: calc(var(--fs-base) * 1.125);
@@ -191,7 +192,7 @@
     button,
     input,
     label {
-        line-height: 1;
+        line-height: 1.15;
     }
 
     /* Balance text wrapping on headings */
@@ -326,7 +327,9 @@
 
 @layer components {
     article {
-        margin: var(--space-6);
+        max-width: 65ch;
+        padding-inline: var(--space-3);
+        width: 100%;
 
         .content {
             display: flex;
@@ -339,18 +342,58 @@
         .divider {
             background-image: linear-gradient(to right, var(--gray-4), var(--gray-2));
             height: 2px;
-            margin-block-start: var(--space-6);
+            margin-block: var(--space-6);
         }
 
-        /* bookmark: todo: you need to override the base font setting of the user agent, which is in em, in such a way that these headings inherit the correct sizes */
-        /* perhaps take the font-size off article-container and start over with some reading */
         h1,
         h2,
         h3,
         h4 {
+            align-self: flex-start;
+
             color: var(--gray-8);
-            margin-block-end: 0;
-            padding-block-end: var(--space-4);
+            padding-block-end: var(--space-3);
+            padding-block-start: var(--space-5);
+        }
+
+        /* override webkit user agent styles, which make h1 smaller inside articles and sections */
+        h1 {
+            font-size: 1.75em;
+        }
+
+        ol,
+        ul {
+            margin-block: var(--space-3);
+
+            li:not(:first-child) {
+                padding-block-start: var(--space-1);
+            }
+
+            li:not(:last-child) {
+                padding-block-end: var(--space-3);
+            }
+
+            @media (width >= 40rem) {
+                padding-inline-start: var(--space-8);
+            }
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-inline-start: var(--space-5);
+
+            li::marker {
+                color: var(--gray-7);
+            }
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-inline-start: var(--space-4);
+
+            li::marker {
+                color: var(--gray-6);
+            }
         }
     }
 
@@ -472,11 +515,9 @@
         gap: var(--space-2);
 
         color: var(--gray-7);
-        padding-block-start: var(--space-6);
-        padding-block-end: var(--space-3);
+        padding-block: var(--space-6);
     }
 
-    /* note: width of 100% were removed on the image and caption class selectors, revisit this if putting the width on the figure-size class is not sufficient. */
     .figure-caption {
         padding-inline: var(--space-4);
     }
@@ -485,13 +526,8 @@
         border-radius: var(--radius-lg);
     }
 
-    .figure-picture {
-        display: flex;
-        place-content: center;
-    }
-
     .figure-size {
-        width: 100%;
+        width: 100vw;
 
         @media (width >= 35rem) {
             &.small {
@@ -571,6 +607,11 @@
 
     .radio-set {
         margin-block: var(--space-4) var(--space-6);
+    }
+
+    .section-header {
+        font-size: var(--fs-2xl);
+        font-weight: var(--fw-semibold);
     }
 
     .wide-card {

@@ -42,7 +42,7 @@ title: A patient's guide to cataract surgery and lens implants
 
     const slitlamp: PhotoFig = {
         image: "images/cataract",
-        size: "large",
+        size: "small",
         alt: "A slitlamp photograph of a cataract",
         caption: "A cataract with yellowing of the lens: In this case, the back of the lens is opaque and irregular, which scatters light and causes glare.",
     };
@@ -55,7 +55,7 @@ A mild cataract won't affect your vision much, but it may change the prescriptio
 Cataracts gradually worsen, and eventually your vision will be blurry in a way that glasses can't correct.
 Difficulty reading and bothersome glare&mdash;particularly when driving at night&mdash;are common complaints.
 
-<PhotoFigure figure={slitlamp} /><br/>
+<PhotoFigure figure={slitlamp} />
 <SvgFigure figure={cataract} />
 
 ## How do I know when it's time for cataract surgery?
@@ -105,7 +105,7 @@ The implants come in three broad categories, and each has different tradeoffs:
 1. **Enhanced depth of field** implants are similar to monofocal implants, but they provide a larger range of clear vision. We sometimes refer to this improvement as better _intermediate_ vision (in the middle distance, just beyond arm's reach). Computer work is a common example of a task that requires good intermediate vision. These implants have fewer optical tradeoffs than multifocal implants (below), but don't completely eliminate the need for glasses when reading or working up close.
 1. **Multifocal** implants give the widest range of vision, and in some cases can completely eliminate the need for glasses. Many patients with this type of implant report that they see soft halos around lights in dim lighting (night driving). These optical artifacts are usually not bothersome, and occur because of the technology that allows the lens to provide both near and far vision. You should choose a multifocal implant if eliminating the need for glasses is your top priority, and you don't mind taking some time to adapt to the implant. Multifocal implants are not suitable for everyone. If you have high levels of astigmatism (oval eye shape), retinal or optic nerve conditions (macular degeneration, glaucoma), or problems with eye alignment (double vision), you may have trouble adjusting to a multifocal lens.
 
-<SvgFigure figure={distance} /><br />
+<SvgFigure figure={distance} />
 <SvgFigure figure={near} />
 
 There are many strategies for using these three types of implants to achieve specific goals.

@@ -53,7 +53,6 @@
             <input name="practice" type="text" class="field" />
         </label>
 
-        <!-- todo: fix icons -->
         <div class="radio-set">
             <span class="field-label">Provider type</span>
             <div class="radio-container">

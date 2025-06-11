@@ -16,8 +16,6 @@
 </svelte:head>
 
 <div class="article-container">
-    <!-- todo: the article tag previously had tailwind prose class and may need to be tweaked -->
-    <!-- conversely, the div wrapping Byline had to be marked not prose, so really only the content div needs tweaking -->
     <article>
         <h1>{title}</h1>
         <div><Byline {meta} /></div>
@@ -29,8 +27,15 @@
 <style>
     .article-container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
 
         background-color: white;
+        font-size: var(--fs-xl);
+        padding-block-end: var(--space-4);
+
+        @media (width >= 40rem) {
+            padding-inline: var(--space-4);
+        }
     }
 </style>

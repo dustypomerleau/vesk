@@ -27,6 +27,7 @@
     .author-container {
         display: flex;
         flex-direction: column;
+        gap: var(--space-2);
 
         color: var(--gray-8);
     }

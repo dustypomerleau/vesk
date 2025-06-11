@@ -6,7 +6,8 @@
 </script>
 
 <div id="info" class="info">
-    <div class="info-header">Patient Information</div>
+    <!-- todo: should these headers be sections for accessibility? -->
+    <div class="info-header section-header">Patient Information</div>
 
     <ul class="posts">
         {#each posts as post}
@@ -24,7 +25,6 @@
     }
 
     .info-header {
-        font-weight: var(--fw-semibold);
         padding-block-end: var(--space-3);
         padding-inline: var(--space-4);
         text-align: center;

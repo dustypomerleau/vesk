@@ -5,7 +5,6 @@
     const { buttonText, href, Icon } = link;
 </script>
 
-<!-- todo: link styles -->
 <a {href} class="button">
     <div class="icon">
         <Icon width={iconWidth} />

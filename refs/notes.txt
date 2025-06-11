@@ -1,6 +1,6 @@
-troubleshooting post loading:
+steps to loading markdown post:
 
-steps:
+the list view (homepage):
 1. routes/+page.ts calls load()
 1. the load function calls fetch and hits the api defined in routes/api/info/+server.ts
 1. the handler in that file calls utils.getPosts()
@@ -10,8 +10,13 @@ steps:
 1. Info component passes each post to a Listing
 1. Listing destructures and uses some of the metadata for the home page listing of articles
 1. Listing also wraps itself in an anchor tag that links to the path of the article, using the path on PostPath
-1. that link fails - props meta is undefined, and the failrue is probably in the load function at routes/info/[slug]/+page.ts
 
+the post view (info/[slug]/some-article):
+1. when you click on the link to the post page, it calls the load function in routes/info/[slug]/+page.ts
+1. the contents of the markdown file have been processed by mdsvex to create an importable module
+1. the load function takes a slug string that is derived from the path params and dynamically imports the appropriate markdown file for the slug as an es6 module
+1. the exports from the module are metadata and default, which is your content as a component
+1. the corresponding info/[slug]/+page.svelte destructures the object and passes the metadata items and the Content component to the view
 
 ---
 

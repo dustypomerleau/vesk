@@ -1,18 +1,7 @@
 <script lang="ts">
-    import type { Component } from "svelte";
+    import type { RadioProps } from "$lib/types";
 
-    let {
-        Icon,
-        name,
-        text = "radio text",
-        iconWidth = "1.5rem",
-    }: {
-        Icon: Component;
-        name: string;
-        text?: string;
-        iconWidth?: string;
-    } = $props();
-
+    let { Icon, name, text = "radio text", iconWidth = "1.5rem" }: RadioProps = $props();
     let value = text.toLowerCase();
 </script>
 

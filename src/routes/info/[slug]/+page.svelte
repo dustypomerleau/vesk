@@ -7,9 +7,8 @@
     const {
         meta,
         meta: { brief, title },
-    } = data;
-
-    const { Content } = data;
+        Content,
+    }: PostContent = data;
 </script>
 
 <svelte:head>

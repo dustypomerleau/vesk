@@ -56,3 +56,10 @@ export interface PostPath {
     meta: PostMetadata;
     path: string;
 }
+
+export interface RadioProps {
+    Icon: Component;
+    name: string;
+    text?: string;
+    iconWidth?: string;
+}

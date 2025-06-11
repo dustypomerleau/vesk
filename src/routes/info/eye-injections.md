@@ -15,7 +15,7 @@ title: Understanding injection therapy for eye conditions
     import type { SvgFig } from "$lib/types";
 
     const injection: SvgFig = {
-        svg: Injection,
+        Svg: Injection,
         viewBox: "0, 30, 1200, 770",
         size: "large",
         caption: "Intravitreal injections (top) are placed into the hollow space inside the eye. Orbital floor injections (bottom) are placed just below the eye.",

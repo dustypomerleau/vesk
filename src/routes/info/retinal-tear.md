@@ -14,7 +14,7 @@ title: Laser treatment for retinal tears
     import type { SvgFig } from "$lib/types";
 
     const tear: SvgFig = {
-        svg: NormalVersusTear,
+        Svg: NormalVersusTear,
         viewBox: "0, 100, 1200, 600",
         size: "large",
         caption: "A healthy retina lines the inside wall of your eye, reacting to light and sending visual information to your brain. Light passes through the vitreous gel to reach the retina. As you age, the gel liquefies and collapses toward the middle of the eye. If the gel is very adherent to the retina, it can pull a flap of tissue free, creating a defect in the retina.",

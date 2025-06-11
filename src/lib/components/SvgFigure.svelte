@@ -4,15 +4,14 @@
     import type { SvgFig } from "$lib/types";
 
     let { figure }: { figure: SvgFig } = $props();
-    const { caption, size, Svg, title, viewBox, width = "100%" } = figure;
+    const { caption, size, Svg, viewBox, width = "100%" } = figure;
 </script>
 
 <div class="figure figure-size {size}">
     <!-- you can apply text-color, gradient, etc. to the svg using styles/classes on this container div -->
     <div class="svg-container">
         <!-- You need to specify width relative to the container div, so that if the SVG also specifies a width, it will be overridden. -->
-        <!-- todo: update the SVGs used in existing posts to take the title prop and add it inside a <title> tag -->
-        <Svg {title} {viewBox} {width} />
+        <Svg {viewBox} {width} />
     </div>
     {#if caption}
         <div class="figure-caption">

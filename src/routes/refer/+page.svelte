@@ -10,8 +10,6 @@
     <title>Vic Eye &amp; Retina Specialists | Refer</title>
 </svelte:head>
 
-<!-- bookmark: removing tailwind from routes starting here -->
-<!-- first, fix the gradient dividers, then remove all other styles and start with just the classes you used on the contact form -->
 <div class="form">
     <div class="card-title">Refer to Vic Eye</div>
     <div>

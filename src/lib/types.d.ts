@@ -23,7 +23,6 @@ export interface SvgFig extends Figure {
     Svg: Component;
     viewBox?: string;
     width?: string;
-    title: string;
 }
 
 export interface Link {
@@ -40,12 +39,12 @@ export interface Card {
 
 export interface PostMetadata {
     author: string;
-    image: string;
-    creds: string;
-    icon: string;
     brief: string;
-    title: string;
+    creds: string;
     date: Date;
+    icon: string;
+    image: string;
+    title: string;
 }
 
 export interface PostContent {

@@ -17,30 +17,33 @@ title: A patient's guide to cataract surgery and lens implants
     import type { PhotoFig, SvgFig } from "$lib/types";
 
     const cataract: SvgFig = {
-        svg: Cataract,
+        Svg: Cataract,
         viewBox: "0, 100, 1200, 600",
         size: "large",
+        title: "Scattering of light by a dense cataract",
         caption: "Compared to a clear lens, a cataract impairs your vision in several ways: It reduces the amount of light entering your eye (poor contrast), changes the color of the image (yellowing), scatters light (glare, blur), and changes where the light is focused (myopic shift).",
     };
 
     const distance: SvgFig = {
-        svg: IolDistance,
+        Svg: IolDistance,
         viewBox: "0, 100, 1200, 600",
         size: "large",
+        title: "Comparison of monofocal and multifocal implants at distance",
         caption: "Distance vision: Both the monofocal implant (left) and the multifocal implant (right) have an in-focus distance image. The multifocal implant also has a near image, but your brain will ignore this image when it's not in focus.",
     };
 
     const near: SvgFig = {
-        svg: IolNear,
+        Svg: IolNear,
         viewBox: "0, 100, 1200, 600",
         size: "large",
+        title: "Comparison of monofocal and multifocal implants at near",
         caption: "Near vision: Only the multifocal implant (right) has an in-focus near image. The distance image is out of focus. The patient with a monofocal implant (left) will need to use reading glasses to move the clear image from distance to near.",
     };
 
     const slitlamp: PhotoFig = {
         image: "images/cataract",
         size: "large",
-        alt: "Slitlamp image of a cataract",
+        alt: "A slitlamp photograph of a cataract",
         caption: "A cataract with yellowing of the lens: In this case, the back of the lens is opaque and irregular, which scatters light and causes glare.",
     };
 </script>

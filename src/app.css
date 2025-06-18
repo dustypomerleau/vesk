@@ -334,7 +334,6 @@
         .content {
             display: flex;
             flex-direction: column;
-            align-items: center;
 
             max-width: 60ch;
         }
@@ -509,6 +508,8 @@
     }
 
     .figure {
+        align-self: center;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -545,9 +546,10 @@
     }
 
     .form {
+        align-self: center;
+
         display: flex;
         flex-direction: column;
-        align-self: center;
         gap: var(--space-4);
 
         background-color: white;

@@ -394,6 +394,10 @@
                 color: var(--gray-6);
             }
         }
+
+        p + p {
+            padding-block-start: var(--space-2);
+        }
     }
 
     .button {

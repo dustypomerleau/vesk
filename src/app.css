@@ -299,7 +299,7 @@
             padding-left: var(--space-3);
             padding: var(--space-2);
             text-align: center;
-            width: calc(var(--space) * 44);
+            width: calc(var(--space-4) * 12);
 
             @media (width >= 40rem) {
                 justify-content: center;

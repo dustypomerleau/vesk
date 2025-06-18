@@ -26,12 +26,12 @@
             font-size: calc(var(--fs-base) * 3.75);
             font-weight: var(--fw-light);
             line-height: 1;
-            padding-block-start: calc(var(--space-4) * 6);
+            padding-block-start: calc(var(--space-4) * 4);
             padding-inline: var(--space-7);
             text-align: center;
             width: 100lvw;
 
-            @media (width >= 40rem) {
+            @media (height >= 64rem) {
                 padding-block-start: calc(var(--space-4) * 12);
             }
 

@@ -22,120 +22,122 @@
 /*     }, */
 /* }), */
 
-@layer reset, base, components;
+@layer global, reset, base, components;
 
-:root {
-    --blue-1: #f1f6fa;
-    --blue-2: #cee1f2;
-    --blue-3: #accded;
-    --blue-4: #86b8e9;
-    --blue-5: #61a2e3;
-    --blue-6: #468dd6;
-    --blue-7: #3a77ba;
-    --blue-8: #2f629e;
-    --blue-9: #244f84;
-    --blue-10: #183863;
-    --blue-11: #10294e;
-    --blue-12: #081a37;
-    --blue-13: #030a1d;
+@layer global {
+    :root {
+        --blue-1: #f1f6fa;
+        --blue-2: #cee1f2;
+        --blue-3: #accded;
+        --blue-4: #86b8e9;
+        --blue-5: #61a2e3;
+        --blue-6: #468dd6;
+        --blue-7: #3a77ba;
+        --blue-8: #2f629e;
+        --blue-9: #244f84;
+        --blue-10: #183863;
+        --blue-11: #10294e;
+        --blue-12: #081a37;
+        --blue-13: #030a1d;
 
-    --gray-1: #f9fafb;
-    --gray-2: #f6f7f7;
-    --gray-3: #e9ebee;
-    --gray-4: #d1d6dc;
-    --gray-5: #b2bcc6;
-    --gray-6: #8e9bab;
-    --gray-7: #6a7789;
-    --gray-8: #4b5563;
-    --gray-9: #323a45;
-    --gray-10: #1f242d;
-    --gray-11: #11151b;
-    --gray-12: #0a0d13;
-    --gray-13: #080b12;
+        --gray-1: #f9fafb;
+        --gray-2: #f6f7f7;
+        --gray-3: #e9ebee;
+        --gray-4: #d1d6dc;
+        --gray-5: #b2bcc6;
+        --gray-6: #8e9bab;
+        --gray-7: #6a7789;
+        --gray-8: #4b5563;
+        --gray-9: #323a45;
+        --gray-10: #1f242d;
+        --gray-11: #11151b;
+        --gray-12: #0a0d13;
+        --gray-13: #080b12;
 
-    --logoNavy: #183863;
-    --logoOrange: #ff7b00;
-    --logoSky: #1785be;
+        --logoNavy: #183863;
+        --logoOrange: #ff7b00;
+        --logoSky: #1785be;
 
-    --orange-1: #fcf3ed;
-    --orange-2: #fbd6bb;
-    --orange-3: #fcb889;
-    --orange-4: #ff9348;
-    --orange-5: #ff7b00;
-    --orange-6: #d76203;
-    --orange-7: #bb4f03;
-    --orange-8: #a03d01;
-    --orange-9: #872c00;
-    --orange-10: #6b1c00;
-    --orange-11: #500e00;
-    --orange-12: #380501;
-    --orange-13: #1d0101;
+        --orange-1: #fcf3ed;
+        --orange-2: #fbd6bb;
+        --orange-3: #fcb889;
+        --orange-4: #ff9348;
+        --orange-5: #ff7b00;
+        --orange-6: #d76203;
+        --orange-7: #bb4f03;
+        --orange-8: #a03d01;
+        --orange-9: #872c00;
+        --orange-10: #6b1c00;
+        --orange-11: #500e00;
+        --orange-12: #380501;
+        --orange-13: #1d0101;
 
-    --sky-1: #eff6fc;
-    --sky-2: #c3e3fa;
-    --sky-3: #95d1fa;
-    --sky-4: #59bdfb;
-    --sky-5: #1ea8ee;
-    --sky-6: #1993d1;
-    --sky-7: #1785be;
-    --sky-8: #0f6795;
-    --sky-9: #0a547a;
-    --sky-10: #06405f;
-    --sky-11: #032e45;
-    --sky-12: #021d2d;
-    --sky-13: #010d16;
+        --sky-1: #eff6fc;
+        --sky-2: #c3e3fa;
+        --sky-3: #95d1fa;
+        --sky-4: #59bdfb;
+        --sky-5: #1ea8ee;
+        --sky-6: #1993d1;
+        --sky-7: #1785be;
+        --sky-8: #0f6795;
+        --sky-9: #0a547a;
+        --sky-10: #06405f;
+        --sky-11: #032e45;
+        --sky-12: #021d2d;
+        --sky-13: #010d16;
 
-    --container-xs: 20rem;
-    --container-sm: 24rem;
-    --container-md: 28rem;
-    --container-lg: 32rem;
-    --container-xl: 36rem;
+        --container-xs: 20rem;
+        --container-sm: 24rem;
+        --container-md: 28rem;
+        --container-lg: 32rem;
+        --container-xl: 36rem;
 
-    --fs-base: 1rem;
-    --fs-sm: calc(var(--fs-base) * 0.875);
-    --fs-lg: calc(var(--fs-base) * 1.125);
-    --fs-xl: calc(var(--fs-base) * 1.25);
-    --fs-2xl: calc(var(--fs-base) * 1.5);
-    --fs-3xl: calc(var(--fs-base) * 1.875);
+        --fs-base: 1rem;
+        --fs-sm: calc(var(--fs-base) * 0.875);
+        --fs-lg: calc(var(--fs-base) * 1.125);
+        --fs-xl: calc(var(--fs-base) * 1.25);
+        --fs-2xl: calc(var(--fs-base) * 1.5);
+        --fs-3xl: calc(var(--fs-base) * 1.875);
 
-    --fw-light: 300;
-    --fw-midlight: 350;
-    --fw-normal: 400;
-    --fw-medium: 500;
-    --fw-semibold: 600;
+        --fw-light: 300;
+        --fw-midlight: 350;
+        --fw-normal: 400;
+        --fw-medium: 500;
+        --fw-semibold: 600;
 
-    /* todo: check these values */
-    /* multiply this unitless factor by the font size */
-    /* line-height should decrease as font size increases */
-    /* see packages/tailwindcss/theme.css */
-    --lh-base: 1.5;
-    --lh-sm: calc(var(--lh-base) * 0.833);
-    --lh-lg: calc(var(--lh-base) * 1.167);
-    --lh-xl: calc(var(--lh-base) * 1.167);
-    --lh-2xl: calc(var(--lh-base) * 1.333);
-    --lh-3xl: calc(var(--lh-base) * 1.5);
+        /* todo: check these values */
+        /* multiply this unitless factor by the font size */
+        /* line-height should decrease as font size increases */
+        /* see packages/tailwindcss/theme.css */
+        --lh-base: 1.5;
+        --lh-sm: calc(var(--lh-base) * 0.833);
+        --lh-lg: calc(var(--lh-base) * 1.167);
+        --lh-xl: calc(var(--lh-base) * 1.167);
+        --lh-2xl: calc(var(--lh-base) * 1.333);
+        --lh-3xl: calc(var(--lh-base) * 1.5);
 
-    --radius: 0.125rem;
-    --radius-xs: calc(var(--radius) * 1);
-    --radius-sm: calc(var(--radius) * 2);
-    --radius-md: calc(var(--radius) * 3);
-    --radius-lg: calc(var(--radius) * 4);
-    --radius-xl: calc(var(--radius) * 6);
+        --radius: 0.125rem;
+        --radius-xs: calc(var(--radius) * 1);
+        --radius-sm: calc(var(--radius) * 2);
+        --radius-md: calc(var(--radius) * 3);
+        --radius-lg: calc(var(--radius) * 4);
+        --radius-xl: calc(var(--radius) * 6);
 
-    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
-    --space: 0.25rem;
-    --space-half: calc(var(--space) * 0.5);
-    --space-1: calc(var(--space) * 1);
-    --space-2: calc(var(--space) * 2);
-    --space-3: calc(var(--space) * 3);
-    --space-4: calc(var(--space) * 4);
-    --space-5: calc(var(--space) * 5);
-    --space-6: calc(var(--space) * 6);
-    --space-7: calc(var(--space) * 7);
-    --space-8: calc(var(--space) * 8);
+        --space: 0.25rem;
+        --space-half: calc(var(--space) * 0.5);
+        --space-1: calc(var(--space) * 1);
+        --space-2: calc(var(--space) * 2);
+        --space-3: calc(var(--space) * 3);
+        --space-4: calc(var(--space) * 4);
+        --space-5: calc(var(--space) * 5);
+        --space-6: calc(var(--space) * 6);
+        --space-7: calc(var(--space) * 7);
+        --space-8: calc(var(--space) * 8);
+    }
 }
 
 @layer reset {
@@ -327,7 +329,11 @@
         margin: var(--space-6);
 
         .content {
-            font-size: var(--fs-lg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            max-width: 60ch;
         }
 
         .divider {
@@ -336,7 +342,12 @@
             margin-block-start: var(--space-6);
         }
 
-        h1 {
+        /* bookmark: todo: you need to override the base font setting of the user agent, which is in em, in such a way that these headings inherit the correct sizes */
+        /* perhaps take the font-size off article-container and start over with some reading */
+        h1,
+        h2,
+        h3,
+        h4 {
             color: var(--gray-8);
             margin-block-end: 0;
             padding-block-end: var(--space-4);
@@ -461,11 +472,13 @@
         gap: var(--space-2);
 
         color: var(--gray-7);
+        padding-block-start: var(--space-6);
+        padding-block-end: var(--space-3);
     }
 
     /* note: width of 100% were removed on the image and caption class selectors, revisit this if putting the width on the figure-size class is not sufficient. */
     .figure-caption {
-        padding-inline: var(--space-2);
+        padding-inline: var(--space-4);
     }
 
     .figure-image {
@@ -480,17 +493,17 @@
     .figure-size {
         width: 100%;
 
-        @media (width >= 40rem) {
+        @media (width >= 35rem) {
             &.small {
                 width: 67%;
             }
 
             &.medium {
-                width: 75%;
+                width: 81%;
             }
 
             &.large {
-                width: 83%;
+                width: 95%;
             }
         }
     }

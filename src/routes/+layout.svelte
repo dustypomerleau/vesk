@@ -45,7 +45,11 @@
         display: flex;
         flex-direction: column;
 
-        font-size: var(--fs-lg);
+        font-size: var(--fs-xl);
+        @media (width >= 40rem) {
+            font-size: var(--fs-lg);
+        }
+
         font-weight: var(--fw-normal);
         line-height: 1.55;
         min-height: 100lvh;

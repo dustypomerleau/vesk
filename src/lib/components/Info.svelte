@@ -7,7 +7,7 @@
 
 <div id="info" class="info">
     <!-- todo: should these headers be sections for accessibility? -->
-    <div class="info-header section-header">Patient Information</div>
+    <div class="section-header">Patient Information</div>
 
     <ul class="posts">
         {#each posts as post}
@@ -24,22 +24,15 @@
         padding-block: var(--space-6);
     }
 
-    .info-header {
-        padding-block-end: var(--space-3);
-        padding-inline: var(--space-4);
-        text-align: center;
-
-        @media (width >= 48rem) {
-            text-align: start;
-        }
-    }
-
     .posts {
         display: grid;
         column-gap: calc(var(--space-4) * 4);
+        row-gap: var(--space-2);
 
         @media (width >= 40rem) {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
+
+        font-size: var(--fs-lg);
     }
 </style>

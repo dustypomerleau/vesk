@@ -17,3 +17,10 @@
     </div>
     <LinkButton {link} />
 </div>
+
+<style>
+    /* override card title padding from the main stylesheet */
+    .card-title {
+        padding-block-end: var(--space-3);
+    }
+</style>

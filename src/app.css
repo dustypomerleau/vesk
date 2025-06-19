@@ -9,19 +9,6 @@
 /* lg 1024px: */
 /* @media (width >= 64rem) {} */
 
-/* tailwind typography settings for reference: */
-/**/
-/* typography: ({ theme }) => ({ */
-/*     DEFAULT: { */
-/*         css: { */
-/*             "--tw-prose-bold": theme("colors.gray[9]"), */
-/*             "--tw-prose-bullets": theme("colors.gray[5]"), */
-/*             "--tw-prose-headings": theme("colors.gray[8]"), */
-/*             a: false, // disable tailwind typography default link styling inside prose */
-/*         }, */
-/*     }, */
-/* }), */
-
 @layer global, reset, base, components;
 
 @layer global {
@@ -94,6 +81,7 @@
 
         font-size: 1em;
         --fs-base: 1rem;
+        /* todo: revisit these values */
         --fs-sm: calc(var(--fs-base) * 0.875);
         --fs-lg: calc(var(--fs-base) * 1.125);
         --fs-xl: calc(var(--fs-base) * 1.25);
@@ -175,6 +163,7 @@
     ol,
     ul {
         list-style: none;
+        margin: 0;
         padding: 0;
     }
 
@@ -276,6 +265,11 @@
     }
 
     /* elements */
+
+    a:any-link {
+        /* avoid descenders and make the underline easier to see */
+        text-underline-offset: 0.25em;
+    }
 
     input[type="radio"] {
         position: fixed;
@@ -379,7 +373,7 @@
 
         ol {
             list-style-type: decimal;
-            padding-inline-start: var(--space-5);
+            padding-inline-start: var(--space-6);
 
             li::marker {
                 color: var(--gray-7);
@@ -388,7 +382,7 @@
 
         ul {
             list-style-type: disc;
-            padding-inline-start: var(--space-4);
+            padding-inline-start: var(--space-5);
 
             li::marker {
                 color: var(--gray-6);
@@ -476,7 +470,6 @@
 
         &.gray {
             background-image: linear-gradient(to right, var(--gray-8), var(--gray-6));
-            padding-block-end: 0;
             text-align: start;
         }
     }
@@ -519,11 +512,11 @@
         align-items: center;
         gap: var(--space-2);
 
-        color: var(--gray-7);
         padding-block: var(--space-6);
     }
 
     .figure-caption {
+        font-style: italic;
         padding-inline: var(--space-4);
     }
 
@@ -598,7 +591,7 @@
         &:focus,
         &:hover {
             text-decoration-color: #468dd6f0;
-            text-decoration-thickness: 3px;
+            text-decoration-thickness: 3.5px;
         }
     }
 
@@ -618,6 +611,7 @@
     .section-header {
         font-size: var(--fs-2xl);
         font-weight: var(--fw-semibold);
+        padding-block-end: var(--space-3);
     }
 
     .wide-card {

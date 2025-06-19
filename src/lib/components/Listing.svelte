@@ -60,7 +60,7 @@
         gap: var(--space-2);
 
         border-radius: var(--radius-md);
-        padding: var(--space-4);
+        padding-block: var(--space-2);
 
         &:hover {
             background-color: var(--gray-1);

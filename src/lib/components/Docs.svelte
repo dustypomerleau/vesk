@@ -112,7 +112,6 @@
         color: transparent;
         font-size: var(--fs-2xl);
         font-weight: var(--fw-medium);
-        line-height: var(--lh-lg);
     }
 
     .name-creds {
@@ -121,10 +120,11 @@
         justify-content: flex-start;
         align-items: baseline;
         column-gap: var(--space-2);
+
+        line-height: 1;
     }
 
     .specialties {
         color: var(--orange-10);
-        line-height: var(--lh-base);
     }
 </style>

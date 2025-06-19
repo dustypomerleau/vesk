@@ -25,7 +25,7 @@
             color: white;
             font-size: calc(var(--fs-base) * 3.75);
             font-weight: var(--fw-light);
-            line-height: 1;
+            line-height: 1.1;
             padding-block-start: calc(var(--space-4) * 4);
             padding-inline: var(--space-7);
             text-align: center;

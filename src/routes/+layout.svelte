@@ -51,7 +51,6 @@
         }
 
         font-weight: var(--fw-normal);
-        line-height: 1.55;
         min-height: 100lvh;
     }
 

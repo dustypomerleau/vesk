@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Cpd from "$lib/components/Cpd.svelte";
+    // import Cpd from "$lib/components/Cpd.svelte";
 </script>
 
 <div id="hero" class="hero">
-    <Cpd />
+    <!-- <Cpd /> -->
     <h1>Specialist eye surgeons that care</h1>
 </div>
 
@@ -26,7 +26,8 @@
             font-size: calc(var(--fs-base) * 3.75);
             font-weight: var(--fw-light);
             line-height: 1.1;
-            padding-block-start: calc(var(--space-4) * 4);
+            padding-block-start: calc(var(--space-4) * 8); /* standard: without Cpd */
+            /* padding-block-start: calc(var(--space-4) * 4); */ /* reduced: with Cpd */
             padding-inline: var(--space-7);
             text-align: center;
             width: 100lvw;

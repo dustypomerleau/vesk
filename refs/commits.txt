@@ -1,8 +1,9 @@
-conventional commits categories:
+conventional commits categories for this repo:
 
 build,
 chore,
 ci,
+deps,
 docs,
 feat,
 fix,
@@ -11,4 +12,3 @@ refactor,
 revert,
 style,
 test
-

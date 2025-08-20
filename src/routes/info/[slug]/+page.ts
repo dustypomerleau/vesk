@@ -25,9 +25,17 @@ import type { Component } from "svelte";
 //     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 //     at async eval (/Users/dn/me/vesk/node_modules/.pnpm/@sveltejs+kit@2.21.5_@sveltejs+vite-plugin-svelte@5.1.0_svelte@5.34.5_vite@6.3.5_@types_a83d7c8fdb834413a46df747fb39d549/node_modules/@sveltejs/kit/src/runtime/server/page/index.js:183:13)
 //
-export async function load({ params }: { params: { slug: string } }): Promise<PostContent> {
-    const { metadata: meta, default: Content }: { metadata: PostMetadata; default: Component } =
-        await import(`../${params.slug}.md`);
+export async function load({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<PostContent> {
+  const {
+    metadata: meta,
+    default: Content,
+  }: { metadata: PostMetadata; default: Component } = await import(
+    `../${params.slug}.md`
+  );
 
-    return { meta, Content };
+  return { meta, Content };
 }

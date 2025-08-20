@@ -59,7 +59,7 @@
     }
 
     .doctor-image {
-        height: calc(var(--space-4) * 24);
+        height: calc(var(--space-4) * 26);
         object-fit: cover;
         object-position: top;
         width: 100%;

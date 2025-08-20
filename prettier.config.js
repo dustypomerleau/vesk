@@ -3,7 +3,7 @@ const config = {
         { files: "*.md", options: { tabWidth: 2 } },
         { files: "*.svelte", options: { parser: "svelte" } },
     ],
-    plugins: ["prettier-plugin-svelte"],
+    plugins: ["@prettier/plugin-oxc", "prettier-plugin-svelte"],
     printWidth: 100,
     tabWidth: 4,
 };

@@ -8,8 +8,8 @@
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "dev": "vite dev",
-        "format": "prettier --write .",
-        "lint": "prettier --check . && oxlint .",
+        "format": "prettier --write --experimental-cli .",
+        "lint": "prettier --check --experimental-cli . && oxlint .",
         "prepare": "svelte-kit sync || echo ''",
         "preview": "vite preview",
         "test": "npm run test:unit -- --run && npm run test:e2e",
@@ -19,6 +19,7 @@
     "devDependencies": {
         "@netlify/plugin-lighthouse": "^6.0.3",
         "@playwright/test": "^1.54.2",
+        "@prettier/plugin-oxc": "^0.0.4",
         "@sveltejs/adapter-netlify": "^5.2.2",
         "@sveltejs/kit": "^2.34.0",
         "@sveltejs/vite-plugin-svelte": "^6.1.3",

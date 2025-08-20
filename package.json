@@ -12,7 +12,7 @@
         "lint": "prettier --check --experimental-cli . && oxlint .",
         "prepare": "svelte-kit sync || echo ''",
         "preview": "vite preview",
-        "test": "npm run test:unit -- --run && npm run test:e2e",
+        "test": "pnpm run test:unit -- --run && pnpm run test:e2e",
         "test:e2e": "playwright test",
         "test:unit": "vitest"
     },

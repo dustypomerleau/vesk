@@ -11,6 +11,7 @@ deprecated/
 hero.avif
 node_modules
 pnpm-lock.yaml
+railway.json
 test-results
 unoptimized/
 vite.config.js.timestamp-*

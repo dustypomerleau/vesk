@@ -1,5 +1,6 @@
 <script lang="ts">
     import Amd from "$lib/svg/Amd.svelte";
+    import Eye from "$lib/svg/Eye.svelte";
     import Iol from "$lib/svg/Iol.svelte";
     import RetinalTear from "$lib/svg/RetinalTear.svelte";
     import Syringe from "$lib/svg/Syringe.svelte";
@@ -9,6 +10,7 @@
 
     const icons: Record<string, Component> = {
         Amd,
+        Eye,
         Iol,
         RetinalTear,
         Syringe,

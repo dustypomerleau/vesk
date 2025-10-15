@@ -1,0 +1,56 @@
+<script lang="ts">
+    import clsx from "clsx";
+    import { getContext } from "svelte";
+    import ToolbarButton from "../toolbar/ToolbarButton.svelte";
+    import Menu from "./Menu.svelte";
+    import { navbarHamburger } from "./theme";
+    import type { NavbarState, NavHamburgerProps, NavbarBreakpoint } from "$lib/types";
+    import type { MouseEventHandler } from "svelte/elements";
+    import { getTheme } from "$lib/theme/themeUtils";
+
+    let {
+        children,
+        onclick,
+        menuClass,
+        class: className,
+        classes,
+        name = "Open main menu",
+        ...restProps
+    }: NavHamburgerProps = $props();
+
+    const styling = $derived(classes ?? { menu: menuClass });
+
+    const theme = getTheme("navbarHamburger");
+    const navState = getContext<NavbarState>("navState");
+    const navBreakpoint = getContext<NavbarBreakpoint>("breakpoint");
+    const { base, menu } = navbarHamburger({ breakpoint: navBreakpoint });
+
+    const toggle: MouseEventHandler<HTMLButtonElement> = (ev) => {
+        navState.hidden = !navState.hidden;
+    };
+</script>
+
+<ToolbarButton {name} onclick={onclick || toggle} {...restProps}>
+    <Menu />
+</ToolbarButton>
+
+<!--
+@component
+[Go to docs](https://flowbite-svelte.com/)
+## Type
+[NavHamburgerProps](https://github.com/themesberg/flowbite-svelte/blob/main/src/lib/types.ts#L1101)
+## Props
+@prop children
+@prop onclick
+@prop menuClass
+@prop class: className
+@prop classes
+@prop name = "Open main menu"
+@prop ...restProps
+-->
+
+<style>
+    .menu {
+        flex-shrink: 0;
+    }
+</style>

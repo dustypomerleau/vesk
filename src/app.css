@@ -578,6 +578,10 @@
         }
     }
 
+    .hidden {
+        display: none;
+    }
+
     .icon {
         display: flex;
         flex-direction: column;
@@ -617,6 +621,19 @@
         font-size: var(--fs-2xl);
         font-weight: var(--fw-semibold);
         padding-block-end: var(--space-3);
+    }
+
+    /* visible only to screen readers */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
     }
 
     .wide-card {

@@ -58,6 +58,8 @@
 <style>
     .burger-button {
         color: var(--gray-4);
-        background-color: var(--logoBlue);
+        background-color: var(--blue-10);
+        /* enlarge the horizontal click target */
+        width: 4rem;
     }
 </style>

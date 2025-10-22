@@ -5,6 +5,7 @@
     let open = $state(false);
 </script>
 
+<!-- todo: hunt down and clean up any tailwind remaining from flowbite, and then remove any JS that only adds those styles. -->
 <header id="header" class="header">
     <Navbar>
         <a href="/" title="Vic Eye Home">
@@ -14,11 +15,11 @@
         </a>
         <NavHamburger />
         <NavUl>
-            <NavLi href="/">Home</NavLi>
             <NavLi href="/#location">Location</NavLi>
             <NavLi href="/#doctors">Doctors</NavLi>
             <NavLi href="/#info">Patient information</NavLi>
             <NavLi href="/#contact">Contact</NavLi>
+            <NavLi href="/refer">Refer</NavLi>
         </NavUl>
     </Navbar>
 </header>

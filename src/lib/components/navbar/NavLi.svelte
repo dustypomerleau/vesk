@@ -80,7 +80,8 @@
 
 <style>
     .menu-item {
-        padding-inline: var(--space-4);
+        padding-inline-start: var(--space-6);
+        padding-inline-end: var(--space-8);
         padding-block: var(--space);
         border-radius: var(--radius-sm);
 

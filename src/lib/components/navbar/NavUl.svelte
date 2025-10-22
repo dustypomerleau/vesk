@@ -107,6 +107,7 @@
         background-color: var(--blue-10);
         color: var(--gray-2);
         padding: var(--space);
+        padding-block-end: var(--space-2);
         border-bottom-left-radius: var(--radius-md);
 
         ul {

@@ -1,8 +1,6 @@
 <script lang="ts">
     import Logo from "$lib/svg/Logo.svelte";
     import { Navbar, NavHamburger, NavLi, NavUl } from "./navbar";
-
-    let open = $state(false);
 </script>
 
 <!-- todo: hunt down and clean up any tailwind remaining from flowbite, and then remove any JS that only adds those styles. -->

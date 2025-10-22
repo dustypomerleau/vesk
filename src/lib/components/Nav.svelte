@@ -4,6 +4,8 @@
 </script>
 
 <!-- todo: hunt down and clean up any tailwind remaining from flowbite, and then remove any JS that only adds those styles. -->
+<!-- then merge any types you need from the flowbite types doc into your own and delete the rest -->
+<!-- todo: fix styles to display links and hide burger on desktop -->
 <header id="header" class="header">
     <Navbar>
         <a href="/" title="Vic Eye Home">

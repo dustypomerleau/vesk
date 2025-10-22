@@ -8,7 +8,7 @@
     import Smartphone from "$lib/svg/Smartphone.svelte";
 </script>
 
-<div id="contact" class="form contact-form">
+<div id="contact" class="form contact-form hash-target">
     <div class="card-title">Contact Vic Eye</div>
     <div class="phone">
         <div class="icon-contact">

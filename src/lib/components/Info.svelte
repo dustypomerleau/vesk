@@ -5,7 +5,7 @@
     let { posts }: { posts: Array<PostPath> } = $props();
 </script>
 
-<div id="info" class="info">
+<div id="info" class="info hash-target">
     <!-- todo: should these headers be sections for accessibility? -->
     <div class="section-header">Patient Information</div>
 

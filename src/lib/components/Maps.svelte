@@ -3,7 +3,7 @@
     import Parking from "$lib/components/Parking.svelte";
 </script>
 
-<div id="location" class="location">
+<div id="location" class="location hash-target">
     <Location />
     <Parking />
 </div>

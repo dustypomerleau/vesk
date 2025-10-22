@@ -29,6 +29,8 @@
         align-items: center;
 
         position: fixed;
+        /* keep the nav on top */
+        z-index: 1;
         width: 100%;
         background-color: var(--blue-10);
         padding: var(--space-4);

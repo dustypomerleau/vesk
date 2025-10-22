@@ -2,7 +2,7 @@
     import { doctors } from "$lib/content/doctors";
 </script>
 
-<div id="doctors" class="doctors">
+<div id="doctors" class="doctors hash-target">
     {#each doctors as doc}
         <div class="wide-card">
             <div class="doctor-image-container">

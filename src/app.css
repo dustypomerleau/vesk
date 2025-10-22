@@ -578,6 +578,11 @@
         }
     }
 
+    .hash-target {
+        /* account for the navbar */
+        scroll-margin-top: 5rem;
+    }
+
     .hidden {
         display: none;
     }
@@ -648,6 +653,7 @@
 
         .info {
             position: absolute;
+            z-index: 0;
 
             padding-block-start: var(--space-2);
             padding-inline-start: var(--space-6);

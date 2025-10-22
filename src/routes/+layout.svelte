@@ -32,7 +32,7 @@
 
     <main>
         <div id="bg" class="bg">
-            {@render children()}
+            <div class="container">{@render children()}</div>
         </div>
     </main>
 
@@ -58,7 +58,16 @@
         background-attachment: fixed;
         background-image: linear-gradient(135deg, var(--gray-1), var(--gray-3));
         background-size: cover;
+    }
+
+    .container {
         display: flex;
         flex-direction: column;
+
+        /* make room for the absolutely-positioned nav */
+        padding-block-start: calc(var(--space) * 18);
+        @media (width >= 40rem) {
+            padding-block-start: calc(var(--space) * 22);
+        }
     }
 </style>

@@ -33,10 +33,6 @@
         width: 100%;
         background-color: var(--blue-10);
         padding: var(--space-4);
-
-        /* @media (width >= 40rem) { */
-        /*     padding-inline: var(--space-8); */
-        /* } */
     }
 
     .logo {

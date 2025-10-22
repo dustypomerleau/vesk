@@ -20,6 +20,8 @@
         background-position: top;
         background-size: cover;
         height: 100lvh;
+        /* compensate for the header space on the container div (prevent white showing) */
+        margin-block-start: calc(var(--space) * -5);
 
         h1 {
             color: white;

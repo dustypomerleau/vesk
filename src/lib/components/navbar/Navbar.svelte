@@ -3,20 +3,9 @@
     import NavContainer from "./NavContainer.svelte";
     import type { NavbarState, NavbarProps } from "$lib/types";
 
-    let {
-        children,
-        fluid,
-        navContainerClass,
-        class: className,
-        closeOnClickOutside = true,
-        breakpoint = "md",
-        ...restProps
-    }: NavbarProps = $props();
-
+    let { children }: NavbarProps = $props();
     let navState = $state({ hidden: true });
     setContext<NavbarState>("navState", navState);
-    setContext("breakpoint", breakpoint);
-
     // Add reference to the navbar element
     let navbarElement: HTMLElement;
 
@@ -25,7 +14,6 @@
     };
 
     function handleDocumentClick(event: MouseEvent) {
-        if (!closeOnClickOutside) return;
         // Check if the click was outside the navbar AND the dropdown is open
         if (!navState.hidden && navbarElement && !navbarElement.contains(event.target as Node)) {
             navState.hidden = true;
@@ -36,30 +24,17 @@
 <svelte:document onclick={handleDocumentClick} />
 
 <nav bind:this={navbarElement} class="navbar">
-    <div {...restProps}>
-        <NavContainer {fluid}>
-            {@render children({ hidden: navState.hidden, toggle, NavContainer })}
-        </NavContainer>
-    </div>
+    <!-- todo: you need a different type definition, rather than NavbarProps, before you can remove NavContainer, even though you aren't using it. -->
+    {@render children({ hidden: navState.hidden, toggle })}
 </nav>
-
-<!--
-@component
-[Go to docs](https://flowbite-svelte.com/)
-## Type
-[NavbarProps](https://github.com/themesberg/flowbite-svelte/blob/main/src/lib/types.ts#L1087)
-## Props
-@prop children
-@prop fluid
-@prop navContainerClass
-@prop class: className
-@prop closeOnClickOutside = true
-@prop breakpoint = "md"
-@prop ...restProps
--->
 
 <style>
     .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
         width: 100%;
     }
 </style>

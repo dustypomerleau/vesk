@@ -63,3 +63,48 @@ export interface RadioProps {
     text?: string;
     iconWidth?: string;
 }
+
+// types from Flowbite for the Nav:
+
+import type { Snippet } from "svelte";
+
+import type {
+    ClassValue,
+    HTMLAnchorAttributes,
+    HTMLAttributes,
+    // HTMLBlockquoteAttributes,
+    // HTMLButtonAttributes,
+    // HTMLDialogAttributes,
+    // HTMLImgAttributes,
+    // HTMLInputAttributes,
+    // HTMLLabelAttributes,
+    // HTMLLiAttributes,
+    // HTMLOlAttributes,
+    // HTMLSelectAttributes,
+    // HTMLSourceAttributes,
+    // HTMLTableAttributes,
+    // HTMLTdAttributes,
+    // HTMLTextareaAttributes,
+    // HTMLThAttributes,
+    // HTMLTrackAttributes,
+    // HTMLVideoAttributes,
+    // SVGAttributes,
+    // FullAutoFill,
+} from "svelte/elements";
+
+export type AnchorButtonAttributes =
+    | ({ href: string } & HTMLAnchorAttributes)
+    | ({ href?: undefined } & HTMLButtonAttributes);
+
+export type NavbarState = {
+    hidden: boolean;
+    activeClass?: string;
+    nonActiveClass?: string;
+    activeUrl?: string;
+};
+
+export type NavbarBreakpoint = "sm" | "md" | "lg" | "xl";
+
+export interface NavbarProps extends Omit<HTMLAttributes<HTMLDivElement>, "children"> {
+    children: Snippet<[{ hidden: boolean; toggle: () => void }]>;
+}

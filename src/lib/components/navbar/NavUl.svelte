@@ -1,32 +1,18 @@
 <script lang="ts">
-    import { getTheme } from "$lib/theme/themeUtils";
-    import type { NavbarState, NavUlProps, NavbarBreakpoint } from "$lib/types";
-    import clsx from "clsx";
+    import type { NavbarState, NavUlProps } from "$lib/types";
     import { getContext } from "svelte";
     import { sineIn } from "svelte/easing";
-    import { prefersReducedMotion } from "svelte/motion";
     import { fade, fly, scale, slide } from "svelte/transition";
-    import { navbarUl } from "./theme";
 
     let navState = getContext<NavbarState>("navState");
-    let navBreakpoint = getContext<NavbarBreakpoint>("breakpoint");
 
     let {
-        children,
         activeUrl = $bindable(),
-        ulClass,
-        slideParams,
+        children,
         transition = slide,
         transitionParams,
-        activeClass,
-        nonActiveClass,
-        respectMotionPreference = true,
-        class: clasName,
         ...restProps
     }: NavUlProps = $props();
-
-    const styling = $derived({ ul: ulClass, active: activeClass, nonActive: nonActiveClass });
-    const theme = getTheme("navbarUl");
 
     // Default parameters for different transitions
     const getDefaultParams = (transitionFn: any) => {
@@ -37,35 +23,13 @@
         return { delay: 0, duration: 200, easing: sineIn };
     };
 
-    // Support legacy slideParams prop
     const defaultParams = $derived(getDefaultParams(transition));
-    const finalParams = $derived(transitionParams ?? slideParams ?? defaultParams);
-
-    // Create motion-aware parameters
-    const transitionOptions = $derived(() => {
-        if (respectMotionPreference && prefersReducedMotion.current) {
-            // return { ...finalParams, duration: 0, delay: 0 };
-            return { ...finalParams };
-        }
-        return finalParams;
-    });
-
+    const finalParams = $derived(transitionParams ?? defaultParams);
     let hidden: boolean = $derived(navState.hidden ?? true);
-
-    let { base, ul, active, nonActive } = $derived(navbarUl({ hidden, breakpoint: navBreakpoint }));
-
-    $effect(() => {
-        navState.activeClass = active({ class: clsx(theme?.active, styling.active) });
-        navState.nonActiveClass = nonActive({ class: clsx(theme?.nonActive, styling.nonActive) });
-        navState.activeUrl = activeUrl;
-    });
-
-    let divCls: string = $derived(base({ class: clsx(theme?.base, clasName) }));
-    let ulCls: string = $derived(ul({ class: clsx(theme?.ul, styling.ul) }));
 </script>
 
 {#if !hidden}
-    <div {...restProps} class="unhidden" transition:transition={transitionOptions()}>
+    <div {...restProps} class="unhidden" transition:transition={finalParams}>
         <ul>
             {@render children?.()}
         </ul>
@@ -77,26 +41,6 @@
         </ul>
     </div>
 {/if}
-
-<!--
-@component
-[Go to docs](https://flowbite-svelte.com/)
-## Type
-[NavUlProps](https://github.com/themesberg/flowbite-svelte/blob/main/src/lib/types.ts#L1107)
-## Props
-@prop children
-@prop activeUrl = $bindable()
-@prop ulClass
-@prop slideParams
-@prop transition = slide
-@prop transitionParams
-@prop activeClass
-@prop nonActiveClass
-@prop respectMotionPreference = true
-@prop class: clasName
-@prop classes
-@prop ...restProps
--->
 
 <style>
     .unhidden {

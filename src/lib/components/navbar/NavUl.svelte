@@ -108,7 +108,6 @@
         color: var(--gray-2);
         padding: var(--space);
         border-bottom-left-radius: var(--radius-md);
-        /* width: 20rem; */
 
         ul {
             display: flex;

@@ -22,19 +22,23 @@ Regular tests include intraocular pressure measurement, examination of the optic
 ## Types of glaucoma
 
 1. Primary open angle glaucoma
+
    This is the most common form, causing over 90% of glaucoma in western countries.
    This causes slow, painless loss of peripheral vision.
    A family history of glaucoma can indicate increased risk or severity.
 
 1. Acute angle closure glaucoma
+
    This form occurs more commonly in the Asian population, and is caused by a narrowing of structures that drain fluid from the eye.
    When angle closure occurs, the eye pressure rises rapidly, which is painful, and requires immediate intervention to prevent permanent vision loss.
 
 1. Secondary glaucoma
+
    Glaucoma caused by another condition—such as diabetes, vascular disease, or an injury to the eye—can sometimes occur.
    Depending on the cause, it may be open angle or angle closure glaucoma.
 
 1. Normal tension glaucoma
+
    This type of glaucoma causes gradual loss of vision, despite normal eye pressure.
 
 ## Treatment

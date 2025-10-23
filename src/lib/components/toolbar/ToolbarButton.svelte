@@ -25,6 +25,10 @@
 
 <style>
     .burger-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         color: var(--gray-4);
         background-color: var(--blue-10);
         /* enlarge the horizontal click target */

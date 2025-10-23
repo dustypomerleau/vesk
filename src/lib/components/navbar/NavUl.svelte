@@ -58,14 +58,23 @@
             display: flex;
             flex-direction: column;
         }
-
-        /* @media (width >= 40rem) { */
-        /*     position: static; */
-        /*     z-index: auto; */
-        /* } */
     }
 
     .hidden {
         display: none;
+    }
+
+    @media (width >= 53rem) {
+        .unhidden,
+        .hidden {
+            display: flex;
+            color: var(--gray-2);
+            font-size: var(--fs-sm);
+
+            ul {
+                display: flex;
+                align-items: center;
+            }
+        }
     }
 </style>

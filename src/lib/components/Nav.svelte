@@ -1,6 +1,7 @@
 <script lang="ts">
     import Logo from "$lib/svg/Logo.svelte";
     import { Navbar, NavHamburger, NavLi, NavUl } from "./navbar";
+    import Social from "./Social.svelte";
 </script>
 
 <!-- todo: hunt down and clean up any tailwind remaining from flowbite, and then remove any JS that only adds those styles. -->
@@ -15,11 +16,14 @@
         </a>
         <NavHamburger />
         <NavUl>
-            <NavLi href="/#location">Location</NavLi>
-            <NavLi href="/#doctors">Doctors</NavLi>
-            <NavLi href="/#info">Patient information</NavLi>
-            <NavLi href="/#contact">Contact</NavLi>
-            <NavLi href="/refer">Refer</NavLi>
+            <div class="links">
+                <NavLi href="/#location">Location</NavLi>
+                <NavLi href="/#doctors">Doctors</NavLi>
+                <NavLi href="/#info">Patient information</NavLi>
+                <NavLi href="/#contact">Contact</NavLi>
+                <NavLi href="/refer">Refer</NavLi>
+            </div>
+            <Social />
         </NavUl>
     </Navbar>
 </header>
@@ -38,14 +42,28 @@
         padding: var(--space-4);
     }
 
+    .links {
+        display: flex;
+        flex-direction: column;
+
+        font-size: var(--fs-xl);
+
+        @media (width >= 53rem) {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            font-size: var(--fs-lg);
+        }
+    }
+
     .logo {
         display: flex;
         flex-direction: column;
 
         width: calc(var(--space-4) * 10);
 
-        @media (width >= 40rem) {
-            width: calc(var(--space-4) * 15);
+        @media (width >= 53rem) {
+            width: calc(var(--space-4) * 12);
         }
     }
 </style>

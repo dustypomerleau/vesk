@@ -6,6 +6,8 @@
 /* md 768px: */
 /* @media (width >= 48rem) {} */
 /**/
+/* in practice, I'm finding I like 53rem as the medium breakpoint (848px)*/
+/**/
 /* lg 1024px: */
 /* @media (width >= 64rem) {} */
 
@@ -606,6 +608,22 @@
         &:hover {
             text-decoration-color: #468dd6f0;
             text-decoration-thickness: 3.5px;
+        }
+    }
+
+    .menu-item {
+        padding-inline-start: var(--space-6);
+        padding-inline-end: var(--space-8);
+        padding-block: var(--space);
+        border-radius: var(--radius-sm);
+
+        @media (width >= 53rem) {
+            padding-inline: var(--space-4);
+        }
+
+        &:hover {
+            background-color: color-mix(in oklab, var(--blue-10) 92%, white);
+            text-decoration: underline;
         }
     }
 

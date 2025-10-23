@@ -32,17 +32,3 @@
         </li>
     </a>
 {/if}
-
-<style>
-    .menu-item {
-        padding-inline-start: var(--space-6);
-        padding-inline-end: var(--space-8);
-        padding-block: var(--space);
-        border-radius: var(--radius-sm);
-
-        &:hover {
-            background-color: color-mix(in oklab, var(--blue-10) 92%, white);
-            text-decoration: underline;
-        }
-    }
-</style>

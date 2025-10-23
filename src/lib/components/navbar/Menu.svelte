@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { MenuProps } from "$lib/types";
+    import { getContext } from "svelte";
 
     let {
         size = "24",
@@ -8,8 +9,8 @@
         ariaLabel = "bars 3",
     }: MenuProps = $props();
 
-    let viewBox: string = $state("0 0 24 24");
     let svgpath: string = $state("");
+    let viewBox: string = $state("0 0 24 24");
 
     let svgoutline = `<path stroke="${color}" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path> `;
 
@@ -29,16 +30,31 @@
     });
 </script>
 
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    role="button"
-    tabindex="0"
-    width={size}
-    height={size}
-    aria-label={ariaLabel}
-    fill="none"
-    {viewBox}
-    stroke-width="2"
->
-    {@html svgpath}
-</svg>
+<div class="hide-on-desktop">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        role="button"
+        tabindex="0"
+        width={size}
+        height={size}
+        aria-label={ariaLabel}
+        fill="none"
+        {viewBox}
+        stroke-width="2"
+    >
+        {@html svgpath}
+    </svg>
+</div>
+
+<style>
+    .hide-on-desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (width >= 53rem) {
+            display: none;
+        }
+    }
+</style>

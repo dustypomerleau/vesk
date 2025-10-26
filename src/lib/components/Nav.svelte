@@ -51,6 +51,7 @@
         @media (width >= 53rem) {
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: flex-end;
 
             font-size: var(--fs-lg);
         }

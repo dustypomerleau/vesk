@@ -33,5 +33,9 @@
         background-color: var(--blue-10);
         /* enlarge the horizontal click target */
         width: 4rem;
+
+        @media (width >= 53rem) {
+            display: none;
+        }
     }
 </style>

@@ -66,7 +66,7 @@
 
         /* make room for the absolutely-positioned nav */
         padding-block-start: calc(var(--space) * 18);
-        @media (width >= 40rem) {
+        @media (width >= 53rem) {
             padding-block-start: calc(var(--space) * 22);
         }
     }

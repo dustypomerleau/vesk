@@ -1,0 +1,13 @@
+// Only JS and TS files are currently supported by oxfmt. This is a direct copy of your
+// prettier config, but the options to format other filetypes or use plugins don't yet
+// have any effect. For now, we have to keep prettier in our deps.
+{
+    "overrides": [
+        { "files": "*.md", "options": { "tabWidth": 2 } },
+        { "files": "*.svelte", "options": { "parser": "svelte" } },
+        { "files": "*.svg", "options": { "parser": "html" } },
+    ],
+
+    "plugins": ["@prettier/plugin-oxc", "prettier-plugin-svelte"],
+    "tabWidth": 4,
+}

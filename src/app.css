@@ -96,10 +96,10 @@
         --fw-medium: 500;
         --fw-semibold: 600;
 
-        /* todo: check these values */
+        /* todo: revisit these values */
         /* multiply this unitless factor by the font size */
         /* line-height should decrease as font size increases */
-        /* see packages/tailwindcss/theme.css */
+        /* see packages/tailwindcss/theme.css for an example */
         --lh-base: 1.5;
         --lh-sm: calc(var(--lh-base) * 0.833);
         --lh-lg: calc(var(--lh-base) * 1.167);
@@ -687,43 +687,3 @@
         }
     }
 }
-
-/* clerk styles */
-
-.cl-organizationSwitcher-root {
-    display: flex;
-}
-
-.cl-organizationSwitcherTrigger {
-    background-color: #e9ebee;
-    padding: 0.2rem;
-}
-
-.cl-organizationSwitcherTrigger:hover {
-    background-color: white;
-}
-
-.cl-avatarBox {
-    background-color: inherit;
-}
-
-.cl-avatarImage {
-    object-fit: contain;
-}
-
-/* .cl-formButtonPrimary { */
-/*     @apply from-blue-9 to-blue-7 hover:from-blue-8 hover:to-blue-6 mx-4 self-center rounded-md bg-gradient-to-r p-2 text-center font-medium text-white shadow-lg; */
-/* } */
-/**/
-/* .cl-footerActionLink { */
-/*     @apply text-blue-8 shadow-link hover:shadow-activeLink; */
-/* } */
-/**/
-/* .cl-formFieldAction { */
-/*     @apply text-blue-8 shadow-link hover:shadow-activeLink; */
-/* } */
-
-/* todo: revisit this to get the styling you want */
-/* .cl-organizationPreview { */
-/*     background-color: #183863; */
-/* } */

@@ -3,9 +3,9 @@
 // have any effect. For now, we have to keep prettier in our deps.
 {
     "overrides": [
-        { "files": "*.md", "options": { "tabWidth": 2 } },
-        { "files": "*.svelte", "options": { "parser": "svelte" } },
-        { "files": "*.svg", "options": { "parser": "html" } },
+        { "files": ["*.md"], "options": { "tabWidth": 2 } },
+        { "files": ["*.svelte"], "options": { "parser": "svelte" } },
+        { "files": ["*.svg"], "options": { "parser": "html" } },
     ],
 
     "plugins": ["@prettier/plugin-oxc", "prettier-plugin-svelte"],

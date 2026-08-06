@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+backend:
+  name: github
+  repo: dustypomerleau/vesk
+  base_url: https://github.com/login/oauth/authorize?client_id=Ov23liPkvrojGOXMLin2
+media_folder: /static/media
+public_folder: /media
+media_libraries:
+  cloudinary:
+    config:
+      cloud_name: vesk
+      api_key: "183891283152378"
+collections:
+  - name: blog
+    icon: post
+    label: Blog Posts
+    label_singular: Post
+    folder: /src/routes/blog
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Brief title (page header), name: brief, widget: string}
+      - {label: Date, name: date, widget: datetime, type: date}
+      - {label: Body, name: body, widget: richtext}

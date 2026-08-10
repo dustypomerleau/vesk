@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Info from "$lib/components/Info.svelte";
+    import Blog from "$lib/components/Blog.svelte";
     import type { PostPath } from "$lib/types";
 
     let { posts }: { posts: Array<PostPath> } = $props();
@@ -9,4 +9,4 @@
     <title>Vic Eye &amp; Retina Specialists | Blog</title>
 </svelte:head>
 
-<Info {posts} />
+<Blog {posts} />

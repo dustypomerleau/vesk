@@ -2,7 +2,12 @@
 backend:
   name: github
   repo: dustypomerleau/vesk
-  base_url: https://github.com/login/oauth/authorize?client_id=Ov23liPkvrojGOXMLin2
+  branch: staging
+  client_id: Ov23liPkvrojGOXMLin2
+  # failed redirect on staging site is to:
+  # https://github.com/login/oauth/authorize?client_id=Ov23liPkvrojGOXMLin2/auth?provider=github&site_id=staging--viceye.netlify.app&scope=repo%2Cuser
+  # deleting the query string fixes it
+  # aha the issue is that there is already a query string in your base URL so you have 2 ? so maybe we need a separate yaml key for the client_id
 media_folder: /static/media
 public_folder: /media
 media_libraries:

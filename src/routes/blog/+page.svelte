@@ -1,8 +1,10 @@
 <script lang="ts">
     import Blog from "$lib/components/Blog.svelte";
     import type { PostPath } from "$lib/types";
+    import type { PageProps } from "./$types";
 
-    let { posts }: { posts: Array<PostPath> } = $props();
+    let { data }: PageProps = $props();
+    const { posts }: { posts: Array<PostPath> } = data;
 </script>
 
 <svelte:head>

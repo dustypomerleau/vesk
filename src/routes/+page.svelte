@@ -8,7 +8,7 @@
     import type { PostPath } from "$lib/types";
 
     let { data } = $props();
-    let { posts } = data;
+    const { posts }: { posts: Array<PostPath> } = data;
 </script>
 
 <svelte:head>

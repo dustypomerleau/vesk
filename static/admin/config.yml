@@ -16,10 +16,10 @@ collections:
   - name: blog
     icon: post
     label: Blog Posts
-    label_singular: Post
+    label_singular: BlogPost
     folder: /src/routes/blog
     fields:
       - {label: Title, name: title, widget: string}
-      - {label: Brief title (page header), name: brief, widget: string}
+      - {label: Tab Header (brief), name: brief, widget: string}
       - {label: Date, name: date, widget: datetime, type: date}
       - {label: Body, name: body, widget: richtext}

@@ -23,19 +23,3 @@
         <div class="content"><Content /></div>
     </article>
 </div>
-
-<style>
-    .article-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        background-color: white;
-        font-size: var(--fs-xl);
-        padding-block-end: var(--space-4);
-
-        @media (width >= 40rem) {
-            padding-inline: var(--space-4);
-        }
-    }
-</style>

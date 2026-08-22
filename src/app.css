@@ -328,11 +328,16 @@
 
 @layer components {
     article {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
         max-width: 65ch;
         padding-inline: var(--space-3);
         width: 100%;
 
         .content {
+            align-self: center;
             display: flex;
             flex-direction: column;
 
@@ -343,6 +348,40 @@
             background-image: linear-gradient(to right, var(--gray-4), var(--gray-2));
             height: 2px;
             margin-block: var(--space-6);
+        }
+
+        /* For clarity, all classes added via `rehype-class-names` will have the `rehype-` prefix. */
+
+        .rehype-content {
+            /* For reasons that I don't completely understand, the padding on `article` tags needs to be repeated here, because it doesn't get applied to some tags in mdsvex injected content. */
+            padding-inline: var(--space-3);
+            @media (width >= 53rem) {
+                padding-inline: 0;
+            }
+        }
+
+        .rehype-img {
+            border-radius: var(--radius-lg);
+            /* Compromise: blog images placed via CMS will all have the same size. */
+            @media (width >= 35rem) {
+                /* We have to constrain the width on larger screens because the mdsvex injected `img` is not constrained normally by its parent. We use 65ch because that's the max article width. */
+                width: calc(65ch * 0.81);
+            }
+        }
+
+        /* This is necessary because mdsvex wraps sveltia images in `p` tags, so we are copying properties to effectively match `class="figure figure-size"`.  */
+        p:has(> .rehype-img) {
+            align-self: center;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-2);
+
+            padding-block: var(--space-6);
+            /* Re-specifying inline padding allows images to span the viewport on mobile, even though `rehype-content` is applied. */
+            padding-inline: 0;
+            width: 100vw;
         }
 
         h1,
@@ -361,6 +400,24 @@
             font-size: 1.75em;
         }
 
+        ol {
+            list-style-type: decimal;
+            padding-inline-start: var(--space-8);
+
+            li::marker {
+                color: var(--gray-7);
+            }
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-inline-start: var(--space-7);
+
+            li::marker {
+                color: var(--gray-6);
+            }
+        }
+
         ol,
         ul {
             margin-block: var(--space-3);
@@ -373,31 +430,27 @@
                 padding-block-end: var(--space-3);
             }
 
-            @media (width >= 40rem) {
-                padding-inline-start: var(--space-8);
-            }
-        }
-
-        ol {
-            list-style-type: decimal;
-            padding-inline-start: var(--space-6);
-
-            li::marker {
-                color: var(--gray-7);
-            }
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-inline-start: var(--space-5);
-
-            li::marker {
-                color: var(--gray-6);
+            @media (width >= 53rem) {
+                padding-inline-start: 0;
             }
         }
 
         p + p {
             padding-block-start: var(--space-2);
+        }
+    }
+
+    .article-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: white;
+        font-size: var(--fs-xl);
+        padding-block-end: var(--space-4);
+
+        @media (width >= 40rem) {
+            padding-inline: var(--space-4);
         }
     }
 
@@ -673,27 +726,6 @@
 
     .radio-set {
         margin-block: var(--space-4) var(--space-6);
-    }
-
-    /* For clarity, all classes added via `rehype-class-names` will have the `rehype-` prefix. */
-
-    /* Compromise: blog images placed via CMS will all have the same size. */
-    .rehype-img {
-        align-self: center;
-        margin-block: var(--space-6);
-
-        width: 100%;
-        @media (width >= 35rem) {
-            width: 81%;
-        }
-
-        border-radius: var(--radius-lg);
-    }
-
-    /* This class is necessary because mdsvex wraps Sveltia `img` tags in `p` tags, so the `align-self` property on `rehype-img` will only take effect if we make the parent a flex container. We avoid aligning all items that are in `p` tags here to avoid side effects. */
-    .rehype-p {
-        display: flex;
-        flex-direction: column;
     }
 
     .section-header {

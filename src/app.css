@@ -676,23 +676,24 @@
     }
 
     /* For clarity, all classes added via `rehype-class-names` will have the `rehype-` prefix. */
-    /* compromise: blog images placed via CMS will all have the same size */
+
+    /* Compromise: blog images placed via CMS will all have the same size. */
     .rehype-img {
         align-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: var(--space-2);
+        margin-block: var(--space-6);
 
-        width: 10vw;
+        width: 100%;
         @media (width >= 35rem) {
-            /* width: 81%; */
-            width: 11%;
+            width: 81%;
         }
 
-        padding-block: var(--space-6);
         border-radius: var(--radius-lg);
-        border: 10px solid red;
+    }
+
+    /* This class is necessary because mdsvex wraps Sveltia `img` tags in `p` tags, so the `align-self` property on `rehype-img` will only take effect if we make the parent a flex container. We avoid aligning all items that are in `p` tags here to avoid side effects. */
+    .rehype-p {
+        display: flex;
+        flex-direction: column;
     }
 
     .section-header {

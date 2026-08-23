@@ -2,7 +2,6 @@
 backend:
   name: github
   repo: dustypomerleau/vesk
-  # branch: cms
   branch: staging
   client_id: Ov23liPkvrojGOXMLin2
 media_folder: /static/media

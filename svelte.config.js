@@ -12,12 +12,7 @@ const config = {
         mdsvex({
             // adding `".md"` to mdsvex extensions puts `{ metadata }` into the exported object!
             extensions: [".md"],
-            rehypePlugins: [
-                [
-                    rehypeClassNames,
-                    { img: "rehype-img", "h1, h2, h3, h4, h5, h6, p": "rehype-content" },
-                ],
-            ],
+            rehypePlugins: [[rehypeClassNames, { img: "rehype-img" }]],
         }),
     ],
 };

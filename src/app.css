@@ -328,16 +328,11 @@
 
 @layer components {
     article {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-
         max-width: 65ch;
         padding-inline: var(--space-3);
         width: 100%;
 
         .content {
-            align-self: center;
             display: flex;
             flex-direction: column;
 
@@ -348,16 +343,6 @@
             background-image: linear-gradient(to right, var(--gray-4), var(--gray-2));
             height: 2px;
             margin-block: var(--space-6);
-        }
-
-        /* For clarity, all classes added via `rehype-class-names` will have the `rehype-` prefix. */
-
-        .rehype-content {
-            /* For reasons that I don't completely understand, the padding on `article` tags needs to be repeated here, because it doesn't get applied to some tags in mdsvex injected content. */
-            padding-inline: var(--space-3);
-            @media (width >= 53rem) {
-                padding-inline: 0;
-            }
         }
 
         .rehype-img {
@@ -402,7 +387,7 @@
 
         ol {
             list-style-type: decimal;
-            padding-inline-start: var(--space-8);
+            padding-inline-start: var(--space-6);
 
             li::marker {
                 color: var(--gray-7);
@@ -411,7 +396,7 @@
 
         ul {
             list-style-type: disc;
-            padding-inline-start: var(--space-7);
+            padding-inline-start: var(--space-5);
 
             li::marker {
                 color: var(--gray-6);
@@ -428,10 +413,6 @@
 
             li:not(:last-child) {
                 padding-block-end: var(--space-3);
-            }
-
-            @media (width >= 53rem) {
-                padding-inline-start: 0;
             }
         }
 

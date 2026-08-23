@@ -401,6 +401,29 @@
         }
     }
 
+    .banner {
+        background-color: var(--orange-7);
+        color: white;
+        font-size: var(--fs-xl);
+        padding: var(--space-6);
+
+        padding-block-end: var(--space-2);
+        @media (53rem <= width < 61rem) {
+            /* accomodate the transition zone where links are displayed horizontally but still wrapped */
+            padding-block-start: calc(var(--space) * 12);
+            padding-block-end: var(--space-4);
+        }
+        @media (width >= 61rem) {
+            padding-block-start: var(--space-3);
+        }
+
+        width: 100%;
+
+        @media (width >= 40rem) {
+            text-align: center;
+        }
+    }
+
     .button {
         display: flex;
         justify-content: center;
@@ -478,6 +501,18 @@
         &.gray {
             background-image: linear-gradient(to right, var(--gray-8), var(--gray-6));
             text-align: start;
+        }
+    }
+
+    .cta-link {
+        color: var(--blue-1);
+        text-decoration: underline;
+        text-decoration-color: var(--blue-2);
+        text-decoration-line: underline;
+
+        &:focus,
+        &:hover {
+            text-decoration-thickness: 3px;
         }
     }
 

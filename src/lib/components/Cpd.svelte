@@ -2,7 +2,7 @@
     import Share from "$lib/svg/Share.svelte";
 </script>
 
-<div id="cpd" class="cpd">
+<div id="cpd" class="banner">
     Referring doctors can
     <a
         href="https://in4med-23651214.hubspotpagebuilder.com/"
@@ -15,34 +15,10 @@
 </div>
 
 <style>
-    .cpd {
-        background-color: var(--orange-7);
-        color: white;
-        font-size: var(--fs-xl);
-        padding: var(--space-4);
-        width: 100%;
-
-        @media (width >= 40rem) {
-            text-align: center;
-        }
-    }
-
     .cta-icon {
         display: inline-flex;
         vertical-align: middle;
 
         color: var(--blue-1);
-    }
-
-    .cta-link {
-        color: var(--blue-1);
-        text-decoration: underline;
-        text-decoration-color: var(--blue-2);
-        text-decoration-line: underline;
-
-        &:focus,
-        &:hover {
-            text-decoration-thickness: 3px;
-        }
     }
 </style>

@@ -1,9 +1,11 @@
 <script lang="ts">
     // import Cpd from "$lib/components/Cpd.svelte";
+    import RefractiveBanner from "$lib/components/RefractiveBanner.svelte";
 </script>
 
 <div id="hero" class="hero">
     <!-- <Cpd /> -->
+    <RefractiveBanner />
     <h1>Specialist eye surgeons that care</h1>
 </div>
 
@@ -28,8 +30,10 @@
             font-size: calc(var(--fs-base) * 3.75);
             font-weight: var(--fw-light);
             line-height: 1.1;
-            padding-block-start: calc(var(--space-4) * 8); /* standard: without Cpd */
-            /* padding-block-start: calc(var(--space-4) * 4); */ /* reduced: with Cpd */
+            /* standard: without banner */
+            /* padding-block-start: calc(var(--space-4) * 8); */
+            /* reduced: with banner */
+            padding-block-start: calc(var(--space-4) * 4);
             padding-inline: var(--space-7);
             text-align: center;
             width: 100lvw;

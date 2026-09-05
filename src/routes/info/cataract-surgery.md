@@ -4,7 +4,7 @@ brief: Cataract surgery
 creds: MD, FRANZCO
 date: 2023-09-24
 icon: Iol
-image: dlp
+image: dp
 title: A patient's guide to cataract surgery and lens implants
 ---
 

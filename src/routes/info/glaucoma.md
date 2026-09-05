@@ -4,7 +4,7 @@ brief: Glaucoma
 creds: MB ChB BAO, PhD, FRCOphth, FRANZCO
 date: 2025-10-15
 icon: Eye
-image: mht
+image: mt
 title: Glaucoma care
 ---
 

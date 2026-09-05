@@ -4,7 +4,7 @@ brief: Eye injections
 creds: MB ChB BAO, PhD, FRCOphth, FRANZCO
 date: 2023-11-25
 icon: Syringe
-image: mht
+image: mt
 title: Understanding injection therapy for eye conditions
 ---
 

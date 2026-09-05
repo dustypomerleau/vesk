@@ -4,7 +4,7 @@ brief: Retinal tear
 creds: MB ChB BAO, PhD, FRCOphth, FRANZCO
 date: 2024-06-12
 icon: RetinalTear
-image: mht
+image: mt
 title: Laser treatment for retinal tears
 ---
 

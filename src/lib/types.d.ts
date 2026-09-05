@@ -96,7 +96,7 @@ export type AnchorButtonAttributes =
     | ({ href: string } & HTMLAnchorAttributes)
     | ({ href?: undefined } & HTMLButtonAttributes);
 
-export type NavHamburgerProps = { name: string };
+export type NavHamburgerProps = { name?: string };
 
 export type NavbarState = {
     hidden: boolean;

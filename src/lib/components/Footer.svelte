@@ -3,9 +3,9 @@
 
     const links = [
         { href: "/", text: "Home" },
-        { href: "/#doctors", text: "Specialists" },
-        { href: "/#location", text: "Location" },
-        { href: "/#contact", text: "Contact" },
+        { href: "/doctors", text: "Specialists" },
+        { href: "/location", text: "Location" },
+        { href: "/contact", text: "Contact" },
         { href: "/refer", text: "Refer" },
     ];
 </script>

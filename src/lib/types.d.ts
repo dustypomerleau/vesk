@@ -69,11 +69,11 @@ export interface RadioProps {
 import type { Snippet } from "svelte";
 
 import type {
-    ClassValue,
+    // ClassValue,
     HTMLAnchorAttributes,
     HTMLAttributes,
     // HTMLBlockquoteAttributes,
-    // HTMLButtonAttributes,
+    HTMLButtonAttributes,
     // HTMLDialogAttributes,
     // HTMLImgAttributes,
     // HTMLInputAttributes,
@@ -95,6 +95,8 @@ import type {
 export type AnchorButtonAttributes =
     | ({ href: string } & HTMLAnchorAttributes)
     | ({ href?: undefined } & HTMLButtonAttributes);
+
+export type NavHamburgerProps = { name: string };
 
 export type NavbarState = {
     hidden: boolean;

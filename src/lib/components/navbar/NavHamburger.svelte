@@ -5,7 +5,7 @@
     import type { NavbarState, NavHamburgerProps, NavbarBreakpoint } from "$lib/types";
     import type { MouseEventHandler } from "svelte/elements";
 
-    let { name = "Open main menu" }: NavHamburgerProps = $props();
+    let { name = "Open main menu" } = $props();
     const navState = getContext<NavbarState>("navState");
 
     const toggle_hidden: MouseEventHandler<HTMLButtonElement> = (ev) => {

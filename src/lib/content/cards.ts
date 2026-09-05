@@ -17,7 +17,7 @@ export const cards: Array<Card> = [
         link: {
             Icon: Eye,
             buttonText: "Meet our surgeons",
-            href: "/#doctors",
+            href: "/doctors",
         },
     },
     {
@@ -42,27 +42,27 @@ export const cards: Array<Card> = [
         points: [
             "Our Ringwood practice has abundant parking, close to the M3, Ringwood Train Station, and Eastland Shopping Centre.",
 
-            'Our ground-floor office is accessible to wheelchairs and walkers. Feel free to <a href="/#contact" class="link">contact us</a> in advance if you require any special assistance for your visit.',
+            'Our ground-floor office is accessible to wheelchairs and walkers. Feel free to <a href="/contact" class="link">contact us</a> in advance if you require any special assistance for your visit.',
 
             "See below for detailed information on how to visit us.",
         ],
         link: {
             Icon: Pin,
             buttonText: "Location and parking",
-            href: "/#location",
+            href: "/location",
         },
     },
     {
         title: "More information",
         points: [
-            'If you would like to request an appointment—or more information—please <a href="#contact" class="link">reach out</a>. Our team will be in touch to arrange a consultation.',
+            'If you would like to request an appointment—or more information—please <a href="contact" class="link">reach out</a>. Our team will be in touch to arrange a consultation.',
 
             "Referrals are required for most of our services. If you have questions about the process, or need help obtaining a referral, we are happy to assist.",
         ],
         link: {
             Icon: Mail,
             buttonText: "Contact us",
-            href: "/#contact",
+            href: "/contact",
         },
     },
 ];

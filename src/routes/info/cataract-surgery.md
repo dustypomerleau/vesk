@@ -128,4 +128,4 @@ Keep in mind that your surgeon is trained to consider all of these factors.
 They will choose an implant with a high likelihood of matching your prescription, and add a safety margin that is appropriate for your measurements.
 If you have specific goals, such as a particular activity you would like to do without glasses, it's important to communicate that to your surgeon.
 
-If you have further questions about cataract surgery and your options, feel free to [contact us](/#contact) at Vic Eye for a consultation.
+If you have further questions about cataract surgery and your options, feel free to [contact us](/contact) at Vic Eye for a consultation.

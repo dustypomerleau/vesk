@@ -17,10 +17,10 @@
         <NavHamburger />
         <NavUl>
             <div class="links">
-                <NavLi href="/#location">Location</NavLi>
-                <NavLi href="/#doctors">Doctors</NavLi>
-                <NavLi href="/#info">Patient information</NavLi>
-                <NavLi href="/#contact">Contact</NavLi>
+                <NavLi href="/location">Location</NavLi>
+                <NavLi href="/doctors">Doctors</NavLi>
+                <NavLi href="/info">Patient information</NavLi>
+                <NavLi href="/contact">Contact</NavLi>
                 <NavLi href="/refer">Refer</NavLi>
             </div>
             <Social />

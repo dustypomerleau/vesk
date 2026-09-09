@@ -1,5 +1,11 @@
 import type { Component } from "svelte";
 
+export interface Card {
+    title: string;
+    points: Array<string>;
+    link: Link;
+}
+
 export interface Doc {
     name: string;
     credentials: string;
@@ -14,27 +20,20 @@ export interface Figure {
     caption?: string;
 }
 
-export interface PhotoFig extends Figure {
-    image: string;
-    alt: string;
-}
-
-export interface SvgFig extends Figure {
-    Svg: Component;
-    viewBox?: string;
-    width?: string;
-}
-
 export interface Link {
     href: string;
     Icon: Component;
     buttonText: string;
 }
 
-export interface Card {
-    title: string;
-    points: Array<string>;
-    link: Link;
+export interface PhotoFig extends Figure {
+    image: string;
+    alt: string;
+}
+
+export interface PostContent {
+    meta: PostMetadata;
+    Content: Component;
 }
 
 export interface PostMetadata {
@@ -47,14 +46,19 @@ export interface PostMetadata {
     title: string;
 }
 
-export interface PostContent {
-    meta: PostMetadata;
-    Content: Component;
-}
-
 export interface PostPath {
     meta: PostMetadata;
     path: string;
+}
+
+export interface Posts {
+    posts: Array<PostPath>;
+}
+
+export enum PostType {
+    Blog,
+    Condition,
+    Treatment,
 }
 
 export interface RadioProps {
@@ -62,6 +66,12 @@ export interface RadioProps {
     name: string;
     text?: string;
     iconWidth?: string;
+}
+
+export interface SvgFig extends Figure {
+    Svg: Component;
+    viewBox?: string;
+    width?: string;
 }
 
 // types from Flowbite for the Nav:

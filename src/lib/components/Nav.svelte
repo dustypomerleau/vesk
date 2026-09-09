@@ -17,9 +17,11 @@
         <NavHamburger />
         <NavUl>
             <div class="links">
+                <NavLi href="/doctors">Our Doctors</NavLi>
+                <NavLi href="/eye-conditions">Eye Conditions</NavLi>
+                <NavLi href="/treatments">Treatments</NavLi>
+                <NavLi href="/blog">Blog</NavLi>
                 <NavLi href="/location">Location</NavLi>
-                <NavLi href="/doctors">Doctors</NavLi>
-                <NavLi href="/info">Patient information</NavLi>
                 <NavLi href="/contact">Contact</NavLi>
                 <NavLi href="/refer">Refer</NavLi>
             </div>

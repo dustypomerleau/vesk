@@ -7,7 +7,7 @@
 
 <div id="info" class="info hash-target">
     <!-- todo: should these headers be sections for accessibility? -->
-    <div class="section-header">Patient Information</div>
+    <div class="section-header">Eye Conditions</div>
 
     <ul class="posts">
         {#each posts as post}

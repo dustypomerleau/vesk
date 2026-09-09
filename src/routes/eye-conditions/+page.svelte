@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Info from "$lib/components/Info.svelte";
+    import EyeConditions from "$lib/components/EyeConditions.svelte";
     import type { PostPath } from "$lib/types";
     import type { PageProps } from "./$types";
 
@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-    <title>Vic Eye &amp; Retina Specialists | Patient information</title>
+    <title>Vic Eye &amp; Retina Specialists | Eye Conditions</title>
 </svelte:head>
 
-<Info {posts} />
+<EyeConditions {posts} />

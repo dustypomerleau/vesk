@@ -1,28 +1,24 @@
-import type { PostMetadata, PostPath } from "$lib/types";
-import type { Component } from "svelte";
-import { render } from "svelte/server";
+import { PostType, type PostMetadata, type PostPath } from "$lib/types";
 
-export const getBlogPosts = async (): Promise<Array<PostPath>> => {
-    const postFiles = import.meta.glob("/src/routes/blog/*.md");
-    const values = Object.values(postFiles);
-    const iterableFiles = Object.entries(postFiles);
+// Using a variable for the glob path is not permitted, so we can't pass the path directly as a parameter.
+export const getPosts = async (postType: PostType): Promise<Array<PostPath>> => {
+    let postFiles: Record<string, () => Promise<{ metadata: PostMetadata }>>;
 
-    const posts: Array<PostPath> = await Promise.all(
-        iterableFiles.map(async ([path, resolver]) => {
-            const { metadata } = await resolver();
-            // trim /src/routes and .md to get the URL
-            const postPath = path.slice(11, -3);
+    switch (postType) {
+        case PostType.Blog: {
+            postFiles = import.meta.glob("/src/routes/blog/*.md");
+            break;
+        }
+        case PostType.Condition: {
+            postFiles = import.meta.glob("/src/routes/eye-conditions/*.md");
+            break;
+        }
+        case PostType.Treatment: {
+            postFiles = import.meta.glob("/src/routes/treatments/*.md");
+            break;
+        }
+    }
 
-            return { meta: metadata, path: postPath };
-        }),
-    );
-
-    return posts;
-};
-
-export const getInfoPosts = async (): Promise<Array<PostPath>> => {
-    const postFiles = import.meta.glob("/src/routes/info/*.md");
-    const values = Object.values(postFiles);
     const iterableFiles = Object.entries(postFiles);
 
     const posts: Array<PostPath> = await Promise.all(

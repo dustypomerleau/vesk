@@ -1,4 +1,4 @@
 engineStrict: true
 allowBuilds:
-    esbuild: true
-    puppeteer: true
+  esbuild: true
+  puppeteer: true

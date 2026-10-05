@@ -2,7 +2,12 @@ import { PostType, type PostMetadata, type PostPath } from "$lib/types";
 
 // Using a variable for the glob path is not permitted, so we can't pass the path directly as a parameter.
 export const getPosts = async (postType: PostType): Promise<Array<PostPath>> => {
-    let postFiles: Record<string, () => Promise<{ metadata: PostMetadata }>>;
+    let postFiles: Record<
+        string,
+        () => Promise<{ metadata: PostMetadata }> | { metadata: PostMetadata }
+    >;
+    // | Promise<{ metadata: PostMetadata } | { metadata: PostMetadata }>
+    // | { metadata: PostMetadata }
 
     switch (postType) {
         case PostType.Blog: {

@@ -1,8 +1,10 @@
 <script lang="ts">
     import Listing from "$lib/components/Listing.svelte";
     import type { PostPath } from "$lib/types";
+    import type { Component } from "svelte";
 
-    let { posts }: { posts: Array<PostPath> } = $props();
+    // wait the post already has Icon on it in PostMetadata
+    let { Icon, posts }: { Icon: Component; posts: Array<PostPath> } = $props();
 </script>
 
 <div id="info" class="info hash-target">

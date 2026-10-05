@@ -1,5 +1,5 @@
 <script lang="ts">
-    import EyeConditions from "$lib/components/EyeConditions.svelte";
+    import IconList from "$lib/components/IconList.svelte";
     import type { PostPath } from "$lib/types";
     import type { PageProps } from "./$types";
 

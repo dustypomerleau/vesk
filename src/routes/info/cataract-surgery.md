@@ -9,12 +9,12 @@ title: A patient's guide to cataract surgery and lens implants
 ---
 
 <script lang="ts">
-    import Cataract from "$lib/svg/Cataract.svelte";
-    import PhotoFigure from "$lib/components/PhotoFigure.svelte";
-    import IolDistance from "$lib/svg/IolDistance.svelte";
-    import IolNear from "$lib/svg/IolNear.svelte";
-    import SvgFigure from "$lib/components/SvgFigure.svelte";
-    import type { PhotoFig, SvgFig } from "$lib/types";
+    import Cataract from "#lib/svg/Cataract.svelte";
+    import PhotoFigure from "#lib/components/PhotoFigure.svelte";
+    import IolDistance from "#lib/svg/IolDistance.svelte";
+    import IolNear from "#lib/svg/IolNear.svelte";
+    import SvgFigure from "#lib/components/SvgFigure.svelte";
+    import type { PhotoFig, SvgFig } from "#lib/types";
 
     const cataract: SvgFig = {
         Svg: Cataract,

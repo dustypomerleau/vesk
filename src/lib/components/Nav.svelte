@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Logo from "$lib/svg/Logo.svelte";
+    import Logo from "#lib/svg/Logo.svelte";
     import { Navbar, NavHamburger, NavLi, NavUl } from "./navbar";
     import Social from "./Social.svelte";
 </script>

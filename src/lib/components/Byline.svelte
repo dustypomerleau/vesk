@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { PostMetadata } from "$lib/types";
+    import type { PostMetadata } from "#lib/types";
 
     let { meta }: { meta: PostMetadata } = $props();
     const { author, creds, image } = meta;

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Refer from "$lib/components/Refer.svelte";
+    import Refer from "#lib/components/Refer.svelte";
 </script>
 
 <svelte:head>

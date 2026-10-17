@@ -1,6 +1,6 @@
 <script lang="ts">
     // todo: fix types
-    import type { ToolbarButtonProps } from "$lib/types";
+    import type { ToolbarButtonProps } from "#lib/types";
 
     let {
         children,

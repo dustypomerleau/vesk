@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Docs from "$lib/components/Docs.svelte";
+    import Docs from "#lib/components/Docs.svelte";
 </script>
 
 <svelte:head>

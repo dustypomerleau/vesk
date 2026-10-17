@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Glasses from "$lib/svg/Glasses.svelte";
-    import Medical from "$lib/svg/Medical.svelte";
-    import Radio from "$lib/components/Radio.svelte";
-    import Send from "$lib/svg/Send.svelte";
-    import Stethoscope from "$lib/svg/Stethoscope.svelte";
+    import Glasses from "#lib/svg/Glasses.svelte";
+    import Medical from "#lib/svg/Medical.svelte";
+    import Radio from "#lib/components/Radio.svelte";
+    import Send from "#lib/svg/Send.svelte";
+    import Stethoscope from "#lib/svg/Stethoscope.svelte";
 </script>
 
 <svelte:head>

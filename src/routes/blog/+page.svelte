@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Blog from "$lib/components/Blog.svelte";
-    import type { PostPath } from "$lib/types";
+    import Blog from "#lib/components/Blog.svelte";
+    import type { PostPath } from "#lib/types";
     import type { PageProps } from "./$types";
 
     let { data }: PageProps = $props();

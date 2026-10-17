@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Facebook from "$lib/svg/Facebook.svelte";
-    import Instagram from "$lib/svg/Instagram.svelte";
-    import LinkedIn from "$lib/svg/LinkedIn.svelte";
+    import Facebook from "#lib/svg/Facebook.svelte";
+    import Instagram from "#lib/svg/Instagram.svelte";
+    import LinkedIn from "#lib/svg/LinkedIn.svelte";
 </script>
 
 <div class="social">

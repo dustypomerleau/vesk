@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { PostContent } from "$lib/types";
+    import type { PostContent } from "#lib/types";
 
     let { data } = $props();
 

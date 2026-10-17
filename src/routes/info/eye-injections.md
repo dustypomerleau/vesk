@@ -9,10 +9,10 @@ title: Understanding injection therapy for eye conditions
 ---
 
 <script lang="ts">
-    import Injection from "$lib/svg/Injection.svelte";
-    import SvgFigure from "$lib/components/SvgFigure.svelte";
-    import Syringe from "$lib/svg/Syringe.svelte";
-    import type { SvgFig } from "$lib/types";
+    import Injection from "#lib/svg/Injection.svelte";
+    import SvgFigure from "#lib/components/SvgFigure.svelte";
+    import Syringe from "#lib/svg/Syringe.svelte";
+    import type { SvgFig } from "#lib/types";
 
     const injection: SvgFig = {
         Svg: Injection,

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { RadioProps } from "$lib/types";
+    import type { RadioProps } from "#lib/types";
 
     let { Icon, name, text = "radio text", iconWidth = "1.5rem" }: RadioProps = $props();
     let value = text.toLowerCase();

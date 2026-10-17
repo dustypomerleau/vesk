@@ -1,4 +1,4 @@
-import type { ThemeConfig } from "$lib/types";
+import type { ThemeConfig } from "#lib/types";
 import type { ClassValue } from "clsx";
 import { getContext } from "svelte";
 

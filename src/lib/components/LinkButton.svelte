@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Link } from "$lib/types";
+    import type { Link } from "#lib/types";
 
     let { link, iconWidth = "1.5rem" }: { link: Link; iconWidth?: string } = $props();
     const { buttonText, href, Icon } = link;

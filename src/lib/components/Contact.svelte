@@ -1,11 +1,11 @@
 <script lang="ts">
-    import Landline from "$lib/svg/Landline.svelte";
-    import Mail from "$lib/svg/Mail.svelte";
-    import Message from "$lib/svg/Message.svelte";
-    import Print from "$lib/svg/Print.svelte";
-    import Radio from "$lib/components/Radio.svelte";
-    import Send from "$lib/svg/Send.svelte";
-    import Smartphone from "$lib/svg/Smartphone.svelte";
+    import Landline from "#lib/svg/Landline.svelte";
+    import Mail from "#lib/svg/Mail.svelte";
+    import Message from "#lib/svg/Message.svelte";
+    import Print from "#lib/svg/Print.svelte";
+    import Radio from "#lib/components/Radio.svelte";
+    import Send from "#lib/svg/Send.svelte";
+    import Smartphone from "#lib/svg/Smartphone.svelte";
 </script>
 
 <div id="contact" class="form contact-form hash-target">

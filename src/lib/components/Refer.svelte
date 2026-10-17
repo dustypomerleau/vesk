@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Calendar from "$lib/svg/Calendar.svelte";
-    import Dp from "$lib/svg/Dp.svelte";
-    import Mt from "$lib/svg/Mt.svelte";
-    import Radio from "$lib/components/Radio.svelte";
-    import Send from "$lib/svg/Send.svelte";
+    import Calendar from "#lib/svg/Calendar.svelte";
+    import Dp from "#lib/svg/Dp.svelte";
+    import Mt from "#lib/svg/Mt.svelte";
+    import Radio from "#lib/components/Radio.svelte";
+    import Send from "#lib/svg/Send.svelte";
 </script>
 
 <div class="form">

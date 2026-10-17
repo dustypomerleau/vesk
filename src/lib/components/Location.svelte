@@ -1,5 +1,5 @@
 <script lang="ts">
-    import LocationMap from "$lib/svg/LocationMap.svelte";
+    import LocationMap from "#lib/svg/LocationMap.svelte";
 </script>
 
 <div class="wide-card">

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Share from "$lib/svg/Share.svelte";
+    import Share from "#lib/svg/Share.svelte";
 </script>
 
 <div id="cpd" class="banner">

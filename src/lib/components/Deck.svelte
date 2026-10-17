@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Card from "$lib/components/Card.svelte";
-    import { cards } from "$lib/content/cards";
+    import Card from "#lib/components/Card.svelte";
+    import { cards } from "#lib/content/cards";
 </script>
 
 <div id="cards" class="deck">

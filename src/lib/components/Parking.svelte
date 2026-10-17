@@ -1,5 +1,5 @@
 <script lang="ts">
-    import ParkingMap from "$lib/svg/ParkingMap.svelte";
+    import ParkingMap from "#lib/svg/ParkingMap.svelte";
 </script>
 
 <div class="wide-card">

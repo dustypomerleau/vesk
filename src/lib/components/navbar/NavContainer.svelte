@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { NavContainerProps } from "$lib/types";
+    import type { NavContainerProps } from "#lib/types";
 
     let { children, fluid, class: clasName, ...restProps }: NavContainerProps = $props();
 </script>

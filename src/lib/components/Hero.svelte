@@ -1,6 +1,6 @@
 <script lang="ts">
-    // import Cpd from "$lib/components/Cpd.svelte";
-    import RefractiveBanner from "$lib/components/RefractiveBanner.svelte";
+    // import Cpd from "#lib/components/Cpd.svelte";
+    import RefractiveBanner from "#lib/components/RefractiveBanner.svelte";
 </script>
 
 <div id="hero" class="hero">

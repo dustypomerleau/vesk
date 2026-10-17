@@ -1,4 +1,4 @@
-import type { PostPath } from "$lib/types";
+import type { PostPath } from "#lib/types";
 import type { PageLoadEvent } from "./$types";
 
 // typeof fetch is (input: RequestInfo | URL, init?: RequestInit | undefined): Promise<Response>

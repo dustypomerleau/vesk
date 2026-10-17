@@ -1,7 +1,7 @@
 <script lang="ts">
     import { setContext } from "svelte";
     import NavContainer from "./NavContainer.svelte";
-    import type { NavbarState, NavbarProps } from "$lib/types";
+    import type { NavbarState, NavbarProps } from "#lib/types";
 
     let { children }: NavbarProps = $props();
     let navState = $state({ hidden: true });

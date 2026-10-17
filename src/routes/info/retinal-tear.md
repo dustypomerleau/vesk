@@ -9,9 +9,9 @@ title: Laser treatment for retinal tears
 ---
 
 <script lang="ts">
-    import NormalVersusTear from "$lib/svg/NormalVersusTear.svelte";
-    import SvgFigure from "$lib/components/SvgFigure.svelte";
-    import type { SvgFig } from "$lib/types";
+    import NormalVersusTear from "#lib/svg/NormalVersusTear.svelte";
+    import SvgFigure from "#lib/components/SvgFigure.svelte";
+    import type { SvgFig } from "#lib/types";
 
     const tear: SvgFig = {
         Svg: NormalVersusTear,

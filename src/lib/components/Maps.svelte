@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Location from "$lib/components/Location.svelte";
-    import Parking from "$lib/components/Parking.svelte";
+    import Location from "#lib/components/Location.svelte";
+    import Parking from "#lib/components/Parking.svelte";
 </script>
 
 <div id="location" class="location hash-target">

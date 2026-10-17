@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Deck from "$lib/components/Deck.svelte";
-    import Hero from "$lib/components/Hero.svelte";
+    import Deck from "#lib/components/Deck.svelte";
+    import Hero from "#lib/components/Hero.svelte";
 </script>
 
 <svelte:head>

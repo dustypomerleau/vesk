@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { MenuProps } from "$lib/types";
+    import type { MenuProps } from "#lib/types";
     import { getContext } from "svelte";
 
     let {

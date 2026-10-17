@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Maps from "$lib/components/Maps.svelte";
+    import Maps from "#lib/components/Maps.svelte";
 </script>
 
 <svelte:head>

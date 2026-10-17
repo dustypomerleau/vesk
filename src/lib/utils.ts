@@ -1,4 +1,4 @@
-import type { PostMetadata, PostPath } from "$lib/types";
+import type { PostMetadata, PostPath } from "#lib/types";
 import type { Component } from "svelte";
 import { render } from "svelte/server";
 

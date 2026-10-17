@@ -1,6 +1,6 @@
 <script lang="ts">
-    import LinkButton from "$lib/components/LinkButton.svelte";
-    import type { Card } from "$lib/types";
+    import LinkButton from "#lib/components/LinkButton.svelte";
+    import type { Card } from "#lib/types";
 
     let { card }: { card: Card } = $props();
     const { link, points, title } = card;

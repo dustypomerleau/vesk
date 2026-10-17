@@ -1,10 +1,10 @@
 <script lang="ts">
-    // import Cpd from "#lib/components/Cpd.svelte";
+    import Cpd from "#lib/components/Cpd.svelte";
     import RefractiveBanner from "#lib/components/RefractiveBanner.svelte";
 </script>
 
 <div id="hero" class="hero">
-    <!-- <Cpd /> -->
+    <Cpd />
     <RefractiveBanner />
     <h1>Specialist eye surgeons that care</h1>
 </div>

@@ -14,7 +14,7 @@ title: A patient's guide to cataract surgery and lens implants
     import IolDistance from "#lib/svg/IolDistance.svelte";
     import IolNear from "#lib/svg/IolNear.svelte";
     import SvgFigure from "#lib/components/SvgFigure.svelte";
-    import type { PhotoFig, SvgFig } from "#lib/types";
+    import type { PhotoFig, SvgFig } from "#lib/types.ts";
 
     const cataract: SvgFig = {
         Svg: Cataract,

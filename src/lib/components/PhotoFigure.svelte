@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { PhotoFig } from "#lib/types";
+    import type { PhotoFig } from "#lib/types.ts";
 
     let { figure }: { figure: PhotoFig } = $props();
     const { alt, caption, image, size } = figure;

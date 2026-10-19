@@ -1,0 +1,40 @@
+<script lang="ts">
+    import Listing from "#lib/components/Listing.svelte";
+    import type { PostPath } from "#lib/types.ts";
+    import type { Component } from "svelte";
+
+    // wait the post already has Icon on it in PostMetadata
+    let { Icon, posts }: { Icon: Component; posts: Array<PostPath> } = $props();
+</script>
+
+<div id="info" class="info hash-target">
+    <!-- todo: should these headers be sections for accessibility? -->
+    <div class="section-header">Eye Conditions</div>
+
+    <ul class="posts">
+        {#each posts as post}
+            <Listing {post} />
+        {/each}
+    </ul>
+</div>
+
+<style>
+    .info {
+        align-self: center;
+
+        border-radius: var(--radius-md);
+        padding-block: var(--space-6);
+    }
+
+    .posts {
+        display: grid;
+        column-gap: calc(var(--space-4) * 4);
+        row-gap: var(--space-2);
+
+        @media (width >= 40rem) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        font-size: var(--fs-lg);
+    }
+</style>

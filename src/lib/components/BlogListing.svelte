@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { PostPath } from "#lib/types";
+    import type { PostPath } from "#lib/types.ts";
 
     let { post }: { post: PostPath } = $props();
 

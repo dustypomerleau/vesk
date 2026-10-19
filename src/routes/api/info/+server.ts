@@ -1,5 +1,5 @@
-import type { PostPath } from "#lib/types";
-import { getInfoPosts } from "#lib/utils";
+import type { PostPath } from "#lib/types.ts";
+import { getInfoPosts } from "#lib/utils.ts";
 import { json } from "@sveltejs/kit";
 
 export const GET = async (): Promise<Response> => {

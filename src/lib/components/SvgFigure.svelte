@@ -1,7 +1,7 @@
 <!-- todo: create a FigStack so that you can wrap sequential figs or lay out horizontally depending on the screen -->
 
 <script lang="ts">
-    import type { SvgFig } from "#lib/types";
+    import type { SvgFig } from "#lib/types.ts";
 
     let { figure }: { figure: SvgFig } = $props();
     const { caption, size, Svg, viewBox, width = "100%" } = figure;

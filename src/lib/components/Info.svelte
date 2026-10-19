@@ -1,6 +1,6 @@
 <script lang="ts">
     import Listing from "#lib/components/Listing.svelte";
-    import type { PostPath } from "#lib/types";
+    import type { PostPath } from "#lib/types.ts";
 
     let { posts }: { posts: Array<PostPath> } = $props();
 </script>

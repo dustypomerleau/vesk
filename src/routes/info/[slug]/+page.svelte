@@ -1,6 +1,6 @@
 <script lang="ts">
     import Byline from "#lib/components/Byline.svelte";
-    import type { PostContent } from "#lib/types";
+    import type { PostContent } from "#lib/types.ts";
 
     let { data } = $props();
 

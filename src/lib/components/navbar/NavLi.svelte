@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { NavbarState, NavLiProps } from "#lib/types";
+    import type { NavbarState, NavLiProps } from "#lib/types.ts";
     import { getContext } from "svelte";
 
     let navState = getContext<NavbarState>("navState");

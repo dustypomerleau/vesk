@@ -2,7 +2,7 @@ import Eye from "#lib/svg/Eye.svelte";
 import Mail from "#lib/svg/Mail.svelte";
 import Pin from "#lib/svg/Pin.svelte";
 import UserPlus from "#lib/svg/UserPlus.svelte";
-import type { Card } from "#lib/types";
+import type { Card } from "#lib/types.ts";
 
 export const cards: Array<Card> = [
     {

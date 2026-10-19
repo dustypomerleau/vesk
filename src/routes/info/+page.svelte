@@ -1,6 +1,6 @@
 <script lang="ts">
     import Info from "#lib/components/Info.svelte";
-    import type { PostPath } from "#lib/types";
+    import type { PostPath } from "#lib/types.ts";
     import type { PageProps } from "./$types";
 
     let { data }: PageProps = $props();

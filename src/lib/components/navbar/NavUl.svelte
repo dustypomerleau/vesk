@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { NavbarState, NavUlProps } from "#lib/types";
+    import type { NavbarState, NavUlProps } from "#lib/types.ts";
     import { getContext } from "svelte";
     import { sineIn } from "svelte/easing";
     import { fade, fly, scale, slide } from "svelte/transition";

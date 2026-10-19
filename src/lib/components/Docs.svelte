@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { doctors } from "#lib/content/doctors";
+    import { doctors } from "#lib/content/doctors.ts";
 </script>
 
 <div id="doctors" class="doctors hash-target">

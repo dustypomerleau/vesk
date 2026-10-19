@@ -1,4 +1,4 @@
-import type { PostContent, PostMetadata } from "#lib/types";
+import type { PostContent, PostMetadata } from "#lib/types.ts";
 import type { Component } from "svelte";
 
 export async function load({ params }: { params: { slug: string } }): Promise<PostContent> {

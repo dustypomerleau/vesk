@@ -1,4 +1,4 @@
-import type { Doc } from "#lib/types";
+import type { Doc } from "#lib/types.ts";
 
 export const doctors: Array<Doc> = [
     {

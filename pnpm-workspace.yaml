@@ -2,3 +2,7 @@ engineStrict: true
 allowBuilds:
   esbuild: true
   puppeteer: true
+minimumReleaseAgeExclude:
+  - '@mdsvex/parse@1.0.0'
+  - '@mdsvex/render@1.0.0'
+  - mdsvex@1.0.1

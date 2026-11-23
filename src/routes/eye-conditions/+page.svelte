@@ -1,5 +1,5 @@
 <script lang="ts">
-    import IconList from "#lib/components/IconList.svelte";
+    import ArticleList from "#lib/components/ArticleList.svelte";
     import type { PostPath } from "#lib/types.ts";
     import type { PageProps } from "./$types";
 
@@ -11,4 +11,5 @@
     <title>Vic Eye &amp; Retina Specialists | Eye Conditions</title>
 </svelte:head>
 
-<EyeConditions {posts} />
+<div class="section-header">Eye Conditions</div>
+<ArticleList {posts} />

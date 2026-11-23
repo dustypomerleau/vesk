@@ -78,6 +78,8 @@
         align-items: center;
 
         @media (width >= 40rem) {
+            /* prevent white background from showing when the .container padding in +layout.svelte is increased */
+            margin-block-start: -1rem;
             background-color: var(--gray-4);
         }
 

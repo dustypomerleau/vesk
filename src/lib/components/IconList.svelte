@@ -7,7 +7,7 @@
     let { Icon, posts }: { Icon: Component; posts: Array<PostPath> } = $props();
 </script>
 
-<div id="info" class="info hash-target">
+<div id="info" class="info ">
     <!-- todo: should these headers be sections for accessibility? -->
     <div class="section-header">Eye Conditions</div>
 

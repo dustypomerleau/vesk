@@ -20,6 +20,6 @@
         <h1>{title}</h1>
         <div class="date">{localDate}</div>
         <div class="divider"></div>
-        <div class="content"><Content /></div>
+        <div class="blog-content content"><Content /></div>
     </article>
 </div>

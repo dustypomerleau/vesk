@@ -1,4 +1,5 @@
 <script lang="ts">
+    // In future, it may be possible to make the icon in Listing.svelte optional, and not have a separate BlogListing.
     import type { PostPath } from "#lib/types.ts";
 
     let { post }: { post: PostPath } = $props();

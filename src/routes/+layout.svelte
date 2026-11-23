@@ -32,7 +32,7 @@
 
     <main>
         <div id="bg" class="bg">
-            <div class="container">{@render children()}</div>
+            <div class="container hash-target">{@render children()}</div>
         </div>
     </main>
 

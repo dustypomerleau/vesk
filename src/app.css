@@ -332,6 +332,31 @@
         padding-inline: var(--space-3);
         width: 100%;
 
+        .blog-content {
+            img {
+                border-radius: var(--radius-lg);
+
+                @media (width >= 35rem) {
+                    /* We have to constrain the width on larger screens because the mdsvex injected `img` is not constrained normally by its parent. We use 65ch because that's the max article width. */
+                    width: calc(65ch * 0.81);
+                }
+            }
+
+            p:has(img) {
+                align-self: center;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: var(--space-2);
+
+                padding-block: var(--space-6);
+                /* Re-specifying inline padding allows images to span the viewport on mobile, even though text `p` tags have padding. */
+                padding-inline: 0;
+                width: 100vw;
+            }
+        }
+
         .content {
             display: flex;
             flex-direction: column;
@@ -343,30 +368,6 @@
             background-image: linear-gradient(to right, var(--gray-4), var(--gray-2));
             height: 2px;
             margin-block: var(--space-6);
-        }
-
-        .rehype-img {
-            border-radius: var(--radius-lg);
-            /* Compromise: blog images placed via CMS will all have the same size. */
-            @media (width >= 35rem) {
-                /* We have to constrain the width on larger screens because the mdsvex injected `img` is not constrained normally by its parent. We use 65ch because that's the max article width. */
-                width: calc(65ch * 0.81);
-            }
-        }
-
-        /* This is necessary because mdsvex wraps sveltia images in `p` tags, so we are copying properties to effectively match `class="figure figure-size"`.  */
-        p:has(> .rehype-img) {
-            align-self: center;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: var(--space-2);
-
-            padding-block: var(--space-6);
-            /* Re-specifying inline padding allows images to span the viewport on mobile, even though text `p` tags have padding. */
-            padding-inline: 0;
-            width: 100vw;
         }
 
         h1,

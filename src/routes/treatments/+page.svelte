@@ -1,5 +1,5 @@
 <script lang="ts">
-    import EyeConditions from "#lib/components/EyeConditions.svelte";
+    import ArticleList from "#lib/components/ArticleList.svelte";
     import type { PostPath } from "#lib/types.ts";
     import type { PageProps } from "./$types";
 
@@ -11,5 +11,4 @@
     <title>Vic Eye &amp; Retina Specialists | Treatments</title>
 </svelte:head>
 
-<!-- todo: EyeConditions should be generic so that we can use it for both treatments and conditions, but to do that we need to rename it and pass another param. -->
-<EyeConditions {posts} />
+<ArticleList {posts} />
